@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabian's Buick Estate Wagon Concept | Dream To Build</title>
+    <style>
+        :root {
+            --bg-color: #0f1115;
+            --card-bg: #181b21;
+            --accent: #7c3aed;
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --border: #262b35;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        nav {
+            margin-bottom: 2rem;
+        }
+
+        .back-link {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .hero-banner {
+            width: 100%;
+            height: 400px;
+            background-color: #242832;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            cursor: pointer;
+        }
+
+        header.project-header {
+            margin-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 1.5rem;
+        }
+
+        header.project-header h1 {
+            font-size: 2.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header.project-header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        .content-section {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.75rem;
+            margin-bottom: 2rem;
+        }
+
+        .content-section h2 {
+            font-size: 1.4rem;
+            margin-bottom: 1.25rem;
+            color: var(--accent);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .spec-item {
+            background: rgba(255, 255, 255, 0.02);
+            padding: 0.75rem 1rem;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+        }
+
+        .spec-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            letter-spacing: 0.05em;
+        }
+
+        .spec-value {
+            font-weight: 600;
+            font-size: 1rem;
+            margin-top: 0.25rem;
+        }
+
+        .forensic-text p {
+            margin-bottom: 1rem;
+            color: #d1d5db;
+        }
+
+        .forensic-text p:last-child {
+            margin-bottom: 0;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.25rem;
+            margin-top: 1.5rem;
+        }
+
+        .gallery-card {
+            display: block;
+            overflow: hidden;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+            background-color: #12141a;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .card-caption {
+            padding: 0.75rem;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-align: center;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        /* Image Viewer Overlay */
+        .image-viewer {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(15, 17, 21, 0.95);
+            z-index: 1000;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            backdrop-filter: blur(5px);
+        }
+
+        .image-viewer.active {
+            display: flex;
+        }
+
+        .viewer-controls {
+            position: absolute;
+            top: 1.5rem;
+            left: 1.5rem;
+        }
+
+        .viewer-controls button {
+            background: var(--card-bg);
+            color: var(--accent);
+            border: 1px solid var(--border);
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            font-weight: 500;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .viewer-img {
+            max-width: 90%;
+            max-height: 80vh;
+            object-fit: contain;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+        }
+
+        .viewer-caption {
+            margin-top: 1rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 2rem;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 600px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="../index.html" class="back-link">&larr; Back to Main Directory</a>
+    </nav>
+
+    <div class="hero-banner">
+        <img src="fabian-buick-wagon-custom.jpg" alt="Fabian's Buick Estate Wagon Concept" onclick="openViewer(this.src, this.alt)">
+    </div>
+
+    <header class="project-header">
+        <h1>Fabian’s Buick Estate Wagon</h1>
+        <p>Pure Vision Concept &bull; LS3 / 4L80 Air-Bagged Boulevard Cruiser</p>
+    </header>
+
+    <section class="content-section">
+        <h2>Quick Specs</h2>
+        <div class="specs-grid">
+            <div class="spec-item">
+                <div class="spec-label">Platform</div>
+                <div class="spec-value">1970s Buick Estate Wagon</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-label">Engine / Trans</div>
+                <div class="spec-value">GM LS3 V8 &bull; 4L80-E Automatic</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-label">Rear End</div>
+                <div class="spec-value">Retained BOP (Buick-Olds-Pontiac) Rear Diff</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-label">Suspension</div>
+                <div class="spec-value">Full Air-Ride Bagged Setup</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-label">Body Modifications</div>
+                <div class="spec-value">Rear Suicide Doors & Shaved Exterior Handles</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-label">Category</div>
+                <div class="spec-value">Fantasy Concept (Non-Build Target)</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <h2>Concept Narrative</h2>
+        <div class="forensic-text">
+            <p>Fabian down at the shop has this old Buick Estate Wagon sitting around—the kind of beat-up land yacht most people walk right past without giving a second thought. But visual mental exercises exist to squeeze style out of unlikely places.</p>
+            <p>This layout explores what happens when you take that long-roof platform and give it the full custom treatment: dropping an LS3 V8 backed by a heavy-duty 4L80-E transmission, slinging the chassis over an air bag suspension, keeping the original BOP rear end, and executing seamless body mods like shaved door handles and re-engineered rear suicide doors.</p>
+            <p>We rendered two distinct styling philosophies: a sleek deep-blue street custom with custom modern wheels, and an urban lowrider iteration featuring multi-pattern graphic paint, wire wheels pushing into Donk proportions, and ground-effect lighting. It's a build that will likely never touch metal, but the render turned out too clean to leave on the hard drive.</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <h2>Render Variations</h2>
+        <div class="gallery-grid">
+            <div class="gallery-card" onclick="openViewer('fabian-buick-wagon-custom.jpg', 'Street Custom Version: Electric Blue, Shaved Suicide Doors, Bagged Stance')">
+                <img src="fabian-buick-wagon-custom.jpg" alt="Street Custom Version">
+                <div class="card-caption">Custom Street Version</div>
+            </div>
+            <div class="gallery-card" onclick="openViewer('fabian-buick-wagon-urban.jpg', 'Urban Lowrider Version: Multi-Pattern Paint, Woodgrain, Wire Wheels, Underglow')">
+                <img src="fabian-buick-wagon-urban.jpg" alt="Urban Lowrider Version">
+                <div class="card-caption">Urban Lowrider Version</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Dream To Build &bull; dreamtobuild.fyi</p>
+    </footer>
+
+    <div id="imageViewer" class="image-viewer">
+        <div class="viewer-controls">
+            <button onclick="closeViewer()">&larr; Back to Concept</button>
+        </div>
+        <img id="viewerImg" class="viewer-img" src="" alt="Full Resolution Image">
+        <div id="viewerCaption" class="viewer-caption"></div>
+    </div>
+
+    <script>
+        const viewer = document.getElementById('imageViewer');
+        const viewerImg = document.getElementById('viewerImg');
+        const viewerCaption = document.getElementById('viewerCaption');
+
+        function openViewer(src, altText) {
+            viewerImg.src = src;
+            viewerCaption.innerText = altText || '';
+            viewer.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeViewer() {
+            viewer.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && viewer.classList.contains('active')) {
+                closeViewer();
+            }
+        });
+    </script>
+
+</body>
+</html>
