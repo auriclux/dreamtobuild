@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About & Manifesto | Dream To Build</title>
+    <style>
+        :root {
+            --bg-color: #0f1115;
+            --card-bg: #181b21;
+            --accent: #3b82f6;
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --border: #262b35;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 2rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        .manifesto-box {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.75rem;
+            margin-bottom: 2rem;
+        }
+
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Link back to the main single-page hub -->
+    <a href="../index.html" class="back-link">&larr; Back to Main Archive</a>
+
+    <header>
+        <h1>About & Manifesto</h1>
+        <p class="subtitle">Dragging High-Concept Pretty Pictures Kicking and Screaming into the Real World</p>
+    </header>
+
+    <div class="manifesto-box">
+        <pre>
+======================================================================
+DREAM TO BUILD: ORIGIN & MANIFESTO
+======================================================================
+
+1. THE MESSAGE IN A BOTTLE
+This site is built as a lark. Consider it digital driftwood tossed into the
+ocean of the internet. It exists primarily because these ideas refused to 
+stay inside my head, and writing HTML by hand was slowing down the eviction 
+process. If this site washes up on your screen and sparks something—a weird 
+chassis design, a bad idea for a shop project, or an over-engineered 
+solution to a non-existent problem—then it served its purpose.
+
+2. THE MACHINE IN THE LOOP (AI COLLABORATION)
+Every pixel, line of CSS flexbox, and high-concept render on this domain is the
+result of partnering with AI (mostly Gemini). 
+
+Discovering that an AI could write the markup meant I no longer had an excuse 
+to keep these concepts locked away. I use AI visual tools to extract automotive 
+fantasies directly from whatever sparks them: a random name, a body line I've 
+never seen before, a midnight shop conversation, or pure mechanical boredom. 
+
+3. ARCHITECTURAL BRANCHES
+The site is divided into three distinct stages of madness:
+
+* PROJECTS (Real Builds)
+  - Real-world vehicles undergoing active metalwork, fabrication, and assembly.
+  - High friction, real tools, real steel, slow progress.
+
+* DREAMS (Target Builds)
+  - Achievable concepts designed with real-world physics in mind.
+  - Feasible aero, suspension geometry, and engine packaging. 
+
+* FANTASIES (Pure Vision)
+  - Unconstrained visual explorations of form, proportion, and extreme style.
+  - High-concept renders created to purge wild ideas from my brain.
+
+4. THE PLAUSIBILITY RULE
+Even in the deepest fantasy renders, things must make functional sense. 
+No Caterpillar D7 dozer engines crammed into a classic Classic Mini—a 9-liter, 
+3,000 lb industrial block will crush a 1,400 lb unibody before you can even 
+tack-weld the subframe. 
+
+Every build on this site—even the speculative ones—is evaluated for:
+  - Aerodynamic feasibility and downforce paths
+  - Fueling, cooling, and powertrain logic
+  - Purpose-driven geometry (overbuilt for the job)
+
+If a fantasy build turns out so absurdly fast, twitchy, or heavy that a human 
+driver can't handle it, we'll let the robots drive.
+======================================================================
+        </pre>
+    </div>
+<div class="shop-notes-links" style="margin-top: 2rem; padding: 1.5rem; background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px;">
+    <h3 style="margin-bottom: 0.75rem;">Additional Shop Records</h3>
+    <ul style="list-style: none; padding: 0; display: flex; gap: 1.5rem;">
+        <li><a href="shop-rules.txt" target="_blank" style="color: var(--accent); text-decoration: none;">&rarr; View Shop Rules (.txt)</a></li>
+        <li><a href="build-stack.txt" target="_blank" style="color: var(--accent); text-decoration: none;">&rarr; View Site Tech Stack (.txt)</a></li>
+        <li><a href="manifesto.txt" target="_blank" style="color: var(--accent); text-decoration: none;">&rarr; View Raw Manifesto (.txt)</a></li>
+    </ul>
+</div>
+    <footer>
+        <p>&copy; Dream To Build &bull; dreamtobuild.fyi</p>
+    </footer>
+
+</body>
+</html>

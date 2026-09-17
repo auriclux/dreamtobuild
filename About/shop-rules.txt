@@ -1,0 +1,23 @@
+======================================================================
+DREAM TO BUILD: THE SHOP RULES
+======================================================================
+
+RULE #1: CALCULATE THE PACKAGING FIRST
+No wedge engines in unibodies that can't support the torque. If the block 
+requires cutting out structural frame rails without adding a subframe cage, 
+it fails the plausibility test.
+
+RULE #2: RESPECT THE LAWS OF AERODYNAMICS
+Downforce paths must lead to real structural mount points, not sheet metal 
+skin. If a wing would pull the trunk lid off at 120 mph, recalculate the 
+chassis mounts.
+
+RULE #3: OVERBUILD FOR PURPOSE
+If a component is designed to handle 300 hp, build the mounting geometry for 
+600 hp. If a fantasy build gets too fast or twitchy for human reaction 
+times, let the robots drive.
+
+RULE #4: DRAG PRETTY PICTURES INTO THE REAL WORLD
+CAD renders and AI concepts are easy. Real metalwork is loud, hot, and slow. 
+Never let a render stay a render if there is shop space and raw stock available.
+======================================================================

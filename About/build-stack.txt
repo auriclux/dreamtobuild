@@ -1,0 +1,18 @@
+======================================================================
+DREAM TO BUILD: TECHNICAL STACK & ARCHITECTURE
+======================================================================
+
+ARCHITECTURE: 
+  Hybrid Static Architecture (Single-page tabbed hub + dedicated build logs)
+
+STACK:
+  - Markup: Pure HTML5
+  - Styling: Native CSS3 (CSS Variables, Flexbox, CSS Grid)
+  - JS: Minimal vanilla tab-switching script (Zero heavy dependencies)
+  - AI Collaboration: Gemini (Markup generation, CSS layout, taglines)
+
+HOSTING & PERFORMANCE:
+  - Zero framework overhead (No React, Vue, or heavy node modules)
+  - Total initial payload: Under 100KB (excluding images)
+  - Instant navigation response times across desktop and mobile
+======================================================================
