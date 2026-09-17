@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>700 HP Twin-Turbo Buick 320 Straight-Eight | Dream To Build</title>
+    <style>
+        :root {
+            --bg-color: #0f1115;
+            --card-bg: #181b21;
+            --accent: #3b82f6;
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --border: #262b35;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        nav {
+            margin-bottom: 2rem;
+        }
+
+        .back-link {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .hero-banner {
+            width: 100%;
+            height: 400px;
+            background-color: #242832;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            cursor: pointer;
+        }
+
+        .historical-callout {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--accent);
+            border-radius: 6px;
+            padding: 1rem 1.25rem;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .historical-callout code {
+            color: var(--accent);
+        }
+
+        header.project-header {
+            margin-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 1.5rem;
+        }
+
+        header.project-header h1 {
+            font-size: 2.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header.project-header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        /* 3-TIER STRUCTURE */
+        .content-section {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.75rem;
+            margin-bottom: 2rem;
+        }
+
+        .content-section h2 {
+            font-size: 1.4rem;
+            margin-bottom: 1.25rem;
+            color: var(--accent);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        /* Tier 1: Quick Specs Grid */
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .spec-item {
+            background: rgba(255, 255, 255, 0.02);
+            padding: 0.75rem 1rem;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+        }
+
+        .spec-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            letter-spacing: 0.05em;
+        }
+
+        .spec-value {
+            font-weight: 600;
+            font-size: 1rem;
+            margin-top: 0.25rem;
+        }
+
+        /* Tier 2: Forensic Story */
+        .forensic-text p {
+            margin-bottom: 1rem;
+            color: #d1d5db;
+        }
+
+        .forensic-text p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Tier 3: Engineering Architecture & Media */
+        .engineering-block {
+            margin-bottom: 2rem;
+        }
+
+        .engineering-block:last-child {
+            margin-bottom: 0;
+        }
+
+        .engineering-block h3 {
+            font-size: 1.15rem;
+            color: #f3f4f6;
+            margin-bottom: 0.75rem;
+            border-left: 3px solid var(--accent);
+            padding-left: 0.75rem;
+        }
+
+        .engineering-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .engineering-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+            color: #d1d5db;
+        }
+
+        .engineering-list li::before {
+            content: "■";
+            position: absolute;
+            left: 0;
+            top: 0.1rem;
+            color: var(--accent);
+            font-size: 0.75rem;
+        }
+
+        .engineering-list strong {
+            color: #ffffff;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.25rem;
+            margin-top: 1.5rem;
+        }
+
+        .gallery-card {
+            display: block;
+            overflow: hidden;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+            background-color: #12141a;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: 240px;
+            object-fit: contain;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-card:hover img {
+            transform: scale(1.08);
+        }
+
+        .rendering-caveat {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-top: 0.75rem;
+            text-align: center;
+        }
+
+        /* Inline Image Viewer Overlay */
+        .image-viewer {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(15, 17, 21, 0.95);
+            z-index: 1000;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            backdrop-filter: blur(5px);
+        }
+
+        .image-viewer.active {
+            display: flex;
+        }
+
+        .viewer-controls {
+            position: absolute;
+            top: 1.5rem;
+            left: 1.5rem;
+        }
+
+        .viewer-controls button {
+            background: var(--card-bg);
+            color: var(--accent);
+            border: 1px solid var(--border);
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            font-weight: 500;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.2s ease, border-color 0.2s ease;
+        }
+
+        .viewer-controls button:hover {
+            background: rgba(59, 130, 246, 0.1);
+            border-color: var(--accent);
+        }
+
+        .viewer-img {
+            max-width: 90%;
+            max-height: 80vh;
+            object-fit: contain;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+        }
+
+        .viewer-caption {
+            margin-top: 1rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 2rem;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 600px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="../index.html" class="back-link">&larr; Back to Portfolio</a>
+    </nav>
+
+    <div class="hero-banner">
+        <img src="buick-supercar.jpg" alt="1939 Buick Business Coupe Touring Supercar Concept" onclick="openViewer(this.src, this.alt)">
+    </div>
+
+    <div class="historical-callout">
+        <strong style="color: var(--text-main);">Historical Note & Render Origin:</strong> 
+        Unlike current vision assets on this site—which are generated through AI synthesis—this initial vehicle concept image was built manually pixel-by-pixel using <code>paint.net</code>. It stands as the early digital baseline for stretching the '39 Buick body over the Fireball straight-eight package before migrating to AI-driven rendering workflows.
+    </div>
+
+    <header class="project-header">
+        <h1>Twin-Turbo Fireball 320</h1>
+        <p>Target Concept &bull; 700 HP Touring Supercar & Chassis Blueprint</p>
+    </header>
+
+    <!-- TIER 1: QUICK SPECS -->
+    <section class="content-section">
+        <h2>Quick Specs</h2>
+        <div class="specs-grid">
+            <div class="spec-item">
+                <div class="spec-label">Body / Profile</div>
+                <div class="spec-value">1939 Buick Business Coupe (Extended Front Nose)</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-label">Engine Core</div>
+                <div class="spec-value">Buick 320ci Fireball Straight-8 (700 HP E85)</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-label">Drivetrain Architecture</div>
+                <div class="spec-value">Modern 10-Speed Auto &bull; Independent Rear Susp.</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-label">Rear Differential Options</div>
+                <div class="spec-value">Ford 8.8 IRS / Aftermarket 9-Inch IRS</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-label">Vehicle Class</div>
+                <div class="spec-value">Long-Wheelbase Touring Supercar</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-label">Feasibility Index</div>
+                <div class="spec-value">Achievable / Eccentric Billionaire Tier</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TIER 2: FORENSIC STORY & VOICE -->
+    <section class="content-section">
+        <h2>The Conceptual Forensic</h2>
+        <div class="forensic-text">
+            <p>Every absurdity requires a catalyst. In this instance, the motivation wasn't selecting a vehicle and finding a motor—it was staring at the heavy, cast-nickel iron architecture of a 1936–1952 Buick 320 Fireball straight-eight engine and asking the immediate, unavoidable question: <em>What happens if we slap two turbos onto 34.5 inches of cast-iron inline arrogance?</em></p>
+            <p>Once you commit to housing almost three feet of boost-fed iron, standard packaging goes out the window. The solution is stretching a 1939 Buick Business Coupe body directly over a custom chassis—stretching the front clip and axle line forward to create an unashamedly dramatic touring supercar silhouette. Power transfers through a modern 10-speed automatic into an independent rear suspension (IRS) setup to ensure this long-nose missile stays planted when all 700 torque-heavy horses hit the pavement.</p>
+            <p>This build sits comfortably on the razor-thin boundary between genuine engineering feasibility and self-inflicted fiscal ruin. It is expensive enough, specialized enough, and mechanically stubborn enough to get pushed to the bottom of the queue indefinitely. But in the statistically improbable event of a lottery win—or should an eccentric billionaire stumble across this grid with more money than sense—this is the exact "this-because-that" blueprint to bring it to life.</p>
+        </div>
+    </section>
+
+    <!-- TIER 3: SYSTEMIC ENGINEERING NARRATIVE -->
+    <section class="content-section">
+        <h2>Subsystem Solutions & Mechanical Vulnerabilities</h2>
+
+        <!-- SECTION 1 -->
+        <div class="engineering-block">
+            <h3>1. Structural Reinforcement & Core Preparation</h3>
+            <ul class="engineering-list">
+                <li><strong>Heavy Nickel-Iron OHV Foundation:</strong> We start with the Buick 320ci Fireball OHV core because its overhead-valve cross-flow head design provides superior high-boost airflow and knock resistance compared to flathead engines, while its heavy nickel-iron block casting gives us the wall thickness needed for boost.</li>
+                <li><strong>3/4-Inch Billet Main Girdle:</strong> We anchor a custom 3/4-inch billet steel girdle directly across all 5 main caps to the oil pan rail because the long, 34.5-inch block is prone to flex, and stabilizing the main caps prevents the crank from walking under 700 HP loads.</li>
+                <li><strong>Deep-Tapped Deck & Ringing:</strong> We deep-tap the block deck for 1/2-inch ARP 2000 studs paired with beryllium-copper O-rings and custom MLS head gaskets because standard head bolts will stretch under high cylinder pressures, risking blown head gaskets between adjacent cylinders.</li>
+                <li><strong>Priority-Main Oil Conversion:</strong> We drill internal passages to convert the block to priority-main oiling and install an external high-volume oil pump because vintage splash/feed systems cannot maintain the oil film strength required by high-load bearings and turbo oil feeds.</li>
+            </ul>
+        </div>
+
+        <!-- SECTION 2 -->
+        <div class="engineering-block">
+            <h3>2. Rotating Assembly & Valvetrain</h3>
+            <ul class="engineering-list">
+                <li><strong>Dynamic Harmonic Suppression:</strong> We commission a custom billet 4340 steel crankshaft with updated counterweighting and pair it with a dual-frequency fluid damper because the long stock crank behaves like a torsional spring, and precise dampening is required to keep dangerous harmonic vibrations below 5,200 RPM.</li>
+                <li><strong>Forged Steel Connecting Rods:</strong> We run custom H-beam 4340 forged steel rods rather than aluminum rods because while aluminum absorbs shock, steel provides the fatigue life and dimensional stability needed for long-term reliability on a street/strip engine.</li>
+                <li><strong>Detonation-Resistant Forgings:</strong> We drop in custom forged 2618 aluminum pistons with thick ring lands and full-floating pins because cast stock pistons will shatter under detonation, while 2618 alloy withstands the heat expansion and cylinder pressures of E85 boost.</li>
+                <li><strong>5,000 RPM Piston Speed Ceiling:</strong> We cap peak engine speed at 5,000 RPM because the 4.3125-inch stroke creates extreme mean piston speeds (3,593 ft/min at 5,000 RPM), meaning high power must be made through torque and boost pressure rather than revs.</li>
+                <li><strong>Rigid Valvetrain & LSA Spacing:</strong> We spec thick-wall 3/8-inch pushrods and a custom billet roller cam with a wide 114°–116° Lobe Separation Angle (LSA) because thin pushrods flex under high valve spring loads, and a wide LSA minimizes valve overlap so boost isn't blown straight out the exhaust ports.</li>
+            </ul>
+        </div>
+
+        <!-- SECTION 3 -->
+        <div class="engineering-block">
+            <h3>3. Drivetrain Adaptation & Chassis Architecture</h3>
+            <ul class="engineering-list">
+                <li><strong>Custom Billet 10-Speed Auto Adapter:</strong> We design a custom flywheel and bellhousing adapter plate to mate the vintage Fireball block to a modern 10-speed automatic transmission because gear-density allows us to keep the 700 HP straight-eight perpetually in its ideal powerband while offering effortless high-speed cruising.</li>
+                <li><strong>Independent Rear Suspension (IRS) Module:</strong> We integrate an 8.8 IRS center section (or a custom aftermarket 9-inch IRS unit) into a multi-link rear subframe because solid axle setups compromise high-speed stability, whereas an IRS delivers modern supercar ride dynamics and anti-squat geometry.</li>
+                <li><strong>Stretched Frame Rails & Proportioning:</strong> We stretch the custom chassis rails directly ahead of the firewall to accommodate the 34.5-inch engine and twin turbo plumbing, extending the front hood line of the '39 Buick Business Coupe to give it true touring supercar proportions.</li>
+            </ul>
+        </div>
+
+        <!-- SECTION 4 -->
+        <div class="engineering-block">
+            <h3>4. Induction, Fuel & Turbo System</h3>
+            <ul class="engineering-list">
+                <li><strong>Equalized Plenum Manifold:</strong> We fabricate a custom sheet metal intake manifold with equal-length runners and an oversized single throttle body because stock long-runner manifolds feed cylinders unevenly, which leads to lean conditions in the end cylinders (1 and 8).</li>
+                <li><strong>Sequential Port Fuel Delivery:</strong> We angle 8 individual 1,200cc+ injectors directly into the intake ports managed by a modern sequential EFI ECU because precise per-cylinder fuel control is mandatory to balance flame propagation across such a long engine block.</li>
+                <li><strong>Pulse-Separated Split Manifolds:</strong> We build twin custom 4-into-1 exhaust manifolds (cylinders 1–4 on Turbo A, 5–8 on Turbo B) paired with Garrett G25-550s or BorgWarner EFR 6758s to equalize exhaust pulses and ensure instant spool off idle.</li>
+            </ul>
+        </div>
+
+        <!-- CONCEPT GALLERY -->
+        <div class="gallery-grid">
+            <div class="gallery-card" onclick="openViewer('buick-supercar.jpg', '1939 Buick Business Coupe Concept (Original paint.net Composite)')">
+                <img src="buick-supercar.jpg" alt="1939 Buick Business Coupe Concept (Original paint.net Composite)">
+            </div>
+            <div class="gallery-card" onclick="openViewer('buick-straight-eight-engine.jpg', '700 HP Twin-Turbo Fireball 320 AI Rendering')">
+                <img src="buick-straight-eight-engine.jpg" alt="700 HP Twin-Turbo Fireball 320 AI Rendering">
+            </div>
+        </div>
+        <p class="rendering-caveat">
+            Note on Engine Rendering: The twin-turbo Fireball 320 image above is an early AI visualization. While it contains a few classic AI architectural artifacts, it accurately conveys the overall packaging scale and dual-boosted straight-eight engine layout.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; Dream To Build &bull; dreamtobuild.fyi</p>
+    </footer>
+
+    <!-- INLINE IMAGE VIEWER OVERLAY -->
+    <div id="imageViewer" class="image-viewer">
+        <div class="viewer-controls">
+            <button onclick="closeViewer()">&larr; Back to Concept</button>
+        </div>
+        <img id="viewerImg" class="viewer-img" src="" alt="Full Resolution Image">
+        <div id="viewerCaption" class="viewer-caption"></div>
+    </div>
+
+    <script>
+        const viewer = document.getElementById('imageViewer');
+        const viewerImg = document.getElementById('viewerImg');
+        const viewerCaption = document.getElementById('viewerCaption');
+
+        function openViewer(src, altText) {
+            viewerImg.src = src;
+            viewerCaption.innerText = altText || '';
+            viewer.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeViewer() {
+            viewer.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && viewer.classList.contains('active')) {
+                closeViewer();
+            }
+        });
+    </script>
+
+</body>
+</html>
