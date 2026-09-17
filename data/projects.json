@@ -1,0 +1,22 @@
+[
+  {
+    "id": "torky-t",
+    "title": "The Torky T",
+    "category": "projects",
+    "badgeText": "Real Builds",
+    "badgeType": "badge-real",
+    "summary": "1923 T-Bucket • Vintage Drag Survivor & Mechanical Sorting.",
+    "thumbnail": "projects/torky-t-hero.jpg",
+    "detailUrl": "projects/torky-t.html",
+    "tags": ["t-bucket", "ford", "vintage-drag", "fabrication", "chassis"],
+    "specifications": {
+      "year": 1923,
+      "make": "Ford",
+      "model": "T-Bucket",
+      "engine": "V8",
+      "chassis": "Custom Drag Frame",
+      "status": "Active Shop Build"
+    },
+    "featured": true
+  }
+]

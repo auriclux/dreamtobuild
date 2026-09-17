@@ -1,0 +1,22 @@
+[
+  {
+    "id": "fabian-buick-wagon",
+    "title": "Fabian's Buick Estate Wagon",
+    "category": "fantasies",
+    "badgeText": "Pure Vision",
+    "badgeType": "badge-fantasy",
+    "summary": "LS3 swap, bagged stance, shaved suicide doors, and dual custom/lowrider paint directions.",
+    "thumbnail": "fantasies/fabian-buick-wagon-custom.jpg",
+    "detailUrl": "fantasies/fabian-buick-wagon.html",
+    "tags": ["buick", "wagon", "ls3", "bagged", "suicide-doors", "lowrider"],
+    "specifications": {
+      "year": 1970,
+      "make": "Buick",
+      "model": "Estate Wagon",
+      "engine": "LS3 V8",
+      "suspension": "Air Ride / Bagged",
+      "status": "Render Concept"
+    },
+    "featured": true
+  }
+]
