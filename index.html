@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream To Build | Automotive Design & Fabrication</title>
+
+    <!-- Google Fonts Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Cinzel:wght@600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #0f1115;
+            --card-bg: #181b21;
+            --accent: #3b82f6;
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --border: #262b35;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding-bottom: 2.5rem;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+        }
+
+        /* Header title layout */
+        header h1.brand-title {
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            gap: 0.6rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Custom typography styles */
+        .font-french {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3.5rem;
+            font-weight: 400;
+            color: #f3f4f6;
+        }
+
+        .font-classic {
+            font-family: 'Cinzel', serif;
+            font-size: 1.25rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--text-muted);
+        }
+
+        .font-industrial {
+            font-family: 'Black Ops One', cursive;
+            font-size: 2.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #e5e7eb;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        /* Main layout: Sidebar + Display Area */
+        .portfolio-layout {
+            display: flex;
+            gap: 2rem;
+            align-items: flex-start;
+            margin-bottom: 4rem;
+        }
+
+        /* Sidebar Navigation */
+        .sidebar-nav {
+            width: 300px;
+            flex-shrink: 0;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.25rem;
+        }
+
+        .sidebar-title {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            letter-spacing: 0.05em;
+            margin-bottom: 0.75rem;
+            margin-top: 1.25rem;
+        }
+
+        .sidebar-title:first-of-type {
+            margin-top: 0;
+        }
+
+        .sidebar-divider {
+            border: 0;
+            border-top: 1px solid var(--border);
+            margin: 1.25rem 0;
+        }
+
+        /* Nav Items with Thumbnails */
+        .nav-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.6rem;
+            border-radius: 6px;
+            text-decoration: none;
+            color: var(--text-main);
+            transition: background 0.2s ease, border-color 0.2s ease;
+            border: 1px solid transparent;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+        }
+
+        .nav-item:hover, .nav-item.active {
+            background: rgba(59, 130, 246, 0.1);
+            border-color: var(--accent);
+        }
+
+        .nav-item-compact {
+            padding: 0.5rem 0.75rem;
+        }
+
+        .nav-thumb {
+            width: 48px;
+            height: 48px;
+            object-fit: cover;
+            border-radius: 4px;
+            background-color: #242832;
+            flex-shrink: 0;
+        }
+
+        .nav-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .nav-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .nav-sub {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        /* Main Content Display Area */
+        .main-display {
+            flex: 1;
+            min-width: 0;
+        }
+
+        /* Hide content sections by default; script toggles active state */
+        .tab-panel {
+            display: none;
+        }
+
+        .tab-panel.active-panel {
+            display: block;
+        }
+
+        /* Category Header Sections */
+        .category-header {
+            margin-bottom: 1.5rem;
+        }
+
+        .category-header h2 {
+            font-size: 1.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .category-header p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-top: 0.25rem;
+        }
+
+        .badge {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            letter-spacing: 0.05em;
+        }
+
+        .badge-real { background: #059669; color: #fff; }
+        .badge-dream { background: #d97706; color: #fff; }
+        .badge-fantasy { background: #7c3aed; color: #fff; }
+        .badge-about { background: #3b82f6; color: #fff; }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .image-container {
+            position: relative;
+            width: 100%;
+            height: 360px;
+            background-color: #0b0d10;
+            overflow: hidden;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            background-color: #0b0d10;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover .image-container img {
+            transform: scale(1.02);
+        }
+
+        .watermark {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.75);
+            color: #ffffff;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 3px 8px;
+            border-radius: 4px;
+            pointer-events: none;
+            user-select: none;
+            backdrop-filter: blur(2px);
+            z-index: 2;
+        }
+
+        .card-content {
+            padding: 1.25rem;
+        }
+
+        .card-content h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-content p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .card-link {
+            display: inline-block;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: color 0.2s ease;
+        }
+
+        .card:hover .card-link {
+            color: #60a5fa;
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+		/* MOBILE & TABLET RESPONSIVE STYLES */
+        @media (max-width: 850px) {
+            /* 1. Reset Body Padding */
+            body {
+                padding: 1rem 0.75rem;
+            }
+
+            /* 2. Rescale Header Fonts for Mobile Screens */
+            .font-french {
+                font-size: 2.5rem;
+            }
+            .font-classic {
+                font-size: 1rem;
+            }
+            .font-industrial {
+                font-size: 2rem;
+            }
+
+            /* 3. Stack Layout Vertically */
+            .portfolio-layout {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+
+            /* 4. Full-Width Navigation Bar */
+            .sidebar-nav {
+                width: 100%;
+                padding: 1rem;
+            }
+
+            /* 5. Touch-Friendly Navigation Links */
+            .nav-item {
+                padding: 0.75rem;
+            }
+
+            /* 6. Adjust Card Image Heights for Mobile Aspect Ratios */
+            .image-container {
+                height: 240px;
+            }
+
+            /* 7. Single Column Card Grid */
+            .grid {
+                grid-template-columns: 1fr;
+                gap: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="brand-title">
+            <span class="font-french">Dream</span>
+            <span class="font-classic">to</span>
+            <span class="font-industrial">Build</span>
+        </h1>
+        <p>Dragging High-Concept Pretty Pictures Kicking and Screaming into the Real World</p>
+    </header>
+
+    <div class="portfolio-layout">
+
+        <!-- SIDEBAR NAVIGATION -->
+        <aside class="sidebar-nav">
+            <div class="sidebar-title">Branches</div>
+            <a class="nav-item active" data-tab="projects">
+                <img src="projects/torky-t-hero.jpg" alt="The Torky T thumbnail" class="nav-thumb">
+                <div class="nav-text">
+                    <span class="nav-title">Projects</span>
+                    <span class="nav-sub">Real Builds</span>
+                </div>
+            </a>
+
+            <a class="nav-item" data-tab="dreams">
+                <img src="dreams/buick-supercar.jpg" alt="Twin-Turbo Fireball 320 thumbnail" class="nav-thumb">
+                <div class="nav-text">
+                    <span class="nav-title">Dreams</span>
+                    <span class="nav-sub">Target Builds</span>
+                </div>
+            </a>
+
+            <a class="nav-item" data-tab="fantasies">
+                <img src="fantasies/fabian-buick-wagon-custom.jpg" alt="Fabian's Buick Estate Wagon thumbnail" class="nav-thumb">
+                <div class="nav-text">
+                    <span class="nav-title">Fantasies</span>
+                    <span class="nav-sub">Pure Vision</span>
+                </div>
+            </a>
+
+            <hr class="sidebar-divider">
+
+            <div class="sidebar-title">Information</div>
+            <a class="nav-item nav-item-compact" data-tab="about">
+                <div class="nav-text">
+                    <span class="nav-title">About This Site</span>
+                    <span class="nav-sub">Shop & Profile Manifesto</span>
+                </div>
+            </a>
+        </aside>
+
+        <!-- MAIN DISPLAY AREA FRAME -->
+        <main class="main-display">
+
+            <!-- PROJECTS TAB -->
+            <div id="tab-projects" class="tab-panel active-panel">
+                <div class="category-header">
+                    <h2>Projects <span class="badge badge-real">Real Builds</span></h2>
+                    <p>Real-world vehicles currently under active fabrication or assembly.</p>
+                </div>
+
+                <div class="grid" id="projects-grid">
+                    <!-- Cards load dynamically from data/projects.json -->
+                </div>
+            </div>
+
+            <!-- DREAMS TAB -->
+            <div id="tab-dreams" class="tab-panel">
+                <div class="category-header">
+                    <h2>Dreams <span class="badge badge-dream">Target Builds</span></h2>
+                    <p>Feasible concepts designed with real-world fabrication in mind.</p>
+                </div>
+
+                <div class="grid" id="dreams-grid">
+                    <!-- Cards load dynamically from data/dreams.json -->
+                </div>
+            </div>
+
+            <!-- FANTASIES TAB -->
+            <div id="tab-fantasies" class="tab-panel">
+                <div class="category-header">
+                    <h2>Fantasies <span class="badge badge-fantasy">Pure Vision</span></h2>
+                    <p>Unconstrained visual explorations of form, proportion, and extreme style.</p>
+                </div>
+
+                <div class="grid" id="fantasies-grid">
+                    <!-- Cards load dynamically from data/fantasies.json -->
+                </div>
+            </div>
+
+            <!-- ABOUT THIS SITE TAB -->
+            <div id="tab-about" class="tab-panel">
+                <div class="category-header">
+                    <h2>About This Site <span class="badge badge-about">Shop Profile</span></h2>
+                    <p>Background, vision, and fabrication capabilities.</p>
+                </div>
+                
+                <div class="grid">
+                    <article class="card">
+                        <div class="card-content">
+                            <h3>Design & Fabrication Archive</h3>
+                            <p>Exploring automotive forms from raw concept renders to real hands-on shop fabrication and custom metalwork.</p>
+                            <a href="about/index.html" class="card-link">Read Full Manifesto &rarr;</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; Dream To Build &bull; dreamtobuild.fyi</p>
+    </footer>
+
+ <!-- Tab Switching & Inline Data Script -->
+    <script>
+        // Tab switching logic
+        const navItems = document.querySelectorAll('.nav-item');
+        const tabPanels = document.querySelectorAll('.tab-panel');
+
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const targetTab = item.getAttribute('data-tab');
+
+                navItems.forEach(nav => nav.classList.remove('active'));
+                item.classList.add('active');
+
+                tabPanels.forEach(panel => {
+                    if (panel.id === `tab-${targetTab}`) {
+                        panel.classList.add('active-panel');
+                    } else {
+                        panel.classList.remove('active-panel');
+                    }
+                });
+            });
+        });
+
+        // Inline Card Data
+        const projectsData = [
+          {
+            "id": "torky-t",
+            "title": "The Torky T",
+            "summary": "1923 T-Bucket • Vintage Drag Survivor & Mechanical Sorting.",
+            "thumbnail": "projects/torky-t-hero.jpg",
+            "detailUrl": "projects/torky-t.html",
+            "tags": ["t-bucket", "ford", "vintage-drag", "fabrication", "chassis"]
+          }
+        ];
+
+        const dreamsData = [
+          {
+            "id": "twin-turbo-fireball-320",
+            "title": "Twin-Turbo Fireball 320",
+            "summary": "700 HP E85 straight-eight engine packaging solution wrapped in a stretched 1939 Buick Business Coupe touring supercar chassis.",
+            "thumbnail": "dreams/buick-supercar.jpg",
+            "detailUrl": "dreams/buick-straight-eight.html",
+            "tags": ["buick", "coupe", "straight-8", "twin-turbo", "e85", "packaging"]
+          },
+		{
+        id: "1ton-surrey",
+        title: "1-Ton Surrey & Chassis Explorations",
+        category: "DREAMS",
+        summary: "A free 1-ton donor frame with a Dana 60 rear serves as the foundation for a 1940s beach Surrey hero build, alongside C-Series COE and KB utility fitment studies.",
+        "thumbnail": "dreams/surrey-hero-40s.jpg",
+        detailUrl: "dreams/surrey-1ton.html",
+        status: "Concept & Chassis Acquisition",
+        tags: ["Dana 60", "1-Ton", "Surrey", "Donor Frame"]
+		  }
+        ];
+
+        const fantasiesData = [
+          {
+            "id": "fabian-buick-wagon",
+            "title": "Fabian's Buick Estate Wagon",
+            "summary": "LS3 swap, bagged stance, shaved suicide doors, and dual custom/lowrider paint directions.",
+            "thumbnail": "fantasies/fabian-buick-wagon-custom.jpg",
+            "detailUrl": "fantasies/fabian-buick-wagon.html",
+            "tags": ["buick", "wagon", "ls3", "bagged", "suicide-doors", "lowrider"]
+          },
+		  {
+			id: "evans-ride-riviera",
+			title: "Evan's Ride: Boattail Riviera Concept",
+			category: "FANTASIES",
+			summary: "Design explorations centered around the iconic Boattail Buick Riviera body style, tailored for Evan.",
+			thumbnail: "fantasies/evans-ride-rivvy-1.jpg",
+			detailUrl: "fantasies/evans-ride.html",
+			status: "Concept Exploration",
+			tags: ["Buick", "Boattail Riviera", "Design Study", "Fantasy Build"]
+		},
+		{
+			id: "nimr-camaro-trophy-truck",
+			title: "Nimr: Mid-Engine Camaro Trophy Truck",
+			category: "FANTASIES",
+			summary: "A mid-engine, trophy-truck-based concept merging a Camaro roofline with Lamborghini sheet metal styling in custom desert camo.",
+			thumbnail: "fantasies/nimr-camaro.jpg",
+			detailUrl: "fantasies/nimr.html",
+			status: "Concept Exploration",
+			tags: ["Camaro", "Trophy Truck", "Mid-Engine", "Lamborghini", "Desert Camo"]
+		}
+        ];
+
+        function renderCards(cardsData, containerId) {
+            const container = document.getElementById(containerId);
+            if (!container) return;
+
+            container.innerHTML = cardsData.map(item => `
+                <article class="card" data-tags="${item.tags ? item.tags.join(',') : ''}">
+                    <div class="image-container">
+                        <img src="${item.thumbnail}" alt="${item.title}">
+                        <span class="watermark">dreamtobuild.fyi</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>${item.title}</h3>
+                        <p>${item.summary}</p>
+                        <a href="${item.detailUrl}" class="card-link">View Details &rarr;</a>
+                    </div>
+                </article>
+            `).join('');
+        }
+		// =================================================================
+        // ?? FEATURED CARS CONFIGURATION (EDIT VIP LIST HERE)
+        // =================================================================
+		
+        const featuredList = ["torky-t", "twin-turbo-fireball-320",  "fabian-buick-wagon"];
+
+        // Filter all cars against your VIP list
+        const allCars = [...projectsData, ...dreamsData, ...fantasiesData];
+        const featuredCars = allCars.filter(car => featuredList.includes(car.id));
+
+        // Render cards into containers
+        renderCards(projectsData, 'projects-grid');
+        renderCards(dreamsData, 'dreams-grid');
+        renderCards(fantasiesData, 'fantasies-grid');
+        
+        // Render featured cars (when you have a 'featured-grid' element)
+        // renderCards(featuredCars, 'featured-grid');
+    </script>
+
+</body>
+</html>
