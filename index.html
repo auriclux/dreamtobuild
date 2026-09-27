@@ -4,72 +4,60 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dream To Build | Custom Automotive Portfolio</title>
+  
+  <!-- GOOGLE FONTS IMPORT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Cinzel:wght@400;700&family=Great+Vibes&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header class="site-header">
     <div class="header-content">
-      <h1>DREAM <span>TO</span> BUILD</h1>
-      <p class="tagline">Dragging High-Concept Pretty Pictures Kicking and Screaming into the Real World</p>
+      <h1 class="brand-title">
+        <span class="font-dream">Dream</span>
+        <span class="font-to">to</span>
+        <span class="font-build">BUILD</span>
+      </h1>
+      <p class="tagline">Restomods, Concept Engineering &amp; Automotive Visions</p>
     </div>
   </header>
 
-  <main class="main-layout">
+  <main class="gallery-container">
     
-    <!-- LEFT SIDEBAR: BRANCHES -->
-    <aside class="sidebar-nav">
-      <div class="nav-group">
-        <span class="nav-label">BRANCHES</span>
-        <button class="branch-btn" data-type="projects">
-          <div class="btn-text">
-            <strong>Projects</strong>
-            <small>Real Builds</small>
-          </div>
-        </button>
-
-        <button class="branch-btn" data-type="dreams">
-          <div class="btn-text">
-            <strong>Dreams</strong>
-            <small>Target Builds</small>
-          </div>
-        </button>
-
-        <button class="branch-btn" data-type="fantasies">
-          <div class="btn-text">
-            <strong>Fantasies</strong>
-            <small>Pure Vision</small>
-          </div>
-        </button>
+    <!-- PROJECTS SECTION -->
+    <section class="portfolio-section">
+      <div class="section-header">
+        <h2>Projects</h2>
+        <p>Active shop builds and physical fabrications</p>
       </div>
-
-      <div class="nav-group info-group">
-        <span class="nav-label">INFORMATION</span>
-        <a href="detail.html?type=about&id=about" class="info-link">
-          <strong>About This Site</strong>
-          <small>Shop &amp; Profile Manifesto</small>
-        </a>
+      <div id="projects-grid" class="card-grid">
+        <!-- Dynamically populated from data/projects.json -->
       </div>
-    </aside>
+    </section>
 
-    <!-- RIGHT CONTENT AREA -->
-    <section class="content-area">
-      
-      <!-- HERO SHOWCASE PANEL -->
-      <div id="hero-showcase" class="hero-showcase">
-        <div class="hero-image-wrapper">
-          <img id="hero-img" src="Projects/scapegoat.jpg" alt="Featured Build Showcase">
-        </div>
-        <div class="hero-details">
-          <h2 id="hero-title">Projects</h2>
-          <span id="hero-badge" class="badge badge-project">REAL BUILDS</span>
-          <p id="hero-desc">Real world vehicles currently under active fabrication or assembly.</p>
-        </div>
+    <!-- DREAMS SECTION -->
+    <section class="portfolio-section">
+      <div class="section-header">
+        <h2>Dreams</h2>
+        <p>Conceptual studies and detailed engineering blueprints</p>
       </div>
+      <div id="dreams-grid" class="card-grid">
+        <!-- Dynamically populated from data/dreams.json -->
+      </div>
+    </section>
 
-     <!-- 3-WIDE THUMBNAIL GRID (Vacant by Default) -->
-    <div id="gallery-grid" class="card-grid-3wide"></div>
-
+    <!-- FANTASIES SECTION -->
+    <section class="portfolio-section">
+      <div class="section-header">
+        <h2>Fantasies</h2>
+        <p>Pure visual explorations and styling studies</p>
+      </div>
+      <div id="fantasies-grid" class="card-grid">
+        <!-- Dynamically populated from data/fantasies.json -->
+      </div>
     </section>
 
   </main>
