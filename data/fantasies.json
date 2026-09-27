@@ -116,6 +116,120 @@
   {
     "id": "fabian-buick-wagon",
     "title": "Fabian's Buick Estate Wagon",
+    "subtitle": "Lowrider & Custom Stance Exploration",
+    "category": "fantasies",
+    "badgeText": "Pure Vision",
+    "badgeType": "badge-fantasy",
+    "summary": "LS3 swap, bagged stance, shaved suicide doors, and dual custom/lowrider paint directions.",
+    "thumbnail": "Fantasies/fabian-buick-wagon-custom.jpg",
+    "detailUrl": "detail.html?type=fantasies&id=fabian-buick-wagon",
+    "tags": ["buick", "wagon", "ls3", "bagged", "suicide-doors", "lowrider"],
+    "specifications": {
+      "year": "1970",
+      "make": "Buick",
+      "model": "Estate Wagon",
+      "engine": "LS3 V8",
+      "suspension": "Air Ride / Bagged",
+      "status": "Render Concept"
+    },
+    "narrative": [
+      "LS3 swap, bagged stance, shaved suicide doors, and dual custom/lowrider paint directions.",
+      "A high-concept exploration into long-roof styling, blending classic Buick cruiser lines with modern air-ride geometry and striking custom paint schemes."
+    ],
+    "gallery": [
+      "Fantasies/fabian-buick-wagon-custom.jpg",
+      "Fantasies/fabian-buick-wagon-urban.jpg"
+    ],
+    "featured": true
+  },
+  {
+    "id": "evans-ride-riviera",
+    "title": "Evan's Ride: Boattail Riviera Concept",
+    "subtitle": "Modern Tailored Muscle & Sweeping Lines",
+    "category": "fantasies",
+    "badgeText": "Pure Vision",
+    "badgeType": "badge-fantasy",
+    "summary": "Design explorations centered around the iconic Boattail Buick Riviera chassis.",
+    "thumbnail": "Fantasies/evans-ride-rivvy-1.jpg",
+    "detailUrl": "detail.html?type=fantasies&id=evans-ride-riviera",
+    "tags": ["buick", "riviera", "boattail", "concept", "classic"],
+    "specifications": {
+      "year": "1971",
+      "make": "Buick",
+      "model": "Riviera",
+      "engine": "Concept Powertrain",
+      "suspension": "Custom Lowered Stance",
+      "status": "Render Concept"
+    },
+    "narrative": [
+      "Design explorations centered around the iconic Boattail Buick Riviera chassis.",
+      "Highlighting the extreme rear fastback profile and boat-tail decklid contouring with aggressive fitment and refined brightwork."
+    ],
+    "gallery": [
+      "Fantasies/evans-ride-rivvy-1.jpg"
+    ],
+    "featured": true
+  },
+  {
+    "id": "nimr-camaro-trophy-truck",
+    "title": "Nimr: Mid-Engine Camaro Trophy Truck",
+    "subtitle": "Extreme Off-Road Performance Fusion",
+    "category": "fantasies",
+    "badgeText": "Pure Vision",
+    "badgeType": "badge-fantasy",
+    "summary": "A mid-engine, trophy-truck-based concept merging a Camaro body shell with extreme off-road capability.",
+    "thumbnail": "Fantasies/nimr-camaro.jpg",
+    "detailUrl": "detail.html?type=fantasies&id=nimr-camaro-trophy-truck",
+    "tags": ["chevy", "camaro", "mid-engine", "trophy-truck", "offroad"],
+    "specifications": {
+      "year": "1969",
+      "make": "Chevrolet",
+      "model": "Camaro",
+      "engine": "Mid-Engine V8",
+      "suspension": "Long-Travel Trophy Truck",
+      "status": "Render Concept"
+    },
+    "narrative": [
+      "A mid-engine, trophy-truck-based concept merging a classic Camaro shell with extreme off-road capability.",
+      "Built over an all-terrain tube chassis designed to soak up desert high-speed runs while keeping muscle car proportions."
+    ],
+    "gallery": [
+      "Fantasies/nimr-camaro.jpg"
+    ],
+    "featured": true
+  },
+  {
+    "id": "blown-gremlin",
+    "title": "Blown '70 Gremlin",
+    "subtitle": "Bridge Donut & Blower Study",
+    "category": "fantasies",
+    "badgeText": "Pure Vision",
+    "badgeType": "badge-fantasy",
+    "summary": "This was a quick study of a '70 Gremlin doing donuts on the 7th Street Bridge. SBC with a 6-71.",
+    "thumbnail": "Fantasies/blown-gremlin.png",
+    "detailUrl": "detail.html?type=fantasies&id=blown-gremlin",
+    "tags": ["amc", "gremlin", "sbc", "6-71", "supercharged", "street-concept"],
+    "specifications": {
+      "year": "1970",
+      "make": "AMC",
+      "model": "Gremlin",
+      "engine": "SBC w/ 6-71 Blower",
+      "suspension": "Street / Drag Stance",
+      "status": "Render Concept"
+    },
+    "narrative": [
+      "This was a quick study of a '70 Gremlin doing donuts on the 7th Street Bridge. SBC with a 6-71.",
+      "A short-wheelbase riot featuring high-rise forced induction, street-drag rake, and aggressive rubber."
+    ],
+    "gallery": [
+      "Fantasies/blown-gremlin.png"
+    ],
+    "featured": true
+  }
+][
+  {
+    "id": "fabian-buick-wagon",
+    "title": "Fabian's Buick Estate Wagon",
     "category": "fantasies",
     "badgeText": "Pure Vision",
     "badgeType": "badge-fantasy",
