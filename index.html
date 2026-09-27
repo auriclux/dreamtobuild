@@ -10,6 +10,90 @@
 
   <header class="site-header">
     <div class="header-content">
+      <h1>DREAM <span>TO</span> BUILD</h1>
+      <p class="tagline">Dragging High-Concept Pretty Pictures Kicking and Screaming into the Real World</p>
+    </div>
+  </header>
+
+  <main class="main-layout">
+    
+    <!-- LEFT SIDEBAR: BRANCHES -->
+    <aside class="sidebar-nav">
+      <div class="nav-group">
+        <span class="nav-label">BRANCHES</span>
+        <button class="branch-btn" data-type="projects">
+          <div class="btn-text">
+            <strong>Projects</strong>
+            <small>Real Builds</small>
+          </div>
+        </button>
+
+        <button class="branch-btn" data-type="dreams">
+          <div class="btn-text">
+            <strong>Dreams</strong>
+            <small>Target Builds</small>
+          </div>
+        </button>
+
+        <button class="branch-btn" data-type="fantasies">
+          <div class="btn-text">
+            <strong>Fantasies</strong>
+            <small>Pure Vision</small>
+          </div>
+        </button>
+      </div>
+
+      <div class="nav-group info-group">
+        <span class="nav-label">INFORMATION</span>
+        <a href="detail.html?type=about&id=about" class="info-link">
+          <strong>About This Site</strong>
+          <small>Shop &amp; Profile Manifesto</small>
+        </a>
+      </div>
+    </aside>
+
+    <!-- RIGHT CONTENT AREA -->
+    <section class="content-area">
+      
+      <!-- HERO SHOWCASE PANEL -->
+      <div id="hero-showcase" class="hero-showcase">
+        <div class="hero-image-wrapper">
+          <img id="hero-img" src="Projects/scapegoat.jpg" alt="Featured Build Showcase">
+        </div>
+        <div class="hero-details">
+          <h2 id="hero-title">Projects</h2>
+          <span id="hero-badge" class="badge badge-project">REAL BUILDS</span>
+          <p id="hero-desc">Real world vehicles currently under active fabrication or assembly.</p>
+        </div>
+      </div>
+
+      <!-- 3-WIDE THUMBNAIL GRID (Vacant by Default) -->
+      <div id="gallery-grid" class="card-grid-3wide">
+        <!-- Dynamically populated on branch click -->
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; Dream To Build. All rights reserved.</p>
+  </footer>
+
+  <script src="gallery-loader.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dream To Build | Custom Automotive Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-content">
       <h1>Dream To Build</h1>
       <p class="tagline">Restomods, Concept Engineering &amp; Automotive Visions</p>
     </div>
