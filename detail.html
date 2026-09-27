@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Build Detail | Dream To Build</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="index.html" class="back-link">&larr; Back to Gallery</a>
+    </nav>
+  </header>
+
+  <main class="detail-container">
+    <article class="build-article">
+      <header class="build-header">
+        <span id="build-badge" class="badge"></span>
+        <h1 id="build-title">Loading Build...</h1>
+        <p id="build-subtitle" class="subtitle"></p>
+      </header>
+
+      <div class="hero-image-wrapper">
+        <img id="build-image" src="" alt="Build Image Placeholder">
+      </div>
+
+      <section class="specs-section">
+        <h2>Specifications</h2>
+        <dl id="specs-grid" class="specs-grid">
+          <!-- Dynamically populated -->
+        </dl>
+      </section>
+
+      <section class="narrative-section">
+        <h2>Overview & Design Intent</h2>
+        <div id="build-narrative">
+          <!-- Dynamically populated paragraphs -->
+        </div>
+      </section>
+
+      <section id="gallery-section" class="gallery-section" style="display: none;">
+        <h2>Gallery</h2>
+        <div id="build-gallery" class="gallery-grid">
+          <!-- Dynamically populated images -->
+        </div>
+      </section>
+
+      <footer class="build-footer">
+        <div id="build-tags" class="tag-cloud"></div>
+      </footer>
+    </article>
+  </main>
+
+  <script src="detail-loader.js"></script>
+</body>
+</html>
