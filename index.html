@@ -1,6 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dream To Build | Custom Automotive Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-content">
+      <h1>Dream To Build</h1>
+      <p class="tagline">Restomods, Concept Engineering &amp; Automotive Visions</p>
+    </div>
+  </header>
+
+  <main class="gallery-container">
+    
+    <!-- PROJECTS SECTION -->
+    <section class="portfolio-section">
+      <div class="section-header">
+        <h2>Projects</h2>
+        <p>Active shop builds and physical fabrications</p>
+      </div>
+      <div id="projects-grid" class="card-grid">
+        <!-- Dynamically populated from data/projects.json -->
+      </div>
+    </section>
+
+    <!-- DREAMS SECTION -->
+    <section class="portfolio-section">
+      <div class="section-header">
+        <h2>Dreams</h2>
+        <p>Conceptual studies and detailed engineering blueprints</p>
+      </div>
+      <div id="dreams-grid" class="card-grid">
+        <!-- Dynamically populated from data/dreams.json -->
+      </div>
+    </section>
+
+    <!-- FANTASIES SECTION -->
+    <section class="portfolio-section">
+      <div class="section-header">
+        <h2>Fantasies</h2>
+        <p>Pure visual explorations and styling studies</p>
+      </div>
+      <div id="fantasies-grid" class="card-grid">
+        <!-- Dynamically populated from data/fantasies.json -->
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; Dream To Build. All rights reserved.</p>
+  </footer>
+
+  <script src="gallery-loader.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dream To Build | Automotive Design & Fabrication</title>
