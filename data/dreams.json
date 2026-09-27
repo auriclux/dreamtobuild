@@ -1,204 +1,54 @@
 [
   {
-    "id": "midnight-caprice",
-    "title": "Midnight Caprice",
-    "subtitle": "1974 Chevrolet Caprice Classic Convertible",
-    "category": "dreams",
-    "badgeText": "Design Concept",
-    "badgeType": "badge-dream",
-    "summary": "Twin-turbo LS3 408 stroker, chassis-integrated roll cage, bagged Pro-Touring suspension, 35-spline Ford 9-inch, and Morimoto bi-LEDs.",
-    "thumbnail": "Dreams/midnight-caprice.jpg",
-    "detailUrl": "detail.html?type=dreams&id=midnight-caprice",
-    "tags": ["chevy", "caprice", "convertible", "twin-turbo", "ls3-408", "pro-touring"],
-    "specifications": {
-      "year": "1974",
-      "make": "Chevrolet",
-      "model": "Caprice Classic Convertible",
-      "engine": "Twin-Turbocharged LS3 408 Stroker",
-      "suspension": "Bagged Pro-Touring Setup",
-      "rearAxle": "35-Spline Ford 9-Inch",
-      "lighting": "Morimoto Bi-LED & Continuous Red COB Taillights",
-      "status": "Design Study"
-    },
-    "narrative": [
-      "Midnight Caprice transforms a full-size 1974 Caprice Classic convertible into a low-slung, twin-turbocharged Pro-Touring cruiser.",
-      "Built with a custom chassis-integrated roll cage, bagged air-ride suspension, and a 35-spline Ford 9-inch rear axle to handle modern high-boost output.",
-      "Aesthetic highlights include modern Morimoto bi-LED headlamps, seamless continuous red COB LED taillights, and custom script emblems."
-    ],
-    "gallery": [
-      "Dreams/midnight-caprice.jpg"
-    ],
-    "featured": true
-  },
-  {
-    "id": "project-voodoo-chile",
-    "title": "Project VôôDôô Chīle",
-    "subtitle": "1948 Studebaker Champion 4-Door Deluxe",
-    "category": "dreams",
-    "badgeText": "Design Concept",
-    "badgeType": "badge-dream",
-    "summary": "Grand Touring concept featuring a Papa Legba vèvè pinstripe on the hood nose and three pure .999 silver fractional coins embedded in the dash.",
-    "thumbnail": "Dreams/voodoo-chile.jpg",
-    "detailUrl": "detail.html?type=dreams&id=project-voodoo-chile",
-    "tags": ["studebaker", "champion", "grand-touring", "voodoo-chile", "custom-dash"],
-    "specifications": {
-      "year": "1948",
-      "make": "Studebaker",
-      "model": "Champion 4-Door Deluxe",
-      "theme": "Papa Legba Vèvè Pinstriping",
-      "interiorDetail": "Flush .999 Silver Fractional Coins",
-      "status": "Design Study"
-    },
-    "narrative": [
-      "Project VôôDôô Chīle is a Grand Touring custom concept crafted around the classic body lines of a 1948 Studebaker Champion 4-door Deluxe.",
-      "The design incorporates subtle spiritual motifs, including a custom Papa Legba vèvè pinstripe flowing down the hood nose and three pure .999 silver fractional coins embedded flush into the dashboard timber."
-    ],
-    "gallery": [
-      "Dreams/voodoo-chile.jpg"
-    ],
-    "featured": true
-  },
-  {
-    "id": "hudugooroo",
-    "title": "HuDuGooRoo",
-    "subtitle": "1960 Chrysler Saratoga 2-Door Wagon",
-    "category": "dreams",
-    "badgeText": "Design Concept",
-    "badgeType": "badge-dream",
-    "summary": "Swamp Bronze finish, 6.2L supercharged Gen III Hemi, 8-speed auto with re-purposed dashboard pushbuttons, bagged stance on 20-inch wheels.",
-    "thumbnail": "Dreams/hudugooroo.jpg",
-    "detailUrl": "detail.html?type=dreams&id=hudugooroo",
-    "tags": ["chrysler", "saratoga", "wagon", "gen3-hemi", "supercharged", "pushbutton-shift"],
-    "specifications": {
-      "year": "1960",
-      "make": "Chrysler",
-      "model": "Saratoga 2-Door Wagon",
-      "engine": "6.2L Supercharged Gen III Hemi V8",
-      "transmission": "8-Speed Auto (Re-purposed Pushbutton Selector)",
-      "finish": "Swamp Bronze",
-      "suspension": "Bagged Air-Ride on 20-Inch Wheels",
-      "status": "Design Study"
-    },
-    "narrative": [
-      "HuDuGooRoo is a custom road-touring wagon concept based on a rare 1960 Chrysler Saratoga 2-door wagon shell.",
-      "Finished in a distinct Swamp Bronze coat, it packs modern supercharged firepower with a 6.2L Gen III Hemi paired to an 8-speed automatic.",
-      "The modern 8-speed transmission is wired to operate via the factory dashboard pushbutton selector, riding on bagged air suspension and low-profile tires wrapped around 20-inch custom wheels."
-    ],
-    "gallery": [
-      "Dreams/hudugooroo.jpg"
-    ],
-    "featured": true
-  },
-  {
-    "id": "night-wraith",
-    "title": "Night Wraith",
-    "subtitle": "1965 Cadillac Convertible",
-    "category": "dreams",
-    "badgeText": "Design Concept",
-    "badgeType": "badge-dream",
-    "summary": "Gloss black low-slung convertible, boosted LS engine, multi-speed auto, narrow rear suicide doors, and ghosted pinstriping.",
-    "thumbnail": "Dreams/night-wraith.jpg",
-    "detailUrl": "detail.html?type=dreams&id=night-wraith",
-    "tags": ["cadillac", "convertible", "boosted-ls", "suicide-doors", "ghost-pinstripe"],
-    "specifications": {
-      "year": "1965",
-      "make": "Cadillac",
-      "model": "Convertible",
-      "engine": "Boosted LS V8",
-      "body": "Pillarless / Narrow Rear Suicide Doors",
-      "paint": "Deep Gloss Black w/ Ghosted Pinstriping",
-      "status": "Design Study"
-    },
-    "narrative": [
-      "Night Wraith presents a low-slung, pillarless 1965 Cadillac Convertible coated in deep gloss black paint with ghosted pinstriping.",
-      "Mechanical features include a boosted LS V8 engine, multi-speed transmission, bagged stance, and custom-engineered narrow rear suicide doors."
-    ],
-    "gallery": [
-      "Dreams/night-wraith.jpg"
-    ],
-    "featured": true
-  },
-  {
-    "id": "reiver-corner-thief",
-    "title": "Reiver, The Corner Thief",
-    "subtitle": "AWD Silhouette Race Car",
-    "category": "dreams",
-    "badgeText": "Design Concept",
-    "badgeType": "badge-dream",
-    "summary": "1962/63 Mini 850 steel shell on a 4130 chromoly tube frame, MTB2 subframe, Honda B-series LS-VTEC, CR-V AWD transaxle, Haltech Elite 1500, and Scottish Saltire roof.",
-    "thumbnail": "Dreams/reiver.jpg",
-    "detailUrl": "detail.html?type=dreams&id=reiver-corner-thief",
-    "tags": ["classic-mini", "awd", "ls-vtec", "haltech", "chromoly-chassis", "corner-thief"],
-    "specifications": {
-      "year": "1962/1963",
-      "make": "Morris",
-      "model": "Mini 850 / Silhouette Race Car",
-      "chassis": "Custom 4130 Chromoly Rectangular Tube Space Frame",
-      "subframe": "Super Fast Minis MTB2 Subframe",
-      "engine": "Honda B-Series LS-VTEC (Haltech Elite 1500 ECU)",
-      "drivetrain": "CR-V AWD Manual Transaxle",
-      "propTunnel": "Uniform 12\" OD / 8\" ID Diagonal Base",
-      "roof": "Painted Scottish Saltire Graphic",
-      "status": "Engineering Design"
-    },
-    "narrative": [
-      "Reiver, The Corner Thief is an all-wheel-drive silhouette race car engineering design that drops a 1962/1963 Morris Mini 850 steel shell over a 4130 chromoly tube space frame.",
-      "Utilizes a Super Fast Minis MTB2 subframe housing a Honda B-series LS-VTEC engine managed by a Haltech Elite 1500 ECU, sending power through a CR-V AWD manual transaxle.",
-      "The chassis incorporates a uniform 12-inch outer diameter / 8-inch inner diameter diagonal prop-shaft tunnel base, 12-inch wheels on 165/60R12 tires, and a hand-painted Scottish Saltire roof graphic."
-    ],
-    "gallery": [
-      "Dreams/reiver.jpg"
-    ],
-    "featured": true
-  },
-  {
-    "id": "s30-240z-restomod",
-    "title": "1972 Nissan 240Z S30",
-    "subtitle": "Chrysanthemum & Wave Stance Study",
-    "category": "dreams",
-    "badgeText": "Design Concept",
-    "badgeType": "badge-dream",
-    "summary": "Jet black front with platinum Chrysanthemum line art fading via micro-Seigaiha waves to smoke gray, toxic blood-orange cage/calipers, and 17-inch wheels.",
-    "thumbnail": "Dreams/240z-restomod.jpg",
-    "detailUrl": "detail.html?type=dreams&id=s30-240z-restomod",
-    "tags": ["nissan", "240z", "s30", "chrysanthemum", "seigaiha", "restomod"],
-    "specifications": {
-      "year": "1972",
-      "make": "Nissan / Datsun",
-      "model": "240Z S30",
-      "livery": "High-Gloss Jet Black into Smoke Gray w/ Platinum Chrysanthemum Line Art",
-      "accent": "Toxic Blood-Orange Roll Cage & Calipers",
-      "wheels": "17-Inch Wheels / Welded Fender Flares",
-      "status": "Design Study"
-    },
-    "narrative": [
-      "A custom 1972 Nissan 240Z S30 restomod design featuring a high-gloss jet black nose that transitions into smoke gray at the rear via a traditional micro-Seigaiha wave pattern.",
-      "Adorned with platinum metallic Imperial Chrysanthemum line art, contrasting against a toxic blood-orange interior roll cage and brake calipers, welded sheet metal fender flares, and 17-inch wheels."
-    ],
-    "gallery": [
-      "Dreams/240z-restomod.jpg"
-    ],
-    "featured": true
-  }
-][
-  {
     "id": "twin-turbo-fireball-320",
     "title": "Twin-Turbo Fireball 320",
+    "subtitle": "1939 Buick Business Coupe",
     "category": "dreams",
     "badgeText": "Target Builds",
     "badgeType": "badge-dream",
     "summary": "700 HP E85 straight-eight engine packaging solution wrapped in a stretched 1939 Buick Business Coupe touring supercar chassis.",
-    "thumbnail": "dreams/buick-supercar.jpg",
-    "detailUrl": "dreams/buick-straight-eight.html",
+    "thumbnail": "Dreams/buick-supercar.jpg",
+    "detailUrl": "detail.html?type=dreams&id=twin-turbo-fireball-320",
     "tags": ["buick", "coupe", "straight-8", "twin-turbo", "e85", "packaging"],
     "specifications": {
-      "year": 1939,
+      "year": "1939",
       "make": "Buick",
       "model": "Business Coupe",
       "engine": "320 ci Straight-8",
       "induction": "Twin-Turbo / E85",
       "status": "Feasible Concept"
     },
+    "narrative": [
+      "A high-horsepower forced induction packaging study built around Buick's iconic 320 cubic inch Fireball straight-eight powerplant.",
+      "Engineered for E85 output targeting 700 HP and housed within a custom-stretched 1939 Buick Business Coupe body."
+    ],
+    "gallery": [
+      "Dreams/buick-supercar.jpg"
+    ],
+    "featured": true
+  },
+  {
+    "id": "surrey-concept",
+    "title": "The Surrey",
+    "subtitle": "Custom Surrey Concept",
+    "category": "dreams",
+    "badgeText": "Design Concept",
+    "badgeType": "badge-dream",
+    "summary": "Custom vintage-inspired Surrey build study.",
+    "thumbnail": "Dreams/surrey.jpg",
+    "detailUrl": "detail.html?type=dreams&id=surrey-concept",
+    "tags": ["surrey", "custom", "concept"],
+    "specifications": {
+      "make": "Custom",
+      "model": "Surrey",
+      "status": "Design Study"
+    },
+    "narrative": [
+      "Custom concept study for the Surrey build."
+    ],
+    "gallery": [
+      "Dreams/surrey.jpg"
+    ],
     "featured": true
   }
 ]
