@@ -1,130 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dream To Build | Custom Automotive Portfolio</title>
-  
-  <!-- GOOGLE FONTS IMPORT -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Cinzel:wght@400;700&family=Great+Vibes&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-  <!-- HEADER (H) -->
-  <header class="site-header">
-    <div class="header-content">
-      <h1 class="brand-title">
-        <span class="font-dream">Dream</span>
-        <span class="font-to">to</span>
-        <span class="font-build">BUILD</span>
-      </h1>
-      <p class="site-tagline">Dragging High-Concept Pretty Pictures Kicking and Screaming into the Real World</p>
-    </div>
-  </header>
-
-  <!-- MAIN STAGE LAYOUT (N + I) -->
-  <div class="main-layout">
-    
-    <!-- REGION N: NAVIGATOR -->
-    <aside class="sidebar-nav">
-      
-      <!-- THUMBNAIL NAVIGATOR (3 ITEMS) -->
-      <span class="nav-label">FEATURED BUILDS</span>
-      <div class="nav-thumb-list">
-        <a href="#spotlight-frame" class="nav-thumb-item">
-          <img src="Projects/torky-t-hero.jpg" alt="Torky-T">
-          <div class="nav-thumb-info">
-            <span class="nav-thumb-title">Torky-T</span>
-            <span class="nav-thumb-sub">1923 T-Bucket</span>
-          </div>
-        </a>
-
-        <a href="#spotlight-frame" class="nav-thumb-item">
-          <img src="Projects/torky-t-hero.jpg" alt="Featured 2">
-          <div class="nav-thumb-info">
-            <span class="nav-thumb-title">Project 02</span>
-            <span class="nav-thumb-sub">Active Build</span>
-          </div>
-        </a>
-
-        <a href="#spotlight-frame" class="nav-thumb-item">
-          <img src="Projects/torky-t-hero.jpg" alt="Featured 3">
-          <div class="nav-thumb-info">
-            <span class="nav-thumb-title">Project 03</span>
-            <span class="nav-thumb-sub">Concept Study</span>
-          </div>
-        </a>
+<!-- REGION N: NAVIGATOR SIDEBAR -->
+<aside class="sidebar-nav">
+  <span class="nav-label">Featured Showcase</span>
+  <div class="nav-thumb-list">
+    <!-- Projects Thumbnail -->
+    <a href="#projects" class="nav-thumb-item branch-btn" data-type="projects">
+      <img src="./Projects/torky-t.jpg" alt="Projects Showcase">
+      <div class="nav-thumb-info">
+        <span class="nav-thumb-title">Projects</span>
+        <span class="nav-thumb-sub">Active Builds</span>
       </div>
+    </a>
 
-      <!-- TEXT-ONLY LINKS -->
-      <span class="nav-label" style="margin-top: 12px;">NAVIGATE</span>
-      <nav class="nav-text-list">
-        <a href="#projects-grid" class="nav-text-link">Projects Section</a>
-        <a href="#dreams-grid" class="nav-text-link">Dreams Section</a>
-        <a href="#fantasies-grid" class="nav-text-link">Fantasies Section</a>
-      </nav>
-
-    </aside>
-
-    <!-- REGION I: SPOTLIGHT FRAME -->
-    <main id="spotlight-frame">
-      <div class="spotlight-media">
-        <img id="spotlight-img" src="Projects/torky-t-hero.jpg" alt="Spotlight Feature">
+    <!-- Dreams Thumbnail -->
+    <a href="#dreams" class="nav-thumb-item branch-btn" data-type="dreams">
+      <img src="./Dreams/reiver.jpg" alt="Dreams Showcase">
+      <div class="nav-thumb-info">
+        <span class="nav-thumb-title">Dreams</span>
+        <span class="nav-thumb-sub">Design Studies</span>
       </div>
-      <div class="spotlight-caption">
-        <h2 id="spotlight-title">Torky-T</h2>
-        <p id="spotlight-desc">1923 Ford T-Bucket featuring a built 350 SBC, Quick Fuel 750, Don Zig serviced Vertex magneto, TH350, and 9-inch rear axle.</p>
-      </div>
-    </main>
+    </a>
 
+    <!-- Fantasies Thumbnail -->
+    <a href="#fantasies" class="nav-thumb-item branch-btn" data-type="fantasies">
+      <img src="./Fantasies/fabian-buick-wagon-custom.jpg" alt="Fantasies Showcase">
+      <div class="nav-thumb-info">
+        <span class="nav-thumb-title">Fantasies</span>
+        <span class="nav-thumb-sub">Pure Vision</span>
+      </div>
+    </a>
   </div>
 
-  <!-- PORTFOLIO SECTIONS BELOW STAGE -->
-  <div class="gallery-container">
-    
-    <!-- PROJECTS SECTION -->
-    <section class="portfolio-section">
-      <div class="section-header">
-        <h2>Projects</h2>
-        <p class="section-subtitle">Active shop builds and physical fabrications</p>
-      </div>
-      <div id="projects-grid" class="card-grid">
-        <!-- Dynamically populated from data/projects.json -->
-      </div>
-    </section>
-
-    <!-- DREAMS SECTION -->
-    <section class="portfolio-section">
-      <div class="section-header">
-        <h2>Dreams</h2>
-        <p class="section-subtitle">Conceptual studies and detailed engineering blueprints</p>
-      </div>
-      <div id="dreams-grid" class="card-grid">
-        <!-- Dynamically populated from data/dreams.json -->
-      </div>
-    </section>
-
-    <!-- FANTASIES SECTION -->
-    <section class="portfolio-section">
-      <div class="section-header">
-        <h2>Fantasies</h2>
-        <p class="section-subtitle">Pure visual explorations and styling studies</p>
-      </div>
-      <div id="fantasies-grid" class="card-grid">
-        <!-- Dynamically populated from data/fantasies.json -->
-      </div>
-    </section>
-
+  <span class="nav-label" style="margin-top: 16px;">Navigate</span>
+  <div class="nav-text-list">
+    <a href="#projects" class="nav-text-link branch-btn" data-type="projects">Projects Section</a>
+    <a href="#dreams" class="nav-text-link branch-btn" data-type="dreams">Dreams Section</a>
+    <a href="#fantasies" class="nav-text-link branch-btn" data-type="fantasies">Fantasies Section</a>
+    <!-- Plain Text Link for About (No Thumbnail) -->
+    <a href="about.html" class="nav-text-link">About Dream To Build</a>
   </div>
-
-  <footer class="site-footer">
-    <p>&copy; Dream To Build. All rights reserved.</p>
-  </footer>
-
-  <script src="gallery-loader.js"></script>
-</body>
-</html>
+</aside>
