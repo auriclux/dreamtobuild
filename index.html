@@ -1,41 +1,84 @@
-<!-- REGION N: NAVIGATOR SIDEBAR -->
-<aside class="sidebar-nav">
-  <span class="nav-label">Featured Showcase</span>
-  <div class="nav-thumb-list">
-    <!-- Projects Thumbnail -->
-    <a href="#projects" class="nav-thumb-item branch-btn" data-type="projects">
-      <img src="./Projects/torky-t.jpg" alt="Projects Showcase">
-      <div class="nav-thumb-info">
-        <span class="nav-thumb-title">Projects</span>
-        <span class="nav-thumb-sub">Active Builds</span>
-      </div>
-    </a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dream To Build | Custom Automotive Portfolio</title>
+  
+  <!-- GOOGLE FONTS IMPORT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Cinzel:wght@400;700&family=Great+Vibes&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- RELATIVE CSS LINK -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
 
-    <!-- Dreams Thumbnail -->
-    <a href="#dreams" class="nav-thumb-item branch-btn" data-type="dreams">
-      <img src="./Dreams/reiver.jpg" alt="Dreams Showcase">
-      <div class="nav-thumb-info">
-        <span class="nav-thumb-title">Dreams</span>
-        <span class="nav-thumb-sub">Design Studies</span>
-      </div>
-    </a>
+  <header class="site-header">
+    <div class="brand-title">
+      <span class="font-dream">Dream</span>
+      <span class="font-to">to</span>
+      <span class="font-build">BUILD</span>
+    </div>
+    <p class="site-tagline">Dragging High Concept Pretty Pictures Kicking and Screaming into the Real World</p>
+  </header>
 
-    <!-- Fantasies Thumbnail -->
-    <a href="#fantasies" class="nav-thumb-item branch-btn" data-type="fantasies">
-      <img src="./Fantasies/fabian-buick-wagon-custom.jpg" alt="Fantasies Showcase">
-      <div class="nav-thumb-info">
-        <span class="nav-thumb-title">Fantasies</span>
-        <span class="nav-thumb-sub">Pure Vision</span>
-      </div>
-    </a>
-  </div>
+  <main class="main-layout">
+    <!-- REGION N: NAVIGATOR SIDEBAR -->
+    <aside class="sidebar-nav">
+      <span class="nav-label">Featured Showcase</span>
+      <div class="nav-thumb-list">
+        <!-- Projects Thumbnail -->
+        <a href="#projects" class="nav-thumb-item branch-btn" data-type="projects">
+          <img src="./Projects/torky-t.jpg" alt="Projects Showcase">
+          <div class="nav-thumb-info">
+            <span class="nav-thumb-title">Projects</span>
+            <span class="nav-thumb-sub">Active Builds</span>
+          </div>
+        </a>
 
-  <span class="nav-label" style="margin-top: 16px;">Navigate</span>
-  <div class="nav-text-list">
-    <a href="#projects" class="nav-text-link branch-btn" data-type="projects">Projects Section</a>
-    <a href="#dreams" class="nav-text-link branch-btn" data-type="dreams">Dreams Section</a>
-    <a href="#fantasies" class="nav-text-link branch-btn" data-type="fantasies">Fantasies Section</a>
-    <!-- Plain Text Link for About (No Thumbnail) -->
-    <a href="about.html" class="nav-text-link">About Dream To Build</a>
-  </div>
-</aside>
+        <!-- Dreams Thumbnail -->
+        <a href="#dreams" class="nav-thumb-item branch-btn" data-type="dreams">
+          <img src="./Dreams/reiver.jpg" alt="Dreams Showcase">
+          <div class="nav-thumb-info">
+            <span class="nav-thumb-title">Dreams</span>
+            <span class="nav-thumb-sub">Design Studies</span>
+          </div>
+        </a>
+
+        <!-- Fantasies Thumbnail -->
+        <a href="#fantasies" class="nav-thumb-item branch-btn" data-type="fantasies">
+          <img src="./Fantasies/fabian-buick-wagon-custom.jpg" alt="Fantasies Showcase">
+          <div class="nav-thumb-info">
+            <span class="nav-thumb-title">Fantasies</span>
+            <span class="nav-thumb-sub">Pure Vision</span>
+          </div>
+        </a>
+      </div>
+
+      <span class="nav-label" style="margin-top: 16px;">Navigate</span>
+      <div class="nav-text-list">
+        <a href="#projects" class="nav-text-link branch-btn" data-type="projects">Projects Section</a>
+        <a href="#dreams" class="nav-text-link branch-btn" data-type="dreams">Dreams Section</a>
+        <a href="#fantasies" class="nav-text-link branch-btn" data-type="fantasies">Fantasies Section</a>
+        <!-- Text-Only Link for About -->
+        <a href="about.html" class="nav-text-link">About Dream To Build</a>
+      </div>
+    </aside>
+
+    <!-- REGION I: SPOTLIGHT FRAME -->
+    <section id="spotlight-frame">
+      <div class="spotlight-media">
+        <img id="spotlight-img" src="./Projects/torky-t.jpg" alt="Featured Build">
+      </div>
+      <div class="spotlight-caption">
+        <h2 id="spotlight-title">Select a Section</h2>
+        <p id="spotlight-desc">Explore active shop builds, engineering blueprints, or vision concepts.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="gallery-loader.js"></script>
+</body>
+</html>
