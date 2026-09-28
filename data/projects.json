@@ -1,142 +1,38 @@
 [
   {
-    "id": "scapegoat",
-    "title": "ScapeGoat",
-    "subtitle": "1968 Pontiac A-Body Outlaw Drag Car",
-    "category": "projects",
-    "badgeText": "Active Build",
-    "badgeType": "badge-project",
-    "summary": "Weathered patina exterior with Alpine Blue roll cage, built 6.2L L94 V8, Tremec T-56 Magnum 6-speed, 35-spline Ford 9-inch, and 31x18 Mickey Thompson rears.",
-    "thumbnail": "Projects/scapegoat.jpg",
-    "detailUrl": "detail.html?type=projects&id=scapegoat",
-    "tags": ["pontiac", "a-body", "l94", "t56-magnum", "outlaw-drag", "body-brothers"],
-    "specifications": {
-      "year": "1968",
-      "make": "Pontiac",
-      "model": "LeMans / ScapeGoat",
-      "engine": "Built 6.2L L94 V8",
-      "transmission": "Tremec T-56 Magnum 6-Speed",
-      "rearAxle": "35-Spline Ford 9-Inch",
-      "status": "In Progress"
-    },
-    "narrative": [
-      "ScapeGoat is a 1968 Pontiac A-body outlaw drag build designed to preserve its weathered patina exterior while housing a serious chassis and powertrain.",
-      "Features an Alpine Blue full roll cage, a built 6.2L L94 V8 mated to a Tremec T-56 Magnum 6-speed manual transmission, a 4-inch aluminum driveshaft, and a 35-spline Ford 9-inch rear axle.",
-      "Out back, 15x15 Weld ProStar wheels carry 31x18 Mickey Thompson Sportsman tires, suspended by UMI and BMR linkages with Viking coilovers. Provenance traces back to the assembly line as 'Body Brothers' with its companion GTO build."
-    ],
-    "gallery": [
-      "Projects/scapegoat.jpg"
-    ],
-    "featured": true
-  },
-  {
-    "id": "billygoat",
-    "title": "BillyGoat",
-    "subtitle": "1968 Pontiac GTO Pro-Touring Restomod",
-    "category": "projects",
-    "badgeText": "Active Build",
-    "badgeType": "badge-project",
-    "summary": "Companion 'Body Brother' build featuring factory sheet metal, a 400ci Pontiac engine, double adjustable control arms, and an autocross-tuned setup.",
-    "thumbnail": "Projects/billygoat.jpg",
-    "detailUrl": "detail.html?type=projects&id=billygoat",
-    "tags": ["pontiac", "gto", "400ci", "pro-touring", "autocross", "body-brothers"],
-    "specifications": {
-      "year": "1968",
-      "make": "Pontiac",
-      "model": "GTO / BillyGoat",
-      "engine": "400ci Pontiac V8",
-      "suspension": "Double Adjustable Upper Arms / Autocross Stance",
-      "firewallStamps": "TA20 / ZA23",
-      "status": "In Progress"
-    },
-    "narrative": [
-      "BillyGoat is a 1968 Pontiac GTO Pro-Touring restomod built as the companion 'Body Brother' to ScapeGoat.",
-      "Retaining factory sheet metal with firewall stampings TA20 and ZA23, it features a 400ci Pontiac V8 engine, double adjustable upper control arms, and a suspension setup tuned specifically for autocross and road touring agility."
-    ],
-    "gallery": [
-      "Projects/billygoat.jpg"
-    ],
-    "featured": true
-  },
-  {
     "id": "torky-t",
     "title": "Torky-T",
     "subtitle": "1923 Ford T-Bucket Roadster",
     "category": "projects",
-    "badgeText": "Active Restoration",
+    "badgeText": "Active Build",
     "badgeType": "badge-project",
-    "summary": "Vintage white fiberglass body, built 350 SBC V8, Quick Fuel SS-750 4-barrel, Vertex magneto ignition, and 29x18.5LT15 Mickey Thompsons.",
-    "thumbnail": "Projects/torky-t.jpg",
+    "summary": "1923 Ford T-Bucket featuring a built 350 SBC, Quick Fuel 750, Don Zig serviced Vertex magneto, TH350, and 9-inch rear axle.",
+    "thumbnail": "Projects/torky-t-hero.jpg",
     "detailUrl": "detail.html?type=projects&id=torky-t",
-    "tags": ["ford", "t-bucket", "sbc-350", "quick-fuel", "vertex-magneto", "hotrod"],
+    "tags": ["ford", "t-bucket", "sbc-350", "vertex-magneto", "hot-rod"],
     "specifications": {
       "year": "1923",
       "make": "Ford",
       "model": "T-Bucket Roadster",
-      "engine": "Built 350 Small Block Chevy",
+      "engine": "Built 350 Small Block Chevrolet V8",
       "carburetor": "Quick Fuel SS-750 4-Barrel",
       "ignition": "Vertex Magneto (Don Zig Serviced)",
       "transmission": "TH350 Automatic",
-      "rearAxle": "Ford 9-Inch (29x18.5LT15 Mickey Thompson)",
-      "status": "Active Restoration"
-    },
-    "narrative": [
-      "Torky-T is a classic 1923 Ford T-Bucket roadster sporting a vintage white fiberglass body and traditional white vinyl pleated upholstery.",
-      "Powered by a built 350 small-block Chevy topped with a Quick Fuel SS-750 carburetor and a Vertex magneto ignition system serviced by Don Zig Magnetos. Backed by a TH350 transmission feeding a Ford 9-inch rear end wrapped in massive 29x18.5LT15 Mickey Thompson rubber."
-    ],
-    "gallery": [
-      "Projects/torky-t.jpg"
-    ],
-    "featured": true
-  },
-  {
-    "id": "not-for-higher",
-    "title": "Not for Higher",
-    "subtitle": "1952 GMC COE Crew Cab Flatbed Tow Truck",
-    "category": "projects",
-    "badgeText": "Active Fabrication",
-    "badgeType": "badge-project",
-    "summary": "1952 GMC Cab-Over-Engine body mounted on a RAM 5500 chassis, 6.7L Cummins, compound turbos, single 10mm stroker CP3, and air-ride cab subframe.",
-    "thumbnail": "Projects/not-for-higher.jpg",
-    "detailUrl": "detail.html?type=projects&id=not-for-higher",
-    "tags": ["gmc", "coe", "cummins", "ram5500", "compound-turbos", "tow-truck"],
-    "specifications": {
-      "year": "1952",
-      "make": "GMC / RAM",
-      "model": "COE Crew Cab Flatbed",
-      "chassis": "RAM 5500 Commercial",
-      "engine": "6.7L Cummins Diesel (Compound Turbos)",
-      "fuelSystem": "Single 10mm Stroker CP3 / 165 GPH FASS",
+      "rearAxle": "Ford 9-Inch",
+      "rearTires": "29x18.5LT15 Mickey Thompson",
       "status": "In Progress"
     },
     "narrative": [
-      "Project 'Not for Higher'—an intentional play on words—combines a 1952 GMC Cab-Over-Engine Crew Cab shell mounted over a heavy-duty RAM 5500 chassis.",
-      "Powered by a 6.7L Cummins diesel with compound turbochargers, fed by a single 10mm stroker CP3 injection pump and a 165 GPH FASS lift pump. Comfort and modern feedback are managed via an air-ride cab subframe and Edge Insight CTS3 display."
+      "Torky-T is a classic 1923 Ford T-Bucket roadster restoration and performance upgrade project.",
+      "Powered by a built 350 SBC fed through a Quick Fuel SS-750 4-barrel carburetor and timed by a vintage Vertex magneto tuned by Don Zig Magnetos.",
+      "Puts power to the pavement via a TH350 transmission and a Ford 9-inch rear end tucked under white vinyl pleated upholstery."
     ],
     "gallery": [
-      "Projects/not-for-higher.jpg"
+      "Projects/torky-t-hero.jpg",
+      "Projects/garage-find.jpg",
+      "Projects/magneto-bench.jpg",
+      "Projects/shop-delivery.jpg"
     ],
-    "featured": true
-  }
-][
-  {
-    "id": "torky-t",
-    "title": "The Torky T",
-    "category": "projects",
-    "badgeText": "Real Builds",
-    "badgeType": "badge-real",
-    "summary": "1923 T-Bucket • Vintage Drag Survivor & Mechanical Sorting.",
-    "thumbnail": "projects/torky-t-hero.jpg",
-    "detailUrl": "projects/torky-t.html",
-    "tags": ["t-bucket", "ford", "vintage-drag", "fabrication", "chassis"],
-    "specifications": {
-      "year": 1923,
-      "make": "Ford",
-      "model": "T-Bucket",
-      "engine": "V8",
-      "chassis": "Custom Drag Frame",
-      "status": "Active Shop Build"
-    },
     "featured": true
   }
 ]
