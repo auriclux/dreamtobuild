@@ -30,7 +30,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* BRAND HEADER & TYPOGRAPHY */
+/* BRAND HEADER (H) */
 .site-header {
   border-bottom: 2px solid var(--border-color);
   padding-bottom: 20px;
@@ -69,7 +69,6 @@ body {
   text-transform: uppercase;
 }
 
-/* TAGLINES AND SUBTITLES */
 .site-tagline,
 .tagline {
   color: var(--text-muted);
@@ -78,17 +77,162 @@ body {
   margin-top: 6px;
 }
 
-.section-subtitle {
-  color: var(--text-muted);
-  font-size: 0.85rem;
-  margin-top: 4px;
+/* MAIN LAYOUT WRAPPER (N + I) */
+.main-layout {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
 }
 
-/* PORTFOLIO SECTIONS & GRIDS */
+/* REGION N: NAVIGATOR SIDEBAR */
+.sidebar-nav {
+  width: 260px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nav-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 4px;
+}
+
+/* NAV THUMBNAIL LIST (3 ITEMS) */
+.nav-thumb-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.nav-thumb-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: var(--panel-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 8px;
+  text-decoration: none;
+  color: var(--text-main);
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+  cursor: pointer;
+}
+
+.nav-thumb-item:hover {
+  background-color: var(--panel-hover);
+  border-color: var(--accent-cyan);
+}
+
+.nav-thumb-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.nav-thumb-info {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.nav-thumb-title {
+  font-family: var(--font-to);
+  font-size: 0.85rem;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nav-thumb-sub {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+/* NAV TEXT LINK LIST */
+.nav-text-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.nav-text-link {
+  display: block;
+  background-color: var(--panel-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 10px 12px;
+  color: var(--text-main);
+  text-decoration: none;
+  font-size: 0.825rem;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.nav-text-link:hover {
+  background-color: var(--panel-hover);
+  border-color: var(--accent-cyan);
+  color: #ffffff;
+}
+
+/* REGION I: SPOTLIGHT FRAME */
+#spotlight-frame {
+  flex-grow: 1;
+  background-color: var(--panel-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.spotlight-media {
+  width: 100%;
+  max-height: 460px;
+  background-color: #000000;
+  overflow: hidden;
+}
+
+.spotlight-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.spotlight-caption {
+  padding: 18px 20px;
+  border-top: 1px solid var(--border-color);
+}
+
+.spotlight-caption h2 {
+  font-family: var(--font-to);
+  font-size: 1.4rem;
+  color: #ffffff;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+
+.spotlight-caption p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* PORTFOLIO SECTIONS BELOW STAGE */
 .gallery-container {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  margin-top: 40px;
 }
 
 .portfolio-section {
@@ -106,6 +250,12 @@ body {
   border-bottom: 1px solid var(--border-color);
   padding-bottom: 6px;
   display: inline-block;
+}
+
+.section-subtitle {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin-top: 4px;
 }
 
 /* CARD GRID */
@@ -193,6 +343,21 @@ body {
   color: var(--text-muted);
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+/* RESPONSIVE LAYOUT BREAKPOINTS */
+@media (max-width: 900px) {
+  .main-layout {
+    flex-direction: column;
+  }
+  
+  .sidebar-nav {
+    width: 100%;
+  }
+
+  #spotlight-frame {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
