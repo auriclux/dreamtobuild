@@ -30,6 +30,11 @@
       <span class="nav-label">Navigation</span>
       <div class="nav-thumb-list">
         
+        <!-- 0. HOME LINK (Text Only / Resets Showcase) -->
+        <a href="./index.html" id="nav-home-btn" class="nav-text-link">
+          Home
+        </a>
+
         <!-- 1. ABOUT LINK (Text Only / No Thumbnail) -->
         <a href="about.html" class="nav-text-link">
           About Dream To Build
@@ -65,16 +70,22 @@
       </div>
     </aside>
 
-    <!-- REGION I: SPOTLIGHT FRAME -->
-    <section id="spotlight-frame">
-      <div class="spotlight-media">
-        <img id="spotlight-img" src="./Projects/torky-t-hero.jpg" alt="Featured Build">
-      </div>
-      <div class="spotlight-caption">
-        <h2 id="spotlight-title">Torky-T</h2>
-        <p id="spotlight-desc" class="spotlight-tagline">1923 Ford T-Bucket featuring a built 350 SBC, Quick Fuel 750, Don Zig serviced Vertex magneto, TH350, and 9-inch rear axle.</p>
-      </div>
-    </section>
+    <!-- SHOWCASE CONTAINER AREA -->
+    <div class="content-area">
+      <!-- REGION I: SPOTLIGHT FRAME (Hero View) -->
+      <section id="spotlight-frame">
+        <div class="spotlight-media">
+          <img id="spotlight-img" src="./Projects/torky-t-hero.jpg" alt="Featured Build">
+        </div>
+        <div class="spotlight-caption">
+          <h2 id="spotlight-title">Torky-T</h2>
+          <p id="spotlight-desc" class="spotlight-tagline">1923 Ford T-Bucket featuring a built 350 SBC, Quick Fuel 750, Don Zig serviced Vertex magneto, TH350, and 9-inch rear axle.</p>
+        </div>
+      </section>
+
+      <!-- DYNAMIC GALLERY GRID (Swaps with Spotlight) -->
+      <div id="gallery-grid" class="gallery-grid" style="display: none;"></div>
+    </div>
   </main>
 
   <script src="gallery-loader.js"></script>
