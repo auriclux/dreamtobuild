@@ -1,9 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // CONFIGURATION: Set your GitHub username and repository name here
-  const REPO_OWNER = "auriclux";      // e.g., 'scotstockton' or 'auriclux'
-  const REPO_NAME = "dreamtobuild";   // e.g., 'dreamtobuild'
+  // Dynamically resolve REPO_OWNER and REPO_NAME from GitHub Pages window.location
+  // URL structure: https://<owner>.github.io/<repo>/
+  const pathSegments = window.location.pathname.split('/').filter(Boolean);
+  const REPO_OWNER = window.location.hostname.split('.')[0] || "auriclux";
+  const REPO_NAME = pathSegments[0] || "dreamtobuild";
 
-  // Category Metadata & Default Fallbacks
   const categoryMeta = {
     Projects: {
       title: "Projects",
@@ -17,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
       badgeText: "TARGET BUILDS",
       badgeClass: "badge-dream",
       desc: "Conceptual studies and detailed engineering blueprints.",
-      defaultHero: "./Dreams/surrey-hero-400.jpg"
+      defaultHero: "./Dreams/surrey-hero-40s.jpg" // Corrected filename mismatch
     },
     Fantasies: {
       title: "Fantasies",
@@ -28,7 +29,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  // Initial Showcase Default on Page Load
   const arbitraryDefaultHero = {
     img: "./Projects/torky-t-hero.jpg",
     title: "Dream To Build",
@@ -47,7 +47,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let activeCategory = null;
 
-  // Helper to Update Hero Frame
   function setHero(data) {
     if (heroImg) heroImg.src = data.img || data.defaultHero || "";
     if (heroTitle) heroTitle.textContent = data.title || "";
@@ -58,7 +57,6 @@ document.addEventListener("DOMContentLoaded", () => {
     if (heroDesc) heroDesc.textContent = data.desc || "";
   }
 
-  // Format Image Filenames into Display Titles
   function formatTitle(filename) {
     const nameWithoutExt = filename.substring(0, filename.lastIndexOf('.')) || filename;
     return nameWithoutExt
@@ -66,12 +64,10 @@ document.addEventListener("DOMContentLoaded", () => {
       .replace(/\b\w/g, char => char.toUpperCase());
   }
 
-  // Set Initial Spotlight State
   setHero(arbitraryDefaultHero);
 
-  // Event Listeners for Navigation Buttons
   branchBtns.forEach(btn => {
-    const folderType = btn.getAttribute("data-type"); // Expects 'Projects', 'Dreams', or 'Fantasies'
+    const folderType = btn.getAttribute("data-type");
     const meta = categoryMeta[folderType];
 
     btn.addEventListener("mouseenter", () => {
@@ -96,7 +92,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (!galleryGrid) return;
 
-      // GitHub REST API Endpoint to fetch folder contents dynamically
       const apiUrl = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${folderType}`;
 
       fetch(apiUrl)
@@ -107,7 +102,6 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(files => {
           galleryGrid.innerHTML = "";
 
-          // Filter for valid image formats only (.jpg, .jpeg, .png, .webp, .gif)
           const imageRegex = /\.(jpg|jpeg|png|webp|gif)$/i;
           const imageFiles = files.filter(f => f.type === "file" && imageRegex.test(f.name));
 
@@ -135,7 +129,6 @@ document.addEventListener("DOMContentLoaded", () => {
               </div>
             `;
 
-            // Hovering a card updates the Spotlight stage image
             card.addEventListener("mouseenter", () => {
               setHero({
                 img: relativeImagePath,
