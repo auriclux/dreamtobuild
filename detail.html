@@ -16,11 +16,11 @@
 
   <header class="site-header">
     <nav class="nav-container">
-      <a href="index.html" class="back-link">&larr; Back to Gallery</a>
+      <a href="index.html" id="detail-back-btn" class="back-link">&larr; Back to Gallery</a>
     </nav>
   </header>
 
-  <main class="detail-container">
+  <main id="detail-container" class="detail-container">
     <article class="build-article">
       <header class="build-header">
         <span id="build-badge" class="badge"></span>
@@ -58,6 +58,13 @@
       </footer>
     </article>
   </main>
+
+  <!-- Lightbox Modal for Gallery Previews -->
+  <div id="image-modal" class="modal">
+    <span id="modal-close" class="modal-close">&times;</span>
+    <img id="modal-img" class="modal-content" alt="Enlarged view">
+    <div id="modal-caption" class="modal-caption"></div>
+  </div>
 
   <script src="detail-loader.js"></script>
 </body>
