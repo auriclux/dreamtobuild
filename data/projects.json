@@ -3,13 +3,14 @@
     "id": "torky-t",
     "title": "Torky-T",
     "subtitle": "1923 Ford T-Bucket Roadster",
-    "category": "projects",
+    "category": "Projects",
     "badgeText": "Active Build",
     "badgeType": "badge-project",
     "summary": "1923 Ford T-Bucket featuring a built 350 SBC, Quick Fuel 750, Don Zig serviced Vertex magneto, TH350, and 9-inch rear axle.",
-    "thumbnail": "Projects/torky-t-hero.jpg",
+    "thumb": "Projects/torky-t-hero.jpg",
+    "heroImage": "Projects/torky-t-hero.jpg",
     "detailUrl": "detail.html?type=projects&id=torky-t",
-    "tags": ["ford", "t-bucket", "sbc-350", "vertex-magneto", "hot-rod"],
+    "tags": ["Ford", "T-Bucket", "SBC 350", "Vertex Magneto", "Hot Rod"],
     "specifications": {
       "year": "1923",
       "make": "Ford",
@@ -20,6 +21,7 @@
       "transmission": "TH350 Automatic",
       "rearAxle": "Ford 9-Inch",
       "rearTires": "29x18.5LT15 Mickey Thompson",
+      "interior": "White Vinyl Pleated Upholstery",
       "status": "In Progress"
     },
     "narrative": [
