@@ -30,10 +30,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const arbitraryDefaultHero = {
     img: "./Projects/torky-t-hero.jpg",
-    title: "Dream To Build",
+    title: "Torky-T",
     badgeText: "FEATURED SHOWCASE",
     badgeClass: "badge-project",
-    desc: "Select a branch to explore active shop projects, design studies, or pure vision concepts.",
+    desc: "1923 Ford T-Bucket featuring a built 350 SBC, Quick Fuel 750, Don Zig serviced Vertex magneto, TH350, and 9-inch rear axle.",
     linkUrl: "#"
   };
 
@@ -45,9 +45,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const spotlightFrame = document.getElementById("spotlight-frame");
   const galleryGrid = document.getElementById("gallery-grid");
   const branchBtns = document.querySelectorAll(".branch-btn");
+  const homeBtn = document.getElementById("nav-home-btn");
 
   let activeCategory = null;
-  let activeHeroTarget = arbitraryDefaultHero.linkUrl;
 
   function setHero(data) {
     if (heroImg) heroImg.src = data.img || data.defaultHero || "";
@@ -57,7 +57,6 @@ document.addEventListener("DOMContentLoaded", () => {
       heroBadge.className = `badge ${data.badgeClass || ''}`;
     }
     if (heroDesc) heroDesc.textContent = data.desc || "";
-    activeHeroTarget = data.linkUrl || "#";
   }
 
   function formatTitle(filename) {
@@ -68,24 +67,26 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function getDetailUrl(folderType, filename) {
-    const nameWithoutExt = filename.substring(0, filename.lastIndexOf('.'));
-    // Checks for paired HTML files (e.g., surrey-1ton.html) or defaults to relative image
+    const nameWithoutExt = filename.substring(0, filename.lastIndexOf('.')).toLowerCase();
     if (folderType === "Dreams" && nameWithoutExt.includes("surrey")) {
       return `./surrey-1ton.html`;
     }
     return `./${folderType}/${filename}`;
   }
 
-  // Set Initial Spotlight State
-  setHero(arbitraryDefaultHero);
+  function resetToHero() {
+    activeCategory = null;
+    branchBtns.forEach(b => b.classList.remove("active"));
+    setHero(arbitraryDefaultHero);
+    if (galleryGrid) galleryGrid.style.display = "none";
+    if (spotlightFrame) spotlightFrame.style.display = "block";
+  }
 
-  // Allow clicking Spotlight Frame to navigate directly
-  if (spotlightFrame) {
-    spotlightFrame.style.cursor = "pointer";
-    spotlightFrame.addEventListener("click", () => {
-      if (activeHeroTarget && activeHeroTarget !== "#") {
-        window.location.href = activeHeroTarget;
-      }
+  // Bind Home Button click to reset showcase view
+  if (homeBtn) {
+    homeBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      resetToHero();
     });
   }
 
@@ -94,25 +95,23 @@ document.addEventListener("DOMContentLoaded", () => {
     const meta = categoryMeta[folderType];
 
     btn.addEventListener("mouseenter", () => {
-      if (meta) setHero({ ...meta, linkUrl: meta.defaultHero });
+      if (meta && !activeCategory) setHero(meta);
     });
 
     btn.addEventListener("mouseleave", () => {
-      if (activeCategory && categoryMeta[activeCategory]) {
-        const activeMeta = categoryMeta[activeCategory];
-        setHero({ ...activeMeta, linkUrl: activeMeta.defaultHero });
-      } else {
-        setHero(arbitraryDefaultHero);
-      }
+      if (!activeCategory) setHero(arbitraryDefaultHero);
     });
 
-    btn.addEventListener("click", () => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
       activeCategory = folderType;
 
       branchBtns.forEach(b => b.classList.remove("active"));
       btn.classList.add("active");
 
-      if (meta) setHero({ ...meta, linkUrl: meta.defaultHero });
+      // Swap view: Hide Spotlight Frame, Show Gallery Grid
+      if (spotlightFrame) spotlightFrame.style.display = "none";
+      if (galleryGrid) galleryGrid.style.display = "grid";
 
       if (!galleryGrid) return;
 
@@ -130,7 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
           const imageFiles = files.filter(f => f.type === "file" && imageRegex.test(f.name));
 
           if (imageFiles.length === 0) {
-            galleryGrid.innerHTML = `<p class="info">No images found in ${folderType}.</p>`;
+            galleryGrid.innerHTML = `<p class="info">No assets found in ${folderType}.</p>`;
             return;
           }
 
@@ -153,17 +152,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
               </a>
             `;
-
-            card.addEventListener("mouseenter", () => {
-              setHero({
-                img: relativeImagePath,
-                title: displayTitle,
-                badgeText: meta.badgeText,
-                badgeClass: meta.badgeClass,
-                desc: `${folderType} Asset`,
-                linkUrl: targetUrl
-              });
-            });
 
             galleryGrid.appendChild(card);
           });
