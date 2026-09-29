@@ -35,21 +35,21 @@
       <section class="specs-section">
         <h2>Specifications</h2>
         <dl id="specs-grid" class="specs-grid">
-          <!-- Dynamically populated -->
+          <!-- Dynamically populated by detail-loader.js -->
         </dl>
       </section>
 
       <section class="narrative-section">
-        <h2>Overview & Design Intent</h2>
+        <h2>Overview &amp; Design Intent</h2>
         <div id="build-narrative">
-          <!-- Dynamically populated paragraphs -->
+          <!-- Dynamically populated by detail-loader.js -->
         </div>
       </section>
 
       <section id="gallery-section" class="gallery-section" style="display: none;">
         <h2>Gallery</h2>
         <div id="build-gallery" class="gallery-grid">
-          <!-- Dynamically populated images -->
+          <!-- Dynamically populated by detail-loader.js -->
         </div>
       </section>
 
@@ -60,8 +60,8 @@
   </main>
 
   <!-- Lightbox Modal for Gallery Previews -->
-  <div id="image-modal" class="modal">
-    <span id="modal-close" class="modal-close">&times;</span>
+  <div id="image-modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true" tabindex="-1">
+    <span id="modal-close" class="modal-close" aria-label="Close modal">&times;</span>
     <img id="modal-img" class="modal-content" alt="Enlarged view">
     <div id="modal-caption" class="modal-caption"></div>
   </div>
