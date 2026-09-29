@@ -6,14 +6,14 @@ document.addEventListener("DOMContentLoaded", () => {
       badgeText: "REAL BUILDS",
       badgeClass: "badge-project",
       desc: "Real world vehicles currently under active fabrication or assembly.",
-      defaultHero: "./Projects/scapegoat.jpg"
+      defaultHero: "./Projects/torky-t-hero.jpg"
     },
     dreams: {
       title: "Dreams",
       badgeText: "TARGET BUILDS",
       badgeClass: "badge-dream",
       desc: "Conceptual studies and detailed engineering blueprints.",
-      defaultHero: "./Dreams/reiver.jpg"
+      defaultHero: "./Dreams/surrey-hero-400.jpg"
     },
     fantasies: {
       title: "Fantasies",
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Arbitrary Default Hero Image on Initial Load
   const arbitraryDefaultHero = {
-    img: "./Projects/scapegoat.jpg",
+    img: "./Projects/torky-t-hero.jpg",
     title: "Dream To Build",
     badgeText: "FEATURED SHOWCASE",
     badgeClass: "badge-project",
