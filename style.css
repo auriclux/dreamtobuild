@@ -89,6 +89,12 @@ body {
   align-items: flex-start;
 }
 
+/* SHOWCASE CONTAINER AREA */
+.content-area {
+  flex: 1;
+  min-width: 0;
+}
+
 /* REGION N: NAVIGATOR SIDEBAR */
 .sidebar-nav {
   width: 260px;
@@ -237,6 +243,14 @@ body {
 .spotlight-caption p {
   font-size: 0.85rem;
   color: var(--text-muted);
+}
+
+/* DYNAMIC GALLERY GRID VIEW */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
 }
 
 /* PORTFOLIO GRID SECTIONS BELOW STAGE */
