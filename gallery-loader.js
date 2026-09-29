@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Dynamically resolve REPO_OWNER and REPO_NAME from GitHub Pages window.location
-  // URL structure: https://<owner>.github.io/<repo>/
+  // Dynamically resolve REPO_OWNER and REPO_NAME from window.location
   const pathSegments = window.location.pathname.split('/').filter(Boolean);
   const REPO_OWNER = window.location.hostname.split('.')[0] || "auriclux";
   const REPO_NAME = pathSegments[0] || "dreamtobuild";
@@ -18,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
       badgeText: "TARGET BUILDS",
       badgeClass: "badge-dream",
       desc: "Conceptual studies and detailed engineering blueprints.",
-      defaultHero: "./Dreams/surrey-hero-40s.jpg" // Corrected filename mismatch
+      defaultHero: "./Dreams/surrey-hero-40s.jpg"
     },
     Fantasies: {
       title: "Fantasies",
@@ -34,7 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
     title: "Dream To Build",
     badgeText: "FEATURED SHOWCASE",
     badgeClass: "badge-project",
-    desc: "Select a branch to explore active shop projects, design studies, or pure vision concepts."
+    desc: "Select a branch to explore active shop projects, design studies, or pure vision concepts.",
+    linkUrl: "#"
   };
 
   // DOM Elements
@@ -42,10 +42,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const heroTitle = document.getElementById("hero-title") || document.getElementById("spotlight-title");
   const heroBadge = document.getElementById("hero-badge");
   const heroDesc = document.getElementById("hero-desc") || document.getElementById("spotlight-desc");
+  const spotlightFrame = document.getElementById("spotlight-frame");
   const galleryGrid = document.getElementById("gallery-grid");
   const branchBtns = document.querySelectorAll(".branch-btn");
 
   let activeCategory = null;
+  let activeHeroTarget = arbitraryDefaultHero.linkUrl;
 
   function setHero(data) {
     if (heroImg) heroImg.src = data.img || data.defaultHero || "";
@@ -55,6 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
       heroBadge.className = `badge ${data.badgeClass || ''}`;
     }
     if (heroDesc) heroDesc.textContent = data.desc || "";
+    activeHeroTarget = data.linkUrl || "#";
   }
 
   function formatTitle(filename) {
@@ -64,19 +67,40 @@ document.addEventListener("DOMContentLoaded", () => {
       .replace(/\b\w/g, char => char.toUpperCase());
   }
 
+  function getDetailUrl(folderType, filename) {
+    const nameWithoutExt = filename.substring(0, filename.lastIndexOf('.'));
+    // Checks for paired HTML files (e.g., surrey-1ton.html) or defaults to relative image
+    if (folderType === "Dreams" && nameWithoutExt.includes("surrey")) {
+      return `./surrey-1ton.html`;
+    }
+    return `./${folderType}/${filename}`;
+  }
+
+  // Set Initial Spotlight State
   setHero(arbitraryDefaultHero);
+
+  // Allow clicking Spotlight Frame to navigate directly
+  if (spotlightFrame) {
+    spotlightFrame.style.cursor = "pointer";
+    spotlightFrame.addEventListener("click", () => {
+      if (activeHeroTarget && activeHeroTarget !== "#") {
+        window.location.href = activeHeroTarget;
+      }
+    });
+  }
 
   branchBtns.forEach(btn => {
     const folderType = btn.getAttribute("data-type");
     const meta = categoryMeta[folderType];
 
     btn.addEventListener("mouseenter", () => {
-      if (meta) setHero(meta);
+      if (meta) setHero({ ...meta, linkUrl: meta.defaultHero });
     });
 
     btn.addEventListener("mouseleave", () => {
       if (activeCategory && categoryMeta[activeCategory]) {
-        setHero(categoryMeta[activeCategory]);
+        const activeMeta = categoryMeta[activeCategory];
+        setHero({ ...activeMeta, linkUrl: activeMeta.defaultHero });
       } else {
         setHero(arbitraryDefaultHero);
       }
@@ -88,7 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
       branchBtns.forEach(b => b.classList.remove("active"));
       btn.classList.add("active");
 
-      if (meta) setHero(meta);
+      if (meta) setHero({ ...meta, linkUrl: meta.defaultHero });
 
       if (!galleryGrid) return;
 
@@ -116,9 +140,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const relativeImagePath = `./${folderType}/${file.name}`;
             const displayTitle = formatTitle(file.name);
+            const targetUrl = getDetailUrl(folderType, file.name);
 
             card.innerHTML = `
-              <div class="card-link">
+              <a href="${targetUrl}" class="card-link">
                 <div class="card-image-wrapper">
                   <img src="${relativeImagePath}" alt="${displayTitle}" loading="lazy">
                   <span class="badge ${meta.badgeClass}">${meta.badgeText}</span>
@@ -126,7 +151,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div class="card-body">
                   <h3 class="card-title">${displayTitle}</h3>
                 </div>
-              </div>
+              </a>
             `;
 
             card.addEventListener("mouseenter", () => {
@@ -135,7 +160,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 title: displayTitle,
                 badgeText: meta.badgeText,
                 badgeClass: meta.badgeClass,
-                desc: `${folderType} Asset`
+                desc: `${folderType} Asset`,
+                linkUrl: targetUrl
               });
             });
 
