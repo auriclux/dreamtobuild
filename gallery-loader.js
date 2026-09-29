@@ -1,5 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
   const categoryMeta = {
+    About: {
+      title: "About Dream To Build",
+      badgeText: "STORY & MISSION",
+      badgeClass: "badge-about",
+      desc: "Dragging High Concept Pretty Pictures Kicking and Screaming into the Real World.",
+      defaultHero: "./Projects/torky-t-hero.jpg",
+      dataFile: "data/about.json"
+    },
     Projects: {
       title: "Projects",
       badgeText: "REAL BUILDS",
@@ -62,7 +70,10 @@ document.addEventListener("DOMContentLoaded", () => {
     activeCategory = null;
     branchBtns.forEach(b => b.classList.remove("active"));
     setHero(arbitraryDefaultHero);
-    if (galleryGrid) galleryGrid.style.display = "none";
+    if (galleryGrid) {
+      galleryGrid.style.display = "none";
+      galleryGrid.innerHTML = "";
+    }
     if (spotlightFrame) spotlightFrame.style.display = "block";
   }
 
@@ -85,6 +96,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   branchBtns.forEach(btn => {
     const folderType = btn.getAttribute("data-type");
+
+    // Skip home reset button from branch processing
+    if (folderType === "Home") return;
+
     const meta = categoryMeta[folderType];
 
     btn.addEventListener("mouseenter", () => {
@@ -104,22 +119,48 @@ document.addEventListener("DOMContentLoaded", () => {
       branchBtns.forEach(b => b.classList.remove("active"));
       btn.classList.add("active");
 
-      // Swap view: Hide Spotlight Frame, Show Gallery Grid
+      // Hide Spotlight Frame
       if (spotlightFrame) spotlightFrame.style.display = "none";
-      if (galleryGrid) galleryGrid.style.display = "grid";
-
       if (!galleryGrid) return;
 
       try {
-        // Cache datasets locally to avoid re-fetching
+        // Cache datasets locally
         if (!categoryCache[folderType]) {
           const res = await fetch(meta.dataFile);
           if (!res.ok) throw new Error(`HTTP ${res.status} fetching ${meta.dataFile}`);
           categoryCache[folderType] = await res.json();
         }
 
-        const items = categoryCache[folderType];
+        const rawData = categoryCache[folderType];
         galleryGrid.innerHTML = "";
+
+        // Special dynamic view for About route
+        if (folderType === "About") {
+          galleryGrid.style.display = "block";
+          const mission = rawData.content?.mission || rawData.mission || "";
+          const pillars = rawData.content?.pillars || [];
+
+          let pillarsHTML = pillars.map(p => `
+            <div class="about-pillar">
+              <h4>${escapeHtml(p.heading)}</h4>
+              <p>${escapeHtml(p.description)}</p>
+            </div>
+          `).join('');
+
+          galleryGrid.innerHTML = `
+            <article class="about-card-view">
+              <h2>${escapeHtml(rawData.title || meta.title)}</h2>
+              <p class="about-tagline"><em>${escapeHtml(rawData.tagline || meta.desc)}</em></p>
+              <p class="about-mission">${escapeHtml(mission)}</p>
+              <div class="about-pillars-grid">${pillarsHTML}</div>
+            </article>
+          `;
+          return;
+        }
+
+        // Gallery Grid View for Projects, Dreams, and Fantasies
+        galleryGrid.style.display = "grid";
+        const items = Array.isArray(rawData) ? rawData : (rawData.items || []);
 
         if (!items || items.length === 0) {
           galleryGrid.innerHTML = `<p class="info">No assets found in ${folderType}.</p>`;
@@ -141,7 +182,7 @@ document.addEventListener("DOMContentLoaded", () => {
               </div>
               <div class="card-body">
                 <h3 class="card-title">${escapeHtml(item.title)}</h3>
-                <p class="card-subtitle">${escapeHtml(item.subtitle || '')}</p>
+                <p class="card-subtitle">${escapeHtml(item.subtitle || item.description || '')}</p>
               </div>
             </a>
           `;
@@ -150,6 +191,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       } catch (err) {
         console.error(`Error loading assets for ${folderType}:`, err);
+        galleryGrid.style.display = "block";
         galleryGrid.innerHTML = `<p class="error">Unable to load assets for ${folderType}.</p>`;
       }
     });
