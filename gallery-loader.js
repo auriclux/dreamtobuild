@@ -54,7 +54,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const homeBtn = document.getElementById("nav-home-btn");
 
   let activeCategory = null;
-  const categoryCache = {};
 
   function setHero(data) {
     if (heroImg) heroImg.src = data.img || data.defaultHero || "";
@@ -112,13 +111,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     try {
-      if (!categoryCache[folderType]) {
-        const res = await fetch(meta.dataFile);
-        if (!res.ok) throw new Error(`HTTP ${res.status} fetching ${meta.dataFile}`);
-        categoryCache[folderType] = await res.json();
-      }
+      // Direct fetch with cache-busting timestamp parameter
+      const res = await fetch(`${meta.dataFile}?v=${Date.now()}`);
+      if (!res.ok) throw new Error(`HTTP ${res.status} fetching ${meta.dataFile}`);
+      const rawData = await res.json();
 
-      const rawData = categoryCache[folderType];
       galleryGrid.innerHTML = "";
 
       if (folderType === "About") {
