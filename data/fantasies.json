@@ -18,7 +18,8 @@
       "model": "Estate Wagon",
       "engine": "LS3 V8",
       "suspension": "Air Ride / Bagged",
-      "status": "Render Concept"
+      "status": "Render Concept",
+      "dateAdded": "2026-09-27T12:00:00"
     },
     "narrative": [
       "LS3 swap, bagged stance, shaved suicide doors, and dual custom/lowrider paint directions.",
@@ -49,7 +50,8 @@
       "model": "Riviera",
       "engine": "Concept Powertrain",
       "suspension": "Custom Lowered Stance",
-      "status": "Render Concept"
+      "status": "Render Concept",
+      "dateAdded": "2026-09-27T12:00:00"
     },
     "narrative": [
       "Design explorations centered around the iconic Boattail Buick Riviera chassis.",
@@ -79,7 +81,8 @@
       "model": "Camaro",
       "engine": "Mid-Engine V8",
       "suspension": "Long-Travel Trophy Truck",
-      "status": "Render Concept"
+      "status": "Render Concept",
+      "dateAdded": "2026-09-27T12:00:00"
     },
     "narrative": [
       "A mid-engine, trophy-truck-based concept merging a classic Camaro shell with extreme off-road capability.",
@@ -109,7 +112,8 @@
       "model": "Gremlin",
       "engine": "SBC w/ 6-71 Blower",
       "suspension": "Street / Drag Stance",
-      "status": "Render Concept"
+      "status": "Render Concept",
+      "dateAdded": "2026-09-27T12:00:00"
     },
     "narrative": [
       "This was a quick study of a '70 Gremlin doing donuts on the 7th Street Bridge. SBC with a 6-71.",
