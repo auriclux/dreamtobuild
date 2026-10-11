@@ -117,13 +117,13 @@ document.addEventListener("DOMContentLoaded", () => {
         if (Array.isArray(narrativeContent)) {
           narrativeContent.forEach(pText => {
             const p = document.createElement("p");
-            p.textContent = pText;
+            p.innerHTML = pText; // Updated to support HTML tags like <em>
             narrativeContainer.appendChild(p);
           });
         } else if (typeof narrativeContent === "string" && narrativeContent.trim() !== "") {
           narrativeContent.split("\n\n").forEach(pText => {
             const p = document.createElement("p");
-            p.textContent = pText;
+            p.innerHTML = pText; // Updated to support HTML tags like <em>
             narrativeContainer.appendChild(p);
           });
         } else {
