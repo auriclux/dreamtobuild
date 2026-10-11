@@ -37,9 +37,9 @@
     "badgeText": "Design Concept",
     "badgeType": "badge-dream",
     "summary": "Custom vintage-inspired Surrey build study.",
-    "thumb": "Dreams/surrey.jpg",
-    "heroImage": "Dreams/surrey.jpg",
-    "thumbnail": "Dreams/surrey.jpg",
+    "thumb": "Dreams/surrey-hero-40s.jpg",
+    "heroImage": "Dreams/surrey-hero-40s.jpg",
+    "thumbnail": "Dreams/surrey-hero-40s.jpg",
     "detailUrl": "detail.html?type=dreams&id=surrey-concept",
     "tags": ["Surrey", "Custom", "Concept"],
     "specifications": {
@@ -51,7 +51,7 @@
       "Custom concept study for the Surrey build."
     ],
     "gallery": [
-      "Dreams/surrey.jpg"
+      "Dreams/surrey-hero-40s.jpg"
     ],
     "featured": true
   }
