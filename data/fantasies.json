@@ -197,13 +197,45 @@
     },
     "narrative": [
       "<em><strong>HISTORICAL DISCLAIMER:</strong> This vehicle concept, narrative, and historical background are entirely fictional. 'Project 69-M' is an alternate-history design study exploring a 'what if' crossover between Ford's NASCAR aero program and Le Mans mid-engine architecture.</em>",
-      "This single prototype is all that remains of 'Project 69-M,' Ford's radical, black-budget attempt to rewrite the rules of both NASCAR and the street. The concept was a direct fusion: take the low-drag, extended nose and flush grille of the homologation-bound 1969 Torino Talladega[cite: 1] and mount it on a mid-engine chassis.",
+      "This single prototype is all that remains of 'Project 69-M,' Ford's radical, black-budget attempt to rewrite the rules of both NASCAR and the street. The concept was a direct fusion: take the low-drag, extended nose and flush grille of the homologation-bound 1969 Torino Talladega and mount it on a mid-engine chassis.",
       "While the race cars would always be front-engine (NASCAR rules demanded it), Ford planned to sell 500 mid-engine 'T-Transaxles' as a production vehicle, creating an exotic 'aero-king' to beat Ferrari on the street and Dodge on the high banks. The large mid-body intakes, seen on the production C8 Corvette-like profile, were designed to feed a planned massive mid-ship powertrain.",
-      "To explain its mid-engine architecture, Ford engineers created the ultimate 'what if' setup: They took a race-ready 7.0-liter (427 cu in) Ford 'Cammer' SOHC V8, but instead of mounting it in the front, they reversed it, mounting it directly behind the driver. The original Ford Toploader transmission was scrapped. Instead, the 'Cammer' was mated to a custom-cast, heavy-duty Hewland LG transaxle—the same reliable box used in Ford's GT40 program[cite: 3].",
-      "This '69 prototype, thus, wasn't just a styling exercise; it was an authentic integration of Ford's two greatest performance eras, pairing the high-drag oval-track nose with the mid-ship transaxle of Le Mans[cite: 1]. The modern, 5-spoke alloys and updated side intakes were added decades later during a modern sympathetic restoration, preparing it for a single, high-speed test run on the gravel road of the skunkworks' private facility."
+      "To explain its mid-engine architecture, Ford engineers created the ultimate 'what if' setup: They took a race-ready 7.0-liter (427 cu in) Ford 'Cammer' SOHC V8, but instead of mounting it in the front, they reversed it, mounting it directly behind the driver. The original Ford Toploader transmission was scrapped. Instead, the 'Cammer' was mated to a custom-cast, heavy-duty Hewland LG transaxle—the same reliable box used in Ford's GT40 program.",
+      "This '69 prototype, thus, wasn't just a styling exercise; it was an authentic integration of Ford's two greatest performance eras, pairing the high-drag oval-track nose with the mid-ship transaxle of Le Mans. The modern, 5-spoke alloys and updated side intakes were added decades later during a modern sympathetic restoration, preparing it for a single, high-speed test run on the gravel road of the skunkworks' private facility."
     ],
     "gallery": [
       "Fantasies/1969 Torino Talledega Supercar dynamic.jpg"
+    ],
+    "featured": true
+  },
+  {
+    "id": "1939-ford-coe-rv",
+    "title": "1939 Ford COE Carnivore RV Restomod",
+    "subtitle": "Supercharged 5.2L Long-Haul Overland Hauler",
+    "category": "Fantasies",
+    "badgeText": "Pure Vision",
+    "badgeType": "badge-fantasy",
+    "summary": "A 1939 Ford Cab-Over-Engine RV restomod powered by a supercharged 5.2L Carnivore V8 (720 hp / 640 lb-ft) and 10R140 10-speed transmission, engineered specifically for high-speed desert blasts and steep mountain passes.",
+    "thumb": "Fantasies/1939 Ford COE RV.jpg",
+    "heroImage": "Fantasies/1939 Ford COE RV.jpg",
+    "thumbnail": "Fantasies/1939 Ford COE RV.jpg",
+    "detailUrl": "detail.html?type=fantasies&id=1939-ford-coe-rv",
+    "tags": ["Ford", "COE", "1939", "RV", "Carnivore V8", "Supercharged", "10R140", "Restomod", "Overland"],
+    "specifications": {
+      "year": "1939",
+      "make": "Ford",
+      "model": "COE Custom RV Restomod",
+      "engine": "Supercharged 5.2L 'Carnivore' V8 (720 hp / 640 lb-ft)",
+      "transmission": "Ford 10R140 TorqShift 10-Speed Automatic",
+      "chassis": "Custom Boxed Chassis w/ IFS & Coilovers",
+      "status": "Render Concept Study",
+      "dateAdded": "2026-10-11T16:40:00"
+    },
+    "narrative": [
+      "Forged from the bones of a 1939 Ford COE, the heart of this restomod is Ford’s supercharged 5.2-liter Carnivore V8 delivering 640 lb-ft of torque and 720 horsepower managed by Ford’s heavy-duty 10R140 TorqShift 10-speed automatic transmission, delivering lightning-fast gear changes and relentless acceleration without missing a beat under load.",
+      "Riding on a custom boxed chassis fitted with independent front suspension and adjustable coil-over shocks, the rig is built for effortless highway cruising and confident mountain ascents. It's spec'd directly for purpose-driven long-haul runs out of Los Angeles: effortlessly holding pace during high-speed desert blasts to Las Vegas, tackling the steep grade and sub-zero conditions on ski trips up to Mammoth, or carving through the sweepers along Highway 395 and the Pacific Coast Highway. Engineering precision meets raw, unstoppable capability."
+    ],
+    "gallery": [
+      "Fantasies/1939 Ford COE RV.jpg"
     ],
     "featured": true
   }
