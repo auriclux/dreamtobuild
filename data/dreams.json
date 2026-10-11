@@ -18,14 +18,17 @@
       "model": "Business Coupe",
       "engine": "320 ci Straight-8",
       "induction": "Twin-Turbo / E85",
-      "status": "Feasible Concept"
+      "status": "Feasible Concept",
+      "dateAdded": "2026-09-27T12:00:00"
     },
     "narrative": [
       "A high-horsepower forced induction packaging study built around Buick's iconic 320 cubic inch Fireball straight-eight powerplant.",
-      "Engineered for E85 output targeting 700 HP and housed within a custom-stretched 1939 Buick Business Coupe body."
+      "Engineered for E85 output targeting 700 HP and housed within a custom-stretched 1939 Buick Business Coupe body.",
+      "Note: The accompanying gallery view features an AI-generated visual representation of the proposed straight-eight engine build."
     ],
     "gallery": [
-      "Dreams/buick-supercar.jpg"
+      "Dreams/buick-supercar.jpg",
+      "Dreams/buick-straight-eight-engine.jpg"
     ],
     "featured": true
   },
@@ -45,7 +48,8 @@
     "specifications": {
       "make": "Custom",
       "model": "Surrey",
-      "status": "Design Study"
+      "status": "Design Study",
+      "dateAdded": "2026-09-27T12:00:00"
     },
     "narrative": [
       "Custom concept study for the Surrey build."
