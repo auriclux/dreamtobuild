@@ -1,8 +1,8 @@
 /* ==========================================================================
-   DREAM TO BUILD — GALLERY LOADER (WIREFRAME COMPLIANT & EVENT-DELEGATED)
+   DREAM TO BUILD — GALLERY LOADER (ROBUST TIMING & EVENT-DELEGATED)
    ========================================================================== */
 
-document.addEventListener("DOMContentLoaded", () => {
+function initGalleryLoader() {
   const categoryMeta = {
     About: {
       title: "About Dream To Build",
@@ -236,4 +236,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   window.addEventListener("popstate", syncViewWithRoute);
   syncViewWithRoute();
-});
+}
+
+// Execute immediately if DOM is ready, otherwise wait
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initGalleryLoader);
+} else {
+  initGalleryLoader();
+}
