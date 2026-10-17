@@ -1,3 +1,7 @@
+/* ==========================================================================
+   DREAM TO BUILD — GALLERY LOADER (WITH NEWEST-FIRST SORTING)
+   ========================================================================== */
+
 document.addEventListener("DOMContentLoaded", () => {
   const categoryMeta = {
     About: {
@@ -142,12 +146,19 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       galleryGrid.style.display = "grid";
-      const items = Array.isArray(rawData) ? rawData : (rawData.items || []);
+      let items = Array.isArray(rawData) ? rawData : (rawData.items || []);
 
       if (!items || items.length === 0) {
         galleryGrid.innerHTML = `<p class="info">No assets found in ${folderType}.</p>`;
         return;
       }
+
+      // NEWEST-FIRST SORTING (dateAdded descending)
+      items.sort((a, b) => {
+        const dateA = new Date(a.specifications?.dateAdded || 0);
+        const dateB = new Date(b.specifications?.dateAdded || 0);
+        return dateB - dateA;
+      });
 
       items.forEach(item => {
         const card = document.createElement("article");
