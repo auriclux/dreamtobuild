@@ -4,7 +4,7 @@
       "file": "data/fantasies.json",
       "description": "Dream To Build — Pure Vision Visual Explorations & Styling Studies",
       "schemaVersion": "1.0",
-      "lastUpdated": "2026-10-17T15:40:00"
+      "lastUpdated": "2026-10-17T16:00:00"
     }
   },
   {
@@ -187,7 +187,7 @@
     "category": "Fantasies",
     "badgeText": "Pure Vision",
     "badgeType": "badge-fantasy",
-    "summary": "A radical, mid-engine concept fusing Ford's low-drag 1969 Torino Talladega aero nose with a mid-mounted 427 'Cammer' SOHC V8 and GT40 Hewland transaxle.",
+    "summary": "A radical, mid-engine concept fusing Ford's low-drag 1969 Torino Talladega aero nose with a mid-mounted 427 Cammer SOHC V8 and GT40 Hewland transaxle.",
     "thumb": "Fantasies/1969 Torino Talledega Supercar dynamic.jpg",
     "heroImage": "Fantasies/1969 Torino Talledega Supercar dynamic.jpg",
     "thumbnail": "Fantasies/1969 Torino Talledega Supercar dynamic.jpg",
@@ -206,4 +206,193 @@
       "HISTORICAL DISCLAIMER: This vehicle concept, narrative, and historical background are entirely fictional. Project 69-M is an alternate-history design study exploring a what if crossover between Ford's NASCAR aero program and Le Mans mid-engine architecture.",
       "This single prototype is all that remains of Project 69-M, Ford's radical, black-budget attempt to rewrite the rules of both NASCAR and the street. The concept was a direct fusion: take the low-drag, extended nose and flush grille of the homologation-bound 1969 Torino Talladega and mount it on a mid-engine chassis.",
       "While the race cars would always be front-engine (NASCAR rules demanded it), Ford planned to sell 500 mid-engine T-Transaxles as a production vehicle, creating an exotic aero-king to beat Ferrari on the street and Dodge on the high banks. The large mid-body intakes, seen on the production C8 Corvette-like profile, were designed to feed a planned massive mid-ship powertrain.",
-      "To explain its mid-engine architecture, Ford engineers created the ultimate what if setup: They took a race-ready 7.0-liter (427 cu in) Ford Cammer SOHC V8, but instead of mounting it in the front, they reversed it, mounting it directly behind the driver. The original Ford Toploader transmission was scrapped
+      "To explain its mid-engine architecture, Ford engineers created the ultimate what if setup: They took a race-ready 7.0-liter (427 cu in) Ford Cammer SOHC V8, but instead of mounting it in the front, they reversed it, mounting it directly behind the driver. The original Ford Toploader transmission was scrapped. Instead, the Cammer was mated to a custom-cast, heavy-duty Hewland LG transaxle—the same reliable box used in Ford's GT40 program.",
+      "This '69 prototype, thus, was not just a styling exercise; it was an authentic integration of Ford's two greatest performance eras, pairing the high-drag oval-track nose with the mid-ship transaxle of Le Mans. The modern, 5-spoke alloys and updated side intakes were added decades later during a modern sympathetic restoration, preparing it for a single, high-speed test run on the gravel road of the skunkworks' private facility."
+    ],
+    "gallery": [
+      "Fantasies/1969 Torino Talledega Supercar dynamic.jpg"
+    ],
+    "featured": true
+  },
+  {
+    "id": "gmc-crackerbox-series",
+    "title": "GMC Crackerbox Series (1959-1968)",
+    "subtitle": "Forward Control Heavy Hauler Explorations",
+    "category": "Fantasies",
+    "badgeText": "Pure Vision",
+    "badgeType": "badge-fantasy",
+    "summary": "Custom forward-control studies based on the legendary 1959-1968 GMC D/DB Series Crackerbox cab, spanning extreme 6x6 builds, flatbed car haulers, and desert off-road transport rigs.",
+    "thumb": "Fantasies/Crackerbox 6x6.jpg",
+    "heroImage": "Fantasies/Crackerbox 6x6.jpg",
+    "thumbnail": "Fantasies/Crackerbox 6x6.jpg",
+    "detailUrl": "detail.html?type=fantasies&id=gmc-crackerbox-series",
+    "tags": ["GMC", "Crackerbox", "Forward Control", "FC", "Flatbed", "6x6", "Duramax"],
+    "specifications": {
+      "years": "1959-1968",
+      "make": "GMC",
+      "model": "D/DB Series Crackerbox",
+      "chassis": "Custom Commercial & Military Platforms",
+      "status": "Render Concept Series",
+      "dateAdded": "2026-10-11T15:23:21"
+    },
+    "narrative": [
+      "A focused design exploration into GMC's iconic 1959-1968 D/DB Series forward-control commercial cab, affectionately known as the Crackerbox.",
+      "This series examines the extreme versatility of the ultra-short cab architecture across high-capability off-road transport, vintage car hauling, and heavy-duty mechanical conversions."
+    ],
+    "gallery": [
+      {
+        "url": "Fantasies/Crackerbox 6x6.jpg",
+        "caption": "Steroidal FC 6x6 using a GMC Crackerbox cab on an M35A2 chassis using a Duramax 6.6L with compound turbo and Allison transmission into the Rockwell transfer case (2.5-ton axles)."
+      },
+      {
+        "url": "Fantasies/Crackerbox 4.jpg",
+        "caption": "Heavy Desert Flatbed Rig — GMC Crackerbox cab with external upright exhaust stacks, heavy bull bar, and a Humvee support payload."
+      },
+      {
+        "url": "Fantasies/Crackerbox 3.jpg",
+        "caption": "Boardwalk Cruiser & Transport — Finished in vibrant deep blue, featuring polished stack exhausts, custom ramps, and a classic '32 Roadster bed payload."
+      },
+      {
+        "url": "Fantasies/Crackerbox 2.jpg",
+        "caption": "Diesel Power Patina Hauler — Weathered green Crackerbox flatbed truck carrying a vintage pickup payload at the lawn show."
+      },
+      {
+        "url": "Fantasies/Crackerbox 1.jpg",
+        "caption": "Class 8 Workhorse — Clean green patina finish, reinforced front brush guard, high-clearance flatbed frame, and single upright stack exhaust."
+      }
+    ],
+    "featured": true
+  },
+  {
+    "id": "blown-gremlin",
+    "title": "Blown '70 Gremlin",
+    "subtitle": "Bridge Donut & Blower Study",
+    "category": "Fantasies",
+    "badgeText": "Pure Vision",
+    "badgeType": "badge-fantasy",
+    "summary": "This was a quick study of a '70 Gremlin doing donuts on the 7th Street Bridge. SBC with a 6-71.",
+    "thumb": "Fantasies/blown-gremlin.png",
+    "heroImage": "Fantasies/blown-gremlin.png",
+    "thumbnail": "Fantasies/blown-gremlin.png",
+    "detailUrl": "detail.html?type=fantasies&id=blown-gremlin",
+    "tags": ["AMC", "Gremlin", "SBC", "6-71", "Supercharged", "Street Concept"],
+    "specifications": {
+      "year": "1970",
+      "make": "AMC",
+      "model": "Gremlin",
+      "engine": "SBC w/ 6-71 Blower",
+      "suspension": "Street / Drag Stance",
+      "status": "Render Concept",
+      "dateAdded": "2026-09-27T12:00:00"
+    },
+    "narrative": [
+      "This was a quick study of a '70 Gremlin doing donuts on the 7th Street Bridge. SBC with a 6-71.",
+      "A short-wheelbase riot featuring high-rise forced induction, street-drag rake, and aggressive rubber."
+    ],
+    "gallery": [
+      "Fantasies/blown-gremlin.png"
+    ],
+    "featured": true
+  },
+  {
+    "id": "nimr-camaro-trophy-truck",
+    "title": "Nimr: Mid-Engine Camaro Trophy Truck",
+    "subtitle": "Extreme Off-Road Performance Fusion",
+    "category": "Fantasies",
+    "badgeText": "Pure Vision",
+    "badgeType": "badge-fantasy",
+    "summary": "A mid-engine, trophy-truck-based concept merging a Camaro body shell with extreme off-road capability.",
+    "thumb": "Fantasies/nimr-camaro.jpg",
+    "heroImage": "Fantasies/nimr-camaro.jpg",
+    "thumbnail": "Fantasies/nimr-camaro.jpg",
+    "detailUrl": "detail.html?type=fantasies&id=nimr-camaro-trophy-truck",
+    "tags": ["Chevy", "Camaro", "Mid-Engine", "Trophy Truck", "Offroad"],
+    "specifications": {
+      "year": "1969",
+      "make": "Chevrolet",
+      "model": "Camaro",
+      "engine": "Mid-Engine V8",
+      "suspension": "Long-Travel Trophy Truck",
+      "status": "Render Concept",
+      "dateAdded": "2026-09-27T12:00:00"
+    },
+    "narrative": [
+      "A mid-engine, trophy-truck-based concept merging a classic Camaro shell with extreme off-road capability.",
+      "Built over an all-terrain tube chassis designed to soak up desert high-speed runs while keeping muscle car proportions."
+    ],
+    "gallery": [
+      "Fantasies/nimr-camaro.jpg"
+    ],
+    "featured": true
+  },
+  {
+    "id": "evans-ride-riviera",
+    "title": "Evan's Ride: Boattail Riviera Concept",
+    "subtitle": "Modern Tailored Muscle & Sweeping Lines",
+    "category": "Fantasies",
+    "badgeText": "Pure Vision",
+    "badgeType": "badge-fantasy",
+    "summary": "Design explorations centered around the iconic Boattail Buick Riviera chassis.",
+    "thumb": "Fantasies/evans-ride-rivvy-1.jpg",
+    "heroImage": "Fantasies/evans-ride-rivvy-1.jpg",
+    "thumbnail": "Fantasies/evans-ride-rivvy-1.jpg",
+    "detailUrl": "detail.html?type=fantasies&id=evans-ride-riviera",
+    "tags": ["Buick", "Riviera", "Boattail", "Concept", "Classic"],
+    "specifications": {
+      "year": "1971",
+      "make": "Buick",
+      "model": "Riviera",
+      "engine": "Concept Powertrain",
+      "suspension": "Custom Lowered Stance",
+      "status": "Render Concept",
+      "dateAdded": "2026-09-27T12:00:00"
+    },
+    "narrative": [
+      "Design explorations centered around the iconic Boattail Buick Riviera chassis.",
+      "Highlighting the extreme rear fastback profile and boat-tail decklid contouring with aggressive fitment and refined brightwork."
+    ],
+    "gallery": [
+      {
+        "url": "Fantasies/evans-ride-rivvy-1.jpg",
+        "caption": "Evan's Ride — Boattail Riviera Concept primary profile view."
+      },
+      {
+        "url": "Fantasies/Rivvy and Caprice.jpg",
+        "caption": "Rivvy and Caprice — Sunset coastal stance exploration."
+      }
+    ],
+    "featured": true
+  },
+  {
+    "id": "fabian-buick-wagon",
+    "title": "Fabian's Buick Estate Wagon",
+    "subtitle": "Lowrider & Custom Stance Exploration",
+    "category": "Fantasies",
+    "badgeText": "Pure Vision",
+    "badgeType": "badge-fantasy",
+    "summary": "LS3 swap, bagged stance, shaved suicide doors, and dual custom/lowrider paint directions.",
+    "thumb": "Fantasies/fabian-buick-wagon-custom.jpg",
+    "heroImage": "Fantasies/fabian-buick-wagon-custom.jpg",
+    "thumbnail": "Fantasies/fabian-buick-wagon-custom.jpg",
+    "detailUrl": "detail.html?type=fantasies&id=fabian-buick-wagon",
+    "tags": ["Buick", "Wagon", "LS3", "Bagged", "Suicide Doors", "Lowrider"],
+    "specifications": {
+      "year": "1970",
+      "make": "Buick",
+      "model": "Estate Wagon",
+      "engine": "LS3 V8",
+      "suspension": "Air Ride / Bagged",
+      "status": "Render Concept",
+      "dateAdded": "2026-09-27T12:00:00"
+    },
+    "narrative": [
+      "LS3 swap, bagged stance, shaved suicide doors, and dual custom/lowrider paint directions.",
+      "A high-concept exploration into long-roof styling, blending classic Buick cruiser lines with modern air-ride geometry and striking custom paint schemes."
+    ],
+    "gallery": [
+      "Fantasies/fabian-buick-wagon-custom.jpg",
+      "Fantasies/fabian-buick-wagon-urban.jpg"
+    ],
+    "featured": true
+  }
+]
