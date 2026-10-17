@@ -1,5 +1,5 @@
 /* ==========================================================================
-   DREAM TO BUILD — GALLERY LOADER (WITH NEWEST-FIRST SORTING)
+   DREAM TO BUILD — GALLERY LOADER (WIREFRAME COMPLIANT)
    ========================================================================== */
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -73,11 +73,14 @@ document.addEventListener("DOMContentLoaded", () => {
     activeCategory = null;
     branchBtns.forEach(b => b.classList.remove("active"));
     setHero(arbitraryDefaultHero);
+    
+    // Always keep Spotlight Stage visible
+    if (spotlightFrame) spotlightFrame.style.display = "flex";
+    
     if (galleryGrid) {
       galleryGrid.style.display = "none";
       galleryGrid.innerHTML = "";
     }
-    if (spotlightFrame) spotlightFrame.style.display = "block";
     
     if (updateState && window.location.hash) {
       history.pushState(null, "", window.location.pathname + window.location.search);
@@ -107,7 +110,8 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-    if (spotlightFrame) spotlightFrame.style.display = "none";
+    // Always keep Spotlight Stage visible
+    if (spotlightFrame) spotlightFrame.style.display = "flex";
     if (!galleryGrid) return;
 
     if (updateState) {
@@ -115,50 +119,43 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     try {
-      // Direct fetch with cache-busting timestamp parameter
       const res = await fetch(`${meta.dataFile}?v=${Date.now()}`);
       if (!res.ok) throw new Error(`HTTP ${res.status} fetching ${meta.dataFile}`);
       const rawData = await res.json();
 
       galleryGrid.innerHTML = "";
 
-      if (folderType === "About") {
+      // Filter out non-item entries (like _meta blocks)
+      let items = Array.isArray(rawData) 
+        ? rawData.filter(item => item && item.id) 
+        : (rawData.items || []);
+
+      if (items.length === 0) {
         galleryGrid.style.display = "block";
-        const mission = rawData.content?.mission || rawData.mission || "";
-        const pillars = rawData.content?.pillars || [];
-
-        let pillarsHTML = pillars.map(p => `
-          <div class="about-pillar">
-            <h4>${escapeHtml(p.heading)}</h4>
-            <p>${escapeHtml(p.description)}</p>
-          </div>
-        `).join('');
-
-        galleryGrid.innerHTML = `
-          <article class="about-card-view">
-            <h2>${escapeHtml(rawData.title || meta.title)}</h2>
-            <p class="about-tagline"><em>${escapeHtml(rawData.tagline || meta.desc)}</em></p>
-            <p class="about-mission">${escapeHtml(mission)}</p>
-            <div class="about-pillars-grid">${pillarsHTML}</div>
-          </article>
-        `;
-        return;
-      }
-
-      galleryGrid.style.display = "grid";
-      let items = Array.isArray(rawData) ? rawData : (rawData.items || []);
-
-      if (!items || items.length === 0) {
         galleryGrid.innerHTML = `<p class="info">No assets found in ${folderType}.</p>`;
         return;
       }
 
-      // NEWEST-FIRST SORTING (dateAdded descending)
+      // Sort items newest-first
       items.sort((a, b) => {
         const dateA = new Date(a.specifications?.dateAdded || 0);
         const dateB = new Date(b.specifications?.dateAdded || 0);
         return dateB - dateA;
       });
+
+      // Update upper spotlight to showcase the newest concept in this category
+      if (items[0]) {
+        const newest = items[0];
+        setHero({
+          img: newest.heroImage || newest.thumb || newest.thumbnail,
+          title: newest.title,
+          badgeText: newest.badgeText || meta.badgeText,
+          badgeClass: newest.badgeType || meta.badgeClass,
+          desc: newest.subtitle || newest.summary || meta.desc
+        });
+      }
+
+      galleryGrid.style.display = "grid";
 
       items.forEach(item => {
         const card = document.createElement("article");
@@ -218,7 +215,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // URL Hash & Query Routing Parser
+  // Route Parser
   function syncViewWithRoute() {
     const urlParams = new URLSearchParams(window.location.search);
     const queryType = urlParams.get("type");
@@ -236,7 +233,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Event Listeners for History Traversal & Initial Run
   window.addEventListener("popstate", syncViewWithRoute);
   syncViewWithRoute();
 });
