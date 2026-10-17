@@ -1,4 +1,6 @@
-<!-- root index file -->
+<!-- ==========================================================================
+   DREAM TO BUILD — MAIN INDEX PAGE (WIREFRAME-COMPLIANT LAYOUT)
+   ========================================================================== -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,6 +18,7 @@
 </head>
 <body>
 
+  <!-- BRAND HEADER - WIREFRAME TOP TITLE BAR -->
   <header class="site-header">
     <div class="brand-title">
       <span class="font-dream">Dream</span>
@@ -25,18 +28,19 @@
     <p class="site-tagline">Dragging High Concept Pretty Pictures Kicking and Screaming into the Real World</p>
   </header>
 
+  <!-- UPPER STAGE: NAV SIDEBAR (LEFT) + SPOTLIGHT HERO FRAME (RIGHT) -->
   <main class="main-layout">
     <!-- REGION N: NAVIGATOR SIDEBAR -->
     <aside class="sidebar-nav">
       <span class="nav-label">Navigation</span>
       <div class="nav-thumb-list">
         
-        <!-- 0. HOME LINK (Resets Showcase to Default Spotlight) -->
+        <!-- 0. HOME LINK -->
         <a href="#" id="nav-home-btn" class="nav-text-link branch-btn" data-type="Home">
           Home
         </a>
 
-        <!-- 1. ABOUT LINK (JSON SPA Route) -->
+        <!-- 1. ABOUT LINK -->
         <a href="#about" class="nav-text-link branch-btn" data-type="About">
           About Dream To Build
         </a>
@@ -71,24 +75,28 @@
       </div>
     </aside>
 
-    <!-- SHOWCASE CONTAINER AREA -->
-    <div class="content-area">
-      <!-- REGION I: SPOTLIGHT FRAME (Hero View) -->
-      <section id="spotlight-frame">
-        <div class="spotlight-media">
-          <img id="spotlight-img" src="./Projects/torky-t-hero.jpg" alt="Featured Build">
-        </div>
-        <div class="spotlight-caption">
-          <h2 id="spotlight-title">Torky-T</h2>
-          <p id="spotlight-desc" class="spotlight-tagline">1923 Ford T-Bucket featuring a built 350 SBC, Quick Fuel 750, Don Zig serviced Vertex magneto, TH350, and 9-inch rear axle.</p>
-        </div>
-      </section>
-
-      <!-- DYNAMIC GALLERY GRID (Swaps with Spotlight) -->
-      <div id="gallery-grid" class="gallery-grid" style="display: none;"></div>
-    </div>
+    <!-- REGION I: SPOTLIGHT FRAME (UPPER STAGE RIGHT) -->
+    <section id="spotlight-frame">
+      <div class="spotlight-media">
+        <img id="spotlight-img" src="./Projects/torky-t-hero.jpg" alt="Featured Build">
+      </div>
+      <div class="spotlight-caption">
+        <span id="hero-badge" class="badge badge-project">FEATURED SHOWCASE</span>
+        <h2 id="spotlight-title">Torky-T</h2>
+        <p id="spotlight-desc" class="spotlight-tagline">1923 Ford T-Bucket featuring a built 350 SBC, Quick Fuel 750, Don Zig serviced Vertex magneto, TH350, and 9-inch rear axle.</p>
+      </div>
+    </section>
   </main>
 
-  <script src="gallery-loader.js"></script>
+  <!-- LOWER GRID: FULL-WIDTH 4-COLUMN CARD GALLERY (BELOW UPPER STAGE) -->
+  <section id="gallery-grid" class="card-grid"></section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>&copy; Dream To Build — All Rights Reserved</p>
+  </footer>
+
+  <!-- GALLERY LOADER SCRIPT -->
+  <script src="js/gallery-loader.js"></script>
 </body>
 </html>
