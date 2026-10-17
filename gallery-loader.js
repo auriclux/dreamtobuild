@@ -1,5 +1,5 @@
 /* ==========================================================================
-   DREAM TO BUILD — GALLERY LOADER (ROBUST TIMING & EVENT-DELEGATED)
+   DREAM TO BUILD — GALLERY LOADER (ROBUST TIMING & ERROR DEBUGGING)
    ========================================================================== */
 
 function initGalleryLoader() {
@@ -47,7 +47,6 @@ function initGalleryLoader() {
     linkUrl: "#"
   };
 
-  // DOM Elements
   const heroImg = document.getElementById("hero-img") || document.getElementById("spotlight-img");
   const heroTitle = document.getElementById("hero-title") || document.getElementById("spotlight-title");
   const heroBadge = document.getElementById("hero-badge");
@@ -119,7 +118,7 @@ function initGalleryLoader() {
 
     try {
       const res = await fetch(`${meta.dataFile}?v=${Date.now()}`);
-      if (!res.ok) throw new Error(`HTTP ${res.status} fetching ${meta.dataFile}`);
+      if (!res.ok) throw new Error(`HTTP ${res.status} (${res.statusText}) fetching ${meta.dataFile}`);
       const rawData = await res.json();
 
       galleryGrid.innerHTML = "";
@@ -130,7 +129,7 @@ function initGalleryLoader() {
 
       if (items.length === 0) {
         galleryGrid.style.display = "block";
-        galleryGrid.innerHTML = `<p class="info">No assets found in ${folderType}.</p>`;
+        galleryGrid.innerHTML = `<p class="info">No valid items found in ${meta.dataFile}.</p>`;
         return;
       }
 
@@ -141,7 +140,6 @@ function initGalleryLoader() {
         return dateB - dateA;
       });
 
-      // Update spotlight with newest item
       if (items[0]) {
         const newest = items[0];
         setHero({
@@ -180,7 +178,8 @@ function initGalleryLoader() {
     } catch (err) {
       console.error(`Error loading assets for ${folderType}:`, err);
       galleryGrid.style.display = "block";
-      galleryGrid.innerHTML = `<p class="error">Unable to load assets for ${folderType}.</p>`;
+      galleryGrid.style.color = "#ff6b6b";
+      galleryGrid.innerHTML = `<p class="error"><strong>JSON/Fetch Error in ${folderType}:</strong> ${escapeHtml(err.message)}</p>`;
     }
   }
 
@@ -238,7 +237,6 @@ function initGalleryLoader() {
   syncViewWithRoute();
 }
 
-// Execute immediately if DOM is ready, otherwise wait
 if (document.readyState === "loading") {
   document.addEventListener("DOMContentLoaded", initGalleryLoader);
 } else {
