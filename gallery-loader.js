@@ -1,5 +1,5 @@
 /* ==========================================================================
-   DREAM TO BUILD — GALLERY LOADER (WIREFRAME COMPLIANT)
+   DREAM TO BUILD — GALLERY LOADER (WIREFRAME COMPLIANT & EVENT-DELEGATED)
    ========================================================================== */
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -103,7 +103,8 @@ document.addEventListener("DOMContentLoaded", () => {
     activeCategory = folderType;
 
     branchBtns.forEach(b => {
-      if (b.getAttribute("data-type") === folderType) {
+      const type = b.getAttribute("data-type");
+      if (type === folderType) {
         b.classList.add("active");
       } else {
         b.classList.remove("active");
@@ -194,7 +195,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Sidebar Button Delegation
+  // Sidebar Button Delegation (Handles clicks on inner images/spans)
   branchBtns.forEach(btn => {
     const folderType = btn.getAttribute("data-type");
     if (folderType === "Home") return;
@@ -211,7 +212,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     btn.addEventListener("click", (e) => {
       e.preventDefault();
-      loadCategory(folderType, true);
+      const targetBtn = e.target.closest(".branch-btn");
+      const type = targetBtn ? targetBtn.getAttribute("data-type") : folderType;
+      if (type && type !== "Home") {
+        loadCategory(type, true);
+      }
     });
   });
 
