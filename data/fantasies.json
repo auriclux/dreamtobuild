@@ -1,126 +1,115 @@
 [
   {
-    "id": "fabian-buick-wagon",
-    "title": "Fabian's Buick Estate Wagon",
-    "subtitle": "Lowrider & Custom Stance Exploration",
+    "_meta": {
+      "file": "data/fantasies.json",
+      "description": "Dream To Build — Pure Vision Visual Explorations & Styling Studies",
+      "schemaVersion": "1.0",
+      "lastUpdated": "2026-10-16T17:10:00"
+    }
+  },
+  {
+    "id": "wicked-j-gtr",
+    "title": "Wicked J GTR Concept",
+    "subtitle": "1951 Henry J TDI Transverse Track Weapon",
     "category": "Fantasies",
     "badgeText": "Pure Vision",
     "badgeType": "badge-fantasy",
-    "summary": "LS3 swap, bagged stance, shaved suicide doors, and dual custom/lowrider paint directions.",
-    "thumb": "Fantasies/fabian-buick-wagon-custom.jpg",
-    "heroImage": "Fantasies/fabian-buick-wagon-custom.jpg",
-    "thumbnail": "Fantasies/fabian-buick-wagon-custom.jpg",
-    "detailUrl": "detail.html?type=fantasies&id=fabian-buick-wagon",
-    "tags": ["Buick", "Wagon", "LS3", "Bagged", "Suicide Doors", "Lowrider"],
+    "summary": "A radical track-focused restomod concept dropping a high-output 1.9L TDI turbodiesel and 02M 6-speed transmission into a flared 1951 Henry J shell.",
+    "thumb": "Fantasies/Henry J striped.png",
+    "heroImage": "Fantasies/Henry J striped.png",
+    "thumbnail": "Fantasies/Henry J striped.png",
+    "detailUrl": "detail.html?type=fantasies&id=wicked-j-gtr",
+    "tags": ["Kaiser", "Henry J", "TDI", "VW 02M", "6-Speed", "GTR", "Track Weapon", "Turbo Diesel"],
     "specifications": {
-      "year": "1970",
-      "make": "Buick",
-      "model": "Estate Wagon",
-      "engine": "LS3 V8",
-      "suspension": "Air Ride / Bagged",
-      "status": "Render Concept",
-      "dateAdded": "2026-09-27T12:00:00"
+      "year": "1951",
+      "make": "Kaiser-Frazer",
+      "model": "Henry J GTR",
+      "engine": "1.9L TDI Turbodiesel (High Boost)",
+      "transmission": "VW 02M 6-Speed Manual",
+      "chassis": "Custom Tube Space Frame w/ Track Geometry",
+      "status": "Render Concept Study",
+      "dateAdded": "2026-10-16T17:10:00"
     },
     "narrative": [
-      "LS3 swap, bagged stance, shaved suicide doors, and dual custom/lowrider paint directions.",
-      "A high-concept exploration into long-roof styling, blending classic Buick cruiser lines with modern air-ride geometry and striking custom paint schemes."
+      "The 'Wicked J GTR' explores taking one of America's original economy compacts—the 1951 Henry J—and transforming it into an ultra-agile, high-torque track beast.",
+      "Underneath the aggressively widened fenders sits a tuned 1.9L TDI turbodiesel engine backed by a VW 02M 6-speed manual transmission, offering extreme low-end torque and bulletproof gearing in a featherweight chassis.",
+      "Featured here in two distinct visual directions: an iconic classic racing-striped livery and a high-visibility 'Toxic' track specification."
     ],
     "gallery": [
-      "Fantasies/fabian-buick-wagon-custom.jpg",
-      "Fantasies/fabian-buick-wagon-urban.jpg"
+      {
+        "url": "Fantasies/Henry J striped.png",
+        "caption": "Wicked J GTR — Heritage Motorsport Livery with dual center stripes and aggressively radiused wheel arches."
+      },
+      {
+        "url": "Fantasies/Henry J toxic.png",
+        "caption": "Wicked J GTR — 'Toxic Green' Track Spec showcasing maximum aero stance and wide-bore side exhaust setup."
+      }
     ],
     "featured": true
   },
   {
-    "id": "evans-ride-riviera",
-    "title": "Evan's Ride: Boattail Riviera Concept",
-    "subtitle": "Modern Tailored Muscle & Sweeping Lines",
+    "id": "1939-ford-coe-rv",
+    "title": "1939 Ford COE Carnivore RV Restomod",
+    "subtitle": "Supercharged 5.2L Long-Haul Overland Hauler",
     "category": "Fantasies",
     "badgeText": "Pure Vision",
     "badgeType": "badge-fantasy",
-    "summary": "Design explorations centered around the iconic Boattail Buick Riviera chassis.",
-    "thumb": "Fantasies/evans-ride-rivvy-1.jpg",
-    "heroImage": "Fantasies/evans-ride-rivvy-1.jpg",
-    "thumbnail": "Fantasies/evans-ride-rivvy-1.jpg",
-    "detailUrl": "detail.html?type=fantasies&id=evans-ride-riviera",
-    "tags": ["Buick", "Riviera", "Boattail", "Concept", "Classic"],
+    "summary": "A 1939 Ford Cab-Over-Engine RV restomod powered by a supercharged 5.2L Carnivore V8 (720 hp / 640 lb-ft) and 10R140 10-speed transmission, engineered specifically for high-speed desert blasts and steep mountain passes.",
+    "thumb": "Fantasies/1939 Ford COE RV.jpg",
+    "heroImage": "Fantasies/1939 Ford COE RV.jpg",
+    "thumbnail": "Fantasies/1939 Ford COE RV.jpg",
+    "detailUrl": "detail.html?type=fantasies&id=1939-ford-coe-rv",
+    "tags": ["Ford", "COE", "1939", "RV", "Carnivore V8", "Supercharged", "10R140", "Restomod", "Overland"],
     "specifications": {
-      "year": "1971",
-      "make": "Buick",
-      "model": "Riviera",
-      "engine": "Concept Powertrain",
-      "suspension": "Custom Lowered Stance",
-      "status": "Render Concept",
-      "dateAdded": "2026-09-27T12:00:00"
+      "year": "1939",
+      "make": "Ford",
+      "model": "COE Custom RV Restomod",
+      "engine": "Supercharged 5.2L 'Carnivore' V8 (720 hp / 640 lb-ft)",
+      "transmission": "Ford 10R140 TorqShift 10-Speed Automatic",
+      "chassis": "Custom Boxed Chassis w/ IFS & Coilovers",
+      "status": "Render Concept Study",
+      "dateAdded": "2026-10-11T16:40:00"
     },
     "narrative": [
-      "Design explorations centered around the iconic Boattail Buick Riviera chassis.",
-      "Highlighting the extreme rear fastback profile and boat-tail decklid contouring with aggressive fitment and refined brightwork."
+      "Forged from the bones of a 1939 Ford COE, the heart of this restomod is Ford’s supercharged 5.2-liter Carnivore V8 delivering 640 lb-ft of torque and 720 horsepower managed by Ford’s heavy-duty 10R140 TorqShift 10-speed automatic transmission, delivering lightning-fast gear changes and relentless acceleration without missing a beat under load.",
+      "Riding on a custom boxed chassis fitted with independent front suspension and adjustable coil-over shocks, the rig is built for effortless highway cruising and confident mountain ascents. It's spec'd directly for purpose-driven long-haul runs out of Los Angeles: effortlessly holding pace during high-speed desert blasts to Las Vegas, tackling the steep grade and sub-zero conditions on ski trips up to Mammoth, or carving through the sweepers along Highway 395 and the Pacific Coast Highway. Engineering precision meets raw, unstoppable capability."
     ],
     "gallery": [
-      "Fantasies/evans-ride-rivvy-1.jpg"
+      "Fantasies/1939 Ford COE RV.jpg"
     ],
     "featured": true
   },
   {
-    "id": "nimr-camaro-trophy-truck",
-    "title": "Nimr: Mid-Engine Camaro Trophy Truck",
-    "subtitle": "Extreme Off-Road Performance Fusion",
+    "id": "torino-talladega-transaxle",
+    "title": "The Talladega Transaxle: '69 Mid-Engine Concept",
+    "subtitle": "The Cancelled '69 Supercar Study",
     "category": "Fantasies",
     "badgeText": "Pure Vision",
     "badgeType": "badge-fantasy",
-    "summary": "A mid-engine, trophy-truck-based concept merging a Camaro body shell with extreme off-road capability.",
-    "thumb": "Fantasies/nimr-camaro.jpg",
-    "heroImage": "Fantasies/nimr-camaro.jpg",
-    "thumbnail": "Fantasies/nimr-camaro.jpg",
-    "detailUrl": "detail.html?type=fantasies&id=nimr-camaro-trophy-truck",
-    "tags": ["Chevy", "Camaro", "Mid-Engine", "Trophy Truck", "Offroad"],
+    "summary": "A radical, mid-engine concept fusing Ford's low-drag 1969 Torino Talladega aero nose with a mid-mounted 427 'Cammer' SOHC V8 and GT40 Hewland transaxle.",
+    "thumb": "Fantasies/1969 Torino Talledega Supercar dynamic.jpg",
+    "heroImage": "Fantasies/1969 Torino Talledega Supercar dynamic.jpg",
+    "thumbnail": "Fantasies/1969 Torino Talledega Supercar dynamic.jpg",
+    "detailUrl": "detail.html?type=fantasies&id=torino-talladega-transaxle",
+    "tags": ["Ford", "Torino", "Talladega", "Cammer", "427 SOHC", "Mid-Engine", "Hewland", "GT40"],
     "specifications": {
       "year": "1969",
-      "make": "Chevrolet",
-      "model": "Camaro",
-      "engine": "Mid-Engine V8",
-      "suspension": "Long-Travel Trophy Truck",
-      "status": "Render Concept",
-      "dateAdded": "2026-09-27T12:00:00"
+      "make": "Ford",
+      "model": "Torino Talladega T-Transaxle",
+      "engine": "7.0L (427 ci) 'Cammer' SOHC V8 (Mid-Ship)",
+      "transaxle": "Hewland LG 4-Speed Manual",
+      "status": "Alternate History Concept Study",
+      "dateAdded": "2026-10-11T16:09:00"
     },
     "narrative": [
-      "A mid-engine, trophy-truck-based concept merging a classic Camaro shell with extreme off-road capability.",
-      "Built over an all-terrain tube chassis designed to soak up desert high-speed runs while keeping muscle car proportions."
+      "<em><strong>HISTORICAL DISCLAIMER:</strong> This vehicle concept, narrative, and historical background are entirely fictional. 'Project 69-M' is an alternate-history design study exploring a 'what if' crossover between Ford's NASCAR aero program and Le Mans mid-engine architecture.</em>",
+      "This single prototype is all that remains of 'Project 69-M,' Ford's radical, black-budget attempt to rewrite the rules of both NASCAR and the street. The concept was a direct fusion: take the low-drag, extended nose and flush grille of the homologation-bound 1969 Torino Talladega and mount it on a mid-engine chassis.",
+      "While the race cars would always be front-engine (NASCAR rules demanded it), Ford planned to sell 500 mid-engine 'T-Transaxles' as a production vehicle, creating an exotic 'aero-king' to beat Ferrari on the street and Dodge on the high banks. The large mid-body intakes, seen on the production C8 Corvette-like profile, were designed to feed a planned massive mid-ship powertrain.",
+      "To explain its mid-engine architecture, Ford engineers created the ultimate 'what if' setup: They took a race-ready 7.0-liter (427 cu in) Ford 'Cammer' SOHC V8, but instead of mounting it in the front, they reversed it, mounting it directly behind the driver. The original Ford Toploader transmission was scrapped. Instead, the 'Cammer' was mated to a custom-cast, heavy-duty Hewland LG transaxle—the same reliable box used in Ford's GT40 program.",
+      "This '69 prototype, thus, wasn't just a styling exercise; it was an authentic integration of Ford's two greatest performance eras, pairing the high-drag oval-track nose with the mid-ship transaxle of Le Mans. The modern, 5-spoke alloys and updated side intakes were added decades later during a modern sympathetic restoration, preparing it for a single, high-speed test run on the gravel road of the skunkworks' private facility."
     ],
     "gallery": [
-      "Fantasies/nimr-camaro.jpg"
-    ],
-    "featured": true
-  },
-  {
-    "id": "blown-gremlin",
-    "title": "Blown '70 Gremlin",
-    "subtitle": "Bridge Donut & Blower Study",
-    "category": "Fantasies",
-    "badgeText": "Pure Vision",
-    "badgeType": "badge-fantasy",
-    "summary": "This was a quick study of a '70 Gremlin doing donuts on the 7th Street Bridge. SBC with a 6-71.",
-    "thumb": "Fantasies/blown-gremlin.png",
-    "heroImage": "Fantasies/blown-gremlin.png",
-    "thumbnail": "Fantasies/blown-gremlin.png",
-    "detailUrl": "detail.html?type=fantasies&id=blown-gremlin",
-    "tags": ["AMC", "Gremlin", "SBC", "6-71", "Supercharged", "Street Concept"],
-    "specifications": {
-      "year": "1970",
-      "make": "AMC",
-      "model": "Gremlin",
-      "engine": "SBC w/ 6-71 Blower",
-      "suspension": "Street / Drag Stance",
-      "status": "Render Concept",
-      "dateAdded": "2026-09-27T12:00:00"
-    },
-    "narrative": [
-      "This was a quick study of a '70 Gremlin doing donuts on the 7th Street Bridge. SBC with a 6-71.",
-      "A short-wheelbase riot featuring high-rise forced induction, street-drag rake, and aggressive rubber."
-    ],
-    "gallery": [
-      "Fantasies/blown-gremlin.png"
+      "Fantasies/1969 Torino Talledega Supercar dynamic.jpg"
     ],
     "featured": true
   },
@@ -174,68 +163,127 @@
     "featured": true
   },
   {
-    "id": "torino-talladega-transaxle",
-    "title": "The Talladega Transaxle: '69 Mid-Engine Concept",
-    "subtitle": "The Cancelled '69 Supercar Study",
+    "id": "blown-gremlin",
+    "title": "Blown '70 Gremlin",
+    "subtitle": "Bridge Donut & Blower Study",
     "category": "Fantasies",
     "badgeText": "Pure Vision",
     "badgeType": "badge-fantasy",
-    "summary": "A radical, mid-engine concept fusing Ford's low-drag 1969 Torino Talladega aero nose with a mid-mounted 427 'Cammer' SOHC V8 and GT40 Hewland transaxle.",
-    "thumb": "Fantasies/1969 Torino Talledega Supercar dynamic.jpg",
-    "heroImage": "Fantasies/1969 Torino Talledega Supercar dynamic.jpg",
-    "thumbnail": "Fantasies/1969 Torino Talledega Supercar dynamic.jpg",
-    "detailUrl": "detail.html?type=fantasies&id=torino-talladega-transaxle",
-    "tags": ["Ford", "Torino", "Talladega", "Cammer", "427 SOHC", "Mid-Engine", "Hewland", "GT40"],
+    "summary": "This was a quick study of a '70 Gremlin doing donuts on the 7th Street Bridge. SBC with a 6-71.",
+    "thumb": "Fantasies/blown-gremlin.png",
+    "heroImage": "Fantasies/blown-gremlin.png",
+    "thumbnail": "Fantasies/blown-gremlin.png",
+    "detailUrl": "detail.html?type=fantasies&id=blown-gremlin",
+    "tags": ["AMC", "Gremlin", "SBC", "6-71", "Supercharged", "Street Concept"],
     "specifications": {
-      "year": "1969",
-      "make": "Ford",
-      "model": "Torino Talladega T-Transaxle",
-      "engine": "7.0L (427 ci) 'Cammer' SOHC V8 (Mid-Ship)",
-      "transaxle": "Hewland LG 4-Speed Manual",
-      "status": "Alternate History Concept Study",
-      "dateAdded": "2026-10-11T16:09:00"
+      "year": "1970",
+      "make": "AMC",
+      "model": "Gremlin",
+      "engine": "SBC w/ 6-71 Blower",
+      "suspension": "Street / Drag Stance",
+      "status": "Render Concept",
+      "dateAdded": "2026-09-27T12:00:00"
     },
     "narrative": [
-      "<em><strong>HISTORICAL DISCLAIMER:</strong> This vehicle concept, narrative, and historical background are entirely fictional. 'Project 69-M' is an alternate-history design study exploring a 'what if' crossover between Ford's NASCAR aero program and Le Mans mid-engine architecture.</em>",
-      "This single prototype is all that remains of 'Project 69-M,' Ford's radical, black-budget attempt to rewrite the rules of both NASCAR and the street. The concept was a direct fusion: take the low-drag, extended nose and flush grille of the homologation-bound 1969 Torino Talladega and mount it on a mid-engine chassis.",
-      "While the race cars would always be front-engine (NASCAR rules demanded it), Ford planned to sell 500 mid-engine 'T-Transaxles' as a production vehicle, creating an exotic 'aero-king' to beat Ferrari on the street and Dodge on the high banks. The large mid-body intakes, seen on the production C8 Corvette-like profile, were designed to feed a planned massive mid-ship powertrain.",
-      "To explain its mid-engine architecture, Ford engineers created the ultimate 'what if' setup: They took a race-ready 7.0-liter (427 cu in) Ford 'Cammer' SOHC V8, but instead of mounting it in the front, they reversed it, mounting it directly behind the driver. The original Ford Toploader transmission was scrapped. Instead, the 'Cammer' was mated to a custom-cast, heavy-duty Hewland LG transaxle—the same reliable box used in Ford's GT40 program.",
-      "This '69 prototype, thus, wasn't just a styling exercise; it was an authentic integration of Ford's two greatest performance eras, pairing the high-drag oval-track nose with the mid-ship transaxle of Le Mans. The modern, 5-spoke alloys and updated side intakes were added decades later during a modern sympathetic restoration, preparing it for a single, high-speed test run on the gravel road of the skunkworks' private facility."
+      "This was a quick study of a '70 Gremlin doing donuts on the 7th Street Bridge. SBC with a 6-71.",
+      "A short-wheelbase riot featuring high-rise forced induction, street-drag rake, and aggressive rubber."
     ],
     "gallery": [
-      "Fantasies/1969 Torino Talledega Supercar dynamic.jpg"
+      "Fantasies/blown-gremlin.png"
     ],
     "featured": true
   },
   {
-    "id": "1939-ford-coe-rv",
-    "title": "1939 Ford COE Carnivore RV Restomod",
-    "subtitle": "Supercharged 5.2L Long-Haul Overland Hauler",
+    "id": "nimr-camaro-trophy-truck",
+    "title": "Nimr: Mid-Engine Camaro Trophy Truck",
+    "subtitle": "Extreme Off-Road Performance Fusion",
     "category": "Fantasies",
     "badgeText": "Pure Vision",
     "badgeType": "badge-fantasy",
-    "summary": "A 1939 Ford Cab-Over-Engine RV restomod powered by a supercharged 5.2L Carnivore V8 (720 hp / 640 lb-ft) and 10R140 10-speed transmission, engineered specifically for high-speed desert blasts and steep mountain passes.",
-    "thumb": "Fantasies/1939 Ford COE RV.jpg",
-    "heroImage": "Fantasies/1939 Ford COE RV.jpg",
-    "thumbnail": "Fantasies/1939 Ford COE RV.jpg",
-    "detailUrl": "detail.html?type=fantasies&id=1939-ford-coe-rv",
-    "tags": ["Ford", "COE", "1939", "RV", "Carnivore V8", "Supercharged", "10R140", "Restomod", "Overland"],
+    "summary": "A mid-engine, trophy-truck-based concept merging a Camaro body shell with extreme off-road capability.",
+    "thumb": "Fantasies/nimr-camaro.jpg",
+    "heroImage": "Fantasies/nimr-camaro.jpg",
+    "thumbnail": "Fantasies/nimr-camaro.jpg",
+    "detailUrl": "detail.html?type=fantasies&id=nimr-camaro-trophy-truck",
+    "tags": ["Chevy", "Camaro", "Mid-Engine", "Trophy Truck", "Offroad"],
     "specifications": {
-      "year": "1939",
-      "make": "Ford",
-      "model": "COE Custom RV Restomod",
-      "engine": "Supercharged 5.2L 'Carnivore' V8 (720 hp / 640 lb-ft)",
-      "transmission": "Ford 10R140 TorqShift 10-Speed Automatic",
-      "chassis": "Custom Boxed Chassis w/ IFS & Coilovers",
-      "status": "Render Concept Study",
-      "dateAdded": "2026-10-11T16:40:00"
+      "year": "1969",
+      "make": "Chevrolet",
+      "model": "Camaro",
+      "engine": "Mid-Engine V8",
+      "suspension": "Long-Travel Trophy Truck",
+      "status": "Render Concept",
+      "dateAdded": "2026-09-27T12:00:00"
     },
     "narrative": [
-      "Forged from the bones of a 1939 Ford COE, the heart of this restomod is Ford’s supercharged 5.2-liter Carnivore V8 delivering 640 lb-ft of torque and 720 horsepower managed by Ford’s heavy-duty 10R140 TorqShift 10-speed automatic transmission, delivering lightning-fast gear changes and relentless acceleration without missing a beat under load.",
-      "Riding on a custom boxed chassis fitted with independent front suspension and adjustable coil-over shocks, the rig is built for effortless highway cruising and confident mountain ascents. It's spec'd directly for purpose-driven long-haul runs out of Los Angeles: effortlessly holding pace during high-speed desert blasts to Las Vegas, tackling the steep grade and sub-zero conditions on ski trips up to Mammoth, or carving through the sweepers along Highway 395 and the Pacific Coast Highway. Engineering precision meets raw, unstoppable capability."
+      "A mid-engine, trophy-truck-based concept merging a classic Camaro shell with extreme off-road capability.",
+      "Built over an all-terrain tube chassis designed to soak up desert high-speed runs while keeping muscle car proportions."
     ],
     "gallery": [
-      "Fantasies/1939 Ford COE RV.jpg"
+      "Fantasies/nimr-camaro.jpg"
+    ],
+    "featured": true
+  },
+  {
+    "id": "evans-ride-riviera",
+    "title": "Evan's Ride: Boattail Riviera Concept",
+    "subtitle": "Modern Tailored Muscle & Sweeping Lines",
+    "category": "Fantasies",
+    "badgeText": "Pure Vision",
+    "badgeType": "badge-fantasy",
+    "summary": "Design explorations centered around the iconic Boattail Buick Riviera chassis.",
+    "thumb": "Fantasies/evans-ride-rivvy-1.jpg",
+    "heroImage": "Fantasies/evans-ride-rivvy-1.jpg",
+    "thumbnail": "Fantasies/evans-ride-rivvy-1.jpg",
+    "detailUrl": "detail.html?type=fantasies&id=evans-ride-riviera",
+    "tags": ["Buick", "Riviera", "Boattail", "Concept", "Classic"],
+    "specifications": {
+      "year": "1971",
+      "make": "Buick",
+      "model": "Riviera",
+      "engine": "Concept Powertrain",
+      "suspension": "Custom Lowered Stance",
+      "status": "Render Concept",
+      "dateAdded": "2026-09-27T12:00:00"
+    },
+    "narrative": [
+      "Design explorations centered around the iconic Boattail Buick Riviera chassis.",
+      "Highlighting the extreme rear fastback profile and boat-tail decklid contouring with aggressive fitment and refined brightwork."
+    ],
+    "gallery": [
+      "Fantasies/evans-ride-rivvy-1.jpg"
+    ],
+    "featured": true
+  },
+  {
+    "id": "fabian-buick-wagon",
+    "title": "Fabian's Buick Estate Wagon",
+    "subtitle": "Lowrider & Custom Stance Exploration",
+    "category": "Fantasies",
+    "badgeText": "Pure Vision",
+    "badgeType": "badge-fantasy",
+    "summary": "LS3 swap, bagged stance, shaved suicide doors, and dual custom/lowrider paint directions.",
+    "thumb": "Fantasies/fabian-buick-wagon-custom.jpg",
+    "heroImage": "Fantasies/fabian-buick-wagon-custom.jpg",
+    "thumbnail": "Fantasies/fabian-buick-wagon-custom.jpg",
+    "detailUrl": "detail.html?type=fantasies&id=fabian-buick-wagon",
+    "tags": ["Buick", "Wagon", "LS3", "Bagged", "Suicide Doors", "Lowrider"],
+    "specifications": {
+      "year": "1970",
+      "make": "Buick",
+      "model": "Estate Wagon",
+      "engine": "LS3 V8",
+      "suspension": "Air Ride / Bagged",
+      "status": "Render Concept",
+      "dateAdded": "2026-09-27T12:00:00"
+    },
+    "narrative": [
+      "LS3 swap, bagged stance, shaved suicide doors, and dual custom/lowrider paint directions.",
+      "A high-concept exploration into long-roof styling, blending classic Buick cruiser lines with modern air-ride geometry and striking custom paint schemes."
+    ],
+    "gallery": [
+      "Fantasies/fabian-buick-wagon-custom.jpg",
+      "Fantasies/fabian-buick-wagon-urban.jpg"
     ],
     "featured": true
   }
