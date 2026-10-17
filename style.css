@@ -35,38 +35,9 @@ body {
   font-family: var(--font-mono);
   line-height: 1.6;
   padding: 24px;
-  max-width: 1280px;
+  max-width: 1320px;
   margin: 0 auto;
   -webkit-font-smoothing: antialiased;
-}
-
-/* HIGH-VISIBILITY BACK BUTTON */
-.back-link,
-#detail-back-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-family: var(--font-mono);
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--accent-cyan);
-  background-color: rgba(56, 189, 248, 0.12);
-  border: 1px solid rgba(56, 189, 248, 0.4);
-  padding: 0.6rem 1.2rem;
-  border-radius: 6px;
-  text-decoration: none;
-  letter-spacing: 0.05em;
-  transition: all 0.2s ease-in-out;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-}
-
-.back-link:hover,
-#detail-back-btn:hover {
-  color: #ffffff;
-  background-color: var(--accent-cyan);
-  border-color: var(--accent-cyan);
-  box-shadow: 0 0 14px rgba(56, 189, 248, 0.6);
-  transform: translateX(-3px);
 }
 
 /* BRAND HEADER - WIREFRAME TOP TITLE BAR */
@@ -111,29 +82,27 @@ body {
   text-transform: uppercase;
 }
 
-.site-tagline,
-.tagline {
+.site-tagline {
   color: var(--text-muted);
   font-family: 'Times New Roman', Times, serif;
   font-style: italic;
   font-size: 0.95rem;
-  letter-spacing: 0.5px;
   margin-top: 4px;
   text-align: center;
 }
 
-/* WIREFRAME UPPER STAGE LAYOUT (NAV + HERO SPOTLIGHT) */
+/* UPPER STAGE LAYOUT (NAV SIDEBAR LEFT + SPOTLIGHT FRAME RIGHT) */
 .main-layout {
   display: flex;
   gap: 24px;
-  align-items: flex-start;
+  align-items: stretch;
   width: 100%;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 
-/* REGION N: NAVIGATOR SIDEBAR (FIXED SIZE) */
+/* REGION N: NAVIGATOR SIDEBAR */
 .sidebar-nav {
-  width: 260px;
+  width: 280px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
@@ -156,7 +125,13 @@ body {
   padding-bottom: 4px;
 }
 
-.branch-btn,
+.nav-thumb-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* TEXT BUTTONS (HOME & ABOUT) */
 .nav-text-link {
   display: block;
   background-color: var(--bg-color);
@@ -168,12 +143,9 @@ body {
   font-size: 0.85rem;
   font-weight: 600;
   transition: all 0.2s ease;
-  cursor: pointer;
   text-align: left;
 }
 
-.branch-btn:hover,
-.branch-btn.active,
 .nav-text-link:hover,
 .nav-text-link.active {
   background-color: var(--panel-hover);
@@ -181,34 +153,55 @@ body {
   color: #ffffff;
 }
 
-/* NAV THUMBNAIL COMPACT LIST */
-.nav-thumb-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
+/* RICH THUMBNAIL BUTTONS (PROJECTS, DREAMS, FANTASIES) */
 .nav-thumb-item {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   background-color: var(--bg-color);
   border: 1px solid var(--border-color);
   border-radius: 4px;
-  padding: 6px;
+  padding: 8px;
   text-decoration: none;
   color: var(--text-main);
   transition: all 0.2s ease;
 }
 
 .nav-thumb-item img {
-  width: 50px;
-  height: 50px;
-  max-width: 50px;
-  max-height: 50px;
+  width: 48px;
+  height: 48px;
   object-fit: cover;
-  border-radius: 3px;
+  border-radius: 4px;
   flex-shrink: 0;
+}
+
+.nav-thumb-info {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.nav-thumb-title {
+  font-family: var(--font-to);
+  font-size: 0.9rem;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.nav-thumb-sub {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nav-thumb-item:hover,
+.nav-thumb-item.active {
+  background-color: var(--panel-hover);
+  border-color: var(--accent-cyan);
 }
 
 /* REGION I: MAIN HERO SPOTLIGHT FRAME */
@@ -225,7 +218,7 @@ body {
 
 .spotlight-media {
   width: 100%;
-  height: 480px;
+  height: 440px;
   background-color: #050608;
   display: flex;
   align-items: center;
@@ -259,18 +252,14 @@ body {
   color: var(--text-muted);
 }
 
-/* WIREFRAME BELOW-STAGE 4-COLUMN GALLERY GRID */
-#gallery-grid {
-  width: 100%;
-  margin-top: 20px;
-}
-
-#gallery-grid.grid-active,
+/* LOWER GRID: WIREFRAME 4-COLUMN CARD GALLERY (BELOW STAGE) */
+#gallery-grid,
 .card-grid {
   display: grid !important;
   grid-template-columns: repeat(4, 1fr) !important;
   gap: 20px !important;
   width: 100% !important;
+  margin-top: 10px;
 }
 
 /* CARD ITEM STYLING */
@@ -328,16 +317,14 @@ article.card-3wide {
   flex-grow: 1;
 }
 
-.card-title,
-.card-body h3 {
+.card-title {
   font-family: var(--font-to);
   font-size: 0.95rem;
   color: #ffffff;
   line-height: 1.3;
 }
 
-.card-subtitle,
-.card-body p {
+.card-subtitle {
   font-size: 0.78rem;
   color: var(--text-muted);
   line-height: 1.4;
@@ -357,61 +344,10 @@ article.card-3wide {
   z-index: 2;
 }
 
-.badge-project {
-  background-color: var(--accent-green);
-  color: #000000;
-}
-
-.badge-dream {
-  background-color: var(--accent-purple);
-  color: #ffffff;
-}
-
-.badge-fantasy {
-  background-color: var(--accent-gold);
-  color: #000000;
-}
-
-.badge-about {
-  background-color: var(--accent-cyan);
-  color: #000000;
-}
-
-/* DETAIL ARTICLE STYLING */
-.detail-container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.hero-image-wrapper {
-  width: 100%;
-  height: 480px;
-  background-color: #050608;
-  border-radius: 6px;
-  border: 1px solid var(--border-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.hero-image-wrapper img {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-}
-
-.specs-section,
-.narrative-section,
-.gallery-section {
-  background-color: var(--panel-bg);
-  padding: 1.5rem;
-  border-radius: 6px;
-  border: 1px solid var(--border-color);
-  margin-top: 20px;
-}
+.badge-project { background-color: var(--accent-green); color: #000; }
+.badge-dream { background-color: var(--accent-purple); color: #fff; }
+.badge-fantasy { background-color: var(--accent-gold); color: #000; }
+.badge-about { background-color: var(--accent-cyan); color: #000; }
 
 /* FOOTER */
 .site-footer {
@@ -426,7 +362,7 @@ article.card-3wide {
 
 /* RESPONSIVE BREAKPOINTS */
 @media (max-width: 1100px) {
-  #gallery-grid.grid-active,
+  #gallery-grid,
   .card-grid {
     grid-template-columns: repeat(3, 1fr) !important;
   }
@@ -436,19 +372,17 @@ article.card-3wide {
   .main-layout {
     flex-direction: column;
   }
-  
   .sidebar-nav {
     width: 100%;
   }
-
-  #gallery-grid.grid-active,
+  #gallery-grid,
   .card-grid {
     grid-template-columns: repeat(2, 1fr) !important;
   }
 }
 
 @media (max-width: 550px) {
-  #gallery-grid.grid-active,
+  #gallery-grid,
   .card-grid {
     grid-template-columns: 1fr !important;
   }
