@@ -1,3 +1,7 @@
+/* ==========================================================================
+   DREAM TO BUILD — DETAIL LOADER (SINGLE BUILD & LIGHTBOX)
+   ========================================================================== */
+
 document.addEventListener("DOMContentLoaded", () => {
   // 1. Parse URL Parameters & Dynamic Back Link Anchor Setup
   const urlParams = new URLSearchParams(window.location.search);
@@ -117,13 +121,13 @@ document.addEventListener("DOMContentLoaded", () => {
         if (Array.isArray(narrativeContent)) {
           narrativeContent.forEach(pText => {
             const p = document.createElement("p");
-            p.innerHTML = pText; // Updated to support HTML tags like <em>
+            p.innerHTML = pText;
             narrativeContainer.appendChild(p);
           });
         } else if (typeof narrativeContent === "string" && narrativeContent.trim() !== "") {
           narrativeContent.split("\n\n").forEach(pText => {
             const p = document.createElement("p");
-            p.innerHTML = pText; // Updated to support HTML tags like <em>
+            p.innerHTML = pText;
             narrativeContainer.appendChild(p);
           });
         } else {
