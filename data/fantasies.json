@@ -4,8 +4,70 @@
       "file": "data/fantasies.json",
       "description": "Dream To Build — Pure Vision Visual Explorations & Styling Studies",
       "schemaVersion": "1.0",
-      "lastUpdated": "2026-10-17T15:00:00"
+      "lastUpdated": "2026-10-17T15:20:00"
     }
+  },
+  {
+    "id": "1950-plymouth-suburban",
+    "title": "1950 Plymouth Suburban Station Wagon",
+    "subtitle": "Early All-Steel Wagon Lowrider & Custom Concept",
+    "category": "Fantasies",
+    "badgeText": "Pure Vision",
+    "badgeType": "badge-fantasy",
+    "summary": "An exploratory design concept reviving Plymouth's iconic 1950 all-steel 2-door wagon with slammed stance, custom brightwork, and modern proportions.",
+    "thumb": "Fantasies/50 Plymouth Suburban.jpg",
+    "heroImage": "Fantasies/50 Plymouth Suburban.jpg",
+    "thumbnail": "Fantasies/50 Plymouth Suburban.jpg",
+    "detailUrl": "detail.html?type=fantasies&id=1950-plymouth-suburban",
+    "tags": ["Plymouth", "Suburban", "Wagon", "1950", "Custom", "Restomod", "Steel Wagon"],
+    "specifications": {
+      "year": "1950",
+      "make": "Plymouth",
+      "model": "Suburban 2-Door Station Wagon",
+      "engine": "Custom Crate Powertrain",
+      "suspension": "Air Ride / Bagged Low Stance",
+      "status": "Render Concept Study",
+      "dateAdded": "2026-10-17T15:15:00"
+    },
+    "narrative": [
+      "The 1950 Plymouth Suburban was a pioneer in American automotive history as one of the first all-steel station wagons brought to market.",
+      "This fantasy concept reimagines the classic 2-door wagon silhouette with modern air suspension geometry, smoothed body contours, and a street-cruiser stance while honoring its vintage chrome grille and fastback roofline."
+    ],
+    "gallery": [
+      "Fantasies/50 Plymouth Suburban.jpg"
+    ],
+    "featured": true
+  },
+  {
+    "id": "1969-chevrolet-suburban",
+    "title": "1969 Chevrolet Suburban Custom Hauler",
+    "subtitle": "3-Door Action Line Pro-Touring & Stance Study",
+    "category": "Fantasies",
+    "badgeText": "Pure Vision",
+    "badgeType": "badge-fantasy",
+    "summary": "A high-concept styling study on the legendary 1969 Action Line 3-door Suburban, featuring tucked big wheels, clean bodywork, and modern muscle attitude.",
+    "thumb": "Fantasies/69 Suburban.jpg",
+    "heroImage": "Fantasies/69 Suburban.jpg",
+    "thumbnail": "Fantasies/69 Suburban.jpg",
+    "detailUrl": "detail.html?type=fantasies&id=1969-chevrolet-suburban",
+    "tags": ["Chevrolet", "Suburban", "1969", "C10", "Action Line", "3-Door", "Pro-Touring"],
+    "specifications": {
+      "year": "1969",
+      "make": "Chevrolet",
+      "model": "Suburban 3-Door",
+      "engine": "Forced Induction V8",
+      "suspension": "Custom Drop Chassis / Coilovers",
+      "status": "Render Concept Study",
+      "dateAdded": "2026-10-17T15:14:00"
+    },
+    "narrative": [
+      "Built on the unique 1967-1972 C10/C20 Action Line 3-door body style (one door on the driver side, two on the passenger side), the 1969 Suburban remains an iconic utility canvas.",
+      "This study examines slamming the heavy-duty hauler over oversized forged wheels, shaving trim for ultra-clean flanks, and delivering pure street-hauler presence."
+    ],
+    "gallery": [
+      "Fantasies/69 Suburban.jpg"
+    ],
+    "featured": true
   },
   {
     "id": "wicked-j-gtr",
@@ -179,119 +241,4 @@
       "year": "1970",
       "make": "AMC",
       "model": "Gremlin",
-      "engine": "SBC w/ 6-71 Blower",
-      "suspension": "Street / Drag Stance",
-      "status": "Render Concept",
-      "dateAdded": "2026-09-27T12:00:00"
-    },
-    "narrative": [
-      "This was a quick study of a '70 Gremlin doing donuts on the 7th Street Bridge. SBC with a 6-71.",
-      "A short-wheelbase riot featuring high-rise forced induction, street-drag rake, and aggressive rubber."
-    ],
-    "gallery": [
-      "Fantasies/blown-gremlin.png"
-    ],
-    "featured": true
-  },
-  {
-    "id": "nimr-camaro-trophy-truck",
-    "title": "Nimr: Mid-Engine Camaro Trophy Truck",
-    "subtitle": "Extreme Off-Road Performance Fusion",
-    "category": "Fantasies",
-    "badgeText": "Pure Vision",
-    "badgeType": "badge-fantasy",
-    "summary": "A mid-engine, trophy-truck-based concept merging a Camaro body shell with extreme off-road capability.",
-    "thumb": "Fantasies/nimr-camaro.jpg",
-    "heroImage": "Fantasies/nimr-camaro.jpg",
-    "thumbnail": "Fantasies/nimr-camaro.jpg",
-    "detailUrl": "detail.html?type=fantasies&id=nimr-camaro-trophy-truck",
-    "tags": ["Chevy", "Camaro", "Mid-Engine", "Trophy Truck", "Offroad"],
-    "specifications": {
-      "year": "1969",
-      "make": "Chevrolet",
-      "model": "Camaro",
-      "engine": "Mid-Engine V8",
-      "suspension": "Long-Travel Trophy Truck",
-      "status": "Render Concept",
-      "dateAdded": "2026-09-27T12:00:00"
-    },
-    "narrative": [
-      "A mid-engine, trophy-truck-based concept merging a classic Camaro shell with extreme off-road capability.",
-      "Built over an all-terrain tube chassis designed to soak up desert high-speed runs while keeping muscle car proportions."
-    ],
-    "gallery": [
-      "Fantasies/nimr-camaro.jpg"
-    ],
-    "featured": true
-  },
-  {
-    "id": "evans-ride-riviera",
-    "title": "Evan's Ride: Boattail Riviera Concept",
-    "subtitle": "Modern Tailored Muscle & Sweeping Lines",
-    "category": "Fantasies",
-    "badgeText": "Pure Vision",
-    "badgeType": "badge-fantasy",
-    "summary": "Design explorations centered around the iconic Boattail Buick Riviera chassis.",
-    "thumb": "Fantasies/evans-ride-rivvy-1.jpg",
-    "heroImage": "Fantasies/evans-ride-rivvy-1.jpg",
-    "thumbnail": "Fantasies/evans-ride-rivvy-1.jpg",
-    "detailUrl": "detail.html?type=fantasies&id=evans-ride-riviera",
-    "tags": ["Buick", "Riviera", "Boattail", "Concept", "Classic"],
-    "specifications": {
-      "year": "1971",
-      "make": "Buick",
-      "model": "Riviera",
-      "engine": "Concept Powertrain",
-      "suspension": "Custom Lowered Stance",
-      "status": "Render Concept",
-      "dateAdded": "2026-09-27T12:00:00"
-    },
-    "narrative": [
-      "Design explorations centered around the iconic Boattail Buick Riviera chassis.",
-      "Highlighting the extreme rear fastback profile and boat-tail decklid contouring with aggressive fitment and refined brightwork."
-    ],
-    "gallery": [
-      {
-        "url": "Fantasies/evans-ride-rivvy-1.jpg",
-        "caption": "Evan's Ride — Boattail Riviera Concept primary profile view."
-      },
-      {
-        "url": "Fantasies/Rivvy and Caprice.jpg",
-        "caption": "Rivvy and Caprice — Sunset coastal stance exploration."
-      }
-    ],
-    "featured": true
-  },
-  {
-    "id": "fabian-buick-wagon",
-    "title": "Fabian's Buick Estate Wagon",
-    "subtitle": "Lowrider & Custom Stance Exploration",
-    "category": "Fantasies",
-    "badgeText": "Pure Vision",
-    "badgeType": "badge-fantasy",
-    "summary": "LS3 swap, bagged stance, shaved suicide doors, and dual custom/lowrider paint directions.",
-    "thumb": "Fantasies/fabian-buick-wagon-custom.jpg",
-    "heroImage": "Fantasies/fabian-buick-wagon-custom.jpg",
-    "thumbnail": "Fantasies/fabian-buick-wagon-custom.jpg",
-    "detailUrl": "detail.html?type=fantasies&id=fabian-buick-wagon",
-    "tags": ["Buick", "Wagon", "LS3", "Bagged", "Suicide Doors", "Lowrider"],
-    "specifications": {
-      "year": "1970",
-      "make": "Buick",
-      "model": "Estate Wagon",
-      "engine": "LS3 V8",
-      "suspension": "Air Ride / Bagged",
-      "status": "Render Concept",
-      "dateAdded": "2026-09-27T12:00:00"
-    },
-    "narrative": [
-      "LS3 swap, bagged stance, shaved suicide doors, and dual custom/lowrider paint directions.",
-      "A high-concept exploration into long-roof styling, blending classic Buick cruiser lines with modern air-ride geometry and striking custom paint schemes."
-    ],
-    "gallery": [
-      "Fantasies/fabian-buick-wagon-custom.jpg",
-      "Fantasies/fabian-buick-wagon-urban.jpg"
-    ],
-    "featured": true
-  }
-]
+      "engine": "S
