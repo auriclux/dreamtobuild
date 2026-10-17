@@ -54,8 +54,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const heroDesc = document.getElementById("hero-desc") || document.getElementById("spotlight-desc");
   const spotlightFrame = document.getElementById("spotlight-frame");
   const galleryGrid = document.getElementById("gallery-grid");
+  const sidebarNav = document.querySelector(".sidebar-nav");
   const branchBtns = document.querySelectorAll(".branch-btn");
-  const homeBtn = document.getElementById("nav-home-btn");
 
   let activeCategory = null;
 
@@ -74,7 +74,6 @@ document.addEventListener("DOMContentLoaded", () => {
     branchBtns.forEach(b => b.classList.remove("active"));
     setHero(arbitraryDefaultHero);
     
-    // Always keep Spotlight Stage visible
     if (spotlightFrame) spotlightFrame.style.display = "flex";
     
     if (galleryGrid) {
@@ -111,7 +110,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-    // Always keep Spotlight Stage visible
     if (spotlightFrame) spotlightFrame.style.display = "flex";
     if (!galleryGrid) return;
 
@@ -126,7 +124,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
       galleryGrid.innerHTML = "";
 
-      // Filter out non-item entries (like _meta blocks)
       let items = Array.isArray(rawData) 
         ? rawData.filter(item => item && item.id) 
         : (rawData.items || []);
@@ -144,7 +141,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return dateB - dateA;
       });
 
-      // Update upper spotlight to showcase the newest concept in this category
+      // Update spotlight with newest item
       if (items[0]) {
         const newest = items[0];
         setHero({
@@ -187,38 +184,37 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Home Button Handler
-  if (homeBtn) {
-    homeBtn.addEventListener("click", (e) => {
+  // GLOBAL SIDEBAR CLICK DELEGATION
+  if (sidebarNav) {
+    sidebarNav.addEventListener("click", (e) => {
+      const btn = e.target.closest(".branch-btn");
+      if (!btn) return;
+
       e.preventDefault();
-      resetToHero(true);
-    });
-  }
+      const type = btn.getAttribute("data-type");
 
-  // Sidebar Button Delegation (Handles clicks on inner images/spans)
-  branchBtns.forEach(btn => {
-    const folderType = btn.getAttribute("data-type");
-    if (folderType === "Home") return;
-
-    const meta = categoryMeta[folderType];
-
-    btn.addEventListener("mouseenter", () => {
-      if (meta && !activeCategory) setHero(meta);
-    });
-
-    btn.addEventListener("mouseleave", () => {
-      if (!activeCategory) setHero(arbitraryDefaultHero);
-    });
-
-    btn.addEventListener("click", (e) => {
-      e.preventDefault();
-      const targetBtn = e.target.closest(".branch-btn");
-      const type = targetBtn ? targetBtn.getAttribute("data-type") : folderType;
-      if (type && type !== "Home") {
+      if (type === "Home") {
+        resetToHero(true);
+      } else if (type) {
         loadCategory(type, true);
       }
     });
-  });
+
+    sidebarNav.addEventListener("mouseover", (e) => {
+      const btn = e.target.closest(".branch-btn");
+      if (!btn || activeCategory) return;
+      const type = btn.getAttribute("data-type");
+      if (categoryMeta[type]) {
+        setHero(categoryMeta[type]);
+      }
+    });
+
+    sidebarNav.addEventListener("mouseout", (e) => {
+      const btn = e.target.closest(".branch-btn");
+      if (!btn || activeCategory) return;
+      setHero(arbitraryDefaultHero);
+    });
+  }
 
   // Route Parser
   function syncViewWithRoute() {
