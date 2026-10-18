@@ -44,7 +44,8 @@ function initGalleryLoader() {
     badgeText: "FEATURED SHOWCASE",
     badgeClass: "badge-project",
     desc: "1923 Ford T-Bucket featuring a built 350 SBC, Quick Fuel 750, Don Zig serviced Vertex magneto, TH350, and 9-inch rear axle.",
-    linkUrl: "#"
+    linkUrl: "#",
+    category: "Projects"
   };
 
   const heroImg = document.getElementById("hero-img") || document.getElementById("spotlight-img");
@@ -57,7 +58,7 @@ function initGalleryLoader() {
   const branchBtns = document.querySelectorAll(".branch-btn");
 
   let activeCategory = null;
-  let activeRotator = null; // Holds our HeroRotator instance
+  let activeRotator = null;
 
   function stopRotator() {
     if (activeRotator) {
@@ -74,27 +75,23 @@ function initGalleryLoader() {
       heroBadge.className = `badge ${data.badgeClass || ''}`;
     }
     if (heroDesc) heroDesc.textContent = data.desc || "";
+
+    // Sync sidebar thumbnail if category is present
+    if (data.category) {
+      const thumbImg = document.getElementById(`nav-thumb-${data.category.toLowerCase()}`);
+      const activeUrl = data.url || data.img;
+      if (thumbImg && activeUrl) {
+        thumbImg.src = activeUrl;
+      }
+    }
   }
 
-  // Dynamically populate sidebar thumbnails from JSON files
-  async function updateSidebarThumbnails() {
-    for (const [category, meta] of Object.entries(categoryMeta)) {
-      if (category === "About") continue;
-      try {
-        const res = await fetch(`${meta.dataFile}?v=${Date.now()}`);
-        if (!res.ok) continue;
-        const rawData = await res.json();
-        const items = Array.isArray(rawData) ? rawData : (rawData.items || []);
-        if (items.length > 0) {
-          items.sort((a, b) => new Date(b.specifications?.dateAdded || 0) - new Date(a.specifications?.dateAdded || 0));
-          const topThumb = items[0].thumb || items[0].thumbnail || items[0].heroImage || "";
-          const thumbImg = document.getElementById(`nav-thumb-${category.toLowerCase()}`);
-          if (thumbImg && topThumb) {
-            thumbImg.src = topThumb;
-          }
-        }
-      } catch (err) {
-        console.warn(`Could not load sidebar thumb for ${category}:`, err);
+  // Rotator callback handler for dynamic updates
+  function handleRotatorTick(target) {
+    if (target.category) {
+      const thumbImg = document.getElementById(`nav-thumb-${target.category.toLowerCase()}`);
+      if (thumbImg && target.url) {
+        thumbImg.src = target.url;
       }
     }
   }
@@ -112,33 +109,35 @@ function initGalleryLoader() {
       galleryGrid.innerHTML = "";
     }
 
-    // Home rotator pool from sidebar nav items
     const homePool = [
       {
         url: "./Projects/torky-t-hero.jpg",
         title: "Torky-T",
         badgeText: "FEATURED SHOWCASE",
         badgeClass: "badge-project",
-        desc: "1923 Ford T-Bucket featuring a built 350 SBC, Quick Fuel 750, Don Zig serviced Vertex magneto, TH350, and 9-inch rear axle."
+        desc: "1923 Ford T-Bucket featuring a built 350 SBC, Quick Fuel 750, Don Zig serviced Vertex magneto, TH350, and 9-inch rear axle.",
+        category: "Projects"
       },
       {
         url: "./Dreams/surrey-hero-40s.jpg",
         title: "Dreams",
         badgeText: "TARGET BUILDS",
         badgeClass: "badge-dream",
-        desc: "Conceptual studies and detailed engineering blueprints."
+        desc: "Conceptual studies and detailed engineering blueprints.",
+        category: "Dreams"
       },
       {
         url: "./Fantasies/fabian-buick-wagon-custom.jpg",
         title: "Fantasies",
         badgeText: "PURE VISION",
         badgeClass: "badge-fantasy",
-        desc: "Pure visual explorations and styling studies."
+        desc: "Pure visual explorations and styling studies.",
+        category: "Fantasies"
       }
     ];
 
     if (window.HeroRotator && heroImg) {
-      activeRotator = new HeroRotator(homePool, heroImg, heroTitle, heroBadge, heroDesc, 7000);
+      activeRotator = new HeroRotator(homePool, heroImg, heroTitle, heroBadge, heroDesc, 7000, handleRotatorTick);
     }
     
     if (updateState && window.location.hash) {
@@ -195,26 +194,25 @@ function initGalleryLoader() {
         return;
       }
 
-      // Sort items newest-first
       items.sort((a, b) => {
         const dateA = new Date(a.specifications?.dateAdded || 0);
         const dateB = new Date(b.specifications?.dateAdded || 0);
         return dateB - dateA;
       });
 
-      // Build image pool for HeroRotator from all items in this category
       const imagePool = items.map(item => ({
         url: item.heroImage || item.thumb || item.thumbnail || (item.gallery && item.gallery[0]) || "",
         title: item.title,
         badgeText: item.badgeText || meta.badgeText,
         badgeClass: item.badgeType || meta.badgeClass,
-        desc: item.subtitle || item.summary || meta.desc
+        desc: item.subtitle || item.summary || meta.desc,
+        category: folderType
       })).filter(img => img.url !== "");
 
       if (imagePool.length > 0 && heroImg) {
         setHero(imagePool[0]);
         if (window.HeroRotator) {
-          activeRotator = new HeroRotator(imagePool, heroImg, heroTitle, heroBadge, heroDesc, 7000);
+          activeRotator = new HeroRotator(imagePool, heroImg, heroTitle, heroBadge, heroDesc, 7000, handleRotatorTick);
         }
       }
 
@@ -250,7 +248,6 @@ function initGalleryLoader() {
     }
   }
 
-  // GLOBAL SIDEBAR CLICK DELEGATION
   if (sidebarNav) {
     sidebarNav.addEventListener("click", (e) => {
       const btn = e.target.closest(".branch-btn");
@@ -282,7 +279,6 @@ function initGalleryLoader() {
     });
   }
 
-  // Route Parser
   function syncViewWithRoute() {
     const urlParams = new URLSearchParams(window.location.search);
     const queryType = urlParams.get("type");
@@ -301,9 +297,6 @@ function initGalleryLoader() {
   }
 
   window.addEventListener("popstate", syncViewWithRoute);
-  
-  // Trigger sidebar thumbnail population and route synchronization
-  updateSidebarThumbnails();
   syncViewWithRoute();
 }
 
