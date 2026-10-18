@@ -4,9 +4,9 @@
    and randomized transition styles (Fade, Slide, Zoom, Palsy).
    ========================================================================== */
 
-class HeroRotator {
+window.HeroRotator = class HeroRotator {
   constructor(imagePool, heroImgEl, titleEl, badgeEl, descEl, intervalMs = 7000) {
-    this.imagePool = imagePool; // Array of { url, title, badgeText, badgeClass, desc }
+    this.imagePool = imagePool || []; // Array of { url, title, badgeText, badgeClass, desc }
     this.heroImgEl = heroImgEl;
     this.titleEl = titleEl;
     this.badgeEl = badgeEl;
@@ -16,8 +16,12 @@ class HeroRotator {
     this.timerId = null;
     this.isRotating = false;
 
-    if (this.imagePool.length > 0) {
+    console.log("HeroRotator initialized with pool size:", this.imagePool.length);
+
+    if (this.imagePool.length > 1) {
       this.startTimer();
+    } else {
+      console.warn("HeroRotator: Image pool has 1 or fewer items. Rotation disabled.");
     }
   }
 
@@ -56,6 +60,8 @@ class HeroRotator {
     const transitions = ["transition-fade", "transition-slide", "transition-zoom", "transition-palsy"];
     const randomTransition = transitions[Math.floor(Math.random() * transitions.length)];
 
+    console.log(`Rotating to index ${this.currentIndex}:`, target.title, `using transition: ${randomTransition}`);
+
     // Apply animation class and update elements
     if (this.heroImgEl) {
       this.heroImgEl.className = `rotator-hero-img ${randomTransition}`;
@@ -80,4 +86,4 @@ class HeroRotator {
       this.resetTimer();
     }
   }
-}
+};
