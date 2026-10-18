@@ -1,5 +1,135 @@
 [
   {"_meta": {"file": "data/fantasies.json", "description": "Dream To Build — Pure Vision Visual Explorations & Styling Studies", "schemaVersion": "1.0", "lastUpdated": "2026-10-18T14:15:00"}},
+  {
+    "id": "1959-dodge-custom-royal-lancer-dazzle",
+    "title": "1959 Dodge Custom Royal Lancer GT",
+    "subtitle": "Urban Adversarial Dazzle Scheme",
+    "category": "Fantasies",
+    "badgeText": "Pure Vision",
+    "badgeType": "badge-fantasy",
+    "summary": "Parked in front of The Broad Museum on Grand Avenue in downtown Los Angeles, this 1959 Dodge Royal Lancer GT combines forward-facing forward-sweep styling with an urban adversarial dazzle camouflage pattern[cite: 6].",
+    "thumb": "Fantasies/1959 Dodge Custom Royal Lancer in an urban adversarial dazzle scheme.jpg",
+    "heroImage": "Fantasies/1959 Dodge Custom Royal Lancer in an urban adversarial dazzle scheme.jpg",
+    "thumbnail": "Fantasies/1959 Dodge Custom Royal Lancer in an urban adversarial dazzle scheme.jpg",
+    "detailUrl": "detail.html?type=fantasies&id=1959-dodge-custom-royal-lancer-dazzle",
+    "tags": ["Dodge", "Custom Royal Lancer", "1959", "Dazzle Camo", "BMW M57", "Diesel", "The Broad"],
+    "specifications": {
+      "year": "1959",
+      "make": "Dodge",
+      "model": "Royal Lancer GT",
+      "length": "217 in[cite: 6]",
+      "wheelbase": "122 in[cite: 6]",
+      "engine": "BMW M57 3.0L inline-6 diesel, compound twin-turbocharger system, single 10mm/12mm Stroker CP3 pump, 100%+ oversized injectors[cite: 6]",
+      "transmission": "ZF 8-speed automatic[cite: 6]",
+      "chassis": "Custom chassis, hidden 6-point DOM roll cage linked to suspension points, custom SLA front wishbones, EPAS rack-and-pinion steering, aftermarket Ford 9\" IRS[cite: 6]",
+      "wheels": "20\" wheels with Michelin Pilot Sport 4S tires (275/35R20 front, 315/35R20 rear), tubbed rear wheel arches[cite: 6]",
+      "performance": "700 hp, 1,000–1,050 lb-ft torque, ~4,300 lbs curb weight, 0-60 mph in ~3.2 seconds, 1/4-mile in ~10.9 seconds @ 128 mph, ~1.03g skidpad grip[cite: 6]",
+      "status": "Render Concept Study",
+      "dateAdded": "2026-10-18T14:15:00"
+    },
+    "narrative": [
+      "Vehicle: 1959 Dodge Royal Lancer GT, 217 in in length, 122 in in wheelbase, custom chassis, hidden 6-point DOM roll cage linked to suspension points, custom SLA front wishbones, EPAS rack-and-pinion steering, aftermarket Ford 9\" IRS, 20\" wheels, Michelin Pilot Sport 4S tires (275/35R20 front, 315/35R20 rear), tubbed rear wheel arches, urban adversarial dazzle scheme[cite: 6].",
+      "Powertrain: BMW M57 3.0L inline-6 diesel, compound twin-turbocharger system, single 10mm/12mm Stroker CP3 pump, 100%+ oversized injectors, ZF 8-speed automatic transmission[cite: 6].",
+      "Performance: 700 hp, 1,000-1,050 lb-ft torque, ~4,300 lbs curb weight, 0-60 mph in ~3.2 seconds, 1/4-mile in ~10.9 seconds @ 128 mph, ~1.03g skidpad grip[cite: 6].",
+      "Setting: Parked on Grand Avenue in downtown Los Angeles, the car sits directly in front of The Broad Museum. The shot captures the building's complete honeycomb facade from ground level to roofline, including the entrance glazing and central oculus window. Adjacent downtown architecture and the curved steel structure of the Walt Disney Concert Hall frame the background[cite: 6]."
+    ],
+    "gallery": [
+      {"url": "Fantasies/1959 Dodge Custom Royal Lancer in an urban adversarial dazzle scheme.jpg", "caption": "1959 Dodge Custom Royal Lancer — Primary view at The Broad Museum."},
+      {"url": "Fantasies/1959 Dodge Custom Royal Lancer in an urban adversarial dazzle scheme at the Broad.jpg", "caption": "1959 Dodge Custom Royal Lancer — Architectural context framing."},
+      {"url": "Fantasies/1959 Dodge Custom Royal Lancer in an urban adversarial dazzle scheme profiles.jpg", "caption": "1959 Dodge Custom Royal Lancer — Profile, top-down, and head-on technical layouts."}
+    ],
+    "featured": true
+  },
+  {
+    "id": "white-super-power-wrv",
+    "title": "White Super Power WRV",
+    "subtitle": "Wilderness Retrieval Vehicle",
+    "category": "Fantasies",
+    "badgeText": "Pure Vision",
+    "badgeType": "badge-fantasy",
+    "summary": "WRV - Wilderness Retrieval Vehicle using a White Super Power cab on an M930-series chassis (5 ton, 6x6) using a Cummins 6.7L compound turbo into an Allison then Rockwell transfer case[cite: 7].",
+    "thumb": "Fantasies/Super Power 6x6.jpg",
+    "heroImage": "Fantasies/Super Power 6x6.jpg",
+    "thumbnail": "Fantasies/Super Power 6x6.jpg",
+    "detailUrl": "detail.html?type=fantasies&id=white-super-power-wrv",
+    "tags": ["White Super Power", "WRV", "Wilderness Retrieval", "M930", "6x6", "Cummins", "Allison", "Rockwell"],
+    "specifications": {
+      "make": "White Super Power / M930",
+      "model": "Wilderness Retrieval Vehicle (WRV)",
+      "chassis": "M930-series 5 ton, 6x6 chassis[cite: 7]",
+      "engine": "Cummins 6.7L compound turbo[cite: 7]",
+      "transmission": "Allison[cite: 7]",
+      "transferCase": "Rockwell transfer case[cite: 7]",
+      "status": "Render Concept Study",
+      "dateAdded": "2026-10-18T14:15:00"
+    },
+    "narrative": [
+      "WRV - Wilderness Retrieval Vehicle using a White Super Power cab on an M930-series chassis (5 ton, 6x6) using a Cummins 6.7L compound turbo into an Allison then Rockwell transfer case[cite: 7]."
+    ],
+    "gallery": [
+      {"url": "Fantasies/Super Power 6x6.jpg", "caption": "White Super Power WRV — Wilderness recovery setup in rugged terrain."}
+    ],
+    "featured": true
+  },
+  {
+    "id": "1964-nova-dazzle",
+    "title": "1964 Chevrolet Nova",
+    "subtitle": "Urban Adversarial Dazzle Scheme",
+    "category": "Fantasies",
+    "badgeText": "Pure Vision",
+    "badgeType": "badge-fantasy",
+    "summary": "A classic 1964 Chevrolet Nova compact styling study wrapped in a high-contrast urban adversarial dazzle camouflage pattern.",
+    "thumb": "Fantasies/1964 Nova in an urban adversarial dazzle scheme.jpg",
+    "heroImage": "Fantasies/1964 Nova in an urban adversarial dazzle scheme.jpg",
+    "thumbnail": "Fantasies/1964 Nova in an urban adversarial dazzle scheme.jpg",
+    "detailUrl": "detail.html?type=fantasies&id=1964-nova-dazzle",
+    "tags": ["Chevrolet", "Nova", "1964", "Dazzle Camo", "Styling Study"],
+    "specifications": {
+      "year": "1964",
+      "make": "Chevrolet",
+      "model": "Nova",
+      "finish": "Urban Adversarial Dazzle Scheme",
+      "status": "Render Concept Study",
+      "dateAdded": "2026-10-18T14:15:00"
+    },
+    "narrative": [
+      "Applying the disruptive geometry of urban adversarial dazzle camouflage to the crisp lines of a 1964 Chevrolet Nova.",
+      "This study explores optical fragmentation and visual disruption across classic compact muscle proportions."
+    ],
+    "gallery": [
+      {"url": "Fantasies/1964 Nova in an urban adversarial dazzle scheme.jpg", "caption": "1964 Chevrolet Nova — Urban adversarial dazzle scheme profile study."}
+    ],
+    "featured": true
+  },
+  {
+    "id": "mack-f-ramp-truck",
+    "title": "Mack F-Series Ramp Truck",
+    "subtitle": "Square Cab Heavy Transporter & Dazzle Scheme",
+    "category": "Fantasies",
+    "badgeText": "Pure Vision",
+    "badgeType": "badge-fantasy",
+    "summary": "A heavy-duty square cab Mack F ramp truck styled in an adversarial dazzle scheme, built for severe-duty vehicle transport.",
+    "thumb": "Fantasies/Mack F Ramp.jpg",
+    "heroImage": "Fantasies/Mack F Ramp.jpg",
+    "thumbnail": "Fantasies/Mack F Ramp.jpg",
+    "detailUrl": "detail.html?type=fantasies&id=mack-f-ramp-truck",
+    "tags": ["Mack", "F-Series", "Square Cab", "Ramp Truck", "Hauler", "Dazzle Camo"],
+    "specifications": {
+      "make": "Mack",
+      "model": "F-Series Square Cab Ramp Truck",
+      "finish": "Adversarial Dazzle Scheme",
+      "status": "Render Concept Study",
+      "dateAdded": "2026-10-18T14:15:00"
+    },
+    "narrative": [
+      "Featuring the iconic heavy-duty square cab architecture of the Mack F-series.",
+      "Configured as a specialized ramp transport truck finished in a disruptive dazzle camouflage scheme."
+    ],
+    "gallery": [
+      {"url": "Fantasies/Mack F Ramp.jpg", "caption": "Mack F-Series Ramp Truck — Square cab transport configuration."}
+    ],
+    "featured": true
+  },
   {"id": "31-ford-aa-display-carrier", "title": "1931 Ford Model AA Display Carrier", "subtitle": "Vintage Heavy Hauler & Cage-Car Transport Rig", "category": "Fantasies", "badgeText": "Pure Vision", "badgeType": "badge-fantasy", "summary": "A vintage 1931 Ford Model AA truck re-engineered as an open-chassis display carrier, built to haul and exhibit open-cage race cars and custom chassis builds.", "thumb": "Fantasies/31 AA Display carrier.jpg", "heroImage": "Fantasies/31 AA Display carrier.jpg", "thumbnail": "Fantasies/31 AA Display carrier.jpg", "detailUrl": "detail.html?type=fantasies&id=31-ford-aa-display-carrier", "tags": ["Ford", "Model AA", "1931", "Carrier", "Display Rig", "Hauler", "Cage Car", "Double-O Garage"], "specifications": {"year": "1931", "make": "Ford", "model": "Model AA Commercial Chassis", "purpose": "Open-Cage Vehicle Display Carrier", "chassis": "Reinforced Flatbed w/ Custom Ramps", "status": "Render Concept Study", "dateAdded": "2026-10-18T14:15:00"}, "narrative": ["Inspired by conversations with custom shop builder Omar regarding dedicated display rigs for open-cage tube-frame cars.", "This study pairs a heavy-duty 1931 Ford Model AA commercial cab and chassis with custom ramp geometry, transforming a classic pre-war workhorse into an eye-catching platform designed to showcase raw space-frame craftsmanship at events and shop displays."], "gallery": [{"url": "Fantasies/31 AA Display carrier.jpg", "caption": "1931 Ford Model AA Display Carrier — Primary ramp profile study."}, {"url": "Fantasies/31 AA Display carrier at NMP.jpg", "caption": "1931 Ford Model AA Display Carrier — On-site exhibition render."}], "featured": true},
   {"id": "sakura-soda-pop", "title": "Sakura Soda Pop: Mk1 Capri", "subtitle": "700+ WHP EA888 2.0L Compound-Turbo AWD Beast", "category": "Fantasies", "badgeText": "Pure Vision", "badgeType": "badge-fantasy", "summary": "Because 2.0L is a drink size, not an engine! A Mk1 Ford Capri engineered around a boosted VW/Audi EA888 2.0L with compound turbos, DSG transmission, and 4MOTION AWD.", "thumb": "Fantasies/Sakura Soda Pop.jpg", "heroImage": "Fantasies/Sakura Soda Pop.jpg", "thumbnail": "Fantasies/Sakura Soda Pop.jpg", "detailUrl": "detail.html?type=fantasies&id=sakura-soda-pop", "tags": ["Ford", "Capri", "Mk1", "Soda Pop", "Sakura", "EA888", "4MOTION", "DSG", "AWD", "Compound Turbo"], "specifications": {"year": "1972", "make": "Ford", "model": "Capri Mk1 Restomod", "engine": "2.0L VW/Audi EA888 Inline-4 w/ Staged Compound Turbos (700+ WHP)", "transmission": "Tuned DSG Dual-Clutch Manual", "drivetrain": "4MOTION All-Wheel Drive w/ Widened MQB Suspension", "weight": "~2,750 lbs", "performance": "0-60 in <2.5s | 1/4-Mile: 9.8s @ 145 mph | 1.20g+ lateral", "status": "Render Concept Study", "dateAdded": "2026-10-18T14:15:00"}, "narrative": ["Soda Pop plays on the classic gearhead jab that '2.0L is a drink size, not an engine!' by dropping a high-boost 2.0L EA888 engine into a featherweight Mk1 Ford Capri.", "Mated to a tuned DSG transmission and 4MOTION AWD drivetrain over widened MQB geometry, custom box flares house 295-width Hoosier R-compound tires on center-lock wheels.", "Featured here blowing past a carbon-bodied supercar along Route 66 near Cadillac Ranch for the Mother Road Centennial (1926–2026) in both classic Aqua Marine and the custom Sakura blossom livery."], "gallery": [{"url": "Fantasies/Sakura Soda Pop.jpg", "caption": "Sakura Soda Pop — Cherry Blossom graphic edition at Cadillac Ranch."}, {"url": "Fantasies/Soda Pop.jpg", "caption": "Soda Pop — High-gloss Aqua Marine edition staging alongside Route 66."}, {"url": "Fantasies/Soda Pop captioned.jpg", "caption": "Soda Pop — Full technical specification and Mother Road Centennial render."}], "featured": true},
   {"id": "project-lynx", "title": "Project Lynx: Mid-Engine AWD Concept", "subtitle": "Mid-Engine e-AWD & Active Aero Performance Study", "category": "Fantasies", "badgeText": "Pure Vision", "badgeType": "badge-fantasy", "summary": "A mid-engine, all-wheel-drive sports car design fantasy combining classic wedge supercar proportions with active aerodynamics and e-AWD torque vectoring.", "thumb": "Fantasies/1974 Pantera - Lynx.jpg", "heroImage": "Fantasies/1974 Pantera - Lynx.jpg", "thumbnail": "Fantasies/1974 Pantera - Lynx.jpg", "detailUrl": "detail.html?type=fantasies&id=project-lynx", "tags": ["Lynx", "Pantera", "Mid-Engine", "e-AWD", "Active Aero", "Supercar Concept"], "specifications": {"year": "1974", "make": "De Tomaso / Custom", "model": "Pantera Lynx", "drivetrain": "Mid-Engine e-AWD", "status": "Render Concept Study", "dateAdded": "2026-10-17T16:20:00"}, "narrative": ["Project Lynx explores an aggressive mid-engine AWD platform configured for high-speed stability and extreme cornering dynamics.", "Blending iconic 1970s Italian-American wedge styling with active aerodynamic vacuum blowers and e-AWD front electric motors, Lynx delivers pure high-concept vision."], "gallery": ["Fantasies/1974 Pantera - Lynx.jpg"], "featured": true},
