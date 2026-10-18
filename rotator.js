@@ -1,28 +1,24 @@
 /* ==========================================================================
    DREAM TO BUILD — SYNCHRONIZED HERO ROTATOR ENGINE
-   Troubleshooting Guide:
-   - MUTEX LOCK: 'isRotating' prevents race conditions if timer & click fire together.
-   - RANDOMIZATION: Picks a random image index different from the current one.
-   - TRANSITIONS: Randomly assigns one of 4 CSS animations (Fade, Slide, Zoom, Palsy).
+   Features: Mutex lock (race-condition safe), 7s timer, randomized selection,
+   and randomized transition styles (Fade, Slide, Zoom, Palsy).
    ========================================================================== */
 
 class HeroRotator {
-  constructor(imagePool, heroImgElement, captionElement, intervalMs = 7000) {
-    this.imagePool = imagePool; // Array of { url, title, subtitle } objects
-    this.heroImgEl = heroImgElement;
-    this.captionEl = captionElement;
+  constructor(imagePool, heroImgEl, titleEl, badgeEl, descEl, intervalMs = 7000) {
+    this.imagePool = imagePool; // Array of { url, title, badgeText, badgeClass, desc }
+    this.heroImgEl = heroImgEl;
+    this.titleEl = titleEl;
+    this.badgeEl = badgeEl;
+    this.descEl = descEl;
     this.intervalMs = intervalMs;
     this.currentIndex = 0;
     this.timerId = null;
     this.isRotating = false;
 
     if (this.imagePool.length > 0) {
-      this.init();
+      this.startTimer();
     }
-  }
-
-  init() {
-    this.startTimer();
   }
 
   startTimer() {
@@ -32,8 +28,15 @@ class HeroRotator {
     }, this.intervalMs);
   }
 
+  stop() {
+    if (this.timerId) {
+      clearInterval(this.timerId);
+      this.timerId = null;
+    }
+  }
+
   resetTimer() {
-    this.startTimer(); // Resets the 7-second countdown when user interacts manually
+    this.startTimer(); // Resets 7-second cadence on manual interaction
   }
 
   async rotateRandom(isAuto = false) {
@@ -47,36 +50,34 @@ class HeroRotator {
     } while (nextIndex === this.currentIndex && this.imagePool.length > 1);
 
     this.currentIndex = nextIndex;
-    const targetData = this.imagePool[this.currentIndex];
+    const target = this.imagePool[this.currentIndex];
 
-    // Choose a random transition style (Fade, Slide, Zoom, Palsy)
+    // Choose a random transition style
     const transitions = ["transition-fade", "transition-slide", "transition-zoom", "transition-palsy"];
     const randomTransition = transitions[Math.floor(Math.random() * transitions.length)];
 
-    // Apply animation class
-    this.heroImgEl.className = `rotator-hero-img ${randomTransition}`;
-    
-    // Update image source and metadata
-    this.heroImgEl.src = targetData.url;
-    if (this.captionEl && targetData.title) {
-      this.captionEl.textContent = targetData.title;
+    // Apply animation class and update elements
+    if (this.heroImgEl) {
+      this.heroImgEl.className = `rotator-hero-img ${randomTransition}`;
+      this.heroImgEl.src = target.url;
     }
+    if (this.titleEl) this.titleEl.textContent = target.title || "";
+    if (this.badgeEl) {
+      this.badgeEl.textContent = target.badgeText || "";
+      this.badgeEl.className = `badge ${target.badgeClass || ''}`;
+    }
+    if (this.descEl) this.descEl.textContent = target.desc || "";
 
-    // Release mutex lock after animation duration completes
+    // Release mutex lock after longest animation completes (Palsy = 1.1s)
     setTimeout(() => {
-      this.heroImgEl.className = "rotator-hero-img";
+      if (this.heroImgEl) {
+        this.heroImgEl.className = "rotator-hero-img";
+      }
       this.isRotating = false;
-    }, 1100); // Matches longest animation duration (Palsy = 1.1s)
+    }, 1100);
 
     if (!isAuto) {
       this.resetTimer();
-    }
-  }
-
-  jumpTo(index) {
-    if (index >= 0 && index < this.imagePool.length) {
-      this.currentIndex = index;
-      this.rotateRandom(false);
     }
   }
 }
