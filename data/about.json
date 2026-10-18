@@ -2,40 +2,53 @@
   {
     "_meta": {
       "file": "data/about.json",
-      "description": "About Dream To Build — Mission, Pillars & Process Notice",
+      "description": "About Dream To Build — Modular Text File Manifest",
       "schemaVersion": "1.0",
-      "lastUpdated": "2026-10-18T13:35:00"
+      "lastUpdated": "2026-10-18T14:30:00"
     }
   },
   {
-    "id": "about-dream-to-build",
-    "title": "About Dream To Build",
-    "subtitle": "Dragging High Concept Pretty Pictures Kicking and Screaming into the Real World",
+    "id": "build-stack",
+    "title": "Build Stack & Studio Architecture",
+    "subtitle": "Engineering Stack, Fabrication Tooling & AI-Assisted Workspace",
     "category": "About",
-    "badgeText": "The Vision",
+    "badgeText": "Architecture",
     "badgeType": "badge-about",
-    "summary": "Dream To Build is a dedicated digital archive and technical workshop workspace. It documents the real-world engineering, custom fabrication, and conceptual blueprints behind pre-1975 custom restomods, hybrid powertrains, and space-frame designs.",
+    "summary": "Technical overview of the software, local compute environments, CAD toolchains, and shop fabrication stack powering Dream To Build.",
     "thumb": "Projects/torky-t-hero.jpg",
     "heroImage": "Projects/torky-t-hero.jpg",
     "thumbnail": "Projects/torky-t-hero.jpg",
-    "detailUrl": "detail.html?type=about&id=about-dream-to-build",
+    "detailUrl": "detail.html?type=about&id=build-stack",
+    "contentUrl": "About/build-stack.txt",
     "specifications": {
-      "focus": "Pre-1975 Restomods, Hybrid Powertrains & Space-Frame Engineering",
-      "curator": "Scot Stockton / Dream To Build Studio",
-      "process": "Iterative Human-AI Co-Creation & Technical Refinement"
+      "environment": "WSL2 / Ubuntu 24.04 on Dell2025",
+      "cad_2d_3d": "Autodesk Fusion & Inkscape Vector Design",
+      "process": "Iterative Human-AI Co-Creation"
     },
-    "narrative": [
-      "Dream To Build serves as a central hub bridging the gap between unconstrained technical styling explorations and hands-on metal fabrication.",
-      "CORE WORKSHOP PILLARS:",
-      "1. Active Shop Builds: Hands-on metal fabrication, chassis engineering, custom wiring, and precision powertrain assembly.",
-      "2. Design & Blueprints: Calculated geometry, CAD layouts, suspension kinematics, and structural mockups.",
-      "3. Pure Vision Concepts: High-concept automotive styling and unconstrained technical explorations.",
-      "DEVELOPMENT & COLLABORATION NOTICE: These galleries and technical specification sheets are undergoing continuous updates with extensive assistance from AI tools.",
-      "Because this is an active, real-time creative workspace, technical discrepancies and errors may be rampant—however, identifying and refining these AI-generated hallucinations is an intentional and vital part of our review, verification, and design update process."
-    ],
     "gallery": [
       "Projects/torky-t-hero.jpg"
     ],
+    "featured": true
+  },
+  {
+    "id": "shop-rules",
+    "title": "Shop Rules & Philosophy",
+    "subtitle": "Vulcan Filters, Empirical Verification & Co-Creation Notice",
+    "category": "About",
+    "badgeText": "Guidelines",
+    "badgeType": "badge-about",
+    "summary": "Core operating principles governing empirical verification, logical consistency, and the continuous AI collaboration/review process.",
+    "thumb": "Projects/torky-t-hero.jpg",
+    "heroImage": "Projects/torky-t-hero.jpg",
+    "thumbnail": "Projects/torky-t-hero.jpg",
+    "detailUrl": "detail.html?type=about&id=shop-rules",
+    "contentUrl": "About/shop-rules.txt",
+    "specifications": {
+      "filter": "Vulcan Logic & Empirical Verification",
+      "notice": "Continuous AI Updates & Review Process",
+      "curator": "Scot Stockton / Dream To Build Studio"
+    },
+    "gallery": [],
     "featured": true
   }
 ]
