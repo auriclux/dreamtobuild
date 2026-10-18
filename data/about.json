@@ -1,23 +1,42 @@
-{
-  "category": "About",
-  "title": "About Dream To Build",
-  "tagline": "Dragging High Concept Pretty Pictures Kicking and Screaming into the Real World",
-  "heroImage": "./Projects/torky-t-hero.jpg",
-  "content": {
-    "mission": "Dream To Build is a dedicated digital archive and technical workshop workspace. It documents the real-world engineering, custom fabrication, and conceptual blueprints behind pre-1975 custom restomods, hybrid powertrains, and space-frame designs.",
-    "pillars": [
-      {
-        "heading": "Active Shop Builds",
-        "description": "Hands-on metal fabrication, chassis engineering, custom wiring, and precision powertrain assembly."
-      },
-      {
-        "heading": "Design & Blueprints",
-        "description": "Calculated geometry, CAD layouts, suspension kinematics, and structural mockups."
-      },
-      {
-        "heading": "Pure Vision Concepts",
-        "description": "High-concept automotive styling and unconstrained technical explorations."
-      }
-    ]
+[
+  {
+    "_meta": {
+      "file": "data/about.json",
+      "description": "About Dream To Build — Mission, Pillars & Process Notice",
+      "schemaVersion": "1.0",
+      "lastUpdated": "2026-10-18T12:50:00"
+    }
+  },
+  {
+    "id": "about-dream-to-build",
+    "title": "About Dream To Build",
+    "subtitle": "Dragging High Concept Pretty Pictures Kicking and Screaming into the Real World",
+    "category": "About",
+    "badgeText": "The Vision",
+    "badgeType": "badge-about",
+    "summary": "Dream To Build is a dedicated digital archive and technical workshop workspace documenting real-world engineering, custom fabrication, and conceptual blueprints behind pre-1975 custom restomods, hybrid powertrains, and space-frame designs.",
+    "thumb": "Projects/torky-t-hero.jpg",
+    "heroImage": "Projects/torky-t-hero.jpg",
+    "thumbnail": "Projects/torky-t-hero.jpg",
+    "detailUrl": "detail.html?type=about&id=about-dream-to-build",
+    "specifications": {
+      "focus": "Pre-1975 Restomods, Hybrid Powertrains & Space-Frame Engineering",
+      "pillars": "Active Shop Builds | Design & Blueprints | Pure Vision Concepts",
+      "curator": "Scot Stockton / Dream To Build Studio",
+      "process": "Iterative Human-AI Co-Creation & Technical Refinement"
+    },
+    "narrative": [
+      "Dream To Build serves as a central hub bridging the gap between unconstrained technical styling explorations and hands-on metal fabrication.",
+      "CORE WORKSHOP PILLARS:",
+      "1. Active Shop Builds: Hands-on metal fabrication, chassis engineering, custom wiring, and precision powertrain assembly.",
+      "2. Design & Blueprints: Calculated geometry, CAD layouts, suspension kinematics, and structural mockups.",
+      "3. Pure Vision Concepts: High-concept automotive styling and unconstrained technical explorations.",
+      "DEVELOPMENT & COLLABORATION NOTICE: These galleries and technical specification sheets are undergoing continuous updates with extensive assistance from AI tools.",
+      "Because this is an active, real-time creative workspace, technical discrepancies and errors may be rampant—however, identifying and refining these AI-generated hallucinations is an intentional and vital part of our review, verification, and design update process."
+    ],
+    "gallery": [
+      "Projects/torky-t-hero.jpg"
+    ],
+    "featured": true
   }
-}
+]
