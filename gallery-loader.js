@@ -39,7 +39,7 @@ function initGalleryLoader() {
   };
 
   const arbitraryDefaultHero = {
-    img: "./Projects/torky-t-hero.jpg",
+    url: "./Projects/torky-t-hero.jpg",
     title: "Torky-T",
     badgeText: "FEATURED SHOWCASE",
     badgeClass: "badge-project",
@@ -67,7 +67,7 @@ function initGalleryLoader() {
   }
 
   function setHero(data) {
-    if (heroImg) heroImg.src = data.img || data.defaultHero || "";
+    if (heroImg) heroImg.src = data.url || data.img || data.defaultHero || "";
     if (heroTitle) heroTitle.textContent = data.title || "";
     if (heroBadge) {
       heroBadge.textContent = data.badgeText || "";
