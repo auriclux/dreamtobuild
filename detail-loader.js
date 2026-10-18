@@ -9,12 +9,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const buildId = (urlParams.get("id") || "").toLowerCase().trim();
   const backBtn = document.getElementById("detail-back-btn");
 
-  const validTypes = ["projects", "dreams", "fantasies"];
+  const validTypes = ["projects", "dreams", "fantasies", "about"];
   const type = (rawType || "fantasies").toLowerCase().trim();
 
   // Route back button directly to originating category hash
   if (backBtn && validTypes.includes(type)) {
-    backBtn.href = `index.html#${type}`;
+    backBtn.href = `index.html#${type === "about" ? "about" : type}`;
   }
 
   // DOM Elements (Supports both 'detail-' and legacy 'build-' element IDs)
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!response.ok) throw new Error(`HTTP ${response.status}: Failed to load ${dataFile}`);
       return response.json();
     })
-    .then(rawData => {
+    .then(async rawData => {
       const items = Array.isArray(rawData) ? rawData : (rawData.items || []);
       
       // 3. Find Matching Build Record
@@ -77,8 +77,13 @@ document.addEventListener("DOMContentLoaded", () => {
       // 5. Populate Main Hero Image
       if (imageEl) {
         const rawImg = build.heroImage || build.image || build.thumb || build.thumbnail || "";
-        imageEl.src = rawImg;
-        imageEl.alt = build.title || "Build Showcase Image";
+        if (rawImg && rawImg.trim() !== "") {
+          imageEl.src = rawImg;
+          imageEl.alt = build.title || "Build Showcase Image";
+          imageEl.style.display = "";
+        } else {
+          imageEl.style.display = "none";
+        }
       }
 
       // 6. Populate Specifications
@@ -113,27 +118,48 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       }
 
-      // 7. Populate Narrative / Summary
+      // 7. Populate Narrative / Summary (Supports external contentUrl text files or inline narratives)
       if (narrativeContainer) {
         narrativeContainer.innerHTML = "";
-        const narrativeContent = build.narrative || build.overview || build.designIntent || build.summary || build.description;
 
-        if (Array.isArray(narrativeContent)) {
-          narrativeContent.forEach(pText => {
-            const p = document.createElement("p");
-            p.innerHTML = pText;
-            narrativeContainer.appendChild(p);
-          });
-        } else if (typeof narrativeContent === "string" && narrativeContent.trim() !== "") {
-          narrativeContent.split("\n\n").forEach(pText => {
-            const p = document.createElement("p");
-            p.innerHTML = pText;
-            narrativeContainer.appendChild(p);
-          });
+        if (build.contentUrl) {
+          try {
+            const textRes = await fetch(build.contentUrl);
+            if (textRes.ok) {
+              const textContent = await textRes.text();
+              textContent.split("\n").forEach(line => {
+                if (line.trim() !== "") {
+                  const p = document.createElement("p");
+                  p.textContent = line;
+                  narrativeContainer.appendChild(p);
+                }
+              });
+            } else {
+              narrativeContainer.innerHTML = "<p><em>Narrative text file could not be loaded.</em></p>";
+            }
+          } catch (e) {
+            narrativeContainer.innerHTML = "<p><em>Error fetching narrative text file.</em></p>";
+          }
         } else {
-          const p = document.createElement("p");
-          p.textContent = "No overview narrative available for this build.";
-          narrativeContainer.appendChild(p);
+          const narrativeContent = build.narrative || build.overview || build.designIntent || build.summary || build.description;
+
+          if (Array.isArray(narrativeContent)) {
+            narrativeContent.forEach(pText => {
+              const p = document.createElement("p");
+              p.innerHTML = pText;
+              narrativeContainer.appendChild(p);
+            });
+          } else if (typeof narrativeContent === "string" && narrativeContent.trim() !== "") {
+            narrativeContent.split("\n\n").forEach(pText => {
+              const p = document.createElement("p");
+              p.innerHTML = pText;
+              narrativeContainer.appendChild(p);
+            });
+          } else {
+            const p = document.createElement("p");
+            p.textContent = "No overview narrative available for this build.";
+            narrativeContainer.appendChild(p);
+          }
         }
       }
 
