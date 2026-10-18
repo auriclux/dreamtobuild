@@ -76,6 +76,29 @@ function initGalleryLoader() {
     if (heroDesc) heroDesc.textContent = data.desc || "";
   }
 
+  // Dynamically populate sidebar thumbnails from JSON files
+  async function updateSidebarThumbnails() {
+    for (const [category, meta] of Object.entries(categoryMeta)) {
+      if (category === "About") continue;
+      try {
+        const res = await fetch(`${meta.dataFile}?v=${Date.now()}`);
+        if (!res.ok) continue;
+        const rawData = await res.json();
+        const items = Array.isArray(rawData) ? rawData : (rawData.items || []);
+        if (items.length > 0) {
+          items.sort((a, b) => new Date(b.specifications?.dateAdded || 0) - new Date(a.specifications?.dateAdded || 0));
+          const topThumb = items[0].thumb || items[0].thumbnail || items[0].heroImage || "";
+          const thumbImg = document.getElementById(`nav-thumb-${category.toLowerCase()}`);
+          if (thumbImg && topThumb) {
+            thumbImg.src = topThumb;
+          }
+        }
+      } catch (err) {
+        console.warn(`Could not load sidebar thumb for ${category}:`, err);
+      }
+    }
+  }
+
   function resetToHero(updateState = true) {
     stopRotator();
     activeCategory = null;
@@ -189,9 +212,7 @@ function initGalleryLoader() {
       })).filter(img => img.url !== "");
 
       if (imagePool.length > 0 && heroImg) {
-        // Set initial hero to the first item
         setHero(imagePool[0]);
-        // Start the 7-second randomized rotator for this category
         if (window.HeroRotator) {
           activeRotator = new HeroRotator(imagePool, heroImg, heroTitle, heroBadge, heroDesc, 7000);
         }
@@ -280,6 +301,9 @@ function initGalleryLoader() {
   }
 
   window.addEventListener("popstate", syncViewWithRoute);
+  
+  // Trigger sidebar thumbnail population and route synchronization
+  updateSidebarThumbnails();
   syncViewWithRoute();
 }
 
