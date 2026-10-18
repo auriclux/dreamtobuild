@@ -5,23 +5,20 @@
    ========================================================================== */
 
 window.HeroRotator = class HeroRotator {
-  constructor(imagePool, heroImgEl, titleEl, badgeEl, descEl, intervalMs = 7000) {
-    this.imagePool = imagePool || []; // Array of { url, title, badgeText, badgeClass, desc }
+  constructor(imagePool, heroImgEl, titleEl, badgeEl, descEl, intervalMs = 7000, onRotateCallback = null) {
+    this.imagePool = imagePool || []; // Array of { url, title, badgeText, badgeClass, desc, category }
     this.heroImgEl = heroImgEl;
     this.titleEl = titleEl;
     this.badgeEl = badgeEl;
     this.descEl = descEl;
     this.intervalMs = intervalMs;
+    this.onRotateCallback = onRotateCallback;
     this.currentIndex = 0;
     this.timerId = null;
     this.isRotating = false;
 
-    console.log("HeroRotator initialized with pool size:", this.imagePool.length);
-
     if (this.imagePool.length > 1) {
       this.startTimer();
-    } else {
-      console.warn("HeroRotator: Image pool has 1 or fewer items. Rotation disabled.");
     }
   }
 
@@ -40,14 +37,13 @@ window.HeroRotator = class HeroRotator {
   }
 
   resetTimer() {
-    this.startTimer(); // Resets 7-second cadence on manual interaction
+    this.startTimer();
   }
 
   async rotateRandom(isAuto = false) {
     if (this.isRotating || this.imagePool.length <= 1) return;
     this.isRotating = true;
 
-    // Pick a random index different from current
     let nextIndex;
     do {
       nextIndex = Math.floor(Math.random() * this.imagePool.length);
@@ -56,13 +52,9 @@ window.HeroRotator = class HeroRotator {
     this.currentIndex = nextIndex;
     const target = this.imagePool[this.currentIndex];
 
-    // Choose a random transition style
     const transitions = ["transition-fade", "transition-slide", "transition-zoom", "transition-palsy"];
     const randomTransition = transitions[Math.floor(Math.random() * transitions.length)];
 
-    console.log(`Rotating to index ${this.currentIndex}:`, target.title, `using transition: ${randomTransition}`);
-
-    // Apply animation class and update elements
     if (this.heroImgEl) {
       this.heroImgEl.className = `rotator-hero-img ${randomTransition}`;
       this.heroImgEl.src = target.url;
@@ -74,7 +66,11 @@ window.HeroRotator = class HeroRotator {
     }
     if (this.descEl) this.descEl.textContent = target.desc || "";
 
-    // Release mutex lock after longest animation completes (Palsy = 1.1s)
+    // Trigger external callback (e.g. updating sidebar thumbnail)
+    if (this.onRotateCallback) {
+      this.onRotateCallback(target, this.currentIndex);
+    }
+
     setTimeout(() => {
       if (this.heroImgEl) {
         this.heroImgEl.className = "rotator-hero-img";
