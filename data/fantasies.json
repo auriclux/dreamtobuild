@@ -1,5 +1,131 @@
 [
-  {"_meta": {"file": "data/fantasies.json", "description": "Dream To Build — Pure Vision Visual Explorations & Styling Studies", "schemaVersion": "1.0", "lastUpdated": "2026-10-18T14:15:00"}},
+  {"_meta": {"file": "data/fantasies.json", "description": "Dream To Build — Pure Vision Visual Explorations & Styling Studies", "schemaVersion": "1.0", "lastUpdated": "2026-10-18T16:55:00"}},
+  {
+    "id": "1962-fiat-600-hayabusa",
+    "title": "1962 Fiat 600 Halftone",
+    "subtitle": "Supercharged Hayabusa Power & Ligurian Coast Study",
+    "category": "Fantasies",
+    "badgeText": "Pure Vision",
+    "badgeType": "badge-fantasy",
+    "summary": "A 1962 Fiat 600 chopped 1\", powered by a 1,507cc supercharged Hayabusa engine delivering ~300 WHP through a 6-speed sequential transaxle, featuring flag-colored halftone dot livery on a fantasy Ligurian coast[cite: 6].",
+    "thumb": "Fantasies/62 Fiat 600 halftone flag colors on a fantasy Ligurian coast.jpg",
+    "heroImage": "Fantasies/62 Fiat 600 halftone flag colors on a fantasy Ligurian coast.jpg",
+    "thumbnail": "Fantasies/62 Fiat 600 halftone flag colors on a fantasy Ligurian coast.jpg",
+    "detailUrl": "detail.html?type=fantasies&id=1962-fiat-600-hayabusa",
+    "tags": ["Fiat", "600", "1962", "Hayabusa", "Supercharged", "Halftone", "Ligurian Coast", "Il Lungo"],
+    "specifications": {
+      "year": "1962",
+      "make": "Fiat",
+      "model": "600 Custom",
+      "engine": "1,507cc Supercharged Hayabusa Inline-4 (~300 WHP)",
+      "transmission": "6-speed sequential transaxle",
+      "suspension": "Short/Long Arm (SLA) double-wishbone suspension",
+      "performance": "1.35g lateral acceleration",
+      "status": "Render Concept Study",
+      "dateAdded": "2026-10-18T16:55:00"
+    },
+    "narrative": [
+      "1962 Fiat 600, chopped 1\", powered by a 1,507cc supercharged Hayabusa engine delivering ~300 WHP through a 6-speed sequential transaxle, is supported by Short/Long Arm (SLA) double-wishbone suspension for optimal handling and 1.35g of lateral acceleration[cite: 6].",
+      "Finished in a striking tricolor halftone flag dot livery cascading along a winding fantasy Ligurian coastal road.",
+      "Related Design Study: See also <a href=\"detail.html?type=fantasies&id=il-lungo-fiat\">Il Lungo: Stretched Fiat Paint Experiment</a> for an extended silhouette and experimental candy finish companion study."
+    ],
+    "gallery": [
+      {"url": "Fantasies/62 Fiat 600 halftone flag colors on a fantasy Ligurian coast.jpg", "caption": "1962 Fiat 600 — Halftone flag colors on a fantasy Ligurian coast."},
+      {"url": "Fantasies/62 Fiat 600.jpg", "caption": "1962 Fiat 600 — Cornering profile study."},
+      {"url": "Fantasies/62 Fiat 600 halftone flag colors.jpg", "caption": "1962 Fiat 600 — Halftone livery dot pattern detail view."}
+    ],
+    "featured": true
+  },
+  {
+    "id": "1965-valiant-mid-engine",
+    "title": "1965 Plymouth Valiant Mid-Engine",
+    "subtitle": "Bob's Big Boy Friday Night Concept",
+    "category": "Fantasies",
+    "badgeText": "Pure Vision",
+    "badgeType": "badge-fantasy",
+    "summary": "A mid-engine 1965 Plymouth Valiant concept realistically imagined during a Friday night cruise at Bob's Big Boy, combining classic compact Mopar lines with a transverse mid-ship powertrain layout.",
+    "thumb": "Fantasies/65 Valiant mid engine.jpg",
+    "heroImage": "Fantasies/65 Valiant mid engine.jpg",
+    "thumbnail": "Fantasies/65 Valiant mid engine.jpg",
+    "detailUrl": "detail.html?type=fantasies&id=1965-valiant-mid-engine",
+    "tags": ["Plymouth", "Valiant", "1965", "Mid-Engine", "Bob's Big Boy", "Mopar", "Friday Night"],
+    "specifications": {
+      "year": "1965",
+      "make": "Plymouth",
+      "model": "Valiant Mid-Engine Transaxle",
+      "engine": "Mid-Mounted V8 / High-Output Powertrain",
+      "status": "Render Concept Study",
+      "dateAdded": "2026-10-18T16:55:00"
+    },
+    "narrative": [
+      "Conceived right where real bench-racing happens—over a burger and fries at Bob's Big Boy on a Friday night.",
+      "This study takes the humble utility lines of a 1965 Plymouth Valiant and re-engineers the chassis around a balanced mid-engine layout, turning an understated economy sedan into an aggressive street brawler."
+    ],
+    "gallery": [
+      {"url": "Fantasies/65 Valiant mid engine.jpg", "caption": "1965 Plymouth Valiant Mid-Engine — Bob's Big Boy Friday night stance study."}
+    ],
+    "featured": true
+  },
+  {
+    "id": "1963-lincoln-continental-halftone",
+    "title": "1963 Lincoln Continental Halftone",
+    "subtitle": "Guggenheim Halftone Livery Study",
+    "category": "Fantasies",
+    "badgeText": "Pure Vision",
+    "badgeType": "badge-fantasy",
+    "summary": "A 1963 Lincoln Continental styling study exploring optical dot-matrix halftone livery parked outside the Frank Lloyd Wright-designed Solomon R. Guggenheim Museum.",
+    "thumb": "Fantasies/63 Lincoln at Guggenheim.jpg",
+    "heroImage": "Fantasies/63 Lincoln at Guggenheim.jpg",
+    "thumbnail": "Fantasies/63 Lincoln at Guggenheim.jpg",
+    "detailUrl": "detail.html?type=fantasies&id=1963-lincoln-continental-halftone",
+    "tags": ["Lincoln", "Continental", "1963", "Halftone", "Livery", "Guggenheim", "Architecture"],
+    "specifications": {
+      "year": "1963",
+      "make": "Lincoln",
+      "model": "Continental Convertible",
+      "finish": "Halftone Dot Matrix Livery",
+      "status": "Render Concept Study",
+      "dateAdded": "2026-10-18T16:55:00"
+    },
+    "narrative": [
+      "An artistic exploration pairing the massive slab-sided geometry of a 1963 Lincoln Continental with precision halftone dot graphics.",
+      "Captured framing the sweeping modernist spiral architecture of the Solomon R. Guggenheim Museum in New York City, bridging classic luxury design with graphic optical texture."
+    ],
+    "gallery": [
+      {"url": "Fantasies/63 Lincoln at Guggenheim.jpg", "caption": "1963 Lincoln Continental — Halftone livery study at the Guggenheim Museum."}
+    ],
+    "featured": true
+  },
+  {
+    "id": "il-lungo-fiat",
+    "title": "Il Lungo: Stretched Fiat Paint Experiment",
+    "subtitle": "Extended Silhouette & Experimental Finish Study",
+    "category": "Fantasies",
+    "badgeText": "Pure Vision",
+    "badgeType": "badge-fantasy",
+    "summary": "A creative styling exploration extending a classic Fiat body shell into a sleek proportion while experimenting with depth-rich paint and clearcoat techniques.",
+    "thumb": "Fantasies/Il Lungo.jpg",
+    "heroImage": "Fantasies/Il Lungo.jpg",
+    "thumbnail": "Fantasies/Il Lungo.jpg",
+    "detailUrl": "detail.html?type=fantasies&id=il-lungo-fiat",
+    "tags": ["Fiat", "Il Lungo", "Custom Paint", "Stretched", "Styling Study", "Fiat 600"],
+    "specifications": {
+      "make": "Fiat",
+      "model": "Il Lungo Custom",
+      "finish": "Experimental Multi-Stage Paint",
+      "status": "Render Concept Study",
+      "dateAdded": "2026-10-17T16:12:00"
+    },
+    "narrative": [
+      "Il Lungo (The Long One) plays with proportion and light refraction, stretching the European compact silhouette into an elongated street cruiser.",
+      "The primary focus of this study is testing rich, multi-layer candy depth and custom clearcoat formulations against dramatic body curves.",
+      "Related Design Study: For a compact, high-output sibling study utilizing similar Italian proportions, see the <a href=\"detail.html?type=fantasies&id=1962-fiat-600-hayabusa\">1962 Fiat 600 Hayabusa Halftone</a>."
+    ],
+    "gallery": [
+      {"url": "Fantasies/Il Lungo.jpg", "caption": "Il Lungo — Stretched profile and candy paint evaluation study."}
+    ],
+    "featured": true
+  },
   {
     "id": "1959-dodge-custom-royal-lancer-dazzle",
     "title": "1959 Dodge Custom Royal Lancer GT",
@@ -7,7 +133,7 @@
     "category": "Fantasies",
     "badgeText": "Pure Vision",
     "badgeType": "badge-fantasy",
-    "summary": "Parked in front of The Broad Museum on Grand Avenue in downtown Los Angeles, this 1959 Dodge Royal Lancer GT combines forward-facing forward-sweep styling with an urban adversarial dazzle camouflage pattern[cite: 6].",
+    "summary": "Parked in front of The Broad Museum on Grand Avenue in downtown Los Angeles, this 1959 Dodge Royal Lancer GT combines forward-facing sweep styling with an urban adversarial dazzle camouflage pattern[cite: 6].",
     "thumb": "Fantasies/1959 Dodge Custom Royal Lancer in an urban adversarial dazzle scheme.jpg",
     "heroImage": "Fantasies/1959 Dodge Custom Royal Lancer in an urban adversarial dazzle scheme.jpg",
     "thumbnail": "Fantasies/1959 Dodge Custom Royal Lancer in an urban adversarial dazzle scheme.jpg",
@@ -47,7 +173,7 @@
     "category": "Fantasies",
     "badgeText": "Pure Vision",
     "badgeType": "badge-fantasy",
-    "summary": "WRV - Wilderness Retrieval Vehicle using a White Super Power cab on an M930-series chassis (5 ton, 6x6) using a Cummins 6.7L compound turbo into an Allison then Rockwell transfer case[cite: 7].",
+    "summary": "WRV - Wilderness Retrieval Vehicle using a White Super Power cab on an M930-series chassis (5 ton, 6x6) using a Cummins 6.7L compound turbo into an Allison then Rockwell transfer case.",
     "thumb": "Fantasies/Super Power 6x6.jpg",
     "heroImage": "Fantasies/Super Power 6x6.jpg",
     "thumbnail": "Fantasies/Super Power 6x6.jpg",
@@ -56,15 +182,15 @@
     "specifications": {
       "make": "White Super Power / M930",
       "model": "Wilderness Retrieval Vehicle (WRV)",
-      "chassis": "M930-series 5 ton, 6x6 chassis[cite: 7]",
-      "engine": "Cummins 6.7L compound turbo[cite: 7]",
-      "transmission": "Allison[cite: 7]",
-      "transferCase": "Rockwell transfer case[cite: 7]",
+      "chassis": "M930-series 5 ton, 6x6 chassis",
+      "engine": "Cummins 6.7L compound turbo",
+      "transmission": "Allison",
+      "transferCase": "Rockwell transfer case",
       "status": "Render Concept Study",
       "dateAdded": "2026-10-18T14:15:00"
     },
     "narrative": [
-      "WRV - Wilderness Retrieval Vehicle using a White Super Power cab on an M930-series chassis (5 ton, 6x6) using a Cummins 6.7L compound turbo into an Allison then Rockwell transfer case[cite: 7]."
+      "WRV - Wilderness Retrieval Vehicle using a White Super Power cab on an M930-series chassis (5 ton, 6x6) using a Cummins 6.7L compound turbo into an Allison then Rockwell transfer case."
     ],
     "gallery": [
       {"url": "Fantasies/Super Power 6x6.jpg", "caption": "White Super Power WRV — Wilderness recovery setup in rugged terrain."}
@@ -136,7 +262,6 @@
   {"id": "1954-willys-aero-awd", "title": "1954 Willys Aero AWD Concept", "subtitle": "All-Wheel Drive Compact Performance Study", "category": "Fantasies", "badgeText": "Pure Vision", "badgeType": "badge-fantasy", "summary": "An all-wheel-drive performance conversion concept bringing modern traction and turbocharged muscle to the classic 1954 Willys Aero compact body.", "thumb": "Fantasies/1954 Willys Aero AWD.jpg", "heroImage": "Fantasies/1954 Willys Aero AWD.jpg", "thumbnail": "Fantasies/1954 Willys Aero AWD.jpg", "detailUrl": "detail.html?type=fantasies&id=1954-willys-aero-awd", "tags": ["Willys", "Aero", "1954", "AWD", "All-Wheel Drive", "Restomod", "Compact"], "specifications": {"year": "1954", "make": "Willys", "model": "Aero Custom", "drivetrain": "All-Wheel Drive (AWD)", "engine": "Turbocharged Powertrain", "status": "Render Concept Study", "dateAdded": "2026-10-17T16:15:00"}, "narrative": ["The 1954 Willys Aero combined lightweight unibody efficiency with streamlined post-war design.", "This fantasy conversion pairs the Aero shell with a modern high-output engine and advanced AWD transfer case, turning the innocent 1950s commuter into an all-weather sleeper missile."], "gallery": ["Fantasies/1954 Willys Aero AWD.jpg"], "featured": true},
   {"id": "mid-engine-cuda-concept", "title": "Mid-Engine 'Cuda Concept", "subtitle": "Transverse Mid-Ship Mopar Performance Study", "category": "Fantasies", "badgeText": "Pure Vision", "badgeType": "badge-fantasy", "summary": "A radical mid-engine layout exploration taking the aggressive proportions of the Plymouth Barracuda and re-centering the V8 powerplant behind the driver.", "thumb": "Fantasies/Soda Pop Cuda.jpg", "heroImage": "Fantasies/Soda Pop Cuda.jpg", "thumbnail": "Fantasies/Soda Pop Cuda.jpg", "detailUrl": "detail.html?type=fantasies&id=mid-engine-cuda-concept", "tags": ["Plymouth", "Barracuda", "Cuda", "Mid-Engine", "Mopar", "Supercar Concept"], "specifications": {"year": "1970", "make": "Plymouth", "model": "Barracuda Transaxle", "engine": "Mid-Mounted V8", "transaxle": "Heavy-Duty Transaxle", "status": "Render Concept Study", "dateAdded": "2026-10-17T16:14:00"}, "narrative": ["Re-imagining the iconic E-Body muscle car architecture through the lens of supercar dynamics.", "By placing the engine mid-ship, weight distribution achieves optimal rear bias while maintaining the wide-track, menacing nose profile of the legendary Barracuda."], "gallery": ["Fantasies/Soda Pop Cuda.jpg"], "featured": true},
   {"id": "1951-hudson-pacemaker", "title": "1951 Hudson Pacemaker Custom", "subtitle": "Step-Down Chassis Lowrider & Cruiser Concept", "category": "Fantasies", "badgeText": "Pure Vision", "badgeType": "badge-fantasy", "summary": "A tailored design study celebrating Hudson's famous step-down floorpan architecture with lowered air stance and shaved custom trim.", "thumb": "Fantasies/51 Pacemaker.jpg", "heroImage": "Fantasies/51 Pacemaker.jpg", "thumbnail": "Fantasies/51 Pacemaker.jpg", "detailUrl": "detail.html?type=fantasies&id=1951-hudson-pacemaker", "tags": ["Hudson", "Pacemaker", "1951", "Step-Down", "Custom", "Restomod"], "specifications": {"year": "1951", "make": "Hudson", "model": "Pacemaker Custom", "engine": "Inline-6 / V8 Restomod", "suspension": "Air Ride Lowered Stance", "status": "Render Concept Study", "dateAdded": "2026-10-17T16:13:00"}, "narrative": ["Hudson's revolutionary Step-Down chassis dropped the passenger floorpan inside the frame rails, giving the 1951 Pacemaker a naturally low center of gravity and low roofline long before it was standard.", "This fantasy study accentuates those swept lines with bagged air suspension, seamless bodywork, and custom rolling stock."], "gallery": ["Fantasies/51 Pacemaker.jpg"], "featured": true},
-  {"id": "il-lungo-fiat", "title": "Il Lungo: Stretched Fiat Paint Experiment", "subtitle": "Extended Silhouette & Experimental Finish Study", "category": "Fantasies", "badgeText": "Pure Vision", "badgeType": "badge-fantasy", "summary": "A creative styling exploration extending a classic Fiat body shell into a sleek proportion while experimenting with depth-rich paint and clearcoat techniques.", "thumb": "Fantasies/Il Lungo.jpg", "heroImage": "Fantasies/Il Lungo.jpg", "thumbnail": "Fantasies/Il Lungo.jpg", "detailUrl": "detail.html?type=fantasies&id=il-lungo-fiat", "tags": ["Fiat", "Il Lungo", "Custom Paint", "Stretched", "Styling Study"], "specifications": {"make": "Fiat", "model": "Il Lungo Custom", "finish": "Experimental Multi-Stage Paint", "status": "Render Concept Study", "dateAdded": "2026-10-17T16:12:00"}, "narrative": ["Il Lungo (The Long One) plays with proportion and light refraction, stretching the European compact silhouette into an elongated street cruiser.", "The primary focus of this study is testing rich, multi-layer candy depth and custom clearcoat formulations against dramatic body curves."], "gallery": ["Fantasies/Il Lungo.jpg"], "featured": true},
   {"id": "van-nuys-blvd-firebird-caddy", "title": "Van Nuys Blvd Cruisin' Situation", "subtitle": "Omar's Firebird & '63 Caddy Imagined Back in the Day", "category": "Fantasies", "badgeText": "Pure Vision", "badgeType": "badge-fantasy", "summary": "A nostalgic period scene placing Omar's custom Firebird alongside a classic '63 Cadillac cruising Van Nuys Boulevard during the golden era of SoCal street culture.", "thumb": "Fantasies/Firebird on Van Nuys blvd.jpg", "heroImage": "Fantasies/Firebird on Van Nuys blvd.jpg", "thumbnail": "Fantasies/Firebird on Van Nuys blvd.jpg", "detailUrl": "detail.html?type=fantasies&id=van-nuys-blvd-firebird-caddy", "tags": ["Pontiac", "Firebird", "Cadillac", "1963", "Van Nuys", "Cruising", "SoCal", "Double-O Garage"], "specifications": {"setting": "Van Nuys Boulevard, SoCal", "vehicles": "Omar's Firebird & '63 Cadillac Convertible", "status": "Fantasy Situation Render", "dateAdded": "2026-10-17T16:11:00"}, "narrative": ["Rather than a single vehicle build concept, this is a fantasy situation—a period-authentic homage to Wednesday night cruising on Van Nuys Boulevard.", "Captured under the boulevard neon lights, Double-O Garage owner Omar's Firebird rolls alongside a low-slung '63 Cadillac, recreating the peak era of South Bay and San Fernando Valley cruising history."], "gallery": ["Fantasies/Firebird on Van Nuys blvd.jpg"], "featured": true},
   {"id": "night-wraith", "title": "Night Wraith: '65 Cadillac Convertible", "subtitle": "Slammed Air Ride & Twin-Boosted Cruiser", "category": "Fantasies", "badgeText": "Pure Vision", "badgeType": "badge-fantasy", "summary": "A radical 1965 Cadillac Convertible restomod concept engineered with ultra-low air ride suspension, custom narrow rear suicide doors, a high-output LS V8, and subtle ghosted graphics.", "thumb": "Fantasies/Night Wraith.jpg", "heroImage": "Fantasies/Night Wraith.jpg", "thumbnail": "Fantasies/Night Wraith.jpg", "detailUrl": "detail.html?type=fantasies&id=night-wraith", "tags": ["Cadillac", "Night Wraith", "1965", "Convertible", "Air Ride", "Suicide Doors", "LS V8", "Restomod"], "specifications": {"year": "1965", "make": "Cadillac", "model": "DeVille Convertible Restomod", "engine": "Twin-Boosted LS V8", "suspension": "Custom Lowered Air Suspension / Bagged", "doors": "Narrow Rear-Hinged Suicide Doors", "status": "Render Concept Study", "dateAdded": "2026-10-17T15:39:00"}, "narrative": ["Night Wraith explores taking the commanding length and iconic tailfins of the 1965 Cadillac Convertible and dropping it flat against the pavement with modern air suspension geometry.", "The custom bodywork features re-engineered narrow rear suicide doors for seamless passenger ingress, shaved brightwork, ghosted graphics, and a twin-boosted LS V8 delivering modern reliability and effortless street presence."], "gallery": [{"url": "Fantasies/Night Wraith.jpg", "caption": "Night Wraith — Primary stance profile showcasing lowered air ride geometry and custom body lines."}, {"url": "Fantasies/Modified 65 up and down.jpg", "caption": "Night Wraith — Ride height and suspension travel comparison study."}], "featured": true},
   {"id": "1950-plymouth-suburban", "title": "1950 Plymouth Suburban Station Wagon", "subtitle": "Early All-Steel Wagon Lowrider & Custom Concept", "category": "Fantasies", "badgeText": "Pure Vision", "badgeType": "badge-fantasy", "summary": "An exploratory design concept reviving Plymouth's iconic 1950 all-steel 2-door wagon with slammed stance, custom brightwork, and modern proportions.", "thumb": "Fantasies/50 Plymouth Suburban.jpg", "heroImage": "Fantasies/50 Plymouth Suburban.jpg", "thumbnail": "Fantasies/50 Plymouth Suburban.jpg", "detailUrl": "detail.html?type=fantasies&id=1950-plymouth-suburban", "tags": ["Plymouth", "Suburban", "Wagon", "1950", "Custom", "Restomod", "Steel Wagon"], "specifications": {"year": "1950", "make": "Plymouth", "model": "Suburban 2-Door Station Wagon", "engine": "Custom Crate Powertrain", "suspension": "Air Ride / Bagged Low Stance", "status": "Render Concept Study", "dateAdded": "2026-10-17T15:15:00"}, "narrative": ["The 1950 Plymouth Suburban was a pioneer in American automotive history as one of the first all-steel station wagons brought to market.", "This fantasy concept reimagines the classic 2-door wagon silhouette with modern air suspension geometry, smoothed body contours, and a street-cruiser stance while honoring its vintage chrome grille and fastback roofline."], "gallery": ["Fantasies/50 Plymouth Suburban.jpg"], "featured": true},
@@ -148,5 +273,5 @@
   {"id": "blown-gremlin", "title": "Blown '70 Gremlin", "subtitle": "Bridge Donut & Blower Study", "category": "Fantasies", "badgeText": "Pure Vision", "badgeType": "badge-fantasy", "summary": "This was a quick study of a '70 Gremlin doing donuts on the 7th Street Bridge. SBC with a 6-71.", "thumb": "Fantasies/blown-gremlin.png", "heroImage": "Fantasies/blown-gremlin.png", "thumbnail": "Fantasies/blown-gremlin.png", "detailUrl": "detail.html?type=fantasies&id=blown-gremlin", "tags": ["AMC", "Gremlin", "SBC", "6-71", "Supercharged", "Street Concept"], "specifications": {"year": "1970", "make": "AMC", "model": "Gremlin", "engine": "SBC w/ 6-71 Blower", "suspension": "Street / Drag Stance", "status": "Render Concept", "dateAdded": "2026-09-27T12:00:00"}, "narrative": ["This was a quick study of a '70 Gremlin doing donuts on the 7th Street Bridge. SBC with a 6-71.", "A short-wheelbase riot featuring high-rise forced induction, street-drag rake, and aggressive rubber."], "gallery": ["Fantasies/blown-gremlin.png"], "featured": true},
   {"id": "nimr-camaro-trophy-truck", "title": "Nimr: Mid-Engine Camaro Trophy Truck", "subtitle": "Extreme Off-Road Performance Fusion", "category": "Fantasies", "badgeText": "Pure Vision", "badgeType": "badge-fantasy", "summary": "A mid-engine, trophy-truck-based concept merging a Camaro body shell with extreme off-road capability.", "thumb": "Fantasies/nimr-camaro.jpg", "heroImage": "Fantasies/nimr-camaro.jpg", "thumbnail": "Fantasies/nimr-camaro.jpg", "detailUrl": "detail.html?type=fantasies&id=nimr-camaro-trophy-truck", "tags": ["Chevy", "Camaro", "Mid-Engine", "Trophy Truck", "Offroad"], "specifications": {"year": "1969", "make": "Chevrolet", "model": "Camaro", "engine": "Mid-Engine V8", "suspension": "Long-Travel Trophy Truck", "status": "Render Concept", "dateAdded": "2026-09-27T12:00:00"}, "narrative": ["A mid-engine, trophy-truck-based concept merging a classic Camaro shell with extreme off-road capability.", "Built over an all-terrain tube chassis designed to soak up desert high-speed runs while keeping muscle car proportions."], "gallery": ["Fantasies/nimr-camaro.jpg"], "featured": true},
   {"id": "evans-ride-riviera", "title": "Evan's Ride: Boattail Riviera Concept", "subtitle": "Modern Tailored Muscle & Sweeping Lines", "category": "Fantasies", "badgeText": "Pure Vision", "badgeType": "badge-fantasy", "summary": "Design explorations centered around the iconic Boattail Buick Riviera chassis.", "thumb": "Fantasies/evans-ride-rivvy-1.jpg", "heroImage": "Fantasies/evans-ride-rivvy-1.jpg", "thumbnail": "Fantasies/evans-ride-rivvy-1.jpg", "detailUrl": "detail.html?type=fantasies&id=evans-ride-riviera", "tags": ["Buick", "Riviera", "Boattail", "Concept", "Classic", "Le Marteau"], "specifications": {"year": "1971", "make": "Buick", "model": "Riviera", "engine": "Concept Powertrain", "suspension": "Custom Lowered Stance", "status": "Render Concept", "dateAdded": "2026-09-27T12:00:00"}, "narrative": ["Design explorations centered around the iconic Boattail Buick Riviera chassis.", "Highlighting the extreme rear fastback profile and boat-tail decklid contouring with aggressive fitment and refined brightwork."], "gallery": [{"url": "Fantasies/evans-ride-rivvy-1.jpg", "caption": "Evan's Ride — Boattail Riviera Concept primary profile view."}, {"url": "Fantasies/Le Marteau.jpg", "caption": "Evan's Ride — Le Marteau styling and attitude study."}, {"url": "Fantasies/Rivvy and Caprice.jpg", "caption": "Rivvy and Caprice — Sunset coastal stance exploration."}], "featured": true},
-  {"id": "fabian-buick-wagon", "title": "Fabian's Buick Estate Wagon", "subtitle": "Lowrider & Custom Stance Exploration", "category": "Fantasies", "badgeText": "Pure Vision", "badgeType": "badge-fantasy", "summary": "LS3 swap, bagged stance, shaved suicide doors, and dual custom/lowrider paint directions.", "thumb": "Fantasies/fabian-buick-wagon-custom.jpg", "heroImage": "Fantasies/fabian-buick-wagon-custom.jpg", "thumbnail": "Fantasies/fabian-buick-wagon-custom.jpg", "detailUrl": "detail.html?type=fantasies&id=fabian-buick-wagon", "tags": ["Buick", "Wagon", "LS3", "Bagged", "Suicide Doors", "Lowrider"], "specifications": {"year": "1970", "make": "Buick", "model": "Estate Wagon", "engine": "LS3 V8", "suspension": "Air Ride / Bagged", "status": "Render Concept", "dateAdded": "2026-09-27T12:00:00"}, "narrative": ["LS3 swap, bagged stance, shaved suicide doors, and dual custom/lowrider paint directions.", "A high-concept exploration into long-roof styling, blending classic Buick cruiser lines with modern air-ride geometry and striking custom paint schemes."], "gallery": ["Fantasies/fabian-buick-wagon-custom.jpg", "Fantasies/fabian-buick-wagon-urban.jpg"], "featured": true}
+  {"id": "fabian-buick-wagon", "title": "Fabian's Buick Estate Wagon", "subtitle": "Lowrider & Custom Stance Exploration", "category": "Fantasies", "badgeText": "Pure Vision", "badgeType": "badge-fantasy", "summary": "LS3 swap, bagged stance, shaved suicide doors, and dual custom/lowrider paint directions.", "thumb": "Fantasies/fabian-buick-wagon-custom.jpg", "heroImage": "Fantasies/fabian-buick-wagon-custom.jpg", "thumbnail": "Fantasies/fabian-buick-wagon-custom.jpg", "detailUrl": "detail.html?type=fantasies&id=fabian-buick-wagon", "tags": ["Buick", "Wagon", "LS3", "Bagged", "Suicide Doors", "Lowrider"], "specifications": {"year": "1970", "make": "Buick", "model": "Estate Wagon", "engine": "LS3 V8", "suspension": "Air Ride / Bagged", "status": "Render Concept", "dateAdded": "2026-09-27T12:00:00"}, "narrative": ["LS3 swap, bagged stance, shaved suicide doors, and dual custom/lowrider paint directions.", "A high-concept exploration into long-roof styling, blending classic Buick cruiser lines with modern air-ride geometry and striking custom paint schemes."], "gallery": [{"url": "Fantasies/fabian-buick-wagon-custom.jpg", "caption": "Fabian's Buick Estate Wagon — Custom paint study."}, {"url": "Fantasies/fabian-buick-wagon-urban.jpg", "caption": "Fabian's Buick Estate Wagon — Urban lowrider street view."}], "featured": true}
 ]
