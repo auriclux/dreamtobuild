@@ -1,5 +1,5 @@
 /* ==========================================================================
-   DREAM TO BUILD — GALLERY LOADER (ROBUST TIMING & ERROR DEBUGGING)
+   DREAM TO BUILD — GALLERY LOADER & ROTATOR INTEGRATION
    ========================================================================== */
 
 function initGalleryLoader() {
@@ -57,6 +57,14 @@ function initGalleryLoader() {
   const branchBtns = document.querySelectorAll(".branch-btn");
 
   let activeCategory = null;
+  let activeRotator = null; // Holds our HeroRotator instance
+
+  function stopRotator() {
+    if (activeRotator) {
+      activeRotator.stop();
+      activeRotator = null;
+    }
+  }
 
   function setHero(data) {
     if (heroImg) heroImg.src = data.img || data.defaultHero || "";
@@ -69,6 +77,7 @@ function initGalleryLoader() {
   }
 
   function resetToHero(updateState = true) {
+    stopRotator();
     activeCategory = null;
     branchBtns.forEach(b => b.classList.remove("active"));
     setHero(arbitraryDefaultHero);
@@ -78,6 +87,35 @@ function initGalleryLoader() {
     if (galleryGrid) {
       galleryGrid.style.display = "none";
       galleryGrid.innerHTML = "";
+    }
+
+    // Home rotator pool from sidebar nav items
+    const homePool = [
+      {
+        url: "./Projects/torky-t-hero.jpg",
+        title: "Torky-T",
+        badgeText: "FEATURED SHOWCASE",
+        badgeClass: "badge-project",
+        desc: "1923 Ford T-Bucket featuring a built 350 SBC, Quick Fuel 750, Don Zig serviced Vertex magneto, TH350, and 9-inch rear axle."
+      },
+      {
+        url: "./Dreams/surrey-hero-40s.jpg",
+        title: "Dreams",
+        badgeText: "TARGET BUILDS",
+        badgeClass: "badge-dream",
+        desc: "Conceptual studies and detailed engineering blueprints."
+      },
+      {
+        url: "./Fantasies/fabian-buick-wagon-custom.jpg",
+        title: "Fantasies",
+        badgeText: "PURE VISION",
+        badgeClass: "badge-fantasy",
+        desc: "Pure visual explorations and styling studies."
+      }
+    ];
+
+    if (window.HeroRotator && heroImg) {
+      activeRotator = new HeroRotator(homePool, heroImg, heroTitle, heroBadge, heroDesc, 7000);
     }
     
     if (updateState && window.location.hash) {
@@ -98,6 +136,7 @@ function initGalleryLoader() {
     const meta = categoryMeta[folderType];
     if (!meta) return;
 
+    stopRotator();
     activeCategory = folderType;
 
     branchBtns.forEach(b => {
@@ -140,15 +179,22 @@ function initGalleryLoader() {
         return dateB - dateA;
       });
 
-      if (items[0]) {
-        const newest = items[0];
-        setHero({
-          img: newest.heroImage || newest.thumb || newest.thumbnail,
-          title: newest.title,
-          badgeText: newest.badgeText || meta.badgeText,
-          badgeClass: newest.badgeType || meta.badgeClass,
-          desc: newest.subtitle || newest.summary || meta.desc
-        });
+      // Build image pool for HeroRotator from all items in this category
+      const imagePool = items.map(item => ({
+        url: item.heroImage || item.thumb || item.thumbnail || (item.gallery && item.gallery[0]) || "",
+        title: item.title,
+        badgeText: item.badgeText || meta.badgeText,
+        badgeClass: item.badgeType || meta.badgeClass,
+        desc: item.subtitle || item.summary || meta.desc
+      })).filter(img => img.url !== "");
+
+      if (imagePool.length > 0 && heroImg) {
+        // Set initial hero to the first item
+        setHero(imagePool[0]);
+        // Start the 7-second randomized rotator for this category
+        if (window.HeroRotator) {
+          activeRotator = new HeroRotator(imagePool, heroImg, heroTitle, heroBadge, heroDesc, 7000);
+        }
       }
 
       galleryGrid.style.display = "grid";
