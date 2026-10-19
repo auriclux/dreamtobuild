@@ -1,5 +1,13 @@
 [
   {
+    "_meta": {
+      "file": "data/dreams.json",
+      "description": "Dream To Build — Design, Blueprints & Future Vehicle Concepts",
+      "schemaVersion": "1.0",
+      "lastUpdated": "2026-10-19T15:58:00"
+    }
+  },
+  {
     "id": "twin-turbo-fireball-320",
     "title": "Twin-Turbo Fireball 320",
     "subtitle": "1939 Buick Business Coupe",
@@ -32,7 +40,7 @@
     ],
     "featured": true
   },
- {
+  {
     "id": "project-voodoo-chile",
     "title": "Project VôôDôô Chīle",
     "subtitle": "1948 Studebaker Champion 4-Door Deluxe Grand Touring Restomod",
@@ -60,9 +68,9 @@
       "While the real Studebaker currently languishes in storage waiting for clear shop bandwidth, the design and treatment studies are fully mapped out for when fabrication finally kicks off."
     ],
     "gallery": [
-      {"url": "Dreams/VooDoo Chile shopping.jpg", "caption": "Project VôôDôô Chīle — Current grand touring shopping and stance study."},
-      {"url": "Dreams/Stude.jpg", "caption": "Project VôôDôô Chīle — Base metal and storage phase reference."},
-      {"url": "Dreams/Updated treatment.jpg", "caption": "Project VôôDôô Chīle — Early rendition showing prior styling phase before recent updates."}
+      "Dreams/VooDoo Chile shopping.jpg",
+      "Dreams/Stude.jpg",
+      "Dreams/Updated treatment.jpg"
     ],
     "featured": true
   },
