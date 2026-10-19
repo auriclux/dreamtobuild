@@ -1,5 +1,94 @@
 [
-  {"_meta": {"file": "data/fantasies.json", "description": "Dream To Build — Pure Vision Visual Explorations & Styling Studies", "schemaVersion": "1.0", "lastUpdated": "2026-10-18T17:15:00"}},
+  {"_meta": {"file": "data/fantasies.json", "description": "Dream To Build — Pure Vision Visual Explorations & Styling Studies", "schemaVersion": "1.0", "lastUpdated": "2026-10-18T17:35:00"}},
+  {
+    "id": "marinas-beloved-corvette",
+    "title": "Marina's Beloved Corvette",
+    "subtitle": "1986 C4 Corvette Custom Styling & Treatment Study",
+    "category": "Fantasies",
+    "badgeText": "Pure Vision",
+    "badgeType": "badge-fantasy",
+    "summary": "A multi-treatment styling exploration centered around a 1986 C4 Corvette, pairing the Sakura Vette custom livery with multi-angle treatment compositions featuring Mina.",
+    "thumb": "Fantasies/Sakura Vette.jpg",
+    "heroImage": "Fantasies/Sakura Vette.jpg",
+    "thumbnail": "Fantasies/Sakura Vette.jpg",
+    "detailUrl": "detail.html?type=fantasies&id=marinas-beloved-corvette",
+    "tags": ["Chevrolet", "Corvette", "C4", "1986", "Sakura", "Mina", "Styling Study"],
+    "specifications": {
+      "year": "1986",
+      "make": "Chevrolet",
+      "model": "Corvette C4",
+      "finish": "Sakura Blossom Custom & Multi-Treatment Composites",
+      "status": "Render Concept Study",
+      "dateAdded": "2026-10-18T17:35:00"
+    },
+    "narrative": [
+      "A personal design study bringing together distinct visual directions for the 1986 C4 Corvette platform.",
+      "The primary hero view highlights the custom Sakura Vette graphic edition, while the secondary composition explores multiple body treatments, stance angles, and character styling with Mina."
+    ],
+    "gallery": [
+      {"url": "Fantasies/Sakura Vette.jpg", "caption": "Marina's Beloved Corvette — Sakura Vette edition primary showcase."},
+      {"url": "Fantasies/86 Vette treatments.jpg", "caption": "Marina's Beloved Corvette — Multi-treatment composite study with Mina."}
+    ],
+    "featured": true
+  },
+  {
+    "id": "necromancer-series",
+    "title": "The Necromancer Series",
+    "subtitle": "Cyber-JDM Street Brawlers & Character Portrait",
+    "category": "Fantasies",
+    "badgeText": "Pure Vision",
+    "badgeType": "badge-fantasy",
+    "summary": "A narrative styling study featuring the Necromancer Z as the hero build alongside the Necromancer Skyline and realistic character portrait.",
+    "thumb": "Fantasies/Necromancer Z.jpg",
+    "heroImage": "Fantasies/Necromancer Z.jpg",
+    "thumbnail": "Fantasies/Necromancer Z.jpg",
+    "detailUrl": "detail.html?type=fantasies&id=necromancer-series",
+    "tags": ["Nissan", "Datsun", "Z", "Skyline", "Necromancer", "Cyber JDM", "Character Study"],
+    "specifications": {
+      "vehicles": "Datsun/Nissan Z & Skyline R32/R34 Concept Platforms",
+      "theme": "Necromancer Cyber-JDM & Photoreal Character Narrative",
+      "status": "Render Concept Study",
+      "dateAdded": "2026-10-18T17:35:00"
+    },
+    "narrative": [
+      "The Necromancer series explores dark, aggressive cyber-JDM styling across classic Nissan/Datsun platforms.",
+      "Anchored by the high-output Necromancer Z, the study expands to include the character's widebody Skyline and a photorealistic depiction of the driver behind the machine."
+    ],
+    "gallery": [
+      {"url": "Fantasies/Necromancer Z.jpg", "caption": "The Necromancer Z — Hero street build stance."},
+      {"url": "Fantasies/Necromancer Skyline.jpg", "caption": "The Necromancer Skyline — Widebody build render with photoreal character portrait."}
+    ],
+    "featured": true
+  },
+  {
+    "id": "1960-chrysler-saratoga-swamp-bronze",
+    "title": "1960 Chrysler Saratoga",
+    "subtitle": "Swamp Bronze Paint & Stance Color Study",
+    "category": "Fantasies", "badgeText": "Pure Vision",
+    "badgeType": "badge-fantasy",
+    "summary": "A focused paint and color match study evaluating deep, metallic Swamp Bronze paint formulation against the long-roof body lines of a 1960 Chrysler Saratoga.",
+    "thumb": "Fantasies/60 Saratoga in Swamp Bronze.jpg",
+    "heroImage": "Fantasies/60 Saratoga in Swamp Bronze.jpg",
+    "thumbnail": "Fantasies/60 Saratoga in Swamp Bronze.jpg",
+    "detailUrl": "detail.html?type=fantasies&id=1960-chrysler-saratoga-swamp-bronze",
+    "tags": ["Chrysler", "Saratoga", "1960", "Swamp Bronze", "Custom Paint", "Color Study"],
+    "specifications": {
+      "year": "1960",
+      "make": "Chrysler",
+      "model": "Saratoga",
+      "finish": "Swamp Bronze Metallic",
+      "status": "Render Concept Study",
+      "dateAdded": "2026-10-18T17:35:00"
+    },
+    "narrative": [
+      "Created as an explicit paint formulation study to evaluate and match the rich, multi-stage reflections of metallic Swamp Bronze.",
+      "The sweeping fins and broad flanks of the 1960 Chrysler Saratoga serve as the canvas for assessing color depth under varying ambient lighting conditions."
+    ],
+    "gallery": [
+      {"url": "Fantasies/60 Saratoga in Swamp Bronze.jpg", "caption": "1960 Chrysler Saratoga — Swamp Bronze paint depth and reflection study."}
+    ],
+    "featured": true
+  },
   {
     "id": "1962-fiat-600-hayabusa",
     "title": "1962 Fiat 600 Halftone",
