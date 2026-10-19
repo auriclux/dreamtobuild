@@ -1,5 +1,5 @@
 [
-  {"_meta": {"file": "data/fantasies.json", "description": "Dream To Build — Pure Vision Visual Explorations & Styling Studies", "schemaVersion": "1.0", "lastUpdated": "2026-10-18T16:55:00"}},
+  {"_meta": {"file": "data/fantasies.json", "description": "Dream To Build — Pure Vision Visual Explorations & Styling Studies", "schemaVersion": "1.0", "lastUpdated": "2026-10-18T17:15:00"}},
   {
     "id": "1962-fiat-600-hayabusa",
     "title": "1962 Fiat 600 Halftone",
@@ -7,7 +7,7 @@
     "category": "Fantasies",
     "badgeText": "Pure Vision",
     "badgeType": "badge-fantasy",
-    "summary": "A 1962 Fiat 600 chopped 1\", powered by a 1,507cc supercharged Hayabusa engine delivering ~300 WHP through a 6-speed sequential transaxle, featuring flag-colored halftone dot livery on a fantasy Ligurian coast[cite: 6].",
+    "summary": "A 1962 Fiat 600 chopped 1\", powered by a 1,507cc supercharged Hayabusa engine delivering ~300 WHP through a 6-speed sequential transaxle, featuring flag-colored halftone dot livery on a fantasy Ligurian coast.",
     "thumb": "Fantasies/62 Fiat 600 halftone flag colors on a fantasy Ligurian coast.jpg",
     "heroImage": "Fantasies/62 Fiat 600 halftone flag colors on a fantasy Ligurian coast.jpg",
     "thumbnail": "Fantasies/62 Fiat 600 halftone flag colors on a fantasy Ligurian coast.jpg",
@@ -25,7 +25,7 @@
       "dateAdded": "2026-10-18T16:55:00"
     },
     "narrative": [
-      "1962 Fiat 600, chopped 1\", powered by a 1,507cc supercharged Hayabusa engine delivering ~300 WHP through a 6-speed sequential transaxle, is supported by Short/Long Arm (SLA) double-wishbone suspension for optimal handling and 1.35g of lateral acceleration[cite: 6].",
+      "1962 Fiat 600, chopped 1\", powered by a 1,507cc supercharged Hayabusa engine delivering ~300 WHP through a 6-speed sequential transaxle, is supported by Short/Long Arm (SLA) double-wishbone suspension for optimal handling and 1.35g of lateral acceleration.",
       "Finished in a striking tricolor halftone flag dot livery cascading along a winding fantasy Ligurian coastal road.",
       "Related Design Study: See also <a href=\"detail.html?type=fantasies&id=il-lungo-fiat\">Il Lungo: Stretched Fiat Paint Experiment</a> for an extended silhouette and experimental candy finish companion study."
     ],
