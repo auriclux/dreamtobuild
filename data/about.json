@@ -4,11 +4,11 @@
       "file": "data/about.json",
       "description": "About Dream To Build — Modular Text File Manifest",
       "schemaVersion": "1.0",
-      "lastUpdated": "2026-10-19T14:32:00"
+      "lastUpdated": "2026-10-19T14:40:00"
     }
   },
   {
-    "id": "about-dream-to-build",
+    "id": "about",
     "title": "About Dream To Build",
     "subtitle": "Dragging High Concept Pretty Pictures Kicking and Screaming into the Real World",
     "category": "About",
@@ -18,7 +18,7 @@
     "thumb": "",
     "heroImage": "",
     "thumbnail": "",
-    "detailUrl": "detail.html?type=about&id=about-dream-to-build",
+    "detailUrl": "detail.html?type=about&id=about",
     "contentUrl": "About/About.txt",
     "gallery": [],
     "featured": true
@@ -26,7 +26,7 @@
   {
     "id": "shop-rules",
     "title": "Shop Rules & Philosophy",
-    "subtitle": "Vulcan Filters, Empirical Verification & Co-Creation Notice",
+    "subtitle": "",
     "category": "About",
     "badgeText": "Guidelines",
     "badgeType": "badge-about",
