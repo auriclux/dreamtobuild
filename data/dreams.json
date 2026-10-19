@@ -32,7 +32,7 @@
     ],
     "featured": true
   },
-  {
+ {
     "id": "project-voodoo-chile",
     "title": "Project VôôDôô Chīle",
     "subtitle": "1948 Studebaker Champion 4-Door Deluxe Grand Touring Restomod",
@@ -52,7 +52,7 @@
       "purpose": "Grand Touring Comfort & Custom Restomod",
       "detailing": "Papa Legba veve pinstriping & embedded pure silver dash rounds",
       "status": "Design Study / Languishing in Storage",
-      "dateAdded": "2026-10-19T15:35:00"
+      "dateAdded": "2026-10-19T15:45:00"
     },
     "narrative": [
       "Project VôôDôô Chīle takes the distinctive post-war silhouette of a 1948 Studebaker Champion 4-door Deluxe and reimagines it as a long-legged Grand Touring cruiser.",
@@ -61,6 +61,7 @@
     ],
     "gallery": [
       {"url": "Dreams/VooDoo Chile shopping.jpg", "caption": "Project VôôDôô Chīle — Current grand touring shopping and stance study."},
+      {"url": "Dreams/Stude.jpg", "caption": "Project VôôDôô Chīle — Base metal and storage phase reference."},
       {"url": "Dreams/Updated treatment.jpg", "caption": "Project VôôDôô Chīle — Early rendition showing prior styling phase before recent updates."}
     ],
     "featured": true
