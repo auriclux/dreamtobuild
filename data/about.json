@@ -4,7 +4,7 @@
       "file": "data/about.json",
       "description": "About Dream To Build — Modular Text File Manifest",
       "schemaVersion": "1.0",
-      "lastUpdated": "2026-10-19T14:48:00"
+      "lastUpdated": "2026-10-19T15:15:00"
     }
   },
   {
@@ -15,12 +15,14 @@
     "badgeText": "Manifesto",
     "badgeType": "badge-about",
     "summary": "The origin, ethos, and purpose behind the Dream To Build custom vehicle portfolio and design studio.",
-    "thumb": "",
-    "heroImage": "",
-    "thumbnail": "",
+    "thumb": "About/mushroom head.jpg",
+    "heroImage": "About/mushroom head.jpg",
+    "thumbnail": "About/mushroom head.jpg",
     "detailUrl": "detail.html?type=about&id=about",
     "contentUrl": "About/About.txt",
-    "gallery": [],
+    "gallery": [
+      {"url": "About/mushroom head.jpg", "caption": "About Dream To Build — Studio concept and visual identity."}
+    ],
     "featured": true
   },
   {
@@ -31,12 +33,14 @@
     "badgeText": "Guidelines",
     "badgeType": "badge-about",
     "summary": "Core operating principles governing empirical verification, logical consistency, and the continuous AI collaboration/review process.",
-    "thumb": "",
-    "heroImage": "",
-    "thumbnail": "",
+    "thumb": "About/Rule 0.jpg",
+    "heroImage": "About/Rule 0.jpg",
+    "thumbnail": "About/Rule 0.jpg",
     "detailUrl": "detail.html?type=about&id=shop-rules",
     "contentUrl": "About/shop-rules.txt",
-    "gallery": [],
+    "gallery": [
+      {"url": "About/Rule 0.jpg", "caption": "Shop Rules & Philosophy — Foundational engineering directives."}
+    ],
     "featured": true
   },
   {
@@ -47,9 +51,9 @@
     "badgeText": "Architecture",
     "badgeType": "badge-about",
     "summary": "Technical overview of the software, local compute environments, CAD toolchains, and shop fabrication stack powering Dream To Build.",
-    "thumb": "",
-    "heroImage": "",
-    "thumbnail": "",
+    "thumb": "About/Stack.jpg",
+    "heroImage": "About/Stack.jpg",
+    "thumbnail": "About/Stack.jpg",
     "detailUrl": "detail.html?type=about&id=build-stack",
     "contentUrl": "About/build-stack.txt",
     "specifications": {
@@ -57,7 +61,9 @@
       "cad_2d_3d": "Autodesk Fusion & Inkscape Vector Design",
       "process": "Iterative Human-AI Co-Creation"
     },
-    "gallery": [],
+    "gallery": [
+      {"url": "About/Stack.jpg", "caption": "Build Stack & Studio Architecture — Tooling and technical environment."}
+    ],
     "featured": true
   }
 ]
