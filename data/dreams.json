@@ -33,6 +33,39 @@
     "featured": true
   },
   {
+    "id": "project-voodoo-chile",
+    "title": "Project VôôDôô Chīle",
+    "subtitle": "1948 Studebaker Champion 4-Door Deluxe Grand Touring Restomod",
+    "category": "Dreams",
+    "badgeText": "Design & Blueprints",
+    "badgeType": "badge-dream",
+    "summary": "A 1948 Studebaker Champion 4-door Deluxe Grand Touring restomod concept featuring Papa Legba veve pinstriping, pure silver rounds embedded in the dash, and custom grand touring architecture.",
+    "thumb": "Dreams/VooDoo Chile shopping.jpg",
+    "heroImage": "Dreams/VooDoo Chile shopping.jpg",
+    "thumbnail": "Dreams/VooDoo Chile shopping.jpg",
+    "detailUrl": "detail.html?type=dreams&id=project-voodoo-chile",
+    "tags": ["Studebaker", "Champion", "1948", "Grand Touring", "VôôDôô Chīle", "Restomod", "Storage Build"],
+    "specifications": {
+      "year": "1948",
+      "make": "Studebaker",
+      "model": "Champion 4-Door Deluxe",
+      "purpose": "Grand Touring Comfort & Custom Restomod",
+      "detailing": "Papa Legba veve pinstriping & embedded pure silver dash rounds",
+      "status": "Design Study / Languishing in Storage",
+      "dateAdded": "2026-10-19T15:35:00"
+    },
+    "narrative": [
+      "Project VôôDôô Chīle takes the distinctive post-war silhouette of a 1948 Studebaker Champion 4-door Deluxe and reimagines it as a long-legged Grand Touring cruiser.",
+      "The aesthetic blends subtle occult-inspired custom detailing—including Papa Legba veve pinstriping and pure silver rounds embedded directly into the dash—with clean restomod proportions.",
+      "While the real Studebaker currently languishes in storage waiting for clear shop bandwidth, the design and treatment studies are fully mapped out for when fabrication finally kicks off."
+    ],
+    "gallery": [
+      {"url": "Dreams/VooDoo Chile shopping.jpg", "caption": "Project VôôDôô Chīle — Current grand touring shopping and stance study."},
+      {"url": "Dreams/Updated treatment.jpg", "caption": "Project VôôDôô Chīle — Early rendition showing prior styling phase before recent updates."}
+    ],
+    "featured": true
+  },
+  {
     "id": "surrey-concept",
     "title": "The Surrey",
     "subtitle": "Custom Surrey Concept",
