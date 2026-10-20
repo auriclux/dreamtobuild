@@ -37,7 +37,7 @@
       
       <!-- Spotlight Hero Media -->
       <div id="spotlight-frame" style="background-color: var(--panel-bg); border: 1px solid var(--border-color); border-radius: 6px; overflow: hidden;">
-        <div class="spotlight-media" style="width: 100%; height: 420px; background-color: #050608; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+        <div class="spotlight-media" style="width: 100%; height: 420px; background-color: #050608; display: flex; align-items: center; justify-content: center; overflow: hidden; cursor: pointer;" onclick="openLightbox(document.getElementById('detail-hero-img').src, document.getElementById('detail-title').textContent)">
           <img id="detail-hero-img" src="" alt="Hero Preview" style="max-width: 100%; max-height: 100%; object-fit: contain;">
         </div>
         <div class="spotlight-caption" style="padding: 16px 20px; border-top: 1px solid var(--border-color);">
@@ -68,6 +68,15 @@
     </aside>
 
   </main>
+
+  <!-- FULLSCREEN LIGHTBOX MODAL -->
+  <div id="lightbox-modal" class="lightbox-overlay" onclick="closeLightbox(event)">
+    <span class="lightbox-close" onclick="closeLightbox(event)">&times;</span>
+    <div class="lightbox-container" onclick="event.stopPropagation()">
+      <img id="lightbox-img" src="" alt="Full Screen View">
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+  </div>
 
   <!-- SITE FOOTER -->
   <footer class="site-footer" style="margin-top: 40px;">
@@ -213,10 +222,14 @@
         
         if (subVal.images && subVal.images.length > 0) {
           html += `<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 16px;">` +
-            subVal.images.map(imgSrc => `
-              <div style="background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 4px; overflow: hidden; cursor: pointer; height: 140px;" onclick="document.getElementById('detail-hero-img').src='${imgSrc}'">
-                <img src="${imgSrc}" style="width: 100%; height: 100%; object-fit: cover;">
-              </div>`).join('') + `</div>`;
+            subVal.images.map(imgSrc => {
+              // Extract readable image title from filename
+              const filename = imgSrc.split('/').pop().replace(/\.[^/.]+$/, "");
+              return `
+                <div style="background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 4px; overflow: hidden; cursor: pointer; height: 140px;" onclick="openLightbox('${imgSrc}', '${filename.replace(/'/g, "\\'")}')">
+                  <img src="${imgSrc}" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>`;
+            }).join('') + `</div>`;
         }
         displayArea.innerHTML = html;
       }
@@ -232,6 +245,31 @@
         alert('Incorrect passcode.');
       }
     }
+
+    /* LIGHTBOX CONTROLS */
+    function openLightbox(imgSrc, captionText) {
+      const modal = document.getElementById('lightbox-modal');
+      const img = document.getElementById('lightbox-img');
+      const caption = document.getElementById('lightbox-caption');
+
+      img.src = imgSrc;
+      caption.textContent = captionText || currentItemData.title;
+      modal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox(e) {
+      const modal = document.getElementById('lightbox-modal');
+      modal.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+
+    // Close on Escape key press
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeLightbox();
+      }
+    });
 
     window.onload = loadDetailPage;
   </script>
