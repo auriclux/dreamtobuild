@@ -40,7 +40,7 @@ body {
   font-size: 1.2rem;
   line-height: 1.75;
   padding: 24px;
-  max-width: 1320px;
+  max-width: 1400px;
   margin: 0 auto;
   -webkit-font-smoothing: antialiased;
 }
@@ -105,9 +105,19 @@ body {
   margin-bottom: 28px;
 }
 
+/* DETAIL PAGE 3-COLUMN GRID LAYOUT */
+.detail-grid-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr 260px;
+  gap: 24px;
+  align-items: start;
+  width: 100%;
+  margin-bottom: 28px;
+}
+
 /* REGION N: NAVIGATOR SIDEBAR */
 .sidebar-nav {
-  width: 280px;
+  width: 100%;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
@@ -137,9 +147,10 @@ body {
   gap: 10px;
 }
 
-/* TEXT BUTTONS (HOME & ABOUT) */
+/* TEXT BUTTONS (HOME, ABOUT & DETAIL TABS) */
 .nav-text-link {
   display: block;
+  width: 100%;
   background-color: var(--bg-color);
   border: 1px solid var(--border-color);
   border-radius: 4px;
@@ -151,6 +162,7 @@ body {
   font-weight: 600;
   transition: all 0.2s ease;
   text-align: left;
+  cursor: pointer;
 }
 
 .nav-text-link:hover,
@@ -160,7 +172,7 @@ body {
   color: #ffffff;
 }
 
-/* RICH THUMBNAIL BUTTONS (PROJECTS, DREAMS, FANTASIES) */
+/* RICH THUMBNAIL BUTTONS */
 .nav-thumb-item {
   display: flex;
   align-items: center;
@@ -492,14 +504,19 @@ dt {
   .card-grid {
     grid-template-columns: repeat(3, 1fr) !important;
   }
+  .detail-grid-layout {
+    grid-template-columns: 260px 1fr 220px;
+  }
 }
 
 @media (max-width: 850px) {
-  .main-layout {
-    flex-direction: column;
+  .main-layout,
+  .detail-grid-layout {
+    display: flex !important;
+    flex-direction: column !important;
   }
   .sidebar-nav {
-    width: 100%;
+    width: 100% !important;
   }
   #gallery-grid,
   .card-grid {
