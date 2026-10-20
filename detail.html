@@ -3,69 +3,225 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title id="page-title">Build Detail | Dream To Build</title>
-  
-  <!-- GOOGLE FONTS IMPORT -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Cinzel:wght@400;700&family=Great+Vibes&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
-  
+  <title>Detail View — Dream To Build</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- BRAND HEADER -->
   <header class="site-header">
-    <nav class="nav-container">
-      <a href="index.html" id="detail-back-btn" class="back-link">&larr; Back to Gallery</a>
-    </nav>
+    <div class="brand-title">
+      <span class="font-dream">Dream</span>
+      <span class="font-to">To</span>
+      <span class="font-build">Build</span>
+    </div>
+    <div class="site-tagline">Dragging high-concept pretty pictures kicking and screaming into the real world.</div>
   </header>
 
-  <main id="detail-container" class="detail-container">
-    <article class="build-article">
-      <header class="build-header">
-        <span id="build-badge" class="badge"></span>
-        <h1 id="build-title">Loading Build...</h1>
-        <p id="build-subtitle" class="subtitle"></p>
-      </header>
+  <!-- NAVIGATION RETURN LINK -->
+  <nav class="detail-nav">
+    <a href="index.html" class="back-link">&larr; Back to Gallery</a>
+  </nav>
 
-      <div class="hero-image-wrapper">
-        <img id="build-image" src="" alt="Build Image Placeholder">
+  <main id="detail-container" class="main-layout flex-column">
+    
+    <!-- DYNAMIC HERO SPOTLIGHT FRAME -->
+    <section id="spotlight-frame">
+      <div class="spotlight-media">
+        <img id="detail-hero-img" src="" alt="Hero Preview">
+      </div>
+      <div class="spotlight-caption">
+        <h2 id="detail-title">Loading Title...</h2>
+        <p id="detail-subtitle" class="card-subtitle">Loading Subtitle...</p>
+      </div>
+    </section>
+
+    <!-- SPECIFICATIONS BLOCK -->
+    <section id="detail-specs-container" class="specifications-block" style="display:none; margin-top:20px;">
+      <h2>Technical Specifications</h2>
+      <dl id="detail-specs-list" class="spec-details"></dl>
+    </section>
+
+    <!-- NARRATIVE / OVERVIEW CONTENT -->
+    <section id="detail-narrative" class="detail-narrative" style="margin-top:24px;">
+      <h2>Overview & Design Intent</h2>
+      <div id="detail-content">Loading description...</div>
+    </section>
+
+    <!-- SUB-GALLERIES & MEMBERS ONLY SECTION -->
+    <section id="sub-galleries-container" style="display:none; margin-top:32px;">
+      <div id="gallery-tabs" style="display:flex; gap:12px; border-bottom:1px solid var(--border-color); padding-bottom:12px; margin-bottom:20px; flex-wrap:wrap;">
+        <!-- Tabs populated dynamically by JavaScript -->
       </div>
 
-      <section class="specs-section">
-        <h2>Specifications</h2>
-        <dl id="specs-grid" class="specs-grid">
-          <!-- Dynamically populated by detail-loader.js -->
-        </dl>
-      </section>
+      <div id="gallery-tab-contents">
+        <!-- Gallery grids populated dynamically -->
+      </div>
+    </section>
 
-      <section class="narrative-section">
-        <h2>Overview &amp; Design Intent</h2>
-        <div id="build-narrative">
-          <!-- Dynamically populated by detail-loader.js -->
-        </div>
-      </section>
-
-      <section id="gallery-section" class="gallery-section" style="display: none;">
-        <h2>Gallery</h2>
-        <div id="build-gallery" class="gallery-grid">
-          <!-- Dynamically populated by detail-loader.js -->
-        </div>
-      </section>
-
-      <footer class="build-footer">
-        <div id="build-tags" class="tag-cloud"></div>
-      </footer>
-    </article>
   </main>
 
-  <!-- Lightbox Modal for Gallery Previews -->
-  <div id="image-modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true" tabindex="-1">
-    <span id="modal-close" class="modal-close" aria-label="Close modal">&times;</span>
-    <img id="modal-img" class="modal-content" alt="Enlarged view">
-    <div id="modal-caption" class="modal-caption"></div>
-  </div>
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <p>&copy; Dream To Build — All Rights Reserved.</p>
+  </footer>
 
-  <script src="detail-loader.js"></script>
+  <!-- DYNAMIC DATA LOADING & TAB SCRIPT -->
+  <script>
+    async function loadDetailPage() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const type = urlParams.get('type') || 'projects';
+      const id = urlParams.get('id');
+
+      if (!id) {
+        document.getElementById('detail-title').textContent = 'Item Not Found';
+        return;
+      }
+
+      try {
+        const response = await fetch(`data/${type}.json`);
+        const data = await response.json();
+        const item = data.find(entry => entry.id === id);
+
+        if (!item) {
+          document.getElementById('detail-title').textContent = 'Entry Not Found';
+          return;
+        }
+
+        // Render Hero Details
+        document.getElementById('detail-title').textContent = item.title;
+        document.getElementById('detail-subtitle').textContent = item.subtitle || '';
+        
+        const heroImg = document.getElementById('detail-hero-img');
+        heroImg.src = item.heroImage || item.thumb;
+        heroImg.alt = item.title;
+
+        // Render Narrative Paragraphs
+        const contentDiv = document.getElementById('detail-content');
+        if (Array.isArray(item.narrative)) {
+          contentDiv.innerHTML = item.narrative.map(p => `<p>${p}</p>`).join('');
+        } else if (item.summary) {
+          contentDiv.innerHTML = `<p>${item.summary}</p>`;
+        }
+
+        // Render Specifications Table
+        if (item.specifications) {
+          const specsContainer = document.getElementById('detail-specs-container');
+          const specsList = document.getElementById('detail-specs-list');
+          specsList.innerHTML = Object.entries(item.specifications)
+            .map(([key, value]) => `<div style="margin-bottom:8px;"><dt style="display:inline; font-weight:bold;">${key}: </dt><dd style="display:inline; margin-left:8px;">${value}</dd></div>`)
+            .join('');
+          specsContainer.style.display = 'block';
+        }
+
+        // Render Sub-Galleries and Members Only Tab
+        if (item.subGalleries || item.builderNotes) {
+          const galleryContainer = document.getElementById('sub-galleries-container');
+          const tabsDiv = document.getElementById('gallery-tabs');
+          const contentsDiv = document.getElementById('gallery-tab-contents');
+
+          galleryContainer.style.display = 'block';
+          tabsDiv.innerHTML = '';
+          contentsDiv.innerHTML = '';
+
+          let isFirst = true;
+
+          // Process Sub-Galleries
+          if (item.subGalleries) {
+            Object.entries(item.subGalleries).forEach(([key, subVal]) => {
+              const tabBtn = document.createElement('button');
+              tabBtn.className = `nav-text-link ${isFirst ? 'active' : ''}`;
+              tabBtn.textContent = subVal.title || key;
+              tabBtn.onclick = () => switchTab(key);
+              tabsDiv.appendChild(tabBtn);
+
+              const tabContent = document.createElement('div');
+              tabContent.id = `tab-content-${key}`;
+              tabContent.style.display = isFirst ? 'block' : 'none';
+
+              // Sub-gallery Section Hero Image
+              if (subVal.heroImage) {
+                tabContent.innerHTML += `
+                  <div style="margin-bottom:16px; border:1px solid var(--border-color); border-radius:6px; overflow:hidden; background:#050608; max-height:360px; display:flex; align-items:center; justify-content:center;">
+                    <img src="${subVal.heroImage}" alt="${subVal.title} Hero" style="max-width:100%; height:auto; max-height:360px; object-fit:contain;">
+                  </div>`;
+              }
+
+              // Sub-gallery Image Grid
+              if (subVal.images && subVal.images.length > 0) {
+                const gridHtml = `<div class="card-grid" style="display:grid; grid-template-columns:repeat(auto-fill, minmax(220px, 1fr)); gap:16px;">` +
+                  subVal.images.map(imgSrc => `
+                    <div class="card" style="overflow:hidden; cursor:pointer;" onclick="document.getElementById('detail-hero-img').src='${imgSrc}'">
+                      <img src="${imgSrc}" style="width:100%; height:160px; object-fit:cover;">
+                    </div>`).join('') + `</div>`;
+                tabContent.innerHTML += gridHtml;
+              }
+
+              contentsDiv.appendChild(tabContent);
+              isFirst = false;
+            });
+          }
+
+          // Render 'Members Only' Passcode Gate Tab
+          if (item.builderNotes) {
+            const memberBtn = document.createElement('button');
+            memberBtn.className = 'nav-text-link';
+            memberBtn.style.borderColor = 'var(--accent-purple)';
+            memberBtn.style.color = 'var(--accent-purple)';
+            memberBtn.textContent = '🔒 Members Only';
+            memberBtn.onclick = () => switchTab('members-only');
+            tabsDiv.appendChild(memberBtn);
+
+            const memberContent = document.createElement('div');
+            memberContent.id = 'tab-content-members-only';
+            memberContent.style.display = 'none';
+            memberContent.innerHTML = `
+              <div id="builder-gate" style="background:var(--panel-bg); border:1px solid var(--border-color); padding:24px; border-radius:6px; text-align:center;">
+                <h3 style="color:var(--accent-purple); font-family:var(--font-spec); margin-bottom:12px;">Restricted Builder Access</h3>
+                <p style="margin-bottom:16px; font-size:1.1rem;">Enter passcode to view confidential builder notes and fabrication instructions:</p>
+                <input type="password" id="builder-pass" placeholder="Enter passcode..." style="padding:10px 14px; font-family:var(--font-spec); border:1px solid var(--border-color); border-radius:4px; background:var(--bg-color); color:#fff; width:220px; font-size:1rem; margin-right:8px;">
+                <button onclick="unlockBuilderNotes('${btoa(item.builderNotes)}')" style="padding:10px 18px; font-family:var(--font-spec); font-weight:bold; background:var(--accent-cyan); color:#000; border:none; border-radius:4px; cursor:pointer;">Unlock</button>
+              </div>
+              <div id="builder-content" style="display:none; background:var(--panel-bg); border:1px solid var(--accent-purple); padding:24px; border-radius:6px; margin-top:16px;">
+                <h3 style="color:var(--accent-purple); font-family:var(--font-spec); margin-bottom:12px;">Confidential Builder Instructions</h3>
+                <pre id="unlocked-notes" style="font-family:var(--font-spec); font-size:1.1rem; line-height:1.7; color:#f1f5f9; white-space:pre-wrap;"></pre>
+              </div>`;
+            contentsDiv.appendChild(memberContent);
+          }
+        }
+
+      } catch (err) {
+        console.error('Error loading detail view:', err);
+        document.getElementById('detail-title').textContent = 'Error Loading Details';
+      }
+    }
+
+    function switchTab(activeKey) {
+      const contentsDiv = document.getElementById('gallery-tab-contents');
+      Array.from(contentsDiv.children).forEach(child => {
+        child.style.display = child.id === `tab-content-${activeKey}` ? 'block' : 'none';
+      });
+
+      const tabsDiv = document.getElementById('gallery-tabs');
+      Array.from(tabsDiv.children).forEach((btn, index) => {
+        btn.classList.remove('active');
+      });
+      event.currentTarget.classList.add('active');
+    }
+
+    function unlockBuilderNotes(encodedNotes) {
+      const pass = document.getElementById('builder-pass').value;
+      if (pass === 'ScapeGoat2026') {
+        document.getElementById('builder-gate').style.display = 'none';
+        document.getElementById('builder-content').style.display = 'block';
+        document.getElementById('unlocked-notes').textContent = atob(encodedNotes);
+      } else {
+        alert('Incorrect passcode.');
+      }
+    }
+
+    window.onload = loadDetailPage;
+  </script>
+
 </body>
 </html>
