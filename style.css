@@ -96,13 +96,18 @@ body {
   text-align: center;
 }
 
-/* UPPER STAGE LAYOUT (NAV SIDEBAR LEFT + SPOTLIGHT FRAME RIGHT) */
+/* MAIN PAGE UPPER STAGE LAYOUT (NAV SIDEBAR LEFT + SPOTLIGHT FRAME RIGHT) */
 .main-layout {
   display: flex;
   gap: 24px;
   align-items: stretch;
   width: 100%;
   margin-bottom: 28px;
+}
+
+.main-layout .sidebar-nav {
+  width: 280px !important;
+  flex-shrink: 0;
 }
 
 /* DETAIL PAGE 3-COLUMN GRID LAYOUT */
@@ -115,10 +120,8 @@ body {
   margin-bottom: 28px;
 }
 
-/* REGION N: NAVIGATOR SIDEBAR */
+/* GENERAL SIDEBAR NAV BASE STYLING */
 .sidebar-nav {
-  width: 100%;
-  flex-shrink: 0;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -515,7 +518,7 @@ dt {
     display: flex !important;
     flex-direction: column !important;
   }
-  .sidebar-nav {
+  .main-layout .sidebar-nav {
     width: 100% !important;
   }
   #gallery-grid,
