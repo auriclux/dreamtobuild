@@ -9,6 +9,7 @@
     "summary": "1923 Ford T-Bucket featuring a built 350 SBC, Quick Fuel 750, Don Zig serviced Vertex magneto, TH350, and 9-inch rear axle.",
     "thumb": "Projects/torky-t-hero.jpg",
     "heroImage": "Projects/torky-t-hero.jpg",
+    "thumbnail": "Projects/torky-t-hero.jpg",
     "detailUrl": "detail.html?type=projects&id=torky-t",
     "tags": ["Ford", "T-Bucket", "SBC 350", "Vertex Magneto", "Hot Rod"],
     "specifications": {
@@ -30,12 +31,29 @@
       "Powered by a built 350 SBC fed through a Quick Fuel SS-750 4-barrel carburetor and timed by a vintage Vertex magneto tuned by Don Zig Magnetos.",
       "Puts power to the pavement via a TH350 transmission and a Ford 9-inch rear end tucked under white vinyl pleated upholstery."
     ],
-    "gallery": [
-      "Projects/torky-t-hero.jpg",
-      "Projects/garage-find.jpg",
-      "Projects/magneto-bench.jpg",
-      "Projects/shop-delivery.jpg"
-    ],
+    "subGalleries": {
+      "concepts": {
+        "title": "AI Concepts",
+        "heroImage": "Projects/torky-t-hero.jpg",
+        "images": []
+      },
+      "funnies": {
+        "title": "The Funnies",
+        "heroImage": "Projects/torky-t-hero.jpg",
+        "images": []
+      },
+      "history": {
+        "title": "Build Start & History",
+        "heroImage": "Projects/torky-t-hero.jpg",
+        "images": [
+          "Projects/torky-t-hero.jpg",
+          "Projects/garage-find.jpg",
+          "Projects/magneto-bench.jpg",
+          "Projects/shop-delivery.jpg"
+        ]
+      }
+    },
+    "builderNotes": "CONFIDENTIAL BUILDER INSTRUCTIONS:\n1. Verify Vertex magneto timing and advance parameters prior to initial firing.\n2. Check clearance for 29x18.5LT15 rear Mickey Thompsons at full compression.\n3. Inspect steering box mount and front suspension link bushings.",
     "featured": true
   },
   {
