@@ -37,5 +37,48 @@
       "Projects/shop-delivery.jpg"
     ],
     "featured": true
+  },
+  {
+    "id": "project-scapegoat",
+    "title": "Project ScapeGoat",
+    "subtitle": "1968 Pontiac Street & Strip Outlaw Drag Car",
+    "category": "Projects",
+    "badgeText": "Active Build",
+    "badgeType": "badge-project",
+    "summary": "1968 Pontiac street and strip outlaw drag car featuring a built 6.2L L94 V8, Tremec T56 Magnum 6-speed, frame notches, and a custom central X-member integrated with the cage for chassis rigidity.",
+    "thumb": "Projects/ScapeGoat rear widened split bumper.jpg",
+    "heroImage": "Projects/ScapeGoat rear widened split bumper.jpg",
+    "thumbnail": "Projects/ScapeGoat rear widened split bumper.jpg",
+    "detailUrl": "detail.html?type=projects&id=project-scapegoat",
+    "tags": ["Pontiac", "1968", "LS/LT V8", "Tremec T56 Magnum", "Street & Strip", "Outlaw Drag", "Chassis Fabrication"],
+    "specifications": {
+      "year": "1968",
+      "make": "Pontiac",
+      "model": "Outlaw Drag Car",
+      "engine": "Built 6.2L L94 V8 (VVT & DOD Delete)",
+      "transmission": "Tremec T56 Magnum 6-Speed (2.66:1 First Gear / QuickTime RM-6037 Bellhousing)",
+      "drivetrain": "4.0-inch Aluminum Driveshaft / Weld ProStar 15x15 Rear Wheels",
+      "chassis": "1-inch Frame Rail Notch & Custom Central X-Member Cage Integration",
+      "management": "Holley Terminator X MAX ECU",
+      "badge": "Laser-Cut Stainless 'SCAPEGOAT' Grille Badge with Stylized Angry Ram",
+      "status": "Active Fabrication / Frame & Chassis Stage",
+      "dateAdded": "2026-10-20T13:00:00"
+    },
+    "narrative": [
+      "Project ScapeGoat transforms a 1968 Pontiac into a full street-and-strip outlaw drag car, built as the high-horsepower outlaw counterpart to its factory-bodied 'Body Brother' restomod companion, BillyGoat.",
+      "Power originates from a built 6.2L L94 V8 with complete VVT and DOD delete systems, controlled via a Holley Terminator X MAX ECU. Power is delivered through a Tremec T56 Magnum 6-speed manual transmission encased in a QuickTime steel bellhousing down to a massive 4.0-inch aluminum driveshaft.",
+      "To accommodate steamroller rear rubber, the rear frame rails received a 1-inch notch with inner rail reinforcement, housing 15x15 Weld ProStar wheels wrapped in Mickey Thompson Sportsman S/R tires.",
+      "Chassis fabrication centers on a custom fabricated steel X-member featuring an integrated central driveshaft safety loop. Built to work in direct concert with the interior cage, this lower structural grid counters planar trapezoidal frame distortion and forms the bottom structural plane of the safety cell."
+    ],
+    "gallery": [
+      "Projects/ScapeGoat rear widened split bumper.jpg",
+      "Projects/ScapeGoat Foldout.jpg",
+      "Projects/ScapeGoat at the Granary.jpg",
+      "Projects/Stuffing Slicks.jpg",
+      "Projects/ScapeGoat at the car show.jpg",
+      "Projects/String measure for shaft cage 1.jpg",
+      "Projects/20261014 X-member start.jpg"
+    ],
+    "featured": true
   }
 ]
