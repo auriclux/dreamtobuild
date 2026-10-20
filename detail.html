@@ -98,7 +98,8 @@
       }
 
       try {
-        const response = await fetch(`data/${type}.json`);
+        // Append timestamp parameter to force fresh JSON load from server
+        const response = await fetch(`data/${type}.json?v=${new Date().getTime()}`);
         const data = await response.json();
         currentItemData = data.find(entry => entry.id === id);
 
@@ -135,6 +136,17 @@
               </div>`)
             .join('');
           specsContainer.style.display = 'block';
+        }
+
+        // Normalize subGalleries structure if missing or legacy
+        if (!currentItemData.subGalleries && currentItemData.gallery) {
+          currentItemData.subGalleries = {
+            history: {
+              title: "Build Start & History",
+              heroImage: currentItemData.heroImage || currentItemData.thumb,
+              images: currentItemData.gallery
+            }
+          };
         }
 
         // Render Vertical Navigation Sidebar & Default Tab
@@ -223,13 +235,14 @@
         if (subVal.images && subVal.images.length > 0) {
           html += `<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 16px;">` +
             subVal.images.map(imgSrc => {
-              // Extract readable image title from filename
               const filename = imgSrc.split('/').pop().replace(/\.[^/.]+$/, "");
               return `
                 <div style="background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 4px; overflow: hidden; cursor: pointer; height: 140px;" onclick="openLightbox('${imgSrc}', '${filename.replace(/'/g, "\\'")}')">
                   <img src="${imgSrc}" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>`;
             }).join('') + `</div>`;
+        } else {
+          html += `<p style="font-family: var(--font-editorial); color: var(--text-muted); font-style: italic;">No images available in this category yet.</p>`;
         }
         displayArea.innerHTML = html;
       }
@@ -264,7 +277,6 @@
       document.body.style.overflow = 'auto';
     }
 
-    // Close on Escape key press
     document.addEventListener('keydown', function(e) {
       if (e.key === 'Escape') {
         closeLightbox();
