@@ -70,15 +70,34 @@
       "To accommodate steamroller rear rubber, the rear frame rails received a 1-inch notch with inner rail reinforcement, housing 15x15 Weld ProStar wheels wrapped in Mickey Thompson Sportsman S/R tires.",
       "Chassis fabrication centers on a custom fabricated steel X-member featuring an integrated central driveshaft safety loop. Built to work in direct concert with the interior cage, this lower structural grid counters planar trapezoidal frame distortion and forms the bottom structural plane of the safety cell."
     ],
-    "gallery": [
-      "Projects/ScapeGoat rear widened split bumper.jpg",
-      "Projects/ScapeGoat Foldout.jpg",
-      "Projects/ScapeGoat at the Granary.jpg",
-      "Projects/Stuffing Slicks.jpg",
-      "Projects/ScapeGoat at the car show.jpg",
-      "Projects/String measure for shaft cage 1.jpg",
-      "Projects/20261014 X-member start.jpg"
-    ],
+    "subGalleries": {
+      "concepts": {
+        "title": "AI Concepts",
+        "heroImage": "Projects/ScapeGoat Foldout.jpg",
+        "images": [
+          "Projects/ScapeGoat Foldout.jpg",
+          "Projects/ScapeGoat rear widened split bumper.jpg"
+        ]
+      },
+      "funnies": {
+        "title": "The Funnies",
+        "heroImage": "Projects/Stuffing Slicks.jpg",
+        "images": [
+          "Projects/Stuffing Slicks.jpg",
+          "Projects/ScapeGoat at the Granary.jpg",
+          "Projects/ScapeGoat at the car show.jpg"
+        ]
+      },
+      "history": {
+        "title": "Build Start & History",
+        "heroImage": "Projects/String measure for shaft cage 1.jpg",
+        "images": [
+          "Projects/String measure for shaft cage 1.jpg",
+          "Projects/20261014 X-member start.jpg"
+        ]
+      }
+    },
+    "builderNotes": "CONFIDENTIAL BUILDER INSTRUCTIONS:\n1. Ensure the central X-member is fully fully-welded and tied directly into the main roll cage floor plates to form a monolithic bottom plane.\n2. Verify planar trapezoidal frame alignment across all 4 corner datum points prior to final welding.\n3. Verify clearance for the 4.0-inch aluminum driveshaft through the central safety loop at full bump travel.",
     "featured": true
   }
 ]
