@@ -347,12 +347,12 @@ article.card-3wide {
 .card-body p,
 .narrative-text {
   font-family: var(--font-editorial);
-  font-size: 1.32rem !important;  /* Balanced ~20% scale reduction */
+  font-size: 1.32rem !important;
   line-height: 1.7 !important;
   color: var(--text-main);
 }
 
-/* DETAIL PAGES & ABOUT SECTION NARRATIVE OVERHAUL (REDUCED ~20%) */
+/* DETAIL PAGES & ABOUT SECTION NARRATIVE OVERHAUL */
 #detail-content,
 #detail-narrative,
 .detail-narrative,
@@ -361,7 +361,7 @@ article.card-3wide {
 #detail-narrative p,
 .detail-body p {
   font-family: var(--font-editorial) !important;
-  font-size: 1.48rem !important;  /* ~24px comfortable reading size */
+  font-size: 1.48rem !important;
   line-height: 1.75 !important;
   color: #f1f5f9 !important;
   margin-bottom: 1.35rem !important;
@@ -394,7 +394,7 @@ a[href*="index.html"],
   font-family: var(--font-spec) !important;
   font-size: 1.1rem !important;
   font-weight: bold !important;
-  color: #38bdf8 !important;           /* Bright Cyan */
+  color: #38bdf8 !important;
   background-color: #181b21 !important;
   border: 1px solid #38bdf8 !important;
   padding: 8px 16px !important;
@@ -412,7 +412,7 @@ a.back-link:visited,
 a.return-link:visited,
 .detail-back-link:visited,
 .detail-nav a:visited {
-  color: #38bdf8 !important;           /* Overrides visited purple state */
+  color: #38bdf8 !important;
   border-color: #38bdf8 !important;
 }
 
@@ -423,7 +423,7 @@ a.return-link:hover,
 .detail-back-link:hover,
 .detail-nav a:hover {
   color: #ffffff !important;
-  background-color: #38bdf8 !important; /* Solid cyan button on hover */
+  background-color: #38bdf8 !important;
   border-color: #38bdf8 !important;
   box-shadow: 0 0 10px rgba(56, 189, 248, 0.4) !important;
 }
@@ -486,7 +486,7 @@ dt {
   letter-spacing: 0.05em;
 }
 
-/* RESPONSIVE BREAKPOINTS */
+/* RESPONSIVE BREAKPOINTS & MOBILE IMAGE FITTING */
 @media (max-width: 1100px) {
   #gallery-grid,
   .card-grid {
@@ -504,6 +504,62 @@ dt {
   #gallery-grid,
   .card-grid {
     grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 12px;
+  }
+
+  /* Spotlight hero media scaling on mobile */
+  .spotlight-media {
+    height: auto !important;
+    min-height: 220px;
+    max-height: 320px;
+    padding: 8px;
+  }
+
+  .spotlight-media img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 300px;
+    object-fit: contain !important;
+  }
+
+  /* Card image wrappers */
+  .card-image-wrapper {
+    height: 200px !important;
+  }
+
+  .card img,
+  .card-3wide img,
+  .card-image-wrapper img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+
+  /* Detail page hero & gallery images */
+  .detail-hero img,
+  .detail-media img,
+  #detail-content img,
+  .gallery-grid img,
+  .modal-content img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+  }
+
+  /* Fluid mobile typography scaling */
+  #detail-content,
+  #detail-narrative,
+  .detail-narrative,
+  .overview-content,
+  #detail-narrative p {
+    font-size: 1.15rem !important;
+    line-height: 1.65 !important;
   }
 }
 
