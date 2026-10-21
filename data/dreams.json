@@ -4,7 +4,7 @@
       "file": "data/dreams.json",
       "description": "Dream To Build — Design, Blueprints & Future Vehicle Concepts",
       "schemaVersion": "1.0",
-      "lastUpdated": "2026-10-19T17:00:00"
+      "lastUpdated": "2026-10-20T23:25:00"
     }
   },
   {
@@ -76,30 +76,29 @@
   },
   {
     "id": "59-catalina-safari",
-    "title": "1959 Pontiac Catalina Safari",
-    "subtitle": "Tri-Power EFI Air-Rided Friday Night Cruiser",
+    "title": "Trips",
+    "subtitle": "Road Trips & Long Haul Concepts",
     "category": "Dreams",
     "badgeText": "Design & Blueprints",
     "badgeType": "badge-dream",
-    "summary": "A low-slung 1959 Pontiac Catalina Safari wagon cruiser built for Friday night posing, combining late-style Tri-Power intake with modern FiTech EFI, full air suspension, and double A-arm / triangulated 4-link geometry.",
+    "summary": "Long-distance cross-country touring concepts engineered around the 1959 Pontiac Catalina Safari station wagon platform.",
     "thumb": "Dreams/59 Catalina Safari.jpg",
     "heroImage": "Dreams/59 Catalina Safari.jpg",
     "thumbnail": "Dreams/59 Catalina Safari.jpg",
     "detailUrl": "detail.html?type=dreams&id=59-catalina-safari",
-    "tags": ["Pontiac", "Catalina", "Safari Wagon", "1959", "Tri-Power", "FiTech EFI", "Air Suspension", "Storage Yard"],
+    "tags": ["Pontiac", "Catalina", "Safari Wagon", "1959", "Tri-Power", "FiTech EFI", "Air Suspension", "Long Haul", "Road Trip"],
     "specifications": {
-      "year": "1959",
-      "make": "Pontiac",
-      "model": "Catalina Safari Wagon",
+      "platform": "1959 Pontiac Catalina Safari Wagon",
       "induction": "Late Tri-Power Intake with FiTech Throttle Body EFI",
       "drivetrain": "Modern Automatic Transmission & Ford 9-inch Rear Axle",
       "suspension": "Airbags, Double A-Arm Front & Triangulated 4-Link Rear",
-      "purpose": "Friday Night Boulevard Cruiser / Boulevard Stance",
+      "purpose": "Friday Night Boulevard Cruiser & Cross-Country Long Haul",
       "status": "Design Study / Waiting in Storage Yard",
       "dateAdded": "2026-10-19T17:00:00"
     },
     "narrative": [
-      "The 1959 Pontiac Catalina Safari Wagon represents the pinnacle of wide-track, long-roof styling—a pure boulevard cruiser designed for Friday night posing and low-slung presence.",
+      "Built around a 1959 Pontiac Catalina Safari station wagon, this concept explores the ultimate low-slung, long-distance road trip cruiser.",
+      "The 1959 Pontiac Catalina Safari Wagon represents the pinnacle of wide-track, long-roof styling—a pure boulevard cruiser designed for Friday night posing and effortless cross-country highway travel.",
       "The powertrain concept pairs a classic late-version Tri-Power intake setup converted to modern FiTech throttle body EFI for turnkey reliability, backed by a modern automatic transmission and a heavy-duty 9-inch rear axle.",
       "Underneath, the chassis is setup for ground-slammed stance on full air bags, supported by a front double A-arm system and a triangulated four-link rear suspension.",
       "The physical Catalina Safari is currently waiting patiently in the storage yard awaiting its turn on the shop floor."
