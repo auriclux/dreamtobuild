@@ -102,7 +102,12 @@
     async function loadDetailPage() {
       const urlParams = new URLSearchParams(window.location.search);
       const type = urlParams.get('type') || 'projects';
-      const id = urlParams.get('id') || 'about';
+      const id = urlParams.get('id') || (type === 'about' ? 'about' : '');
+
+      if (!id) {
+        document.getElementById('detail-title').textContent = 'Item Not Found';
+        return;
+      }
 
       try {
         let response;
@@ -120,6 +125,8 @@
         if (type === 'about') {
           if (Array.isArray(data)) {
             currentItemData = data.find(entry => entry.id === id) || data[0];
+          } else if (data && data[id]) {
+            currentItemData = data[id];
           } else if (data && data.about) {
             currentItemData = data.about;
           } else {
@@ -143,7 +150,7 @@
         document.getElementById('active-tab-display').style.display = 'none';
         document.getElementById('standard-gallery-container').style.display = 'none';
 
-        // Render Base Details directly from fetched JSON
+        // Render Base Details directly from fetched JSON entry
         document.getElementById('detail-title').textContent = currentItemData.title || "Dream To Build";
         document.getElementById('detail-subtitle').textContent = currentItemData.subtitle || '';
         
@@ -151,14 +158,18 @@
         heroImg.src = currentItemData.heroImage || currentItemData.thumb || currentItemData.image || "Projects/ScapeGoat at the Granary.jpg";
         heroImg.alt = currentItemData.title || "Detail View";
 
-        // Render Narrative Paragraphs
+        // Render Narrative Paragraphs / Text File Content properly
         const contentDiv = document.getElementById('detail-content');
         if (Array.isArray(currentItemData.narrative)) {
           contentDiv.innerHTML = currentItemData.narrative.map(p => `<p style="margin-bottom: 1.25rem;">${p}</p>`).join('');
+        } else if (typeof currentItemData.narrative === 'string') {
+          contentDiv.innerHTML = `<p>${currentItemData.narrative}</p>`;
         } else if (currentItemData.summary) {
           contentDiv.innerHTML = `<p>${currentItemData.summary}</p>`;
         } else if (currentItemData.description) {
           contentDiv.innerHTML = `<p>${currentItemData.description}</p>`;
+        } else {
+          contentDiv.innerHTML = `<p>No description available for this section.</p>`;
         }
 
         const mainContainer = document.getElementById('detail-main-container');
