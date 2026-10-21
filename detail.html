@@ -236,16 +236,20 @@
             hasRightNav = true;
           }
         } else {
-          // Render standard flat gallery for Dreams, Fantasies, About
+          // Render standard flat gallery for Dreams, Fantasies, About (Supports both string & object arrays)
           if (currentItemData.gallery && currentItemData.gallery.length > 0) {
             const galContainer = document.getElementById('standard-gallery-container');
             const galGrid = document.getElementById('standard-gallery-grid');
             galContainer.style.display = 'block';
-            galGrid.innerHTML = currentItemData.gallery.map(imgSrc => {
+            
+            galGrid.innerHTML = currentItemData.gallery.map(item => {
+              const imgSrc = typeof item === 'string' ? item : (item.url || item.path || item.image || '');
+              if (!imgSrc) return '';
+              
               const filename = imgSrc.split('/').pop().replace(/\.[^/.]+$/, "");
               return `
                 <div style="background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 4px; overflow: hidden; cursor: pointer; height: 140px;" onclick="openLightbox('${imgSrc}', '${filename.replace(/'/g, "\\'")}')">
-                  <img src="${imgSrc}" style="width: 100%; height: 100%; object-fit: cover;">
+                  <img src="${imgSrc}" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.onerror=null; this.src='Projects/ScapeGoat at the Granary.jpg';">
                 </div>`;
             }).join('');
           }
@@ -311,7 +315,9 @@
         
         if (subVal.images && subVal.images.length > 0) {
           html += `<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 16px;">` +
-            subVal.images.map(imgSrc => {
+            subVal.images.map(item => {
+              const imgSrc = typeof item === 'string' ? item : (item.url || item.path || item.image || '');
+              if (!imgSrc) return '';
               const filename = imgSrc.split('/').pop().replace(/\.[^/.]+$/, "");
               return `
                 <div style="background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 4px; overflow: hidden; cursor: pointer; height: 140px;" onclick="openLightbox('${imgSrc}', '${filename.replace(/'/g, "\\'")}')">
