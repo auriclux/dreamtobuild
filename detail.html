@@ -1,703 +1,346 @@
-/* ==========================================================================
-   DREAM TO BUILD — MASTER STYLESHEET (STRICT WIREFRAME LAYOUT)
-   ========================================================================== */
-
-/* ROOT VARIABLES & COLOR PALETTE */
-:root {
-  --bg-color: #0f1115;
-  --panel-bg: #181b21;
-  --panel-hover: #22262f;
-  --accent-cyan: #38bdf8;
-  --accent-purple: #c084fc;
-  --accent-gold: #fbbf24;
-  --accent-green: #4ade80;
-  --text-main: #e0e6ed;
-  --text-muted: #8a99ad;
-  --border-color: #2a2f3a;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail View — Dream To Build</title>
   
-  /* FONT FAMILIES */
-  --font-dream: 'Great Vibes', cursive;
-  --font-to: 'Cinzel', serif;
-  --font-build: 'Black Ops One', cursive;
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Cinzel:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
   
-  /* TYPOGRAPHY OVERHAUL */
-  --font-editorial: Georgia, 'Times New Roman', serif;
-  --font-spec: Consolas, 'Liberation Mono', 'Courier New', monospace;
-  --font-mono: Consolas, 'Liberation Mono', 'Courier New', monospace;
-}
-
-/* GLOBAL RESET */
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-color: var(--bg-color);
-  color: var(--text-main);
-  font-family: var(--font-editorial);
-  font-size: 1.2rem;
-  line-height: 1.75;
-  padding: 24px;
-  max-width: 1400px;
-  margin: 0 auto;
-  -webkit-font-smoothing: antialiased;
-}
-
-/* BRAND HEADER - WIREFRAME TOP TITLE BAR & FONT ALIGNMENT */
-.site-header {
-  border: 1px solid var(--border-color);
-  background-color: var(--panel-bg);
-  padding: 16px 20px;
-  margin-bottom: 24px;
-  border-radius: 6px;
-  text-align: center;
-  width: 100%;
-}
-
-.brand-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-}
-
-.font-dream {
-  font-family: var(--font-dream), 'Great Vibes', cursive;
-  font-size: 3.2rem;
-  color: #ffffff;
-  font-weight: 400;
-  line-height: 1;
-  position: relative;
-  top: -2px;
-}
-
-.font-to {
-  font-family: var(--font-to), 'Cinzel', serif;
-  font-size: 1.25rem;
-  color: var(--text-muted);
-  text-transform: lowercase;
-  font-style: italic;
-  letter-spacing: 1px;
-}
-
-.font-build {
-  font-family: var(--font-build), 'Black Ops One', cursive;
-  font-size: 2.6rem;
-  color: var(--accent-cyan);
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  line-height: 1;
-}
-
-.site-tagline {
-  color: var(--text-muted);
-  font-family: var(--font-editorial);
-  font-style: italic;
-  font-size: 1.05rem;
-  margin-top: 6px;
-  text-align: center;
-}
-
-/* MAIN PAGE UPPER STAGE LAYOUT (NAV SIDEBAR LEFT + SPOTLIGHT FRAME RIGHT) */
-.main-layout {
-  display: flex;
-  gap: 24px;
-  align-items: stretch;
-  width: 100%;
-  margin-bottom: 28px;
-}
-
-.main-layout .sidebar-nav {
-  width: 280px !important;
-  flex-shrink: 0;
-}
-
-/* DETAIL PAGE 3-COLUMN GRID LAYOUT */
-.detail-grid-layout {
-  display: grid;
-  grid-template-columns: 280px 1fr 260px;
-  gap: 24px;
-  align-items: start;
-  width: 100%;
-  margin-bottom: 28px;
-}
-
-/* GENERAL SIDEBAR NAV BASE STYLING */
-.sidebar-nav {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  background-color: var(--panel-bg);
-  border: 1px solid var(--border-color);
-  border-radius: 6px;
-  padding: 16px;
-}
-
-.nav-label {
-  display: block;
-  font-family: var(--font-spec);
-  font-size: 0.85rem;
-  font-weight: bold;
-  letter-spacing: 1.5px;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  margin-bottom: 8px;
-  border-bottom: 1px solid var(--border-color);
-  padding-bottom: 4px;
-}
-
-.nav-thumb-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-/* TEXT BUTTONS (HOME, ABOUT & DETAIL TABS) */
-.nav-text-link {
-  display: block;
-  width: 100%;
-  background-color: var(--bg-color);
-  border: 1px solid var(--border-color);
-  border-radius: 4px;
-  padding: 10px 12px;
-  color: var(--text-main);
-  text-decoration: none;
-  font-family: var(--font-spec);
-  font-size: 0.95rem;
-  font-weight: 600;
-  transition: all 0.2s ease;
-  text-align: left;
-  cursor: pointer;
-}
-
-.nav-text-link:hover,
-.nav-text-link.active {
-  background-color: var(--panel-hover);
-  border-color: var(--accent-cyan);
-  color: #ffffff;
-}
-
-/* RICH THUMBNAIL BUTTONS */
-.nav-thumb-item {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  background-color: var(--bg-color);
-  border: 1px solid var(--border-color);
-  border-radius: 4px;
-  padding: 8px;
-  text-decoration: none;
-  color: var(--text-main);
-  transition: all 0.2s ease;
-}
-
-.nav-thumb-item img {
-  width: 48px;
-  height: 48px;
-  object-fit: cover;
-  border-radius: 4px;
-  flex-shrink: 0;
-}
-
-.nav-thumb-info {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
-.nav-thumb-title {
-  font-family: var(--font-to);
-  font-size: 0.95rem;
-  color: #ffffff;
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-.nav-thumb-sub {
-  font-family: var(--font-editorial);
-  font-size: 0.88rem;
-  color: var(--text-muted);
-  line-height: 1.3;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.nav-thumb-item:hover,
-.nav-thumb-item.active {
-  background-color: var(--panel-hover);
-  border-color: var(--accent-cyan);
-}
-
-/* REGION I: MAIN HERO SPOTLIGHT FRAME */
-#spotlight-frame {
-  flex: 1;
-  min-width: 0;
-  background-color: var(--panel-bg);
-  border: 1px solid var(--border-color);
-  border-radius: 6px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-.spotlight-media {
-  width: 100%;
-  height: 440px;
-  background-color: #050608;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.spotlight-media img {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  display: block;
-}
-
-.spotlight-caption {
-  padding: 18px 22px;
-  border-top: 1px solid var(--border-color);
-}
-
-.spotlight-caption h2 {
-  font-family: var(--font-to);
-  font-size: 1.45rem;
-  color: #ffffff;
-  margin-bottom: 6px;
-}
-
-.spotlight-caption p {
-  font-family: var(--font-editorial);
-  font-size: 1.32rem;
-  line-height: 1.7;
-  color: var(--text-main);
-}
-
-/* LOWER GRID: WIREFRAME 4-COLUMN CARD GALLERY (BELOW STAGE) */
-#gallery-grid,
-.card-grid {
-  display: grid !important;
-  grid-template-columns: repeat(4, 1fr) !important;
-  gap: 20px !important;
-  width: 100% !important;
-  margin-top: 10px;
-}
-
-/* CARD ITEM STYLING */
-.card,
-.card-3wide,
-article.card-3wide {
-  background-color: var(--panel-bg);
-  border: 1px solid var(--border-color);
-  border-radius: 6px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  color: inherit;
-  transition: transform 0.2s ease, border-color 0.2s ease;
-}
-
-.card:hover,
-.card-3wide:hover {
-  transform: translateY(-4px);
-  border-color: var(--accent-cyan);
-  background-color: var(--panel-hover);
-}
-
-.card-link {
-  text-decoration: none;
-  color: inherit;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.card-image-wrapper {
-  position: relative;
-  width: 100%;
-  height: 180px;
-  background-color: #050608;
-  overflow: hidden;
-}
-
-.card img,
-.card-3wide img,
-.card-image-wrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.card-body {
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  flex-grow: 1;
-}
-
-.card-title {
-  font-family: var(--font-to);
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #ffffff;
-  line-height: 1.35;
-}
-
-.card-subtitle {
-  font-family: var(--font-spec);
-  font-size: 0.88rem;
-  color: var(--accent-cyan);
-  line-height: 1.4;
-  letter-spacing: 0.02em;
-}
-
-.card-summary,
-.card-body p,
-.narrative-text {
-  font-family: var(--font-editorial);
-  font-size: 1.32rem !important;
-  line-height: 1.7 !important;
-  color: var(--text-main);
-}
-
-/* DETAIL PAGES & ABOUT SECTION NARRATIVE OVERHAUL */
-#detail-content,
-#detail-narrative,
-.detail-narrative,
-.overview-content,
-.detail-container p,
-#detail-narrative p,
-.detail-body p {
-  font-family: var(--font-editorial) !important;
-  font-size: 1.48rem !important;
-  line-height: 1.75 !important;
-  color: #f1f5f9 !important;
-  margin-bottom: 1.35rem !important;
-  letter-spacing: 0.01em;
-}
-
-#detail-content h2,
-#detail-narrative h2,
-.detail-container h2 {
-  font-family: var(--font-to) !important;
-  font-size: 1.95rem !important;
-  color: #ffffff !important;
-  margin-top: 1.5rem !important;
-  margin-bottom: 1.1rem !important;
-  border-bottom: 1px solid var(--border-color);
-  padding-bottom: 0.5rem;
-}
-
-/* BACK TO GALLERY / RETURN LINK STYLING (HIGH-CONTRAST VISIBILITY) */
-.back-link,
-a.back-link,
-.return-link,
-a.return-link,
-a[href*="index.html"],
-.detail-back-link,
-.detail-nav a {
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 8px !important;
-  font-family: var(--font-spec) !important;
-  font-size: 1.1rem !important;
-  font-weight: bold !important;
-  color: #38bdf8 !important;
-  background-color: #181b21 !important;
-  border: 1px solid #38bdf8 !important;
-  padding: 8px 16px !important;
-  border-radius: 4px !important;
-  text-decoration: none !important;
-  text-transform: uppercase !important;
-  letter-spacing: 1px !important;
-  margin-bottom: 20px !important;
-  transition: all 0.2s ease-in-out !important;
-}
-
-.back-link:visited,
-a.back-link:visited,
-.return-link:visited,
-a.return-link:visited,
-.detail-back-link:visited,
-.detail-nav a:visited {
-  color: #38bdf8 !important;
-  border-color: #38bdf8 !important;
-}
-
-.back-link:hover,
-a.back-link:hover,
-.return-link:hover,
-a.return-link:hover,
-.detail-back-link:hover,
-.detail-nav a:hover {
-  color: #ffffff !important;
-  background-color: #38bdf8 !important;
-  border-color: #38bdf8 !important;
-  box-shadow: 0 0 10px rgba(56, 189, 248, 0.4) !important;
-}
-
-/* SPECIFICATIONS & BLUEPRINTS (CRISP INDUSTRIAL CONSOLAS) */
-.specifications-block,
-.spec-list,
-.spec-item,
-.spec-label,
-.spec-value,
-table.specs-table,
-.specifications,
-.tech-specs,
-dl.spec-details {
-  font-family: var(--font-spec) !important;
-  font-size: 1.08rem;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
-  color: #f0f4f8;
-}
-
-.spec-label,
-.spec-key,
-dt {
-  color: var(--accent-cyan);
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-/* FULLSCREEN LIGHTBOX MODAL STYLING */
-.lightbox-overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(5, 6, 8, 0.92);
-  z-index: 9999;
-  justify-content: center;
-  align-items: center;
-  padding: 24px;
-  backdrop-filter: blur(8px);
-}
-
-.lightbox-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 92vw;
-  max-height: 92vh;
-}
-
-.lightbox-container img {
-  max-width: 100%;
-  max-height: 80vh;
-  object-fit: contain;
-  border: 1px solid var(--border-color);
-  border-radius: 6px;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
-}
-
-.lightbox-caption {
-  font-family: var(--font-editorial);
-  font-size: 1.25rem;
-  color: #ffffff;
-  margin-top: 16px;
-  text-align: center;
-  letter-spacing: 0.02em;
-}
-
-.lightbox-close {
-  position: absolute;
-  top: 20px;
-  right: 32px;
-  font-size: 2.8rem;
-  color: var(--accent-cyan);
-  cursor: pointer;
-  font-family: var(--font-spec);
-  font-weight: bold;
-  user-select: none;
-  transition: color 0.2s ease;
-}
-
-.lightbox-close:hover {
-  color: #ffffff;
-}
-
-/* BADGES */
-.badge {
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  padding: 4px 8px;
-  font-family: var(--font-spec);
-  font-size: 0.75rem;
-  font-weight: bold;
-  letter-spacing: 0.8px;
-  border-radius: 3px;
-  text-transform: uppercase;
-  z-index: 2;
-}
-
-.badge-project { background-color: var(--accent-green); color: #000; }
-.badge-dream { background-color: var(--accent-purple); color: #fff; }
-.badge-fantasy { background-color: var(--accent-gold); color: #000; }
-.badge-about { background-color: var(--accent-cyan); color: #000; }
-
-/* FOOTER */
-.site-footer {
-  margin-top: 40px;
-  padding-top: 20px;
-  border-top: 1px solid var(--border-color);
-  text-align: center;
-  font-family: var(--font-spec);
-  font-size: 0.9rem;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-/* RESPONSIVE BREAKPOINTS & MOBILE IMAGE FITTING */
-@media (max-width: 1100px) {
-  #gallery-grid,
-  .card-grid {
-    grid-template-columns: repeat(3, 1fr) !important;
-  }
-  .detail-grid-layout {
-    grid-template-columns: 260px 1fr 220px;
-  }
-}
-
-@media (max-width: 850px) {
-  .main-layout,
-  .detail-grid-layout {
-    display: flex !important;
-    flex-direction: column !important;
-  }
-  .main-layout .sidebar-nav {
-    width: 100% !important;
-  }
-  #gallery-grid,
-  .card-grid {
-    grid-template-columns: repeat(2, 1fr) !important;
-  }
-}
-
-@media (max-width: 768px) {
-  body {
-    padding: 12px;
-  }
-
-  /* Spotlight hero media scaling on mobile */
-  .spotlight-media {
-    height: auto !important;
-    min-height: 220px;
-    max-height: 320px;
-    padding: 8px;
-  }
-
-  .spotlight-media img {
-    width: 100% !important;
-    height: auto !important;
-    max-height: 300px;
-    object-fit: contain !important;
-  }
-
-  /* Card image wrappers */
-  .card-image-wrapper {
-    height: 200px !important;
-  }
-
-  .card img,
-  .card-3wide img,
-  .card-image-wrapper img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-  }
-
-  /* Detail page hero & gallery images */
-  .detail-hero img,
-  .detail-media img,
-  #detail-content img,
-  .gallery-grid img,
-  .modal-content img {
-    width: 100% !important;
-    max-width: 100% !important;
-    height: auto !important;
-    object-fit: contain !important;
-  }
-
-  /* Fluid mobile typography scaling */
-  #detail-content,
-  #detail-narrative,
-  .detail-narrative,
-  .overview-content,
-  #detail-narrative p {
-    font-size: 1.15rem !important;
-    line-height: 1.65 !important;
-  }
-}
-
-@media (max-width: 550px) {
-  #gallery-grid,
-  .card-grid {
-    grid-template-columns: 1fr !important;
-  }
-}
-
-/* ==========================================================================
-   DREAM TO BUILD — ROTATOR & SLIDESHOW TRANSITION ANIMATIONS
-   ========================================================================== */
-
-.rotator-hero-img {
-  transition: opacity 0.3s ease;
-}
-
-/* 1. Standard Smooth Fade */
-@keyframes rotatorFade {
-  0% { opacity: 0.2; }
-  100% { opacity: 1; }
-}
-.transition-fade {
-  animation: rotatorFade 0.8s ease-in-out forwards;
-}
-
-/* 2. Clean Slide-In */
-@keyframes rotatorSlide {
-  0% { transform: translateX(40px); opacity: 0; }
-  100% { transform: translateX(0); opacity: 1; }
-}
-.transition-slide {
-  animation: rotatorSlide 0.7s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-}
-
-/* 3. Subtle Zoom */
-@keyframes rotatorZoom {
-  0% { transform: scale(0.95); opacity: 0; }
-  100% { transform: scale(1); opacity: 1; }
-}
-.transition-zoom {
-  animation: rotatorZoom 0.7s ease-out forwards;
-}
-
-/* 4. The "Drunk with Palsy" Jittery Slide */
-@keyframes rotatorPalsy {
-  0%   { transform: translate(-45px, 25px) rotate(-4deg); opacity: 0; }
-  15%  { transform: translate(30px, -18px) rotate(3deg); opacity: 0.4; }
-  35%  { transform: translate(-22px, 12px) rotate(-2.5deg); opacity: 0.6; }
-  55%  { transform: translate(14px, -8px) rotate(1.5deg); opacity: 0.8; }
-  75%  { transform: translate(-6px, 4px) rotate(-0.5deg); opacity: 0.95; }
-  90%  { transform: translate(2px, -1px) rotate(0.2deg); opacity: 1; }
-  100% { transform: translate(0, 0) rotate(0deg); opacity: 1; }
-}
-.transition-palsy {
-  animation: rotatorPalsy 1.1s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
-}
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- BRAND HEADER -->
+  <header class="site-header">
+    <div class="brand-title">
+      <span class="font-dream">Dream</span>
+      <span class="font-to">to</span>
+      <span class="font-build">BUILD</span>
+    </div>
+    <div class="site-tagline">Dragging high-concept pretty pictures kicking and screaming into the real world.</div>
+  </header>
+
+  <!-- NAVIGATION RETURN LINK -->
+  <nav class="detail-nav">
+    <a href="index.html" class="back-link">&larr; Back to Gallery</a>
+  </nav>
+
+  <!-- DYNAMIC LAYOUT CONTAINER -->
+  <main id="detail-main-container" class="main-layout flex-column">
+
+    <!-- LEFT COLUMN: TECHNICAL SPECIFICATIONS (PROJECTS ONLY) -->
+    <aside id="detail-specs-container" class="sidebar-nav" style="display:none; padding: 16px;">
+      <span class="nav-label">Technical Specs</span>
+      <dl id="detail-specs-list" class="spec-details" style="display: flex; flex-direction: column; gap: 10px; margin-top: 10px;"></dl>
+    </aside>
+
+    <!-- CENTER / MAIN CONTENT FRAME -->
+    <section id="center-frame" style="display: flex; flex-direction: column; gap: 24px; min-width: 0; flex: 1;">
+      
+      <!-- Hero Spotlight Frame -->
+      <div id="spotlight-frame" style="background-color: var(--panel-bg); border: 1px solid var(--border-color); border-radius: 6px; overflow: hidden;">
+        <div class="spotlight-media" style="width: 100%; height: 420px; background-color: #050608; display: flex; align-items: center; justify-content: center; overflow: hidden; cursor: pointer;" onclick="openLightbox(document.getElementById('detail-hero-img').src, document.getElementById('detail-title').textContent)">
+          <img id="detail-hero-img" src="" alt="Hero Preview" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+        </div>
+        <div class="spotlight-caption" style="padding: 18px 22px; border-top: 1px solid var(--border-color);">
+          <h2 id="detail-title" style="font-family: var(--font-to); font-size: 1.45rem; color: #ffffff; margin-bottom: 6px;">Loading Title...</h2>
+          <p id="detail-subtitle" class="card-subtitle" style="font-family: var(--font-spec); color: var(--accent-cyan);">Loading Subtitle...</p>
+        </div>
+      </div>
+
+      <!-- Narrative / Overview Content -->
+      <div id="detail-narrative" class="detail-narrative" style="background-color: var(--panel-bg); border: 1px solid var(--border-color); border-radius: 6px; padding: 24px;">
+        <h2 style="font-family: var(--font-to); font-size: 1.6rem; color: #ffffff; margin-bottom: 16px; border-bottom: 1px solid var(--border-color); padding-bottom: 8px;">Overview & Design Intent</h2>
+        <div id="detail-content">Loading description...</div>
+      </div>
+
+      <!-- Active Sub-Gallery / Builder Content Display (Projects Only) -->
+      <div id="active-tab-display" style="background-color: var(--panel-bg); border: 1px solid var(--border-color); border-radius: 6px; padding: 24px; display: none;">
+        <!-- Dynamically rendered sub-gallery or password gate -->
+      </div>
+
+      <!-- Standard Flat Gallery Grid (Dreams, Fantasies, About) -->
+      <div id="standard-gallery-container" style="background-color: var(--panel-bg); border: 1px solid var(--border-color); border-radius: 6px; padding: 24px; display: none;">
+        <h2 style="font-family: var(--font-to); font-size: 1.4rem; color: #ffffff; margin-bottom: 16px;">Gallery</h2>
+        <div id="standard-gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px;"></div>
+      </div>
+
+    </section>
+
+    <!-- RIGHT COLUMN: VERTICAL NAVIGATION SIDEBAR (PROJECTS ONLY) -->
+    <aside id="sidebar-nav-right" class="sidebar-nav" style="display: none; padding: 16px;">
+      <span class="nav-label">Project Sections</span>
+      <div id="gallery-tabs" style="display: flex; flex-direction: column; gap: 10px; margin-top: 10px;">
+        <!-- Vertical buttons populated dynamically for Projects -->
+      </div>
+    </aside>
+
+  </main>
+
+  <!-- FULLSCREEN LIGHTBOX MODAL -->
+  <div id="lightbox-modal" class="lightbox-overlay" onclick="closeLightbox(event)">
+    <span class="lightbox-close" onclick="closeLightbox(event)">&times;</span>
+    <div class="lightbox-container" onclick="event.stopPropagation()">
+      <img id="lightbox-img" src="" alt="Full Screen View">
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer" style="margin-top: 40px;">
+    <p>&copy; Dream To Build — All Rights Reserved.</p>
+  </footer>
+
+  <!-- DYNAMIC DATA LOADING SCRIPT -->
+  <script>
+    let currentItemData = null;
+
+    async function loadDetailPage() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const type = urlParams.get('type') || 'projects';
+      const id = urlParams.get('id');
+
+      if (!id) {
+        document.getElementById('detail-title').textContent = 'Item Not Found';
+        return;
+      }
+
+      try {
+        let response;
+        if (type === 'about') {
+          response = await fetch(`data/siteData.json?v=${new Date().getTime()}`).catch(() => null);
+          if (!response || !response.ok) {
+            response = await fetch(`data/about.json?v=${new Date().getTime()}`);
+          }
+        } else {
+          response = await fetch(`data/${type}.json?v=${new Date().getTime()}`);
+        }
+
+        const data = await response.json();
+        
+        if (Array.isArray(data)) {
+          currentItemData = data.find(entry => entry.id === id);
+        } else if (data[id]) {
+          currentItemData = data[id];
+        } else if (data.about && id === 'about') {
+          currentItemData = data.about;
+        }
+
+        if (!currentItemData && type === 'about') {
+          currentItemData = {
+            id: "about",
+            title: "About Dream To Build",
+            subtitle: "Dragging High Concept Pretty Pictures Kicking and Screaming into the Real World",
+            heroImage: "Projects/ScapeGoat at the Granary.jpg",
+            narrative: [
+              "Dream To Build is a custom vehicle design studio and fabrication workshop focused on bridging the gap between high-concept artistic visions and functional, street-and-strip realities.",
+              "Every build documented here represents a unique synthesis of classic automotive styling, modern powertrain engineering, and custom metal fabrication."
+            ]
+          };
+        }
+
+        if (!currentItemData) {
+          document.getElementById('detail-title').textContent = 'Entry Not Found';
+          return;
+        }
+
+        document.getElementById('detail-title').textContent = currentItemData.title || "Dream To Build";
+        document.getElementById('detail-subtitle').textContent = currentItemData.subtitle || '';
+        
+        const heroImg = document.getElementById('detail-hero-img');
+        heroImg.src = currentItemData.heroImage || currentItemData.thumb || "Projects/ScapeGoat at the Granary.jpg";
+        heroImg.alt = currentItemData.title || "Detail View";
+
+        const contentDiv = document.getElementById('detail-content');
+        if (Array.isArray(currentItemData.narrative)) {
+          contentDiv.innerHTML = currentItemData.narrative.map(p => `<p style="margin-bottom: 1.25rem;">${p}</p>`).join('');
+        } else if (currentItemData.summary) {
+          contentDiv.innerHTML = `<p>${currentItemData.summary}</p>`;
+        }
+
+        const mainContainer = document.getElementById('detail-main-container');
+
+        if (type === 'projects') {
+          mainContainer.className = 'detail-grid-layout';
+
+          if (currentItemData.specifications) {
+            const specsContainer = document.getElementById('detail-specs-container');
+            const specsList = document.getElementById('detail-specs-list');
+            specsList.innerHTML = Object.entries(currentItemData.specifications)
+              .map(([key, value]) => `
+                <div style="border-bottom: 1px solid var(--border-color); padding-bottom: 6px;">
+                  <dt style="font-family: var(--font-spec); font-size: 0.8rem; color: var(--accent-cyan); text-transform: uppercase;">${key}</dt>
+                  <dd style="font-family: var(--font-spec); font-size: 0.95rem; color: #f0f4f8; margin-top: 2px;">${value}</dd>
+                </div>`)
+              .join('');
+            specsContainer.style.display = 'flex';
+          }
+
+          if (!currentItemData.subGalleries && currentItemData.gallery) {
+            currentItemData.subGalleries = {
+              history: {
+                title: "Build Start & History",
+                heroImage: currentItemData.heroImage || currentItemData.thumb,
+                images: currentItemData.gallery
+              }
+            };
+          }
+
+          if (currentItemData.subGalleries || currentItemData.builderNotes) {
+            const rightSidebar = document.getElementById('sidebar-nav-right');
+            const tabsDiv = document.getElementById('gallery-tabs');
+            rightSidebar.style.display = 'flex';
+            tabsDiv.innerHTML = '';
+
+            let firstKey = null;
+
+            if (currentItemData.subGalleries) {
+              Object.entries(currentItemData.subGalleries).forEach(([key, subVal], index) => {
+                if (index === 0) firstKey = key;
+                const tabBtn = document.createElement('button');
+                tabBtn.className = `nav-text-link ${index === 0 ? 'active' : ''}`;
+                tabBtn.textContent = subVal.title || key;
+                tabBtn.onclick = () => switchTab(key);
+                tabsDiv.appendChild(tabBtn);
+              });
+            }
+
+            if (currentItemData.builderNotes) {
+              const memberBtn = document.createElement('button');
+              memberBtn.className = 'nav-text-link';
+              memberBtn.style.borderColor = 'var(--accent-purple)';
+              memberBtn.style.color = 'var(--accent-purple)';
+              memberBtn.textContent = '🔒 Members Only';
+              memberBtn.onclick = () => switchTab('members-only');
+              tabsDiv.appendChild(memberBtn);
+              if (!firstKey) firstKey = 'members-only';
+            }
+
+            if (firstKey) switchTab(firstKey);
+          }
+
+        } else {
+          mainContainer.className = 'main-layout flex-column';
+          document.getElementById('detail-specs-container').style.display = 'none';
+          document.getElementById('sidebar-nav-right').style.display = 'none';
+          document.getElementById('active-tab-display').style.display = 'none';
+
+          if (currentItemData.gallery && currentItemData.gallery.length > 0) {
+            const galContainer = document.getElementById('standard-gallery-container');
+            const galGrid = document.getElementById('standard-gallery-grid');
+            galContainer.style.display = 'block';
+            galGrid.innerHTML = currentItemData.gallery.map(imgSrc => {
+              const filename = imgSrc.split('/').pop().replace(/\.[^/.]+$/, "");
+              return `
+                <div style="background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 4px; overflow: hidden; cursor: pointer; height: 140px;" onclick="openLightbox('${imgSrc}', '${filename.replace(/'/g, "\\'")}')">
+                  <img src="${imgSrc}" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>`;
+            }).join('');
+          } else {
+            document.getElementById('standard-gallery-container').style.display = 'none';
+          }
+        }
+
+      } catch (err) {
+        console.error('Error loading detail view:', err);
+        document.getElementById('detail-title').textContent = 'About Dream To Build';
+        document.getElementById('detail-subtitle').textContent = 'Dragging High Concept Pretty Pictures Kicking and Screaming into the Real World';
+        document.getElementById('detail-content').innerHTML = '<p>The origin, ethos, and purpose behind the Dream To Build custom vehicle portfolio and design studio.</p>';
+      }
+    }
+
+    function switchTab(activeKey) {
+      const displayArea = document.getElementById('active-tab-display');
+      displayArea.style.display = 'block';
+      displayArea.innerHTML = '';
+
+      const tabsDiv = document.getElementById('gallery-tabs');
+      Array.from(tabsDiv.children).forEach(btn => {
+        if (btn.textContent.toLowerCase().includes(activeKey.toLowerCase()) || 
+           (activeKey === 'members-only' && btn.textContent.includes('Members Only'))) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      });
+
+      if (activeKey === 'members-only') {
+        displayArea.innerHTML = `
+          <div id="builder-gate" style="text-align:center; padding: 12px;">
+            <h3 style="color:var(--accent-purple); font-family:var(--font-spec); margin-bottom:12px;">Restricted Builder Access</h3>
+            <p style="margin-bottom:16px; font-size:1.1rem;">Enter passcode to view confidential builder notes and fabrication instructions:</p>
+            <input type="password" id="builder-pass" placeholder="Enter passcode..." style="padding:10px 14px; font-family:var(--font-spec); border:1px solid var(--border-color); border-radius:4px; background:var(--bg-color); color:#fff; width:220px; font-size:1rem; margin-right:8px;">
+            <button onclick="unlockBuilderNotes()" style="padding:10px 18px; font-family:var(--font-spec); font-weight:bold; background:var(--accent-cyan); color:#000; border:none; border-radius:4px; cursor:pointer;">Unlock</button>
+          </div>
+          <div id="builder-content" style="display:none; border-top: 1px solid var(--border-color); padding-top: 16px; margin-top: 16px;">
+            <h3 style="color:var(--accent-purple); font-family:var(--font-spec); margin-bottom:12px;">Confidential Builder Instructions</h3>
+            <pre id="unlocked-notes" style="font-family:var(--font-spec); font-size:1.05rem; line-height:1.7; color:#f1f5f9; white-space:pre-wrap;"></pre>
+          </div>`;
+      } else if (currentItemData.subGalleries && currentItemData.subGalleries[activeKey]) {
+        const subVal = currentItemData.subGalleries[activeKey];
+        
+        if (subVal.heroImage) {
+          document.getElementById('detail-hero-img').src = subVal.heroImage;
+        }
+
+        let html = `<h3 style="font-family: var(--font-to); font-size: 1.4rem; color: #ffffff; margin-bottom: 16px;">${subVal.title || activeKey}</h3>`;
+        
+        if (subVal.images && subVal.images.length > 0) {
+          html += `<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 16px;">` +
+            subVal.images.map(imgSrc => {
+              const filename = imgSrc.split('/').pop().replace(/\.[^/.]+$/, "");
+              return `
+                <div style="background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 4px; overflow: hidden; cursor: pointer; height: 140px;" onclick="openLightbox('${imgSrc}', '${filename.replace(/'/g, "\\'")}')">
+                  <img src="${imgSrc}" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>`;
+            }).join('') + `</div>`;
+        } else {
+          html += `<p style="font-family: var(--font-editorial); color: var(--text-muted); font-style: italic;">No images available in this category yet.</p>`;
+        }
+        displayArea.innerHTML = html;
+      }
+    }
+
+    function unlockBuilderNotes() {
+      const pass = document.getElementById('builder-pass').value;
+      if (pass === 'Marina') {
+        document.getElementById('builder-gate').style.display = 'none';
+        document.getElementById('builder-content').style.display = 'block';
+        document.getElementById('unlocked-notes').textContent = currentItemData.builderNotes;
+      } else {
+        alert('Incorrect passcode.');
+      }
+    }
+
+    function openLightbox(imgSrc, captionText) {
+      const modal = document.getElementById('lightbox-modal');
+      const img = document.getElementById('lightbox-img');
+      const caption = document.getElementById('lightbox-caption');
+
+      img.src = imgSrc;
+      caption.textContent = captionText || currentItemData.title;
+      modal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox(e) {
+      const modal = document.getElementById('lightbox-modal');
+      modal.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeLightbox();
+      }
+    });
+
+    window.onload = loadDetailPage;
+  </script>
+
+</body>
+</html>
