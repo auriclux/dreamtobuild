@@ -30,16 +30,16 @@
   </nav>
 
   <!-- DYNAMIC LAYOUT CONTAINER -->
-  <main id="detail-main-container" class="main-layout flex-column">
+  <main id="detail-main-container" style="display: flex; flex-direction: column; gap: 24px; max-width: 1400px; margin: 0 auto; align-items: start;">
 
-    <!-- LEFT COLUMN: TECHNICAL SPECIFICATIONS (PROJECTS ONLY) -->
+    <!-- LEFT COLUMN: TECHNICAL SPECIFICATIONS -->
     <aside id="detail-specs-container" class="sidebar-nav" style="display:none; padding: 16px;">
       <span class="nav-label">Technical Specs</span>
       <dl id="detail-specs-list" class="spec-details" style="display: flex; flex-direction: column; gap: 10px; margin-top: 10px;"></dl>
     </aside>
 
     <!-- CENTER / MAIN CONTENT FRAME -->
-    <section id="center-frame" style="display: flex; flex-direction: column; gap: 24px; min-width: 0; flex: 1;">
+    <section id="center-frame" style="display: flex; flex-direction: column; gap: 24px; min-width: 0; width: 100%;">
       
       <!-- Hero Spotlight Frame -->
       <div id="spotlight-frame" style="background-color: var(--panel-bg); border: 1px solid var(--border-color); border-radius: 6px; overflow: hidden;">
@@ -59,12 +59,12 @@
       </div>
 
       <!-- Active Sub-Gallery / Builder Content Display (Projects Only) -->
-      <div id="active-tab-display" style="background-color: var(--panel-bg); border: 1px solid var(--border-color); border-radius: 6px; padding: 24px; display: none;">
+      <div id="active-tab-display" style="background-color: var(--panel-bg); border: 1px solid var(--border-color); border-radius: 6px; padding: 24px; display: none; width: 100%;">
         <!-- Dynamically rendered sub-gallery or password gate -->
       </div>
 
       <!-- Standard Flat Gallery Grid (Dreams, Fantasies, About) -->
-      <div id="standard-gallery-container" style="background-color: var(--panel-bg); border: 1px solid var(--border-color); border-radius: 6px; padding: 24px; display: none;">
+      <div id="standard-gallery-container" style="background-color: var(--panel-bg); border: 1px solid var(--border-color); border-radius: 6px; padding: 24px; display: none; width: 100%;">
         <h2 style="font-family: var(--font-to); font-size: 1.4rem; color: #ffffff; margin-bottom: 16px;">Gallery</h2>
         <div id="standard-gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px;"></div>
       </div>
@@ -164,22 +164,25 @@
 
         const mainContainer = document.getElementById('detail-main-container');
 
+        // 1. Check Specifications (Left Sidebar)
+        let hasSpecs = false;
+        if (currentItemData.specifications) {
+          const specsContainer = document.getElementById('detail-specs-container');
+          const specsList = document.getElementById('detail-specs-list');
+          specsList.innerHTML = Object.entries(currentItemData.specifications)
+            .map(([key, value]) => `
+              <div style="border-bottom: 1px solid var(--border-color); padding-bottom: 6px;">
+                <dt style="font-family: var(--font-spec); font-size: 0.8rem; color: var(--accent-cyan); text-transform: uppercase;">${key}</dt>
+                <dd style="font-family: var(--font-spec); font-size: 0.95rem; color: #f0f4f8; margin-top: 2px;">${value}</dd>
+              </div>`)
+            .join('');
+          specsContainer.style.display = 'flex';
+          hasSpecs = true;
+        }
+
+        // 2. Check Right Navigation Sidebar (Projects Only with Sub-galleries or Notes)
+        let hasRightNav = false;
         if (type === 'projects') {
-          mainContainer.className = 'detail-grid-layout';
-
-          if (currentItemData.specifications) {
-            const specsContainer = document.getElementById('detail-specs-container');
-            const specsList = document.getElementById('detail-specs-list');
-            specsList.innerHTML = Object.entries(currentItemData.specifications)
-              .map(([key, value]) => `
-                <div style="border-bottom: 1px solid var(--border-color); padding-bottom: 6px;">
-                  <dt style="font-family: var(--font-spec); font-size: 0.8rem; color: var(--accent-cyan); text-transform: uppercase;">${key}</dt>
-                  <dd style="font-family: var(--font-spec); font-size: 0.95rem; color: #f0f4f8; margin-top: 2px;">${value}</dd>
-                </div>`)
-              .join('');
-            specsContainer.style.display = 'flex';
-          }
-
           if (!currentItemData.subGalleries && currentItemData.gallery) {
             currentItemData.subGalleries = {
               history: {
@@ -221,14 +224,10 @@
             }
 
             if (firstKey) switchTab(firstKey);
+            hasRightNav = true;
           }
-
         } else {
-          mainContainer.className = 'main-layout flex-column';
-          document.getElementById('detail-specs-container').style.display = 'none';
-          document.getElementById('sidebar-nav-right').style.display = 'none';
-          document.getElementById('active-tab-display').style.display = 'none';
-
+          // Render standard flat gallery for non-project sections (Dreams, Fantasies, About)
           if (currentItemData.gallery && currentItemData.gallery.length > 0) {
             const galContainer = document.getElementById('standard-gallery-container');
             const galGrid = document.getElementById('standard-gallery-grid');
@@ -240,9 +239,19 @@
                   <img src="${imgSrc}" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>`;
             }).join('');
-          } else {
-            document.getElementById('standard-gallery-container').style.display = 'none';
           }
+        }
+
+        // 3. Dynamic Grid Layout Configuration
+        if (hasSpecs && hasRightNav) {
+          mainContainer.style.display = 'grid';
+          mainContainer.style.gridTemplateColumns = '280px 1fr 260px';
+        } else if (hasSpecs && !hasRightNav) {
+          mainContainer.style.display = 'grid';
+          mainContainer.style.gridTemplateColumns = '280px 1fr';
+        } else {
+          mainContainer.style.display = 'flex';
+          mainContainer.style.flexDirection = 'column';
         }
 
       } catch (err) {
