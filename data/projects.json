@@ -117,5 +117,66 @@
     },
     "builderNotes": "CONFIDENTIAL BUILDER INSTRUCTIONS:\n1. Ensure the central X-member is fully fully-welded and tied directly into the main roll cage floor plates to form a monolithic bottom plane.\n2. Verify planar trapezoidal frame alignment across all 4 corner datum points prior to final welding.\n3. Verify clearance for the 4.0-inch aluminum driveshaft through the central safety loop at full bump travel.",
     "featured": true
+  },
+  {
+    "id": "project-reiver",
+    "title": "Project Reiver, The Corner Thief",
+    "subtitle": "1962 Classic Mini AWD Space-Frame Race Car",
+    "category": "Projects",
+    "badgeText": "Active Build",
+    "badgeType": "badge-project",
+    "summary": "1962 Classic Mini Cooper steel shell transformed into an all-wheel-drive space-frame weapon powered by a forced-induction Honda LS-VTEC engine controlled by Haltech Elite 1500 ECU, Super Fast Minis MTB subframe, sloped steel flares, and Blue/Teal chameleon finish.",
+    "thumb": "Projects/Reiver flared in Blue & Teal chameleon.jpg",
+    "heroImage": "Projects/Reiver flared in Blue & Teal chameleon.jpg",
+    "thumbnail": "Projects/Reiver flared in Blue & Teal chameleon.jpg",
+    "detailUrl": "detail.html?type=projects&id=project-reiver",
+    "tags": ["Mini", "1962", "Space Frame", "AWD", "Honda LS-VTEC", "Haltech", "Super Fast Minis MTB", "Scottish Saltire"],
+    "specifications": {
+      "year": "1962",
+      "make": "Austin / Morris",
+      "model": "Mini Cooper (Space-Frame Skin)",
+      "engine": "Forced-Induction Honda LS-VTEC B-Series",
+      "subframe": "Super Fast Minis MTB B-Series Subframe",
+      "drivetrain": "Custom All-Wheel-Drive System",
+      "management": "Haltech Elite 1500 ECU",
+      "chassis": "Custom Tube-Frame Space Frame with Non-Structural Steel Skin",
+      "bodywork": "Sloped Steel Fender Flares / Blue & Teal Chameleon Paint / Scottish Saltire Roof Graphic",
+      "wheelsTires": "12-Inch Wheels with Wide DOT Race Compound Tires",
+      "status": "Active Fabrication / Chassis & Shell Prep",
+      "dateAdded": "2026-10-20T19:00:00"
+    },
+    "narrative": [
+      "Project Reiver, The Corner Thief combines iconic 1962 Classic Mini Cooper aesthetics with full tube-frame racing architecture. Rather than relying on a unibody structure, the original Morris Mini body shell functions purely as a non-structural aesthetic skin over a custom space-frame chassis.",
+      "Powertrain engineering centers on a forced-induction Honda LS-VTEC engine mounted to a Super Fast Minis MTB subframe designed specifically for Honda B-series powerplants. Engine calibration and boost management are handled by a Haltech Elite 1500 ECU delivering power to all four corners via a custom AWD driveline.",
+      "Exterior styling features aggressive sloped steel fender flares over wide DOT-approved racing rubber wrapped around 12-inch wheels. Draped in a striking Blue and Teal chameleon color-shifting finish with a iconic Scottish Saltire roof graphic, Reiver pays homage to border raiders while dominating tight road courses."
+    ],
+    "subGalleries": {
+      "concepts": {
+        "title": "AI Concepts",
+        "heroImage": "Projects/Reiver flared in Blue & Teal chameleon.jpg",
+        "images": [
+          "Projects/Exploded AWD Mini build.jpg",
+          "Projects/Reiver flared in Blue & Teal chameleon.jpg",
+          "Projects/Reiver Race in Edinburgh.jpg",
+          "Projects/REIVER S emblem.jpg",
+          "Projects/Reiver & Mina.jpg",
+          "Projects/Reiver on Targo Floria.jpg"
+        ]
+      },
+      "funnies": {
+        "title": "The Funnies",
+        "heroImage": "Projects/Reiver flared in Blue & Teal chameleon.jpg",
+        "images": []
+      },
+      "history": {
+        "title": "Build Start & History",
+        "heroImage": "Projects/Reiver shell 20260507.jpg",
+        "images": [
+          "Projects/Reiver shell 20260507.jpg"
+        ]
+      }
+    },
+    "builderNotes": "CONFIDENTIAL BUILDER INSTRUCTIONS:\n1. Verify space-frame hardpoints align with Super Fast Minis MTB B-series front subframe pick-up nodes.\n2. Confirm full suspension articulation clearance within steel sloped fender flares for 12-inch wide DOT rubber.\n3. Calibrate Haltech Elite 1500 CAN inputs and AWD center transfer torque split parameters.",
+    "featured": true
   }
 ]
