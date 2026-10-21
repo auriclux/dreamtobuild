@@ -130,7 +130,6 @@
           currentItemData = data.about;
         }
 
-        // Fallback exclusively for About section if missing
         if (!currentItemData && type === 'about') {
           currentItemData = {
             id: "about",
@@ -150,6 +149,12 @@
           return;
         }
 
+        // Reset UI Elements explicitly
+        document.getElementById('detail-specs-container').style.display = 'none';
+        document.getElementById('sidebar-nav-right').style.display = 'none';
+        document.getElementById('active-tab-display').style.display = 'none';
+        document.getElementById('standard-gallery-container').style.display = 'none';
+
         // Render Base Details
         document.getElementById('detail-title').textContent = currentItemData.title || "Dream To Build";
         document.getElementById('detail-subtitle').textContent = currentItemData.subtitle || '';
@@ -168,7 +173,7 @@
 
         const mainContainer = document.getElementById('detail-main-container');
 
-        // 1. Render Specifications (Left Sidebar) if present
+        // 1. Render Specifications (Left Sidebar) if present across any section
         let hasSpecs = false;
         if (currentItemData.specifications) {
           const specsContainer = document.getElementById('detail-specs-container');
@@ -248,17 +253,18 @@
 
         // 3. Apply Clean CSS Grid Alignment based on active sidebars
         if (hasSpecs && hasRightNav) {
-          // 3-Column Layout: Specs (Left) + Center Frame + Right Nav
           mainContainer.className = 'detail-grid-layout';
+          mainContainer.style.display = '';
         } else if (hasSpecs && !hasRightNav) {
-          // 2-Column Layout for Dreams/Fantasies: Specs (Left) + Center Frame
+          mainContainer.className = '';
           mainContainer.style.display = 'grid';
           mainContainer.style.gridTemplateColumns = '280px 1fr';
           mainContainer.style.gap = '24px';
           mainContainer.style.alignItems = 'start';
+          mainContainer.style.width = '100%';
         } else {
-          // Standard Single Column Layout
           mainContainer.className = 'main-layout flex-column';
+          mainContainer.style.display = '';
         }
 
       } catch (err) {
