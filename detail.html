@@ -104,7 +104,7 @@
       const type = urlParams.get('type') || 'projects';
       const id = urlParams.get('id');
 
-      if (!id) {
+      if (!id && type !== 'about') {
         document.getElementById('detail-title').textContent = 'Item Not Found';
         return;
       }
@@ -114,33 +114,31 @@
         if (type === 'about') {
           response = await fetch(`data/siteData.json?v=${new Date().getTime()}`).catch(() => null);
           if (!response || !response.ok) {
-            response = await fetch(`data/about.json?v=${new Date().getTime()}`);
+            response = await fetch(`data/about.json?v=${new Date().getTime()}`).catch(() => null);
           }
         } else {
           response = await fetch(`data/${type}.json?v=${new Date().getTime()}`);
         }
 
-        const data = await response.json();
+        const data = response ? await response.json() : null;
         
-        if (Array.isArray(data)) {
+        if (type === 'about') {
+          currentItemData = data && data.about ? data.about : (data || {});
+          if (!currentItemData.title) {
+            currentItemData = {
+              title: "About Dream To Build",
+              subtitle: "Dragging High Concept Pretty Pictures Kicking and Screaming into the Real World",
+              heroImage: "Projects/ScapeGoat at the Granary.jpg",
+              narrative: [
+                "Dream To Build is a custom vehicle design studio and fabrication workshop focused on bridging the gap between high-concept artistic visions and functional, street-and-strip realities.",
+                "Every build documented here represents a unique synthesis of classic automotive styling, modern powertrain engineering, and custom metal fabrication."
+              ]
+            };
+          }
+        } else if (Array.isArray(data)) {
           currentItemData = data.find(entry => entry.id === id);
-        } else if (data[id]) {
+        } else if (data && data[id]) {
           currentItemData = data[id];
-        } else if (data.about && id === 'about') {
-          currentItemData = data.about;
-        }
-
-        if (!currentItemData && type === 'about') {
-          currentItemData = {
-            id: "about",
-            title: "About Dream To Build",
-            subtitle: "Dragging High Concept Pretty Pictures Kicking and Screaming into the Real World",
-            heroImage: "Projects/ScapeGoat at the Granary.jpg",
-            narrative: [
-              "Dream To Build is a custom vehicle design studio and fabrication workshop focused on bridging the gap between high-concept artistic visions and functional, street-and-strip realities.",
-              "Every build documented here represents a unique synthesis of classic automotive styling, modern powertrain engineering, and custom metal fabrication."
-            ]
-          };
         }
 
         if (!currentItemData) {
