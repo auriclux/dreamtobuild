@@ -104,9 +104,41 @@
       }
 
       try {
-        const response = await fetch(`data/${type}.json?v=${new Date().getTime()}`);
+        let response;
+        // Check siteData.json first for about pages, otherwise load type-specific json
+        if (type === 'about') {
+          response = await fetch(`data/siteData.json?v=${new Date().getTime()}`).catch(() => null);
+          if (!response || !response.ok) {
+            response = await fetch(`data/about.json?v=${new Date().getTime()}`);
+          }
+        } else {
+          response = await fetch(`data/${type}.json?v=${new Date().getTime()}`);
+        }
+
         const data = await response.json();
-        currentItemData = data.find(entry => entry.id === id);
+        
+        // Find entry across array or direct object property
+        if (Array.isArray(data)) {
+          currentItemData = data.find(entry => entry.id === id);
+        } else if (data[id]) {
+          currentItemData = data[id];
+        } else if (data.about && id === 'about') {
+          currentItemData = data.about;
+        }
+
+        // Fallback for About section default content
+        if (!currentItemData && type === 'about') {
+          currentItemData = {
+            id: "about",
+            title: "About Dream To Build",
+            subtitle: "Dragging High Concept Pretty Pictures Kicking and Screaming into the Real World",
+            heroImage: "Projects/ScapeGoat at the Granary.jpg",
+            narrative: [
+              "Dream To Build is a custom vehicle design studio and fabrication workshop focused on bridging the gap between high-concept artistic visions and functional, street-and-strip realities.",
+              "Every build documented here represents a unique synthesis of classic automotive styling, modern powertrain engineering, and custom metal fabrication."
+            ]
+          };
+        }
 
         if (!currentItemData) {
           document.getElementById('detail-title').textContent = 'Entry Not Found';
@@ -114,12 +146,12 @@
         }
 
         // Render Base Details
-        document.getElementById('detail-title').textContent = currentItemData.title;
+        document.getElementById('detail-title').textContent = currentItemData.title || "Dream To Build";
         document.getElementById('detail-subtitle').textContent = currentItemData.subtitle || '';
         
         const heroImg = document.getElementById('detail-hero-img');
-        heroImg.src = currentItemData.heroImage || currentItemData.thumb;
-        heroImg.alt = currentItemData.title;
+        heroImg.src = currentItemData.heroImage || currentItemData.thumb || "Projects/ScapeGoat at the Granary.jpg";
+        heroImg.alt = currentItemData.title || "About";
 
         // Render Narrative Paragraphs
         const contentDiv = document.getElementById('detail-content');
@@ -135,7 +167,6 @@
         if (type === 'projects') {
           mainContainer.className = 'detail-grid-layout';
 
-          // Render Left Specs Column
           if (currentItemData.specifications) {
             const specsContainer = document.getElementById('detail-specs-container');
             const specsList = document.getElementById('detail-specs-list');
@@ -149,7 +180,6 @@
             specsContainer.style.display = 'flex';
           }
 
-          // Normalize subGalleries if missing
           if (!currentItemData.subGalleries && currentItemData.gallery) {
             currentItemData.subGalleries = {
               history: {
@@ -160,7 +190,6 @@
             };
           }
 
-          // Render Right Navigation Column
           if (currentItemData.subGalleries || currentItemData.builderNotes) {
             const rightSidebar = document.getElementById('sidebar-nav-right');
             const tabsDiv = document.getElementById('gallery-tabs');
@@ -195,13 +224,12 @@
           }
 
         } else {
-          // BRANCH 2: DREAMS, FANTASIES, ABOUT SECTIONS (Original Standard Layout)
+          // BRANCH 2: DREAMS, FANTASIES, ABOUT SECTIONS
           mainContainer.className = 'main-layout flex-column';
           document.getElementById('detail-specs-container').style.display = 'none';
           document.getElementById('sidebar-nav-right').style.display = 'none';
           document.getElementById('active-tab-display').style.display = 'none';
 
-          // Render Standard Flat Gallery if images exist
           if (currentItemData.gallery && currentItemData.gallery.length > 0) {
             const galContainer = document.getElementById('standard-gallery-container');
             const galGrid = document.getElementById('standard-gallery-grid');
@@ -213,12 +241,16 @@
                   <img src="${imgSrc}" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>`;
             }).join('');
+          } else {
+            document.getElementById('standard-gallery-container').style.display = 'none';
           }
         }
 
       } catch (err) {
         console.error('Error loading detail view:', err);
-        document.getElementById('detail-title').textContent = 'Error Loading Details';
+        document.getElementById('detail-title').textContent = 'About Dream To Build';
+        document.getElementById('detail-subtitle').textContent = 'Dragging High Concept Pretty Pictures Kicking and Screaming into the Real World';
+        document.getElementById('detail-content').innerHTML = '<p>The origin, ethos, and purpose behind the Dream To Build custom vehicle portfolio and design studio.</p>';
       }
     }
 
