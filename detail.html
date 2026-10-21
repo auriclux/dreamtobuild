@@ -102,19 +102,14 @@
     async function loadDetailPage() {
       const urlParams = new URLSearchParams(window.location.search);
       const type = urlParams.get('type') || 'projects';
-      const id = urlParams.get('id');
-
-      if (!id && type !== 'about') {
-        document.getElementById('detail-title').textContent = 'Item Not Found';
-        return;
-      }
+      const id = urlParams.get('id') || 'about';
 
       try {
         let response;
         if (type === 'about') {
-          response = await fetch(`data/siteData.json?v=${new Date().getTime()}`).catch(() => null);
+          response = await fetch(`data/about.json?v=${new Date().getTime()}`).catch(() => null);
           if (!response || !response.ok) {
-            response = await fetch(`data/about.json?v=${new Date().getTime()}`).catch(() => null);
+            response = await fetch(`data/siteData.json?v=${new Date().getTime()}`).catch(() => null);
           }
         } else {
           response = await fetch(`data/${type}.json?v=${new Date().getTime()}`);
@@ -123,17 +118,12 @@
         const data = response ? await response.json() : null;
         
         if (type === 'about') {
-          currentItemData = data && data.about ? data.about : (data || {});
-          if (!currentItemData.title) {
-            currentItemData = {
-              title: "About Dream To Build",
-              subtitle: "Dragging High Concept Pretty Pictures Kicking and Screaming into the Real World",
-              heroImage: "Projects/ScapeGoat at the Granary.jpg",
-              narrative: [
-                "Dream To Build is a custom vehicle design studio and fabrication workshop focused on bridging the gap between high-concept artistic visions and functional, street-and-strip realities.",
-                "Every build documented here represents a unique synthesis of classic automotive styling, modern powertrain engineering, and custom metal fabrication."
-              ]
-            };
+          if (Array.isArray(data)) {
+            currentItemData = data.find(entry => entry.id === id) || data[0];
+          } else if (data && data.about) {
+            currentItemData = data.about;
+          } else {
+            currentItemData = data || {};
           }
         } else if (Array.isArray(data)) {
           currentItemData = data.find(entry => entry.id === id);
@@ -153,12 +143,12 @@
         document.getElementById('active-tab-display').style.display = 'none';
         document.getElementById('standard-gallery-container').style.display = 'none';
 
-        // Render Base Details
+        // Render Base Details directly from fetched JSON
         document.getElementById('detail-title').textContent = currentItemData.title || "Dream To Build";
         document.getElementById('detail-subtitle').textContent = currentItemData.subtitle || '';
         
         const heroImg = document.getElementById('detail-hero-img');
-        heroImg.src = currentItemData.heroImage || currentItemData.thumb || "Projects/ScapeGoat at the Granary.jpg";
+        heroImg.src = currentItemData.heroImage || currentItemData.thumb || currentItemData.image || "Projects/ScapeGoat at the Granary.jpg";
         heroImg.alt = currentItemData.title || "Detail View";
 
         // Render Narrative Paragraphs
@@ -167,11 +157,13 @@
           contentDiv.innerHTML = currentItemData.narrative.map(p => `<p style="margin-bottom: 1.25rem;">${p}</p>`).join('');
         } else if (currentItemData.summary) {
           contentDiv.innerHTML = `<p>${currentItemData.summary}</p>`;
+        } else if (currentItemData.description) {
+          contentDiv.innerHTML = `<p>${currentItemData.description}</p>`;
         }
 
         const mainContainer = document.getElementById('detail-main-container');
 
-        // 1. Render Specifications (Left Sidebar) if present across any section
+        // 1. Render Specifications (Left Sidebar) if present
         let hasSpecs = false;
         if (currentItemData.specifications) {
           const specsContainer = document.getElementById('detail-specs-container');
@@ -234,7 +226,7 @@
             hasRightNav = true;
           }
         } else {
-          // Render standard flat gallery for Dreams, Fantasies, About (Supports both string & object arrays)
+          // Render standard flat gallery for Dreams, Fantasies, About
           if (currentItemData.gallery && currentItemData.gallery.length > 0) {
             const galContainer = document.getElementById('standard-gallery-container');
             const galGrid = document.getElementById('standard-gallery-grid');
