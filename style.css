@@ -45,7 +45,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* BRAND HEADER - WIREFRAME TOP TITLE BAR */
+/* BRAND HEADER - WIREFRAME TOP TITLE BAR & FONT ALIGNMENT */
 .site-header {
   border: 1px solid var(--border-color);
   background-color: var(--panel-bg);
@@ -58,33 +58,37 @@ body {
 
 .brand-title {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 14px;
 }
 
 .font-dream {
-  font-family: var(--font-dream);
+  font-family: var(--font-dream), 'Great Vibes', cursive;
   font-size: 3.2rem;
   color: #ffffff;
   font-weight: 400;
   line-height: 1;
+  position: relative;
+  top: -2px;
 }
 
 .font-to {
-  font-family: var(--font-to);
-  font-size: 1.4rem;
+  font-family: var(--font-to), 'Cinzel', serif;
+  font-size: 1.25rem;
   color: var(--text-muted);
   text-transform: lowercase;
   font-style: italic;
+  letter-spacing: 1px;
 }
 
 .font-build {
-  font-family: var(--font-build);
+  font-family: var(--font-build), 'Black Ops One', cursive;
   font-size: 2.6rem;
   color: var(--accent-cyan);
   letter-spacing: 2px;
   text-transform: uppercase;
+  line-height: 1;
 }
 
 .site-tagline {
