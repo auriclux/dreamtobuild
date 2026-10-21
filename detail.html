@@ -23,19 +23,19 @@
     <a href="index.html" class="back-link">&larr; Back to Gallery</a>
   </nav>
 
-  <!-- 3-COLUMN DETAIL LAYOUT -->
-  <main class="detail-grid-layout" style="display: grid; grid-template-columns: 280px 1fr 260px; gap: 24px; align-items: start; max-width: 1400px; margin: 0 auto;">
+  <!-- DYNAMIC LAYOUT CONTAINER -->
+  <main id="detail-main-container" class="main-layout flex-column">
 
-    <!-- COLUMN 1: TECHNICAL SPECIFICATIONS (LEFT) -->
+    <!-- LEFT COLUMN: TECHNICAL SPECIFICATIONS (PROJECTS ONLY) -->
     <aside id="detail-specs-container" class="sidebar-nav" style="display:none; padding: 16px;">
       <span class="nav-label">Technical Specs</span>
       <dl id="detail-specs-list" class="spec-details" style="display: flex; flex-direction: column; gap: 10px; margin-top: 10px;"></dl>
     </aside>
 
-    <!-- COLUMN 2: CENTER FRAME (CONTENT & HERO MEDIA) -->
-    <section id="center-frame" style="display: flex; flex-direction: column; gap: 24px; min-width: 0;">
+    <!-- CENTER / MAIN CONTENT FRAME -->
+    <section id="center-frame" style="display: flex; flex-direction: column; gap: 24px; min-width: 0; flex: 1;">
       
-      <!-- Spotlight Hero Media -->
+      <!-- Hero Spotlight Frame -->
       <div id="spotlight-frame" style="background-color: var(--panel-bg); border: 1px solid var(--border-color); border-radius: 6px; overflow: hidden;">
         <div class="spotlight-media" style="width: 100%; height: 420px; background-color: #050608; display: flex; align-items: center; justify-content: center; overflow: hidden; cursor: pointer;" onclick="openLightbox(document.getElementById('detail-hero-img').src, document.getElementById('detail-title').textContent)">
           <img id="detail-hero-img" src="" alt="Hero Preview" style="max-width: 100%; max-height: 100%; object-fit: contain;">
@@ -52,18 +52,24 @@
         <div id="detail-content">Loading description...</div>
       </div>
 
-      <!-- Active Tab Content Area (Sub-galleries or Members Only) -->
+      <!-- Active Sub-Gallery / Builder Content Display (Projects Only) -->
       <div id="active-tab-display" style="background-color: var(--panel-bg); border: 1px solid var(--border-color); border-radius: 6px; padding: 24px; display: none;">
         <!-- Dynamically rendered sub-gallery or password gate -->
       </div>
 
+      <!-- Standard Flat Gallery Grid (Dreams, Fantasies, About) -->
+      <div id="standard-gallery-container" style="background-color: var(--panel-bg); border: 1px solid var(--border-color); border-radius: 6px; padding: 24px; display: none;">
+        <h2 style="font-family: var(--font-to); font-size: 1.4rem; color: #ffffff; margin-bottom: 16px;">Gallery</h2>
+        <div id="standard-gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px;"></div>
+      </div>
+
     </section>
 
-    <!-- COLUMN 3: VERTICAL NAVIGATION SIDEBAR (RIGHT) -->
+    <!-- RIGHT COLUMN: VERTICAL NAVIGATION SIDEBAR (PROJECTS ONLY) -->
     <aside id="sidebar-nav-right" class="sidebar-nav" style="display: none; padding: 16px;">
       <span class="nav-label">Project Sections</span>
       <div id="gallery-tabs" style="display: flex; flex-direction: column; gap: 10px; margin-top: 10px;">
-        <!-- Vertical buttons populated dynamically -->
+        <!-- Vertical buttons populated dynamically for Projects -->
       </div>
     </aside>
 
@@ -83,7 +89,7 @@
     <p>&copy; Dream To Build — All Rights Reserved.</p>
   </footer>
 
-  <!-- DYNAMIC DATA LOADING & TAB SCRIPT -->
+  <!-- DYNAMIC DATA LOADING SCRIPT -->
   <script>
     let currentItemData = null;
 
@@ -98,7 +104,6 @@
       }
 
       try {
-        // Append timestamp parameter to force fresh JSON load from server
         const response = await fetch(`data/${type}.json?v=${new Date().getTime()}`);
         const data = await response.json();
         currentItemData = data.find(entry => entry.id === id);
@@ -108,7 +113,7 @@
           return;
         }
 
-        // Render Hero Details
+        // Render Base Details
         document.getElementById('detail-title').textContent = currentItemData.title;
         document.getElementById('detail-subtitle').textContent = currentItemData.subtitle || '';
         
@@ -124,67 +129,90 @@
           contentDiv.innerHTML = `<p>${currentItemData.summary}</p>`;
         }
 
-        // Render Specifications Table (Left Column)
-        if (currentItemData.specifications) {
-          const specsContainer = document.getElementById('detail-specs-container');
-          const specsList = document.getElementById('detail-specs-list');
-          specsList.innerHTML = Object.entries(currentItemData.specifications)
-            .map(([key, value]) => `
-              <div style="border-bottom: 1px solid var(--border-color); padding-bottom: 6px;">
-                <dt style="font-family: var(--font-spec); font-size: 0.8rem; color: var(--accent-cyan); text-transform: uppercase;">${key}</dt>
-                <dd style="font-family: var(--font-spec); font-size: 0.95rem; color: #f0f4f8; margin-top: 2px;">${value}</dd>
-              </div>`)
-            .join('');
-          specsContainer.style.display = 'block';
-        }
+        const mainContainer = document.getElementById('detail-main-container');
 
-        // Normalize subGalleries structure if missing or legacy
-        if (!currentItemData.subGalleries && currentItemData.gallery) {
-          currentItemData.subGalleries = {
-            history: {
-              title: "Build Start & History",
-              heroImage: currentItemData.heroImage || currentItemData.thumb,
-              images: currentItemData.gallery
+        // BRANCH 1: PROJECTS SECTION (3-Column Layout with Specifications, Sub-Galleries, & Gate)
+        if (type === 'projects') {
+          mainContainer.className = 'detail-grid-layout';
+
+          // Render Left Specs Column
+          if (currentItemData.specifications) {
+            const specsContainer = document.getElementById('detail-specs-container');
+            const specsList = document.getElementById('detail-specs-list');
+            specsList.innerHTML = Object.entries(currentItemData.specifications)
+              .map(([key, value]) => `
+                <div style="border-bottom: 1px solid var(--border-color); padding-bottom: 6px;">
+                  <dt style="font-family: var(--font-spec); font-size: 0.8rem; color: var(--accent-cyan); text-transform: uppercase;">${key}</dt>
+                  <dd style="font-family: var(--font-spec); font-size: 0.95rem; color: #f0f4f8; margin-top: 2px;">${value}</dd>
+                </div>`)
+              .join('');
+            specsContainer.style.display = 'flex';
+          }
+
+          // Normalize subGalleries if missing
+          if (!currentItemData.subGalleries && currentItemData.gallery) {
+            currentItemData.subGalleries = {
+              history: {
+                title: "Build Start & History",
+                heroImage: currentItemData.heroImage || currentItemData.thumb,
+                images: currentItemData.gallery
+              }
+            };
+          }
+
+          // Render Right Navigation Column
+          if (currentItemData.subGalleries || currentItemData.builderNotes) {
+            const rightSidebar = document.getElementById('sidebar-nav-right');
+            const tabsDiv = document.getElementById('gallery-tabs');
+            rightSidebar.style.display = 'flex';
+            tabsDiv.innerHTML = '';
+
+            let firstKey = null;
+
+            if (currentItemData.subGalleries) {
+              Object.entries(currentItemData.subGalleries).forEach(([key, subVal], index) => {
+                if (index === 0) firstKey = key;
+                const tabBtn = document.createElement('button');
+                tabBtn.className = `nav-text-link ${index === 0 ? 'active' : ''}`;
+                tabBtn.textContent = subVal.title || key;
+                tabBtn.onclick = () => switchTab(key);
+                tabsDiv.appendChild(tabBtn);
+              });
             }
-          };
-        }
 
-        // Render Vertical Navigation Sidebar & Default Tab
-        if (currentItemData.subGalleries || currentItemData.builderNotes) {
-          const rightSidebar = document.getElementById('sidebar-nav-right');
-          const tabsDiv = document.getElementById('gallery-tabs');
-          rightSidebar.style.display = 'flex';
-          tabsDiv.innerHTML = '';
+            if (currentItemData.builderNotes) {
+              const memberBtn = document.createElement('button');
+              memberBtn.className = 'nav-text-link';
+              memberBtn.style.borderColor = 'var(--accent-purple)';
+              memberBtn.style.color = 'var(--accent-purple)';
+              memberBtn.textContent = '🔒 Members Only';
+              memberBtn.onclick = () => switchTab('members-only');
+              tabsDiv.appendChild(memberBtn);
+              if (!firstKey) firstKey = 'members-only';
+            }
 
-          let firstKey = null;
-
-          // Sub-galleries
-          if (currentItemData.subGalleries) {
-            Object.entries(currentItemData.subGalleries).forEach(([key, subVal], index) => {
-              if (index === 0) firstKey = key;
-              const tabBtn = document.createElement('button');
-              tabBtn.className = `nav-text-link ${index === 0 ? 'active' : ''}`;
-              tabBtn.textContent = subVal.title || key;
-              tabBtn.onclick = () => switchTab(key);
-              tabsDiv.appendChild(tabBtn);
-            });
+            if (firstKey) switchTab(firstKey);
           }
 
-          // Members Only Tab
-          if (currentItemData.builderNotes) {
-            const memberBtn = document.createElement('button');
-            memberBtn.className = 'nav-text-link';
-            memberBtn.style.borderColor = 'var(--accent-purple)';
-            memberBtn.style.color = 'var(--accent-purple)';
-            memberBtn.textContent = '🔒 Members Only';
-            memberBtn.onclick = () => switchTab('members-only');
-            tabsDiv.appendChild(memberBtn);
-            if (!firstKey) firstKey = 'members-only';
-          }
+        } else {
+          // BRANCH 2: DREAMS, FANTASIES, ABOUT SECTIONS (Original Standard Layout)
+          mainContainer.className = 'main-layout flex-column';
+          document.getElementById('detail-specs-container').style.display = 'none';
+          document.getElementById('sidebar-nav-right').style.display = 'none';
+          document.getElementById('active-tab-display').style.display = 'none';
 
-          // Load default first tab
-          if (firstKey) {
-            switchTab(firstKey);
+          // Render Standard Flat Gallery if images exist
+          if (currentItemData.gallery && currentItemData.gallery.length > 0) {
+            const galContainer = document.getElementById('standard-gallery-container');
+            const galGrid = document.getElementById('standard-gallery-grid');
+            galContainer.style.display = 'block';
+            galGrid.innerHTML = currentItemData.gallery.map(imgSrc => {
+              const filename = imgSrc.split('/').pop().replace(/\.[^/.]+$/, "");
+              return `
+                <div style="background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 4px; overflow: hidden; cursor: pointer; height: 140px;" onclick="openLightbox('${imgSrc}', '${filename.replace(/'/g, "\\'")}')">
+                  <img src="${imgSrc}" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>`;
+            }).join('');
           }
         }
 
@@ -199,7 +227,6 @@
       displayArea.style.display = 'block';
       displayArea.innerHTML = '';
 
-      // Highlight active vertical button
       const tabsDiv = document.getElementById('gallery-tabs');
       Array.from(tabsDiv.children).forEach(btn => {
         if (btn.textContent.toLowerCase().includes(activeKey.toLowerCase()) || 
@@ -225,7 +252,6 @@
       } else if (currentItemData.subGalleries && currentItemData.subGalleries[activeKey]) {
         const subVal = currentItemData.subGalleries[activeKey];
         
-        // Update main center spotlight hero image to section hero image if available
         if (subVal.heroImage) {
           document.getElementById('detail-hero-img').src = subVal.heroImage;
         }
