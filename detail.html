@@ -30,7 +30,7 @@
   </nav>
 
   <!-- DYNAMIC LAYOUT CONTAINER -->
-  <main id="detail-main-container" style="display: flex; flex-direction: column; gap: 24px; max-width: 1400px; margin: 0 auto; align-items: start;">
+  <main id="detail-main-container" class="main-layout flex-column">
 
     <!-- LEFT COLUMN: TECHNICAL SPECIFICATIONS -->
     <aside id="detail-specs-container" class="sidebar-nav" style="display:none; padding: 16px;">
@@ -39,7 +39,7 @@
     </aside>
 
     <!-- CENTER / MAIN CONTENT FRAME -->
-    <section id="center-frame" style="display: flex; flex-direction: column; gap: 24px; min-width: 0; width: 100%;">
+    <section id="center-frame" style="display: flex; flex-direction: column; gap: 24px; min-width: 0; flex: 1;">
       
       <!-- Hero Spotlight Frame -->
       <div id="spotlight-frame" style="background-color: var(--panel-bg); border: 1px solid var(--border-color); border-radius: 6px; overflow: hidden;">
@@ -59,12 +59,12 @@
       </div>
 
       <!-- Active Sub-Gallery / Builder Content Display (Projects Only) -->
-      <div id="active-tab-display" style="background-color: var(--panel-bg); border: 1px solid var(--border-color); border-radius: 6px; padding: 24px; display: none; width: 100%;">
+      <div id="active-tab-display" style="background-color: var(--panel-bg); border: 1px solid var(--border-color); border-radius: 6px; padding: 24px; display: none;">
         <!-- Dynamically rendered sub-gallery or password gate -->
       </div>
 
       <!-- Standard Flat Gallery Grid (Dreams, Fantasies, About) -->
-      <div id="standard-gallery-container" style="background-color: var(--panel-bg); border: 1px solid var(--border-color); border-radius: 6px; padding: 24px; display: none; width: 100%;">
+      <div id="standard-gallery-container" style="background-color: var(--panel-bg); border: 1px solid var(--border-color); border-radius: 6px; padding: 24px; display: none;">
         <h2 style="font-family: var(--font-to); font-size: 1.4rem; color: #ffffff; margin-bottom: 16px;">Gallery</h2>
         <div id="standard-gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px;"></div>
       </div>
@@ -130,6 +130,7 @@
           currentItemData = data.about;
         }
 
+        // Fallback exclusively for About section if missing
         if (!currentItemData && type === 'about') {
           currentItemData = {
             id: "about",
@@ -145,9 +146,11 @@
 
         if (!currentItemData) {
           document.getElementById('detail-title').textContent = 'Entry Not Found';
+          document.getElementById('detail-content').innerHTML = `<p>Could not locate item ID "${id}" in data/${type}.json.</p>`;
           return;
         }
 
+        // Render Base Details
         document.getElementById('detail-title').textContent = currentItemData.title || "Dream To Build";
         document.getElementById('detail-subtitle').textContent = currentItemData.subtitle || '';
         
@@ -155,6 +158,7 @@
         heroImg.src = currentItemData.heroImage || currentItemData.thumb || "Projects/ScapeGoat at the Granary.jpg";
         heroImg.alt = currentItemData.title || "Detail View";
 
+        // Render Narrative Paragraphs
         const contentDiv = document.getElementById('detail-content');
         if (Array.isArray(currentItemData.narrative)) {
           contentDiv.innerHTML = currentItemData.narrative.map(p => `<p style="margin-bottom: 1.25rem;">${p}</p>`).join('');
@@ -164,7 +168,7 @@
 
         const mainContainer = document.getElementById('detail-main-container');
 
-        // 1. Check Specifications (Left Sidebar)
+        // 1. Render Specifications (Left Sidebar) if present
         let hasSpecs = false;
         if (currentItemData.specifications) {
           const specsContainer = document.getElementById('detail-specs-container');
@@ -180,7 +184,7 @@
           hasSpecs = true;
         }
 
-        // 2. Check Right Navigation Sidebar (Projects Only with Sub-galleries or Notes)
+        // 2. Handle Projects vs. Dreams/Fantasies/About Layouts & Galleries
         let hasRightNav = false;
         if (type === 'projects') {
           if (!currentItemData.subGalleries && currentItemData.gallery) {
@@ -227,7 +231,7 @@
             hasRightNav = true;
           }
         } else {
-          // Render standard flat gallery for non-project sections (Dreams, Fantasies, About)
+          // Render standard flat gallery for Dreams, Fantasies, About
           if (currentItemData.gallery && currentItemData.gallery.length > 0) {
             const galContainer = document.getElementById('standard-gallery-container');
             const galGrid = document.getElementById('standard-gallery-grid');
@@ -242,23 +246,24 @@
           }
         }
 
-        // 3. Dynamic Grid Layout Configuration
+        // 3. Apply Clean CSS Grid Alignment based on active sidebars
         if (hasSpecs && hasRightNav) {
-          mainContainer.style.display = 'grid';
-          mainContainer.style.gridTemplateColumns = '280px 1fr 260px';
+          // 3-Column Layout: Specs (Left) + Center Frame + Right Nav
+          mainContainer.className = 'detail-grid-layout';
         } else if (hasSpecs && !hasRightNav) {
+          // 2-Column Layout for Dreams/Fantasies: Specs (Left) + Center Frame
           mainContainer.style.display = 'grid';
           mainContainer.style.gridTemplateColumns = '280px 1fr';
+          mainContainer.style.gap = '24px';
+          mainContainer.style.alignItems = 'start';
         } else {
-          mainContainer.style.display = 'flex';
-          mainContainer.style.flexDirection = 'column';
+          // Standard Single Column Layout
+          mainContainer.className = 'main-layout flex-column';
         }
 
       } catch (err) {
         console.error('Error loading detail view:', err);
-        document.getElementById('detail-title').textContent = 'About Dream To Build';
-        document.getElementById('detail-subtitle').textContent = 'Dragging High Concept Pretty Pictures Kicking and Screaming into the Real World';
-        document.getElementById('detail-content').innerHTML = '<p>The origin, ethos, and purpose behind the Dream To Build custom vehicle portfolio and design studio.</p>';
+        document.getElementById('detail-title').textContent = 'Error Loading Details';
       }
     }
 
@@ -325,6 +330,7 @@
       }
     }
 
+    /* LIGHTBOX CONTROLS */
     function openLightbox(imgSrc, captionText) {
       const modal = document.getElementById('lightbox-modal');
       const img = document.getElementById('lightbox-img');
