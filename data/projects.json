@@ -3,8 +3,9 @@
     "id": "torky-t",
     "title": "Torky-T",
     "subtitle": "1923 Ford T-Bucket Roadster",
-    "thumb": "Projects/Torky-T Thumb.jpg",
-    "heroImage": "Projects/Torky-T Thumb.jpg",
+    "thumb": "Projects/Torky-T.jpg",
+    "heroImage": "Projects/Torky-T.jpg",
+    "image": "Projects/Torky-T.jpg",
     "narrative": [
       "Constructed with a vintage fiberglass body, Small Block Chevrolet engine with a Vertex magneto ignition system, TH350 transmission, and Ford 9-inch rear axle."
     ],
@@ -19,7 +20,7 @@
       "Tires": "Mickey Thompson 29x18.5LT15 Rear"
     },
     "gallery": [
-      "Projects/Torky-T Thumb.jpg"
+      "Projects/Torky-T.jpg"
     ]
   },
   {
@@ -28,6 +29,7 @@
     "subtitle": "1968 Pontiac Street & Strip Outlaw Drag Car",
     "thumb": "Projects/ScapeGoat at the Granary.jpg",
     "heroImage": "Projects/ScapeGoat at the Granary.jpg",
+    "image": "Projects/ScapeGoat at the Granary.jpg",
     "narrative": [
       "Project ScapeGoat transforms a 1968 Pontiac into a full street-and-strip outlaw drag car, built as the high-horsepower outlaw counterpart to its factory-bodied 'Body Brother' restomod."
     ],
@@ -75,6 +77,7 @@
     "subtitle": "1962 Classic Mini AWD Space-Frame Race Car",
     "thumb": "Projects/Reiver Studio 01.jpg",
     "heroImage": "Projects/Reiver Studio 01.jpg",
+    "image": "Projects/Reiver Studio 01.jpg",
     "narrative": [
       "Combining a 1962 Austin/Morris Mini Cooper body shell over a custom tube-frame space frame, Super Fast Minis MTB subframe, and forced-induction Honda LS-VTEC engine."
     ],
