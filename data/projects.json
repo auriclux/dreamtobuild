@@ -3,181 +3,18 @@
     "id": "torky-t",
     "title": "Torky-T",
     "subtitle": "1923 Ford T-Bucket Roadster",
-    "category": "Projects",
-    "badgeText": "Active Build",
-    "badgeType": "badge-project",
-    "summary": "1923 Ford T-Bucket featuring a built 350 SBC, Quick Fuel 750, Don Zig serviced Vertex magneto, TH350, and 9-inch rear axle.",
-    "thumb": "Projects/torky-t-hero.jpg",
-    "heroImage": "Projects/torky-t-hero.jpg",
-    "thumbnail": "Projects/torky-t-hero.jpg",
-    "detailUrl": "detail.html?type=projects&id=torky-t",
-    "tags": ["Ford", "T-Bucket", "SBC 350", "Vertex Magneto", "Hot Rod"],
-    "specifications": {
-      "year": "1923",
-      "make": "Ford",
-      "model": "T-Bucket Roadster",
-      "engine": "Built 350 Small Block Chevrolet V8",
-      "carburetor": "Quick Fuel SS-750 4-Barrel",
-      "ignition": "Vertex Magneto (Don Zig Serviced)",
-      "transmission": "TH350 Automatic",
-      "rearAxle": "Ford 9-Inch",
-      "rearTires": "29x18.5LT15 Mickey Thompson",
-      "interior": "White Vinyl Pleated Upholstery",
-      "status": "In Progress",
-      "dateAdded": "2026-09-27T12:00:00"
-    },
-    "narrative": [
-      "Torky-T is a classic 1923 Ford T-Bucket roadster restoration and performance upgrade project.",
-      "Powered by a built 350 SBC fed through a Quick Fuel SS-750 4-barrel carburetor and timed by a vintage Vertex magneto tuned by Don Zig Magnetos.",
-      "Puts power to the pavement via a TH350 transmission and a Ford 9-inch rear end tucked under white vinyl pleated upholstery."
-    ],
-    "subGalleries": {
-      "concepts": {
-        "title": "AI Concepts",
-        "heroImage": "Projects/torky-t-hero.jpg",
-        "images": []
-      },
-      "funnies": {
-        "title": "The Funnies",
-        "heroImage": "Projects/torky-t-hero.jpg",
-        "images": []
-      },
-      "history": {
-        "title": "Build Start & History",
-        "heroImage": "Projects/torky-t-hero.jpg",
-        "images": [
-          "Projects/torky-t-hero.jpg",
-          "Projects/garage-find.jpg",
-          "Projects/magneto-bench.jpg",
-          "Projects/shop-delivery.jpg"
-        ]
-      }
-    },
-    "builderNotes": "CONFIDENTIAL BUILDER INSTRUCTIONS:\n1. Verify Vertex magneto timing and advance parameters prior to initial firing.\n2. Check clearance for 29x18.5LT15 rear Mickey Thompsons at full compression.\n3. Inspect steering box mount and front suspension link bushings.",
-    "featured": true
+    ...
   },
   {
-    "id": "project-scapegoat",
+    "id": "scapegoat",
     "title": "Project ScapeGoat",
     "subtitle": "1968 Pontiac Street & Strip Outlaw Drag Car",
-    "category": "Projects",
-    "badgeText": "Active Build",
-    "badgeType": "badge-project",
-    "summary": "1968 Pontiac street and strip outlaw drag car featuring a built 6.2L L94 V8, Tremec T56 Magnum 6-speed, frame notches, and a custom central X-member integrated with the cage for chassis rigidity.",
-    "thumb": "Projects/ScapeGoat rear widened split bumper.jpg",
-    "heroImage": "Projects/ScapeGoat rear widened split bumper.jpg",
-    "thumbnail": "Projects/ScapeGoat rear widened split bumper.jpg",
-    "detailUrl": "detail.html?type=projects&id=project-scapegoat",
-    "tags": ["Pontiac", "1968", "LS/LT V8", "Tremec T56 Magnum", "Street & Strip", "Outlaw Drag", "Chassis Fabrication"],
-    "specifications": {
-      "year": "1968",
-      "make": "Pontiac",
-      "model": "Outlaw Drag Car",
-      "engine": "Built 6.2L L94 V8 (VVT & DOD Delete)",
-      "transmission": "Tremec T56 Magnum 6-Speed (2.66:1 First Gear / QuickTime RM-6037 Bellhousing)",
-      "drivetrain": "4.0-inch Aluminum Driveshaft / Weld ProStar 15x15 Rear Wheels",
-      "chassis": "1-inch Frame Rail Notch & Custom Central X-Member Cage Integration",
-      "management": "Holley Terminator X MAX ECU",
-      "badge": "Laser-Cut Stainless 'SCAPEGOAT' Grille Badge with Stylized Angry Ram",
-      "status": "Active Fabrication / Frame & Chassis Stage",
-      "dateAdded": "2026-10-20T13:00:00"
-    },
-    "narrative": [
-      "Project ScapeGoat transforms a 1968 Pontiac into a full street-and-strip outlaw drag car, built as the high-horsepower outlaw counterpart to its factory-bodied 'Body Brother' restomod companion, BillyGoat.",
-      "Power originates from a built 6.2L L94 V8 with complete VVT and DOD delete systems, controlled via a Holley Terminator X MAX ECU. Power is delivered through a Tremec T56 Magnum 6-speed manual transmission encased in a QuickTime steel bellhousing down to a massive 4.0-inch aluminum driveshaft.",
-      "To accommodate steamroller rear rubber, the rear frame rails received a 1-inch notch with inner rail reinforcement, housing 15x15 Weld ProStar wheels wrapped in Mickey Thompson Sportsman S/R tires.",
-      "Chassis fabrication centers on a custom fabricated steel X-member featuring an integrated central driveshaft safety loop. Built to work in direct concert with the interior cage, this lower structural grid counters planar trapezoidal frame distortion and forms the bottom structural plane of the safety cell."
-    ],
-    "subGalleries": {
-      "concepts": {
-        "title": "AI Concepts",
-        "heroImage": "Projects/ScapeGoat Foldout.jpg",
-        "images": [
-          "Projects/ScapeGoat Foldout.jpg",
-          "Projects/ScapeGoat rear widened split bumper.jpg"
-        ]
-      },
-      "funnies": {
-        "title": "The Funnies",
-        "heroImage": "Projects/Stuffing Slicks.jpg",
-        "images": [
-          "Projects/Stuffing Slicks.jpg",
-          "Projects/ScapeGoat at the Granary.jpg",
-          "Projects/ScapeGoat at the car show.jpg"
-        ]
-      },
-      "history": {
-        "title": "Build Start & History",
-        "heroImage": "Projects/String measure for shaft cage 1.jpg",
-        "images": [
-          "Projects/String measure for shaft cage 1.jpg",
-          "Projects/20261014 X-member start.jpg",
-          "Projects/20261021 X-member mock-up 01.jpg"
-        ]
-      }
-    },
-    "builderNotes": "CONFIDENTIAL BUILDER INSTRUCTIONS:\n1. Ensure the central X-member is fully fully-welded and tied directly into the main roll cage floor plates to form a monolithic bottom plane.\n2. Verify planar trapezoidal frame alignment across all 4 corner datum points prior to final welding.\n3. Verify clearance for the 4.0-inch aluminum driveshaft through the central safety loop at full bump travel.",
-    "featured": true
+    ...
   },
   {
-    "id": "project-reiver",
+    "id": "reiver",
     "title": "Project Reiver, The Corner Thief",
     "subtitle": "1962 Classic Mini AWD Space-Frame Race Car",
-    "category": "Projects",
-    "badgeText": "Active Build",
-    "badgeType": "badge-project",
-    "summary": "1962 Classic Mini Cooper steel shell transformed into an all-wheel-drive space-frame weapon powered by a forced-induction Honda LS-VTEC engine controlled by Haltech Elite 1500 ECU, Super Fast Minis MTB subframe, sloped steel flares, and Blue/Teal chameleon finish.",
-    "thumb": "Projects/Reiver flared in Blue & Teal chameleon.jpg",
-    "heroImage": "Projects/Reiver flared in Blue & Teal chameleon.jpg",
-    "thumbnail": "Projects/Reiver flared in Blue & Teal chameleon.jpg",
-    "detailUrl": "detail.html?type=projects&id=project-reiver",
-    "tags": ["Mini", "1962", "Space Frame", "AWD", "Honda LS-VTEC", "Haltech", "Super Fast Minis MTB", "Scottish Saltire"],
-    "specifications": {
-      "year": "1962",
-      "make": "Austin / Morris",
-      "model": "Mini Cooper (Space-Frame Skin)",
-      "engine": "Forced-Induction Honda LS-VTEC B-Series",
-      "subframe": "Super Fast Minis MTB B-Series Subframe",
-      "drivetrain": "Custom All-Wheel-Drive System",
-      "management": "Haltech Elite 1500 ECU",
-      "chassis": "Custom Tube-Frame Space Frame with Non-Structural Steel Skin",
-      "bodywork": "Sloped Steel Fender Flares / Blue & Teal Chameleon Paint / Scottish Saltire Roof Graphic",
-      "wheelsTires": "12-Inch Wheels with Wide DOT Race Compound Tires",
-      "status": "Active Fabrication / Chassis & Shell Prep",
-      "dateAdded": "2026-10-20T19:00:00"
-    },
-    "narrative": [
-      "Project Reiver, The Corner Thief combines iconic 1962 Classic Mini Cooper aesthetics with full tube-frame racing architecture. Rather than relying on a unibody structure, the original Morris Mini body shell functions purely as a non-structural aesthetic skin over a custom space-frame chassis.",
-      "Powertrain engineering centers on a forced-induction Honda LS-VTEC engine mounted to a Super Fast Minis MTB subframe designed specifically for Honda B-series powerplants. Engine calibration and boost management are handled by a Haltech Elite 1500 ECU delivering power to all four corners via a custom AWD driveline.",
-      "Exterior styling features aggressive sloped steel fender flares over wide DOT-approved racing rubber wrapped around 12-inch wheels. Draped in a striking Blue and Teal chameleon color-shifting finish with a iconic Scottish Saltire roof graphic, Reiver pays homage to border raiders while dominating tight road courses."
-    ],
-    "subGalleries": {
-      "concepts": {
-        "title": "AI Concepts",
-        "heroImage": "Projects/Reiver flared in Blue & Teal chameleon.jpg",
-        "images": [
-          "Projects/Exploded AWD Mini build.jpg",
-          "Projects/Reiver flared in Blue & Teal chameleon.jpg",
-          "Projects/Reiver Race in Edinburgh.jpg",
-          "Projects/REIVER S emblem.jpg",
-          "Projects/Reiver & Mina.jpg",
-          "Projects/Reiver on Targo Floria.jpg"
-        ]
-      },
-      "funnies": {
-        "title": "The Funnies",
-        "heroImage": "Projects/Reiver flared in Blue & Teal chameleon.jpg",
-        "images": []
-      },
-      "history": {
-        "title": "Build Start & History",
-        "heroImage": "Projects/Reiver shell 20260507.jpg",
-        "images": [
-          "Projects/Reiver shell 20260507.jpg"
-        ]
-      }
-    },
-    "builderNotes": "CONFIDENTIAL BUILDER INSTRUCTIONS:\n1. Verify space-frame hardpoints align with Super Fast Minis MTB B-series front subframe pick-up nodes.\n2. Confirm full suspension articulation clearance within steel sloped fender flares for 12-inch wide DOT rubber.\n3. Calibrate Haltech Elite 1500 CAN inputs and AWD center transfer torque split parameters.",
-    "featured": true
+    ...
   }
 ]
