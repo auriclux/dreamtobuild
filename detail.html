@@ -158,15 +158,31 @@
         heroImg.src = currentItemData.heroImage || currentItemData.thumb || currentItemData.image || "Projects/ScapeGoat at the Granary.jpg";
         heroImg.alt = currentItemData.title || "Detail View";
 
-        // Render Narrative / Text File Content (.txt support)
+        // Render Narrative / Text File Content (.txt support with smart About folder fallback)
         const contentDiv = document.getElementById('detail-content');
         contentDiv.innerHTML = '<p>Loading content...</p>';
 
-        let textSource = currentItemData.file || currentItemData.txt || currentItemData.contentFile || currentItemData.textPath;
+        let textSource = currentItemData.file || currentItemData.txt || currentItemData.contentFile || currentItemData.textPath || currentItemData.path || currentItemData.source;
+        
+        // If no explicit file property is in JSON for About types, construct standard path from ID
+        if (!textSource && type === 'about') {
+          if (id === 'about') {
+            textSource = 'About/About.txt';
+          } else {
+            textSource = `About/${id}.txt`;
+          }
+        }
+
+        let textFetched = false;
         if (textSource) {
           try {
-            const txtRes = await fetch(textSource + `?v=${new Date().getTime()}`);
-            if (txtRes.ok) {
+            let txtRes = await fetch(textSource + `?v=${new Date().getTime()}`);
+            if (!txtRes.ok && type === 'about') {
+              // Try alternate capitalization if initial fetch fails
+              const altSource = `About/${id.charAt(0).toUpperCase() + id.slice(1)}.txt`;
+              txtRes = await fetch(altSource + `?v=${new Date().getTime()}`);
+            }
+            if (txtRes && txtRes.ok) {
               const txtText = await txtRes.text();
               const paragraphs = txtText.split(/\r?\n\r?\n/).filter(p => p.trim().length > 0);
               if (paragraphs.length > 0) {
@@ -174,23 +190,25 @@
               } else {
                 contentDiv.innerHTML = `<p>${txtText}</p>`;
               }
-            } else {
-              contentDiv.innerHTML = `<p>Could not load text file: ${textSource}</p>`;
+              textFetched = true;
             }
           } catch (e) {
             console.error("Error fetching text file:", e);
-            contentDiv.innerHTML = `<p>Error loading text content.</p>`;
           }
-        } else if (currentItemData && Array.isArray(currentItemData.narrative)) {
-          contentDiv.innerHTML = currentItemData.narrative.map(p => `<p style="margin-bottom: 1.25rem;">${p}</p>`).join('');
-        } else if (currentItemData && typeof currentItemData.narrative === 'string') {
-          contentDiv.innerHTML = `<p>${currentItemData.narrative}</p>`;
-        } else if (currentItemData && currentItemData.summary) {
-          contentDiv.innerHTML = `<p>${currentItemData.summary}</p>`;
-        } else if (currentItemData && currentItemData.description) {
-          contentDiv.innerHTML = `<p>${currentItemData.description}</p>`;
-        } else {
-          contentDiv.innerHTML = `<p>Dream To Build is a custom vehicle design studio and fabrication workshop focused on bridging the gap between high-concept artistic visions and functional realities.</p>`;
+        }
+
+        if (!textFetched) {
+          if (currentItemData && Array.isArray(currentItemData.narrative)) {
+            contentDiv.innerHTML = currentItemData.narrative.map(p => `<p style="margin-bottom: 1.25rem;">${p}</p>`).join('');
+          } else if (currentItemData && typeof currentItemData.narrative === 'string') {
+            contentDiv.innerHTML = `<p>${currentItemData.narrative}</p>`;
+          } else if (currentItemData && currentItemData.summary) {
+            contentDiv.innerHTML = `<p>${currentItemData.summary}</p>`;
+          } else if (currentItemData && currentItemData.description) {
+            contentDiv.innerHTML = `<p>${currentItemData.description}</p>`;
+          } else {
+            contentDiv.innerHTML = `<p>Dream To Build is a custom vehicle design studio and fabrication workshop focused on bridging the gap between high-concept artistic visions and functional realities.</p>`;
+          }
         }
 
         const mainContainer = document.getElementById('detail-main-container');
@@ -366,7 +384,7 @@
 
     /* LIGHTBOX CONTROLS */
     function openLightbox(imgSrc, captionText) {
-      const modal = document.getElementById('lightbox-modal');
+      const motals = document.getElementById('lightbox-modal');
       const img = document.getElementById('lightbox-img');
       const caption = document.getElementById('lightbox-caption');
 
