@@ -26,7 +26,7 @@
 
   <!-- NAVIGATION RETURN LINK -->
   <nav class="detail-nav">
-    <a href="index.html" class="back-link">&larr; Back to Gallery</a>
+    <a id="back-link-anchor" href="index.html" class="back-link">&larr; Back to Gallery</a>
   </nav>
 
   <!-- DYNAMIC LAYOUT CONTAINER -->
@@ -104,6 +104,22 @@
       const type = urlParams.get('type') || 'projects';
       const id = urlParams.get('id') || (type === 'about' ? 'about' : '');
 
+      // Configure contextual Back link anchor based on type
+      const backAnchor = document.getElementById('back-link-anchor');
+      if (type === 'about') {
+        backAnchor.href = 'index.html#about';
+        backAnchor.textContent = '← Back to About';
+      } else if (type === 'dreams') {
+        backAnchor.href = 'index.html#dreams';
+        backAnchor.textContent = '← Back to Dreams';
+      } else if (type === 'fantasies') {
+        backAnchor.href = 'index.html#fantasies';
+        backAnchor.textContent = '← Back to Fantasies';
+      } else {
+        backAnchor.href = 'index.html#projects';
+        backAnchor.textContent = '← Back to Projects';
+      }
+
       if (!id) {
         document.getElementById('detail-title').textContent = 'Item Not Found';
         return;
@@ -164,7 +180,6 @@
 
         let textSource = currentItemData.file || currentItemData.txt || currentItemData.contentFile || currentItemData.textPath || currentItemData.path || currentItemData.source;
         
-        // If no explicit file property is in JSON for About types, construct standard path from ID
         if (!textSource && type === 'about') {
           if (id === 'about') {
             textSource = 'About/About.txt';
@@ -178,7 +193,6 @@
           try {
             let txtRes = await fetch(textSource + `?v=${new Date().getTime()}`);
             if (!txtRes.ok && type === 'about') {
-              // Try alternate capitalization if initial fetch fails
               const altSource = `About/${id.charAt(0).toUpperCase() + id.slice(1)}.txt`;
               txtRes = await fetch(altSource + `?v=${new Date().getTime()}`);
             }
@@ -384,7 +398,7 @@
 
     /* LIGHTBOX CONTROLS */
     function openLightbox(imgSrc, captionText) {
-      const motals = document.getElementById('lightbox-modal');
+      const modal = document.getElementById('lightbox-modal');
       const img = document.getElementById('lightbox-img');
       const caption = document.getElementById('lightbox-caption');
 
