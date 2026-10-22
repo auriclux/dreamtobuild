@@ -79,7 +79,8 @@
         "title": "The Funnies",
         "heroImage": "Projects/Stuffing Slicks.jpg",
         "images": [
-          "Projects/Stuffing Slicks.jpg"
+          "Projects/Stuffing Slicks.jpg",
+          "Projects/ScapeGoat at the Granary.jpg"
         ]
       },
       "history": {
@@ -87,8 +88,7 @@
         "heroImage": "Projects/20261021 X-member mock-up 01.jpg",
         "images": [
           "Projects/20261021 X-member mock-up 01.jpg",
-          "Projects/20261014 X-member start.jpg",
-          "Projects/ScapeGoat at the Granary.jpg"
+          "Projects/20261014 X-member start.jpg"
         ]
       }
     },
