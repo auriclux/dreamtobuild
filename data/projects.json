@@ -3,9 +3,9 @@
     "id": "torky-t",
     "title": "Torky-T",
     "subtitle": "1923 Ford T-Bucket Roadster",
-    "thumb": "Projects/Torky-T.jpg",
-    "heroImage": "Projects/Torky-T.jpg",
-    "image": "Projects/Torky-T.jpg",
+    "thumb": "Projects/torky-t-hero.jpg",
+    "heroImage": "Projects/torky-t-hero.jpg",
+    "image": "Projects/torky-t-hero.jpg",
     "narrative": [
       "Constructed with a vintage fiberglass body, Small Block Chevrolet engine with a Vertex magneto ignition system, TH350 transmission, and Ford 9-inch rear axle."
     ],
@@ -20,7 +20,7 @@
       "Tires": "Mickey Thompson 29x18.5LT15 Rear"
     },
     "gallery": [
-      "Projects/Torky-T.jpg"
+      "Projects/torky-t-hero.jpg"
     ]
   },
   {
@@ -45,26 +45,12 @@
       "Badge": "Laser-Cut Stainless 'SCAPEGOAT' Grille Badge"
     },
     "subGalleries": {
-      "concepts": {
-        "title": "AI Concepts",
-        "heroImage": "Projects/ScapeGoat Ortho render.jpg",
-        "images": [
-          "Projects/ScapeGoat Ortho render.jpg",
-          "Projects/ScapeGoat rear end shot.jpg"
-        ]
-      },
-      "funnies": {
-        "title": "The Funnies",
-        "heroImage": "Projects/ScapeGoat Dragstrip burn-out funny.jpg",
-        "images": [
-          "Projects/ScapeGoat Dragstrip burn-out funny.jpg"
-        ]
-      },
       "history": {
         "title": "Build Start & History",
         "heroImage": "Projects/20261021 X-member mock-up 01.jpg",
         "images": [
           "Projects/20261021 X-member mock-up 01.jpg",
+          "Projects/20261014 X-member start.jpg",
           "Projects/ScapeGoat at the Granary.jpg"
         ]
       }
@@ -75,9 +61,9 @@
     "id": "reiver",
     "title": "Project Reiver, The Corner Thief",
     "subtitle": "1962 Classic Mini AWD Space-Frame Race Car",
-    "thumb": "Projects/Reiver Studio 01.jpg",
-    "heroImage": "Projects/Reiver Studio 01.jpg",
-    "image": "Projects/Reiver Studio 01.jpg",
+    "thumb": "Projects/Reiver on Targo Floria.jpg",
+    "heroImage": "Projects/Reiver on Targo Floria.jpg",
+    "image": "Projects/Reiver on Targo Floria.jpg",
     "narrative": [
       "Combining a 1962 Austin/Morris Mini Cooper body shell over a custom tube-frame space frame, Super Fast Minis MTB subframe, and forced-induction Honda LS-VTEC engine."
     ],
@@ -91,7 +77,9 @@
       "ECU": "Haltech Elite 1500"
     },
     "gallery": [
-      "Projects/Reiver Studio 01.jpg"
+      "Projects/Reiver on Targo Floria.jpg",
+      "Projects/Reiver shell 20260507.jpg",
+      "Projects/REIVER S emblem.jpg"
     ]
   }
 ]
