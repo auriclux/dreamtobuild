@@ -19,9 +19,30 @@
       "Rear Axle": "Ford 9-inch",
       "Tires": "Mickey Thompson 29x18.5LT15 Rear"
     },
-    "gallery": [
-      "Projects/torky-t-hero.jpg"
-    ]
+    "subGalleries": {
+      "concepts": {
+        "title": "AI Concepts",
+        "heroImage": "Projects/torky-t-hero.jpg",
+        "images": [
+          "Projects/torky-t-hero.jpg"
+        ]
+      },
+      "funnies": {
+        "title": "The Funnies",
+        "heroImage": "Projects/torky-t-hero.jpg",
+        "images": [
+          "Projects/torky-t-hero.jpg"
+        ]
+      },
+      "history": {
+        "title": "Build Start & History",
+        "heroImage": "Projects/torky-t-hero.jpg",
+        "images": [
+          "Projects/torky-t-hero.jpg"
+        ]
+      }
+    },
+    "builderNotes": "Torky-T ignition timing and custom laser-cut pedal pad specs..."
   },
   {
     "id": "scapegoat",
@@ -45,6 +66,22 @@
       "Badge": "Laser-Cut Stainless 'SCAPEGOAT' Grille Badge"
     },
     "subGalleries": {
+      "concepts": {
+        "title": "AI Concepts",
+        "heroImage": "Projects/ScapeGoat Foldout.jpg",
+        "images": [
+          "Projects/ScapeGoat Foldout.jpg",
+          "Projects/ScapeGoat at the car show.jpg",
+          "Projects/ScapeGoat rear widened split bumper.jpg"
+        ]
+      },
+      "funnies": {
+        "title": "The Funnies",
+        "heroImage": "Projects/Stuffing Slicks.jpg",
+        "images": [
+          "Projects/Stuffing Slicks.jpg"
+        ]
+      },
       "history": {
         "title": "Build Start & History",
         "heroImage": "Projects/20261021 X-member mock-up 01.jpg",
@@ -76,10 +113,32 @@
       "Engine": "Honda LS-VTEC Forced Induction",
       "ECU": "Haltech Elite 1500"
     },
-    "gallery": [
-      "Projects/Reiver on Targo Floria.jpg",
-      "Projects/Reiver shell 20260507.jpg",
-      "Projects/REIVER S emblem.jpg"
-    ]
+    "subGalleries": {
+      "concepts": {
+        "title": "AI Concepts",
+        "heroImage": "Projects/Reiver on Targo Floria.jpg",
+        "images": [
+          "Projects/Reiver on Targo Floria.jpg",
+          "Projects/Reiver flared in Blue & Teal chameleon.jpg"
+        ]
+      },
+      "funnies": {
+        "title": "The Funnies",
+        "heroImage": "Projects/Reiver Race in Edinburgh.jpg",
+        "images": [
+          "Projects/Reiver Race in Edinburgh.jpg"
+        ]
+      },
+      "history": {
+        "title": "Build Start & History",
+        "heroImage": "Projects/Reiver shell 20260507.jpg",
+        "images": [
+          "Projects/Reiver shell 20260507.jpg",
+          "Projects/Exploded AWD Mini build.jpg",
+          "Projects/REIVER S emblem.jpg"
+        ]
+      }
+    },
+    "builderNotes": "Confidential space-frame integration specs: Maintain 0.5-inch clearance on Super Fast Minis MTB subframe mounting points."
   }
 ]
