@@ -95,6 +95,53 @@
     "builderNotes": "Confidential chassis fabrication specs: Frame rail notch requires inner 3/16-inch plate reinforcement prior to x-member cross-member welded tie-in."
   },
   {
+    "id": "not-for-higher",
+    "title": "Project 'Not for Higher'",
+    "subtitle": "1952 GMC Cab-Over-Engine on 2008 Ram 5500 Chassis",
+    "thumb": "Projects/3 quarter view with push bar and fairing pinstriping 01.jpg",
+    "heroImage": "Projects/3 quarter view with push bar and fairing pinstriping 01.jpg",
+    "image": "Projects/3 quarter view with push bar and fairing pinstriping 01.jpg",
+    "narrative": [
+      "Project 'Not for Higher' grafts a 1952 GMC Cab-Over-Engine body onto a 2008 Ram 5500 chassis, powered by a 2007.5 6.7L Cummins diesel with a single 10mm stroker CP3 injection pump, stock Bosch connector tubes, compound turbos with an electronic wastegate, rear-hinged suicide doors, and a custom digital telemetry monitor."
+    ],
+    "specifications": {
+      "Year": "1952 / 2008",
+      "Make": "GMC / Ram",
+      "Model": "Not for Higher Crew Cab COE",
+      "Engine": "2007.5 6.7L Cummins Diesel (Single 10mm Stroker CP3 / Stock Connector Tubes)",
+      "Fuel System": "FASS 165gph Lift Pump / 100% Over Injectors / Pressure Relief Valve Shim Kit",
+      "Induction": "Compound Turbos with Electronic Wastegate",
+      "Chassis": "2008 Ram 5500 Frame with Rear-Hinged Suicide Doors",
+      "Electronics": "Waveshare 10.1-inch ESP32-P4 Touch LCD / Edge Insight CTS3 / 5-Camera Mobile DVR"
+    },
+    "subGalleries": {
+      "concepts": {
+        "title": "AI Concepts",
+        "heroImage": "Projects/3 quarter view with push bar and fairing pinstriping 01.jpg",
+        "images": [
+          "Projects/3 quarter view with push bar and fairing pinstriping 01.jpg"
+        ]
+      },
+      "funnies": {
+        "title": "The Funnies",
+        "heroImage": "Projects/NfH vs HellCat.jpg",
+        "images": [
+          "Projects/NfH vs HellCat.jpg",
+          "Projects/Bringing ScapeGoat.jpg"
+        ]
+      },
+      "history": {
+        "title": "Build Start & History",
+        "heroImage": "Projects/Overhead.jpg",
+        "images": [
+          "Projects/Overhead.jpg",
+          "Projects/COE on temp frame.jpg"
+        ]
+      }
+    },
+    "builderNotes": "COE cab graft specs: Verify rear-hinged suicide door latch geometry and monitor fuel pressure telemetry under load."
+  },
+  {
     "id": "reiver",
     "title": "Project Reiver, The Corner Thief",
     "subtitle": "1962 Classic Mini AWD Space-Frame Race Car",
