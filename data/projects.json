@@ -1,5 +1,55 @@
 [
   {
+    "id": "midnight-caprice",
+    "title": "Project Midnight Caprice",
+    "subtitle": "1974 Chevrolet Caprice Classic Restomod Convertible",
+    "thumb": "Projects/20260412 three-quarter w roll bar.png",
+    "heroImage": "Projects/20260412 three-quarter w roll bar.png",
+    "image": "Projects/20260412 three-quarter w roll bar.png",
+    "narrative": [
+      "Project Midnight Caprice transforms a 1974 Chevrolet Caprice Classic convertible into an aggressive twin-turbo restomod, featuring twin VSR 70/70 billet T4 turbochargers on an LS3 408 stroker engine, Morimoto bi-LED projector headlights, custom stainless script badges, and a integrated roll bar with dove grey interior."
+    ],
+    "specifications": {
+      "Year": "1974",
+      "Make": "Chevrolet",
+      "Model": "Caprice Classic Convertible",
+      "Engine": "LS3 408 Stroker V8",
+      "Induction": "Twin VSR 70/70 Billet T4 Turbochargers",
+      "Lighting": "Morimoto Bi-LED Projector Headlights / BTF-Lighting FCOB Red LED Strips",
+      "Exterior": "Aerofoil Streamline Tubing Grille / Custom 'Midnight Caprice' Stainless Badges",
+      "Interior": "Dove Grey Interior / Custom Integrated Roll Bar"
+    },
+    "subGalleries": {
+      "concepts": {
+        "title": "AI Concepts",
+        "heroImage": "Projects/20260412 three-quarter w roll bar.png",
+        "images": [
+          "Projects/20260412 three-quarter w roll bar.png",
+          "Projects/Rear 03 raw.jpg",
+          "Projects/20260412 Rear three quarter with navy top up.png"
+        ]
+      },
+      "funnies": {
+        "title": "The Funnies",
+        "heroImage": "Projects/20260412 three-quarter w roll bar.png",
+        "images": []
+      },
+      "history": {
+        "title": "Build Start & History",
+        "heroImage": "Projects/20220701 Arrival.JPG",
+        "images": [
+          "Projects/20220701 Arrival.JPG",
+          "Projects/20230315 Frame.jpg",
+          "Projects/20230315 Side.jpg",
+          "Projects/20241025 Dash in Car.jpg",
+          "Projects/20260408 In shop top & doors on.jpg",
+          "Projects/20260415 sheet metal cleco on.jpg"
+        ]
+      }
+    },
+    "builderNotes": "Frame and body alignment specs for B-body restomod: Ensure twin VSR turbo plumbing clears front air dam turnbuckles and radiator core support."
+  },
+  {
     "id": "torky-t",
     "title": "Torky-T",
     "subtitle": "1923 Ford T-Bucket Roadster",
