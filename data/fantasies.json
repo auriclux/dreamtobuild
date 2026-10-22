@@ -4,7 +4,7 @@
       "file": "data/fantasies.json",
       "description": "Dream To Build — Pure Vision Visual Explorations & Styling Studies",
       "schemaVersion": "1.0",
-      "lastUpdated": "2026-10-18T17:40:00"
+      "lastUpdated": "2026-10-22T14:00:00"
     }
   },
   {
@@ -264,7 +264,7 @@
     "category": "Fantasies",
     "badgeText": "Pure Vision",
     "badgeType": "badge-fantasy",
-    "summary": "Parked in front of The Broad Museum on Grand Avenue in downtown Los Angeles, this 1959 Dodge Royal Lancer GT combines forward-facing sweep styling with an urban adversarial dazzle camouflage pattern[cite: 6].",
+    "summary": "Parked in front of The Broad Museum on Grand Avenue in downtown Los Angeles, this 1959 Dodge Royal Lancer GT combines forward-facing sweep styling with an urban adversarial dazzle camouflage pattern.",
     "thumb": "Fantasies/1959 Dodge Custom Royal Lancer in an urban adversarial dazzle scheme.jpg",
     "heroImage": "Fantasies/1959 Dodge Custom Royal Lancer in an urban adversarial dazzle scheme.jpg",
     "thumbnail": "Fantasies/1959 Dodge Custom Royal Lancer in an urban adversarial dazzle scheme.jpg",
@@ -274,21 +274,21 @@
       "year": "1959",
       "make": "Dodge",
       "model": "Royal Lancer GT",
-      "length": "217 in[cite: 6]",
-      "wheelbase": "122 in[cite: 6]",
-      "engine": "BMW M57 3.0L inline-6 diesel, compound twin-turbocharger system, single 10mm/12mm Stroker CP3 pump, 100%+ oversized injectors[cite: 6]",
-      "transmission": "ZF 8-speed automatic[cite: 6]",
-      "chassis": "Custom chassis, hidden 6-point DOM roll cage linked to suspension points, custom SLA front wishbones, EPAS rack-and-pinion steering, aftermarket Ford 9\" IRS[cite: 6]",
-      "wheels": "20\" wheels with Michelin Pilot Sport 4S tires (275/35R20 front, 315/35R20 rear), tubbed rear wheel arches[cite: 6]",
-      "performance": "700 hp, 1,000–1,050 lb-ft torque, ~4,300 lbs curb weight, 0-60 mph in ~3.2 seconds, 1/4-mile in ~10.9 seconds @ 128 mph, ~1.03g skidpad grip[cite: 6]",
+      "length": "217 in",
+      "wheelbase": "122 in",
+      "engine": "BMW M57 3.0L inline-6 diesel, compound twin-turbocharger system, single 10mm/12mm Stroker CP3 pump, 100%+ oversized injectors",
+      "transmission": "ZF 8-speed automatic",
+      "chassis": "Custom chassis, hidden 6-point DOM roll cage linked to suspension points, custom SLA front wishbones, EPAS rack-and-pinion steering, aftermarket Ford 9\" IRS",
+      "wheels": "20\" wheels with Michelin Pilot Sport 4S tires (275/35R20 front, 315/35R20 rear), tubbed rear wheel arches",
+      "performance": "700 hp, 1,000–1,050 lb-ft torque, ~4,300 lbs curb weight, 0-60 mph in ~3.2 seconds, 1/4-mile in ~10.9 seconds @ 128 mph, ~1.03g skidpad grip",
       "status": "Render Concept Study",
       "dateAdded": "2026-10-18T14:15:00"
     },
     "narrative": [
-      "Vehicle: 1959 Dodge Royal Lancer GT, 217 in in length, 122 in in wheelbase, custom chassis, hidden 6-point DOM roll cage linked to suspension points, custom SLA front wishbones, EPAS rack-and-pinion steering, aftermarket Ford 9\" IRS, 20\" wheels, Michelin Pilot Sport 4S tires (275/35R20 front, 315/35R20 rear), tubbed rear wheel arches, urban adversarial dazzle scheme[cite: 6].",
-      "Powertrain: BMW M57 3.0L inline-6 diesel, compound twin-turbocharger system, single 10mm/12mm Stroker CP3 pump, 100%+ oversized injectors, ZF 8-speed automatic transmission[cite: 6].",
-      "Performance: 700 hp, 1,000-1,050 lb-ft torque, ~4,300 lbs curb weight, 0-60 mph in ~3.2 seconds, 1/4-mile in ~10.9 seconds @ 128 mph, ~1.03g skidpad grip[cite: 6].",
-      "Setting: Parked on Grand Avenue in downtown Los Angeles, the car sits directly in front of The Broad Museum. The shot captures the building's complete honeycomb facade from ground level to roofline, including the entrance glazing and central oculus window. Adjacent downtown architecture and the curved steel structure of the Walt Disney Concert Hall frame the background[cite: 6]."
+      "Vehicle: 1959 Dodge Royal Lancer GT, 217 in in length, 122 in in wheelbase, custom chassis, hidden 6-point DOM roll cage linked to suspension points, custom SLA front wishbones, EPAS rack-and-pinion steering, aftermarket Ford 9\" IRS, 20\" wheels, Michelin Pilot Sport 4S tires (275/35R20 front, 315/35R20 rear), tubbed rear wheel arches, urban adversarial dazzle scheme.",
+      "Powertrain: BMW M57 3.0L inline-6 diesel, compound twin-turbocharger system, single 10mm/12mm Stroker CP3 pump, 100%+ oversized injectors, ZF 8-speed automatic transmission.",
+      "Performance: 700 hp, 1,000-1,050 lb-ft torque, ~4,300 lbs curb weight, 0-60 mph in ~3.2 seconds, 1/4-mile in ~10.9 seconds @ 128 mph, ~1.03g skidpad grip.",
+      "Setting: Parked on Grand Avenue in downtown Los Angeles, the car sits directly in front of The Broad Museum. The shot captures the building's complete honeycomb facade from ground level to roofline, including the entrance glazing and central oculus window. Adjacent downtown architecture and the curved steel structure of the Walt Disney Concert Hall frame the background."
     ],
     "gallery": [
       {"url": "Fantasies/1959 Dodge Custom Royal Lancer in an urban adversarial dazzle scheme.jpg", "caption": "1959 Dodge Custom Royal Lancer — Primary view at The Broad Museum."},
@@ -481,7 +481,7 @@
       "Project Lynx explores an aggressive mid-engine AWD platform configured for high-speed stability and extreme cornering dynamics.",
       "Blending iconic 1970s Italian-American wedge styling with active aerodynamic vacuum blowers and e-AWD front electric motors, Lynx delivers pure high-concept vision."
     ],
-    "gallery": ["Fantasies/1974 Pantera - Lynx.jpg"],
+    "gallery": [{"url": "Fantasies/1974 Pantera - Lynx.jpg", "caption": "Project Lynx — Mid-engine wedge supercar concept."}],
     "featured": true
   },
   {
@@ -510,7 +510,7 @@
       "The 1954 Willys Aero combined lightweight unibody efficiency with streamlined post-war design.",
       "This fantasy conversion pairs the Aero shell with a modern high-output engine and advanced AWD transfer case, turning the innocent 1950s commuter into an all-weather sleeper missile."
     ],
-    "gallery": ["Fantasies/1954 Willys Aero AWD.jpg"],
+    "gallery": [{"url": "Fantasies/1954 Willys Aero AWD.jpg", "caption": "1954 Willys Aero AWD Concept — All-wheel-drive compact performance study."}],
     "featured": true
   },
   {
@@ -539,7 +539,7 @@
       "Re-imagining the iconic E-Body muscle car architecture through the lens of supercar dynamics.",
       "By placing the engine mid-ship, weight distribution achieves optimal rear bias while maintaining the wide-track, menacing nose profile of the legendary Barracuda."
     ],
-    "gallery": ["Fantasies/Soda Pop Cuda.jpg"],
+    "gallery": [{"url": "Fantasies/Soda Pop Cuda.jpg", "caption": "Mid-Engine 'Cuda Concept — Transverse mid-ship Mopar performance study."}],
     "featured": true
   },
   {
@@ -566,344 +566,39 @@
     },
     "narrative": [
       "Hudson's revolutionary Step-Down chassis dropped the passenger floorpan inside the frame rails, giving the 1951 Pacemaker a naturally low center of gravity and low roofline long before it was standard.",
-      "This fantasy study accentuates those swept lines with bagged air suspension, seamless bodywork, and custom rolling stock."
+      "This fantasy study accentuates those swept lines with bagged air suspension, seamless bodywork, and custom lowrider styling."
     ],
-    "gallery": ["Fantasies/51 Pacemaker.jpg"],
+    "gallery": [{"url": "Fantasies/51 Pacemaker.jpg", "caption": "1951 Hudson Pacemaker Custom — Step-down chassis air-ride stance."}],
     "featured": true
   },
   {
-    "id": "van-nuys-blvd-firebird-caddy",
-    "title": "Van Nuys Blvd Cruisin' Situation",
-    "subtitle": "Omar's Firebird & '63 Caddy Imagined Back in the Day", "category": "Fantasies",
-    "badgeText": "Pure Vision",
-    "badgeType": "badge-fantasy",
-    "summary": "A nostalgic period scene placing Omar's custom Firebird alongside a classic '63 Cadillac cruising Van Nuys Boulevard during the golden era of SoCal street culture.",
-    "thumb": "Fantasies/Firebird on Van Nuys blvd.jpg",
-    "heroImage": "Fantasies/Firebird on Van Nuys blvd.jpg",
-    "thumbnail": "Fantasies/Firebird on Van Nuys blvd.jpg",
-    "detailUrl": "detail.html?type=fantasies&id=van-nuys-blvd-firebird-caddy",
-    "tags": ["Pontiac", "Firebird", "Cadillac", "1963", "Van Nuys", "Cruising", "SoCal", "Double-O Garage"],
-    "specifications": {
-      "setting": "Van Nuys Boulevard, SoCal",
-      "vehicles": "Omar's Firebird & '63 Cadillac Convertible",
-      "status": "Fantasy Situation Render",
-      "dateAdded": "2026-10-17T16:11:00"
-    },
-    "narrative": [
-      "Rather than a single vehicle build concept, this is a fantasy situation—a period-authentic homage to Wednesday night cruising on Van Nuys Boulevard.",
-      "Captured under the boulevard neon lights, Double-O Garage owner Omar's Firebird rolls alongside a low-slung '63 Cadillac, recreating the peak era of South Bay and San Fernando Valley cruising history."
-    ],
-    "gallery": ["Fantasies/Firebird on Van Nuys blvd.jpg"],
-    "featured": true
-  },
-  {
-    "id": "1950-plymouth-suburban",
-    "title": "1950 Plymouth Suburban Station Wagon",
-    "subtitle": "Early All-Steel Wagon Lowrider & Custom Concept",
+    "id": "juke-joint",
+    "title": "Juke Joint",
+    "subtitle": "Pure Vision Custom Concept Study",
     "category": "Fantasies",
     "badgeText": "Pure Vision",
     "badgeType": "badge-fantasy",
-    "summary": "An exploratory design concept reviving Plymouth's iconic 1950 all-steel 2-door wagon with slammed stance, custom brightwork, and modern proportions.",
-    "thumb": "Fantasies/50 Plymouth Suburban.jpg",
-    "heroImage": "Fantasies/50 Plymouth Suburban.jpg",
-    "thumbnail": "Fantasies/50 Plymouth Suburban.jpg",
-    "detailUrl": "detail.html?type=fantasies&id=1950-plymouth-suburban",
-    "tags": ["Plymouth", "Suburban", "Wagon", "1950", "Custom", "Restomod", "Steel Wagon"],
+    "summary": "A moody Pure Vision custom styling study capturing raw stance and custom badging across atmospheric road settings.",
+    "thumb": "Fantasies/Juke Joint on a PV switchback.jpg",
+    "heroImage": "Fantasies/Juke Joint on a PV switchback.jpg",
+    "thumbnail": "Fantasies/Juke Joint on a PV switchback.jpg",
+    "detailUrl": "detail.html?type=fantasies&id=juke-joint",
+    "tags": ["Juke Joint", "Pure Vision", "Concept", "Styling Study"],
     "specifications": {
-      "year": "1950",
-      "make": "Plymouth",
-      "model": "Suburban 2-Door Station Wagon",
-      "engine": "Custom Crate Powertrain",
-      "suspension": "Air Ride / Bagged Low Stance",
+      "category": "Fantasies",
+      "type": "Pure Vision Concept Study",
       "status": "Render Concept Study",
-      "dateAdded": "2026-10-17T15:15:00"
+      "dateAdded": "2026-10-22T14:00:00"
     },
     "narrative": [
-      "The 1950 Plymouth Suburban was a pioneer in American automotive history as one of the first all-steel station wagons brought to market.",
-      "This fantasy concept reimagines the classic 2-door wagon silhouette with modern air suspension geometry, smoothed body contours, and a street-cruiser stance while honoring its vintage chrome grille and fastback roofline."
-    ],
-    "gallery": ["Fantasies/50 Plymouth Suburban.jpg"],
-    "featured": true
-  },
-  {
-    "id": "1969-chevrolet-suburban",
-    "title": "1969 Chevrolet Suburban Custom Hauler",
-    "subtitle": "3-Door Action Line Pro-Touring & Stance Study",
-    "category": "Fantasies",
-    "badgeText": "Pure Vision",
-    "badgeType": "badge-fantasy",
-    "summary": "A high-concept styling study on the legendary 1969 Action Line 3-door Suburban, featuring tucked big wheels, clean bodywork, and modern muscle attitude.",
-    "thumb": "Fantasies/69 Suburban.jpg",
-    "heroImage": "Fantasies/69 Suburban.jpg",
-    "thumbnail": "Fantasies/69 Suburban.jpg",
-    "detailUrl": "detail.html?type=fantasies&id=1969-chevrolet-suburban",
-    "tags": ["Chevrolet", "Suburban", "1969", "C10", "Action Line", "3-Door", "Pro-Touring"],
-    "specifications": {
-      "year": "1969",
-      "make": "Chevrolet",
-      "model": "Suburban 3-Door",
-      "engine": "Forced Induction V8",
-      "suspension": "Custom Drop Chassis / Coilovers",
-      "status": "Render Concept Study",
-      "dateAdded": "2026-10-17T15:14:00"
-    },
-    "narrative": [
-      "Built on the unique 1967-1972 C10/C20 Action Line 3-door body style (one door on the driver side, two on the passenger side), the 1969 Suburban remains an iconic utility canvas.",
-      "This study examines slamming the heavy-duty hauler over oversized forged wheels, shaving trim for ultra-clean flanks, and delivering pure street-hauler presence."
-    ],
-    "gallery": ["Fantasies/69 Suburban.jpg"],
-    "featured": true
-  },
-  {
-    "id": "wicked-j-gtr",
-    "title": "Wicked J GTR Concept",
-    "subtitle": "1951 Henry J TDI Transverse Track Weapon",
-    "category": "Fantasies",
-    "badgeText": "Pure Vision",
-    "badgeType": "badge-fantasy",
-    "summary": "A radical track-focused restomod concept dropping a high-output 1.9L TDI turbodiesel and 02M 6-speed transmission into a flared 1951 Henry J shell.",
-    "thumb": "Fantasies/Henry J striped.png",
-    "heroImage": "Fantasies/Henry J striped.png",
-    "thumbnail": "Fantasies/Henry J striped.png",
-    "detailUrl": "detail.html?type=fantasies&id=wicked-j-gtr",
-    "tags": ["Kaiser", "Henry J", "TDI", "VW 02M", "6-Speed", "GTR", "Track Weapon", "Turbo Diesel"],
-    "specifications": {
-      "year": "1951",
-      "make": "Kaiser-Frazer",
-      "model": "Henry J GTR",
-      "engine": "1.9L TDI Turbodiesel (High Boost)",
-      "transmission": "VW 02M 6-Speed Manual",
-      "chassis": "Custom Tube Space Frame w/ Track Geometry",
-      "status": "Render Concept Study",
-      "dateAdded": "2026-10-16T17:10:00"
-    },
-    "narrative": [
-      "The Wicked J GTR explores taking one of America's original economy compacts—the 1951 Henry J—and transforming it into an ultra-agile, high-torque track beast.",
-      "Underneath the aggressively widened fenders sits a tuned 1.9L TDI turbodiesel engine backed by a VW 02M 6-speed manual transmission, offering extreme low-end torque and bulletproof gearing in a featherweight chassis.",
-      "Featured here in two distinct visual directions: an iconic classic racing-striped livery and a high-visibility Toxic track specification."
+      "Juke Joint brings together atmospheric styling cues and custom badging in a distinctive Pure Vision conceptual exploration.",
+      "Ranging from winding switchback road settings to neutral studio backdrops, this study highlights unique proportions and bespoke design details."
     ],
     "gallery": [
-      {"url": "Fantasies/Henry J striped.png", "caption": "Wicked J GTR — Heritage Motorsport Livery with dual center stripes and aggressively radiused wheel arches."},
-      {"url": "Fantasies/Henry J toxic.png", "caption": "Wicked J GTR — Toxic Green Track Spec showcasing maximum aero stance and wide-bore side exhaust setup."}
-    ],
-    "featured": true
-  },
-  {
-    "id": "1939-ford-coe-rv",
-    "title": "1939 Ford COE Carnivore RV Restomod",
-    "subtitle": "Supercharged 5.2L Long-Haul Overland Hauler",
-    "category": "Fantasies",
-    "badgeText": "Pure Vision",
-    "badgeType": "badge-fantasy",
-    "summary": "A 1939 Ford Cab-Over-Engine RV restomod powered by a supercharged 5.2L Carnivore V8 (720 hp / 640 lb-ft) and 10R140 10-speed transmission, engineered specifically for high-speed desert blasts and steep mountain passes.",
-    "thumb": "Fantasies/1939 Ford COE RV.jpg",
-    "heroImage": "Fantasies/1939 Ford COE RV.jpg",
-    "thumbnail": "Fantasies/1939 Ford COE RV.jpg",
-    "detailUrl": "detail.html?type=fantasies&id=1939-ford-coe-rv",
-    "tags": ["Ford", "COE", "1939", "RV", "Carnivore V8", "Supercharged", "10R140", "Restomod", "Overland"],
-    "specifications": {
-      "year": "1939",
-      "make": "Ford",
-      "model": "COE Custom RV Restomod",
-      "engine": "Supercharged 5.2L Carnivore V8 (720 hp / 640 lb-ft)",
-      "transmission": "Ford 10R140 TorqShift 10-Speed Automatic",
-      "chassis": "Custom Boxed Chassis w/ IFS & Coilovers",
-      "status": "Render Concept Study",
-      "dateAdded": "2026-10-11T16:40:00"
-    },
-    "narrative": [
-      "Forged from the bones of a 1939 Ford COE, the heart of this restomod is Ford's supercharged 5.2-liter Carnivore V8 delivering 640 lb-ft of torque and 720 horsepower managed by Ford's heavy-duty 10R140 TorqShift 10-speed automatic transmission, delivering lightning-fast gear changes and relentless acceleration without missing a beat under load.",
-      "Riding on a custom boxed chassis fitted with independent front suspension and adjustable coil-over shocks, the rig is built for effortless highway cruising and confident mountain ascents. It is spec'd directly for purpose-driven long-haul runs out of Los Angeles: effortlessly holding pace during high-speed desert blasts to Las Vegas, tackling the steep grade and sub-zero conditions on ski trips up to Mammoth, or carving through the sweepers along Highway 395 and the Pacific Coast Highway. Engineering precision meets raw, unstoppable capability."
-    ],
-    "gallery": ["Fantasies/1939 Ford COE RV.jpg"],
-    "featured": true
-  },
-  {
-    "id": "torino-talladega-transaxle",
-    "title": "The Talladega Transaxle: '69 Mid-Engine Concept",
-    "subtitle": "The Cancelled '69 Supercar Study",
-    "category": "Fantasies",
-    "badgeText": "Pure Vision",
-    "badgeType": "badge-fantasy",
-    "summary": "A radical, mid-engine concept fusing Ford's low-drag 1969 Torino Talladega aero nose with a mid-mounted 427 Cammer SOHC V8 and GT40 Hewland transaxle.",
-    "thumb": "Fantasies/1969 Torino Talledega Supercar dynamic.jpg",
-    "heroImage": "Fantasies/1969 Torino Talledega Supercar dynamic.jpg",
-    "thumbnail": "Fantasies/1969 Torino Talledega Supercar dynamic.jpg",
-    "detailUrl": "detail.html?type=fantasies&id=torino-talladega-transaxle",
-    "tags": ["Ford", "Torino", "Talladega", "Cammer", "427 SOHC", "Mid-Engine", "Hewland", "GT40"],
-    "specifications": {
-      "year": "1969",
-      "make": "Ford",
-      "model": "Torino Talladega T-Transaxle",
-      "engine": "7.0L (427 ci) Cammer SOHC V8 (Mid-Ship)",
-      "transaxle": "Hewland LG 4-Speed Manual",
-      "status": "Alternate History Concept Study",
-      "dateAdded": "2026-10-11T16:09:00"
-    },
-    "narrative": [
-      "HISTORICAL DISCLAIMER: This vehicle concept, narrative, and historical background are entirely fictional. Project 69-M is an alternate-history design study exploring a what if crossover between Ford's NASCAR aero program and Le Mans mid-engine architecture.",
-      "This single prototype is all that remains of Project 69-M, Ford's radical, black-budget attempt to rewrite the rules of both NASCAR and the street. The concept was a direct fusion: take the low-drag, extended nose and flush grille of the homologation-bound 1969 Torino Talladega and mount it on a mid-engine chassis.",
-      "While the race cars would always be front-engine (NASCAR rules demanded it), Ford planned to sell 500 mid-engine T-Transaxles as a production vehicle, creating an exotic aero-king to beat Ferrari on the street and Dodge on the high banks. The large mid-body intakes, seen on the production C8 Corvette-like profile, were designed to feed a planned massive mid-ship powertrain.",
-      "To explain its mid-engine architecture, Ford engineers created the ultimate what if setup: They took a race-ready 7.0-liter (427 cu in) Ford Cammer SOHC V8, but instead of mounting it in the front, they reversed it, mounting it directly behind the driver. The original Ford Toploader transmission was scrapped. Instead, the Cammer was mated to a custom-cast, heavy-duty Hewland LG transaxle—the same reliable box used in Ford's GT40 program.",
-      "This '69 prototype, thus, was not just a styling exercise; it was an authentic integration of Ford's two greatest performance eras, pairing the high-drag oval-track nose with the mid-ship transaxle of Le Mans. The modern, 5-spoke alloys and updated side intakes were added decades later during a modern sympathetic restoration, preparing it for a single, high-speed test run on the gravel road of the skunkworks' private facility."
-    ],
-    "gallery": ["Fantasies/1969 Torino Talledega Supercar dynamic.jpg"],
-    "featured": true
-  },
-  {
-    "id": "gmc-crackerbox-series",
-    "title": "GMC Crackerbox Series (1959-1968)",
-    "subtitle": "Forward Control Heavy Hauler Explorations",
-    "category": "Fantasies",
-    "badgeText": "Pure Vision",
-    "badgeType": "badge-fantasy",
-    "summary": "Custom forward-control studies based on the legendary 1959-1968 GMC D/DB Series Crackerbox cab, spanning extreme 6x6 builds, flatbed car haulers, and desert off-road transport rigs.",
-    "thumb": "Fantasies/Crackerbox 6x6.jpg",
-    "heroImage": "Fantasies/Crackerbox 6x6.jpg",
-    "thumbnail": "Fantasies/Crackerbox 6x6.jpg",
-    "detailUrl": "detail.html?type=fantasies&id=gmc-crackerbox-series",
-    "tags": ["GMC", "Crackerbox", "Forward Control", "FC", "Flatbed", "6x6", "Duramax"],
-    "specifications": {
-      "years": "1959-1968",
-      "make": "GMC",
-      "model": "D/DB Series Crackerbox",
-      "chassis": "Custom Commercial & Military Platforms",
-      "status": "Render Concept Series",
-      "dateAdded": "2026-10-11T15:23:21"
-    },
-    "narrative": [
-      "A focused design exploration into GMC's iconic 1959-1968 D/DB Series forward-control commercial cab, affectionately known as the Crackerbox.",
-      "This series examines the extreme versatility of the ultra-short cab architecture across high-capability off-road transport, vintage car hauling, and heavy-duty mechanical conversions."
-    ],
-    "gallery": [
-      {"url": "Fantasies/Crackerbox 6x6.jpg", "caption": "Steroidal FC 6x6 using a GMC Crackerbox cab on an M35A2 chassis using a Duramax 6.6L with compound turbo and Allison transmission into the Rockwell transfer case (2.5-ton axles)."},
-      {"url": "Fantasies/Crackerbox 4.jpg", "caption": "Heavy Desert Flatbed Rig — GMC Crackerbox cab with external upright exhaust stacks, heavy bull bar, and a Humvee support payload."},
-      {"url": "Fantasies/Crackerbox 3.jpg", "caption": "Boardwalk Cruiser & Transport — Finished in vibrant deep blue, featuring polished stack exhausts, custom ramps, and a classic '32 Roadster bed payload."},
-      {"url": "Fantasies/Crackerbox 2.jpg", "caption": "Diesel Power Patina Hauler — Weathered green Crackerbox flatbed truck carrying a vintage pickup payload at the lawn show."},
-      {"url": "Fantasies/Crackerbox 1.jpg", "caption": "Class 8 Workhorse — Clean green patina finish, reinforced front brush guard, high-clearance flatbed frame, and single upright stack exhaust."}
-    ],
-    "featured": true
-  },
-  {
-    "id": "blown-gremlin",
-    "title": "Blown '70 Gremlin",
-    "subtitle": "Bridge Donut & Blower Study",
-    "category": "Fantasies",
-    "badgeText": "Pure Vision",
-    "badgeType": "badge-fantasy",
-    "summary": "This was a quick study of a '70 Gremlin doing donuts on the 7th Street Bridge. SBC with a 6-71.",
-    "thumb": "Fantasies/blown-gremlin.png",
-    "heroImage": "Fantasies/blown-gremlin.png",
-    "thumbnail": "Fantasies/blown-gremlin.png",
-    "detailUrl": "detail.html?type=fantasies&id=blown-gremlin",
-    "tags": ["AMC", "Gremlin", "SBC", "6-71", "Supercharged", "Street Concept"],
-    "specifications": {
-      "year": "1970",
-      "make": "AMC",
-      "model": "Gremlin",
-      "engine": "SBC w/ 6-71 Blower",
-      "suspension": "Street / Drag Stance",
-      "status": "Render Concept",
-      "dateAdded": "2026-09-27T12:00:00"
-    },
-    "narrative": [
-      "This was a quick study of a '70 Gremlin doing donuts on the 7th Street Bridge. SBC with a 6-71.",
-      "A short-wheelbase riot featuring high-rise forced induction, street-drag rake, and aggressive rubber."
-    ],
-    "gallery": ["Fantasies/blown-gremlin.png"],
-    "featured": true
-  },
-  {
-    "id": "nimr-camaro-trophy-truck",
-    "title": "Nimr: Mid-Engine Camaro Trophy Truck",
-    "subtitle": "Extreme Off-Road Performance Fusion",
-    "category": "Fantasies",
-    "badgeText": "Pure Vision",
-    "badgeType": "badge-fantasy",
-    "summary": "A mid-engine, trophy-truck-based concept merging a Camaro body shell with extreme off-road capability.",
-    "thumb": "Fantasies/nimr-camaro.jpg",
-    "heroImage": "Fantasies/nimr-camaro.jpg",
-    "thumbnail": "Fantasies/nimr-camaro.jpg",
-    "detailUrl": "detail.html?type=fantasies&id=nimr-camaro-trophy-truck",
-    "tags": ["Chevy", "Camaro", "Mid-Engine", "Trophy Truck", "Offroad"],
-    "specifications": {
-      "year": "1969",
-      "make": "Chevrolet",
-      "model": "Camaro",
-      "engine": "Mid-Engine V8",
-      "suspension": "Long-Travel Trophy Truck",
-      "status": "Render Concept",
-      "dateAdded": "2026-09-27T12:00:00"
-    },
-    "narrative": [
-      "A mid-engine, trophy-truck-based concept merging a classic Camaro shell with extreme off-road capability.",
-      "Built over an all-terrain tube chassis designed to soak up desert high-speed runs while keeping muscle car proportions."
-    ],
-    "gallery": ["Fantasies/nimr-camaro.jpg"],
-    "featured": true
-  },
-  {
-    "id": "evans-ride-riviera",
-    "title": "Evan's Ride: Boattail Riviera Concept",
-    "subtitle": "Modern Tailored Muscle & Sweeping Lines",
-    "category": "Fantasies",
-    "badgeText": "Pure Vision",
-    "badgeType": "badge-fantasy",
-    "summary": "Design explorations centered around the iconic Boattail Buick Riviera chassis.",
-    "thumb": "Fantasies/evans-ride-rivvy-1.jpg",
-    "heroImage": "Fantasies/evans-ride-rivvy-1.jpg",
-    "thumbnail": "Fantasies/evans-ride-rivvy-1.jpg",
-    "detailUrl": "detail.html?type=fantasies&id=evans-ride-riviera",
-    "tags": ["Buick", "Riviera", "Boattail", "Concept", "Classic", "Le Marteau"],
-    "specifications": {
-      "year": "1971",
-      "make": "Buick",
-      "model": "Riviera",
-      "engine": "Concept Powertrain",
-      "suspension": "Custom Lowered Stance",
-      "status": "Render Concept",
-      "dateAdded": "2026-09-27T12:00:00"
-    },
-    "narrative": [
-      "Design explorations centered around the iconic Boattail Buick Riviera chassis.",
-      "Highlighting the extreme rear fastback profile and boat-tail decklid contouring with aggressive fitment and refined brightwork."
-    ],
-    "gallery": [
-      {"url": "Fantasies/evans-ride-rivvy-1.jpg", "caption": "Evan's Ride — Boattail Riviera Concept primary profile view."},
-      {"url": "Fantasies/Le Marteau.jpg", "caption": "Evan's Ride — Le Marteau styling and attitude study."},
-      {"url": "Fantasies/Rivvy and Caprice.jpg", "caption": "Rivvy and Caprice — Sunset coastal stance exploration."}
-    ],
-    "featured": true
-  },
-  {
-    "id": "fabian-buick-wagon",
-    "title": "Fabian's Buick Estate Wagon",
-    "subtitle": "Lowrider & Custom Stance Exploration",
-    "category": "Fantasies",
-    "badgeText": "Pure Vision",
-    "badgeType": "badge-fantasy",
-    "summary": "LS3 swap, bagged stance, shaved suicide doors, and dual custom/lowrider paint directions.",
-    "thumb": "Fantasies/fabian-buick-wagon-custom.jpg",
-    "heroImage": "Fantasies/fabian-buick-wagon-custom.jpg",
-    "thumbnail": "Fantasies/fabian-buick-wagon-custom.jpg",
-    "detailUrl": "detail.html?type=fantasies&id=fabian-buick-wagon",
-    "tags": ["Buick", "Wagon", "LS3", "Bagged", "Suicide Doors", "Lowrider"],
-    "specifications": {
-      "year": "1970",
-      "make": "Buick",
-      "model": "Estate Wagon",
-      "engine": "LS3 V8",
-      "suspension": "Air Ride / Bagged",
-      "status": "Render Concept",
-      "dateAdded": "2026-09-27T12:00:00"
-    },
-    "narrative": [
-      "LS3 swap, bagged stance, shaved suicide doors, and dual custom/lowrider paint directions.",
-      "A high-concept exploration into long-roof styling, blending classic Buick cruiser lines with modern air-ride geometry and striking custom paint schemes."
-    ],
-    "gallery": [
-      {"url": "Fantasies/fabian-buick-wagon-custom.jpg", "caption": "Fabian's Buick Estate Wagon — Custom paint study."},
-      {"url": "Fantasies/fabian-buick-wagon-urban.jpg", "caption": "Fabian's Buick Estate Wagon — Urban lowrider street view."}
+      {"url": "Fantasies/Juke Joint on a PV switchback.jpg", "caption": "Juke Joint — On a Pure Vision switchback road setting."},
+      {"url": "Fantasies/Juke Joint in Neutral setting.jpg", "caption": "Juke Joint — Neutral setting studio composition."},
+      {"url": "Fantasies/Crossroads Juke Joint.jpg", "caption": "Juke Joint — Crossroads atmospheric concept view."},
+      {"url": "Fantasies/Juke Joint badge 2.jpg", "caption": "Juke Joint — Custom script badge detail study."}
     ],
     "featured": true
   }
