@@ -11,7 +11,12 @@
     "specifications": {
       "Year": "1923",
       "Make": "Ford",
-      "Model": "T-Bucket Roadster"
+      "Model": "T-Bucket Roadster",
+      "Engine": "Small Block Chevrolet V8",
+      "Ignition": "Vertex Magneto System",
+      "Transmission": "TH350 Automatic",
+      "Rear Axle": "Ford 9-inch",
+      "Tires": "Mickey Thompson 29x18.5LT15 Rear"
     },
     "gallery": [
       "Projects/Torky-T Thumb.jpg"
@@ -24,23 +29,45 @@
     "thumb": "Projects/ScapeGoat at the Granary.jpg",
     "heroImage": "Projects/ScapeGoat at the Granary.jpg",
     "narrative": [
-      "Project ScapeGoat transforms a 1968 Pontiac into a full street-and-strip outlaw drag car."
+      "Project ScapeGoat transforms a 1968 Pontiac into a full street-and-strip outlaw drag car, built as the high-horsepower outlaw counterpart to its factory-bodied 'Body Brother' restomod."
     ],
     "specifications": {
       "Year": "1968",
       "Make": "Pontiac",
-      "Model": "Outlaw Drag Car"
+      "Model": "Outlaw Drag Car",
+      "Engine": "Built 6.2L L94 V8 (VVT & DOD Delete)",
+      "Transmission": "Tremec T56 Magnum 6-Speed (2.66:1 First Gear / QuickTime RM-6037 Bellhousing)",
+      "Drivetrain": "4.0-inch Aluminum Driveshaft / Weld ProStar 15x15 Rear Wheels",
+      "Chassis": "1-inch Frame Rail Notch & Custom Central X-Member Cage Integration",
+      "Management": "Holley Terminator X MAX ECU",
+      "Badge": "Laser-Cut Stainless 'SCAPEGOAT' Grille Badge"
     },
     "subGalleries": {
+      "concepts": {
+        "title": "AI Concepts",
+        "heroImage": "Projects/ScapeGoat Ortho render.jpg",
+        "images": [
+          "Projects/ScapeGoat Ortho render.jpg",
+          "Projects/ScapeGoat rear end shot.jpg"
+        ]
+      },
+      "funnies": {
+        "title": "The Funnies",
+        "heroImage": "Projects/ScapeGoat Dragstrip burn-out funny.jpg",
+        "images": [
+          "Projects/ScapeGoat Dragstrip burn-out funny.jpg"
+        ]
+      },
       "history": {
         "title": "Build Start & History",
-        "heroImage": "Projects/ScapeGoat at the Granary.jpg",
+        "heroImage": "Projects/20261021 X-member mock-up 01.jpg",
         "images": [
           "Projects/20261021 X-member mock-up 01.jpg",
           "Projects/ScapeGoat at the Granary.jpg"
         ]
       }
-    }
+    },
+    "builderNotes": "Confidential chassis fabrication specs: Frame rail notch requires inner 3/16-inch plate reinforcement prior to x-member cross-member welded tie-in."
   },
   {
     "id": "reiver",
@@ -49,12 +76,16 @@
     "thumb": "Projects/Reiver Studio 01.jpg",
     "heroImage": "Projects/Reiver Studio 01.jpg",
     "narrative": [
-      "Combining a 1962 Austin/Morris Mini Cooper body shell over a custom tube-frame space frame."
+      "Combining a 1962 Austin/Morris Mini Cooper body shell over a custom tube-frame space frame, Super Fast Minis MTB subframe, and forced-induction Honda LS-VTEC engine."
     ],
     "specifications": {
       "Year": "1962",
       "Make": "Austin/Morris",
-      "Model": "Mini Cooper AWD"
+      "Model": "Mini Cooper AWD",
+      "Chassis": "Custom Tube Space-Frame",
+      "Subframe": "Super Fast Minis MTB (B-Series)",
+      "Engine": "Honda LS-VTEC Forced Induction",
+      "ECU": "Haltech Elite 1500"
     },
     "gallery": [
       "Projects/Reiver Studio 01.jpg"
