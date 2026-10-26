@@ -217,4 +217,330 @@ body {
 }
 
 .nav-thumb-sub {
-  font-family: var(--font-editorial
+  font-family: var(--font-editorial);
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nav-thumb-item:hover,
+.nav-thumb-item.active {
+  background-color: var(--panel-hover);
+  border-color: var(--accent-cyan);
+}
+
+/* REGION I: MAIN HERO SPOTLIGHT FRAME */
+#spotlight-frame {
+  flex: 1;
+  width: 0; /* Prevents flexbox blowouts */
+  min-width: 0;
+  background-color: var(--panel-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.spotlight-media {
+  width: 100%;
+  height: 440px;
+  background-color: #050608;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.spotlight-media img,
+.spotlight-media video {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.spotlight-caption {
+  padding: 18px 22px;
+  border-top: 1px solid var(--border-color);
+}
+
+.spotlight-caption h2 {
+  font-family: var(--font-to);
+  font-size: 1.45rem;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.spotlight-caption p {
+  font-family: var(--font-editorial);
+  font-size: 1.32rem;
+  line-height: 1.7;
+  color: var(--text-main);
+}
+
+/* LOWER GRID: WIREFRAME 4-COLUMN CARD GALLERY (BELOW STAGE) */
+#gallery-grid,
+.card-grid,
+#detail-gallery,
+.gallery-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 20px !important;
+  width: 100% !important;
+  margin-top: 10px;
+}
+
+/* GALLERY THUMB WRAPPERS & MEDIA ENHANCEMENTS */
+.gallery-thumb-wrapper {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  background-color: #050608;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-thumb,
+img.gallery-thumb,
+video.gallery-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.gallery-thumb-wrapper:hover .gallery-thumb {
+  transform: scale(1.03);
+}
+
+/* CARD ITEM STYLING */
+.card,
+.card-3wide,
+article.card-3wide {
+  background-color: var(--panel-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover,
+.card-3wide:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent-cyan);
+  background-color: var(--panel-hover);
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  background-color: #050608;
+  overflow: hidden;
+}
+
+.card img,
+.card video,
+.card-3wide img,
+.card-3wide video,
+.card-image-wrapper img,
+.card-image-wrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex-grow: 1;
+}
+
+.card-title {
+  font-family: var(--font-to);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.35;
+}
+
+.card-subtitle {
+  font-family: var(--font-spec);
+  font-size: 0.88rem;
+  color: var(--accent-cyan);
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+}
+
+.card-summary,
+.card-body p,
+.narrative-text {
+  font-family: var(--font-editorial);
+  font-size: 1.32rem !important;
+  line-height: 1.7 !important;
+  color: var(--text-main);
+}
+
+/* DETAIL PAGES & ABOUT SECTION NARRATIVE OVERHAUL */
+#detail-content,
+#detail-narrative,
+.detail-narrative,
+.overview-content,
+.detail-container p,
+#detail-narrative p,
+.detail-body p {
+  font-family: var(--font-editorial) !important;
+  font-size: 1.48rem !important;
+  line-height: 1.75 !important;
+  color: #f1f5f9 !important;
+  margin-bottom: 1.35rem !important;
+  letter-spacing: 0.01em;
+}
+
+#detail-content h2,
+#detail-narrative h2,
+.detail-container h2 {
+  font-family: var(--font-to) !important;
+  font-size: 1.95rem !important;
+  color: #ffffff !important;
+  margin-top: 1.5rem !important;
+  margin-bottom: 1.1rem !important;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.5rem;
+}
+
+/* BACK TO GALLERY / RETURN LINK STYLING (HIGH-CONTRAST VISIBILITY) */
+.back-link,
+a.back-link,
+.return-link,
+a.return-link,
+a[href*="index.html"],
+.detail-back-link,
+.detail-nav a {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  font-family: var(--font-spec) !important;
+  font-size: 1.1rem !important;
+  font-weight: bold !important;
+  color: #38bdf8 !important;
+  background-color: #181b21 !important;
+  border: 1px solid #38bdf8 !important;
+  padding: 8px 16px !important;
+  border-radius: 4px !important;
+  text-decoration: none !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  margin-bottom: 20px !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+.back-link:visited,
+a.back-link:visited,
+.return-link:visited,
+a.return-link:visited,
+.detail-back-link:visited,
+.detail-nav a:visited {
+  color: #38bdf8 !important;
+  border-color: #38bdf8 !important;
+}
+
+.back-link:hover,
+a.back-link:hover,
+.return-link:hover,
+a.return-link:hover,
+.detail-back-link:hover,
+.detail-nav a:hover {
+  color: #ffffff !important;
+  background-color: #38bdf8 !important;
+  border-color: #38bdf8 !important;
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.4) !important;
+}
+
+/* SPECIFICATIONS & BLUEPRINTS (CRISP INDUSTRIAL CONSOLAS) */
+.specifications-block,
+.spec-list,
+.spec-item,
+.spec-label,
+.spec-value,
+table.specs-table,
+.specifications,
+.tech-specs,
+dl.spec-details {
+  font-family: var(--font-spec) !important;
+  font-size: 1.08rem;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  color: #f0f4f8;
+}
+
+.spec-label,
+.spec-key,
+dt {
+  color: var(--accent-cyan);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* FULLSCREEN LIGHTBOX MODAL STYLING (IMAGES & MP4 VIDEOS) */
+.lightbox-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(5, 6, 8, 0.92);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  backdrop-filter: blur(8px);
+}
+
+.lightbox-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 92vw;
+  max-height: 92vh;
+}
+
+.lightbox-container img,
+.lightbox-container video,
+#modal-video {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+  background-color:
