@@ -185,9 +185,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (isVideo) {
               const video = document.createElement("video");
-              video.src = src;
-              video.controls = true;
-              video.preload = "metadata";
+              // Ensure path has correct relative prefix if it doesn't start with ./ or http
+              video.src = src.startsWith(".") ? src : `./${src}`;
+              video.muted = true;
+              video.autoplay = true;
+              video.loop = true;
+              video.playsInline = true;
+              video.preload = "auto";
               video.className = "gallery-thumb lightbox-trigger";
 
               video.addEventListener("click", (e) => {
