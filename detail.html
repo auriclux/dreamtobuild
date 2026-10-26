@@ -355,9 +355,16 @@
       } else if (currentItemData.subGalleries && currentItemData.subGalleries[activeKey]) {
         const subVal = currentItemData.subGalleries[activeKey];
         
-        const activeHero = subVal.heroImage || currentItemData.heroImage || currentItemData.thumb || currentItemData.image;
+        // Resolve hero image with full fallback chain
+        const activeHero = (subVal && subVal.heroImage) || 
+                           currentItemData.heroImage || 
+                           currentItemData.thumb || 
+                           currentItemData.image || 
+                           (currentItemData.gallery && currentItemData.gallery[0] && (typeof currentItemData.gallery[0] === 'string' ? currentItemData.gallery[0] : currentItemData.gallery[0].url));
+        
         if (activeHero) {
-          document.getElementById('detail-hero-img').src = activeHero;
+          const heroImgElem = document.getElementById('detail-hero-img');
+          if (heroImgElem) heroImgElem.src = activeHero;
         }
 
         let html = `<h3 style="font-family: var(--font-to); font-size: 1.4rem; color: #ffffff; margin-bottom: 16px;">${subVal.title || activeKey}</h3>`;
