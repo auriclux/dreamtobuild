@@ -160,7 +160,8 @@
           document.getElementById('detail-content').innerHTML = `<p>Could not locate item ID "${id}" in data/${type}.json.</p>`;
           return;
         }
-
+        // ADD THIS LINE TO INSPECT THE DATA OBJECT IN BROWSER CONSOLE:
+        console.log("Loaded Item Data:", currentItemData);
         // Reset UI Elements explicitly
         document.getElementById('detail-specs-container').style.display = 'none';
         document.getElementById('sidebar-nav-right').style.display = 'none';
