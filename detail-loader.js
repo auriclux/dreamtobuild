@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       }
 
-      // 7. Populate Narrative / Summary (Supports external contentUrl text files or inline narratives)
+      // 7. Populate Narrative / Summary
       if (narrativeContainer) {
         narrativeContainer.innerHTML = "";
 
@@ -163,7 +163,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       }
 
-      // 8. Populate Gallery Grid & Lightbox Integration
+      // 8. Populate Gallery Grid & Lightbox Integration (Supports Images & MP4 Videos)
       if (galleryGrid) {
         const rawGallery = build.gallery;
         const galleryImages = Array.isArray(rawGallery) && rawGallery.length > 0
@@ -181,17 +181,35 @@ document.addEventListener("DOMContentLoaded", () => {
             const col = document.createElement("div");
             col.className = "gallery-thumb-wrapper";
 
-            const img = document.createElement("img");
-            img.src = src;
-            img.alt = caption;
-            img.loading = "lazy";
-            img.className = "gallery-thumb lightbox-trigger";
+            const isVideo = src.toLowerCase().endsWith(".mp4");
 
-            img.addEventListener("click", () => {
-              openModal(src, caption);
-            });
+            if (isVideo) {
+              const video = document.createElement("video");
+              video.src = src;
+              video.controls = true;
+              video.preload = "metadata";
+              video.className = "gallery-thumb lightbox-trigger";
 
-            col.appendChild(img);
+              video.addEventListener("click", (e) => {
+                e.preventDefault();
+                openModal(src, caption, true);
+              });
+
+              col.appendChild(video);
+            } else {
+              const img = document.createElement("img");
+              img.src = src;
+              img.alt = caption;
+              img.loading = "lazy";
+              img.className = "gallery-thumb lightbox-trigger";
+
+              img.addEventListener("click", () => {
+                openModal(src, caption, false);
+              });
+
+              col.appendChild(img);
+            }
+
             galleryGrid.appendChild(col);
           });
 
@@ -219,10 +237,37 @@ document.addEventListener("DOMContentLoaded", () => {
       if (titleEl) titleEl.textContent = "Error loading concept details.";
     });
 
-  // Modal Lightbox Helpers
-  function openModal(src, caption) {
-    if (!modal || !modalImg) return;
-    modalImg.src = src;
+  // Modal Lightbox Helpers (Supports Images & MP4 Videos)
+  function openModal(src, caption, isVideo = false) {
+    if (!modal) return;
+
+    const modalContentContainer = modalImg ? modalImg.parentElement : modal;
+    let modalVideo = modal.querySelector("#modal-video");
+
+    if (isVideo) {
+      if (modalImg) modalImg.style.display = "none";
+      if (!modalVideo) {
+        modalVideo = document.createElement("video");
+        modalVideo.id = "modal-video";
+        modalVideo.controls = true;
+        modalVideo.autoplay = true;
+        modalVideo.style.maxWidth = "100%";
+        modalVideo.style.maxHeight = "80vh";
+        modalContentContainer.insertBefore(modalVideo, modalImg);
+      }
+      modalVideo.src = src;
+      modalVideo.style.display = "block";
+    } else {
+      if (modalVideo) {
+        modalVideo.pause();
+        modalVideo.style.display = "none";
+      }
+      if (modalImg) {
+        modalImg.style.display = "block";
+        modalImg.src = src;
+      }
+    }
+
     if (modalCaption) modalCaption.textContent = caption || "";
     modal.style.display = "flex";
     modal.classList.add("visible");
@@ -237,6 +282,14 @@ document.addEventListener("DOMContentLoaded", () => {
     modal.classList.remove("visible");
     modal.setAttribute("aria-hidden", "true");
     if (modalImg) modalImg.src = "";
+    
+    const modalVideo = modal.querySelector("#modal-video");
+    if (modalVideo) {
+      modalVideo.pause();
+      modalVideo.src = "";
+      modalVideo.style.display = "none";
+    }
+
     document.body.style.overflow = "auto";
   }
 
