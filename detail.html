@@ -30,7 +30,7 @@
   </nav>
 
   <!-- DYNAMIC LAYOUT CONTAINER -->
-  <main id="detail-main-container" class="main-layout flex-column">
+  <main id="detail-main-container" class="detail-grid-layout">
 
     <!-- LEFT COLUMN: TECHNICAL SPECIFICATIONS -->
     <aside id="detail-specs-container" class="sidebar-nav" style="display:none; padding: 16px;">
@@ -43,7 +43,7 @@
       
       <!-- Hero Spotlight Frame -->
       <div id="spotlight-frame" style="background-color: var(--panel-bg); border: 1px solid var(--border-color); border-radius: 6px; overflow: hidden;">
-        <div class="spotlight-media" style="width: 100%; height: 420px; background-color: #050608; display: flex; align-items: center; justify-content: center; overflow: hidden; cursor: pointer;" onclick="openLightbox(document.getElementById('detail-hero-img').src, document.getElementById('detail-title').textContent)">
+        <div class="spotlight-media" style="width: 100%; height: 420px; background-color: #050608; display: flex; align-items: center; justify-content: center; overflow: hidden; cursor: pointer;" onclick="openLightbox(document.getElementById('detail-hero-img').src, document.getElementById('detail-title').textContent, false)">
           <img id="detail-hero-img" src="" alt="Hero Preview" style="max-width: 100%; max-height: 100%; object-fit: contain;">
         </div>
         <div class="spotlight-caption" style="padding: 18px 22px; border-top: 1px solid var(--border-color);">
@@ -66,7 +66,7 @@
       <!-- Standard Flat Gallery Grid (Dreams, Fantasies, About) -->
       <div id="standard-gallery-container" style="background-color: var(--panel-bg); border: 1px solid var(--border-color); border-radius: 6px; padding: 24px; display: none;">
         <h2 style="font-family: var(--font-to); font-size: 1.4rem; color: #ffffff; margin-bottom: 16px;">Gallery</h2>
-        <div id="standard-gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px;"></div>
+        <div id="standard-gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 16px;"></div>
       </div>
 
     </section>
@@ -81,11 +81,12 @@
 
   </main>
 
-  <!-- FULLSCREEN LIGHTBOX MODAL -->
+  <!-- FULLSCREEN LIGHTBOX MODAL (SUPPORTS IMAGES & MP4 VIDEOS) -->
   <div id="lightbox-modal" class="lightbox-overlay" onclick="closeLightbox(event)">
     <span class="lightbox-close" onclick="closeLightbox(event)">&times;</span>
     <div class="lightbox-container" onclick="event.stopPropagation()">
-      <img id="lightbox-img" src="" alt="Full Screen View">
+      <img id="lightbox-img" src="" alt="Full Screen View" style="display: none;">
+      <video id="lightbox-video" controls autoplay style="display: none; max-width: 100%; max-height: 80vh; border: 1px solid var(--border-color); border-radius: 6px; background-color: #000;"></video>
       <div id="lightbox-caption" class="lightbox-caption"></div>
     </div>
   </div>
@@ -174,7 +175,7 @@
         heroImg.src = currentItemData.heroImage || currentItemData.thumb || currentItemData.image || "Projects/ScapeGoat at the Granary.jpg";
         heroImg.alt = currentItemData.title || "Detail View";
 
-        // Render Narrative / Text File Content (.txt support with smart About folder fallback)
+        // Render Narrative / Text File Content
         const contentDiv = document.getElementById('detail-content');
         contentDiv.innerHTML = '<p>Loading content...</p>';
 
@@ -301,28 +302,21 @@
               if (!imgSrc) return '';
               
               const filename = imgSrc.split('/').pop().replace(/\.[^/.]+$/, "");
+              const isVideo = imgSrc.toLowerCase().endsWith('.mp4');
+
+              if (isVideo) {
+                return `
+                  <div style="background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 4px; overflow: hidden; cursor: pointer; height: 140px;" onclick="openLightbox('${imgSrc}', '${filename.replace(/'/g, "\\'")}', true)">
+                    <video src="${imgSrc}" autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;"></video>
+                  </div>`;
+              }
+
               return `
-                <div style="background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 4px; overflow: hidden; cursor: pointer; height: 140px;" onclick="openLightbox('${imgSrc}', '${filename.replace(/'/g, "\\'")}')">
+                <div style="background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 4px; overflow: hidden; cursor: pointer; height: 140px;" onclick="openLightbox('${imgSrc}', '${filename.replace(/'/g, "\\'")}', false)">
                   <img src="${imgSrc}" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.onerror=null; this.src='Projects/ScapeGoat at the Granary.jpg';">
                 </div>`;
             }).join('');
           }
-        }
-
-        // 3. Apply Clean CSS Grid Alignment based on active sidebars
-        if (hasSpecs && hasRightNav) {
-          mainContainer.className = 'detail-grid-layout';
-          mainContainer.style.display = '';
-        } else if (hasSpecs && !hasRightNav) {
-          mainContainer.className = '';
-          mainContainer.style.display = 'grid';
-          mainContainer.style.gridTemplateColumns = '280px 1fr';
-          mainContainer.style.gap = '24px';
-          mainContainer.style.alignItems = 'start';
-          mainContainer.style.width = '100%';
-        } else {
-          mainContainer.className = 'main-layout flex-column';
-          mainContainer.style.display = '';
         }
 
       } catch (err) {
@@ -373,8 +367,17 @@
               const imgSrc = typeof item === 'string' ? item : (item.url || item.path || item.image || '');
               if (!imgSrc) return '';
               const filename = imgSrc.split('/').pop().replace(/\.[^/.]+$/, "");
+              const isVideo = imgSrc.toLowerCase().endsWith('.mp4');
+
+              if (isVideo) {
+                return `
+                  <div style="background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 4px; overflow: hidden; cursor: pointer; height: 140px;" onclick="openLightbox('${imgSrc}', '${filename.replace(/'/g, "\\'")}', true)">
+                    <video src="${imgSrc}" autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;"></video>
+                  </div>`;
+              }
+
               return `
-                <div style="background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 4px; overflow: hidden; cursor: pointer; height: 140px;" onclick="openLightbox('${imgSrc}', '${filename.replace(/'/g, "\\'")}')">
+                <div style="background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 4px; overflow: hidden; cursor: pointer; height: 140px;" onclick="openLightbox('${imgSrc}', '${filename.replace(/'/g, "\\'")}', false)">
                   <img src="${imgSrc}" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>`;
             }).join('') + `</div>`;
@@ -396,13 +399,24 @@
       }
     }
 
-    /* LIGHTBOX CONTROLS */
-    function openLightbox(imgSrc, captionText) {
+    /* LIGHTBOX CONTROLS (IMAGES & MP4 VIDEOS) */
+    function openLightbox(mediaSrc, captionText, isVideo = false) {
       const modal = document.getElementById('lightbox-modal');
       const img = document.getElementById('lightbox-img');
+      const video = document.getElementById('lightbox-video');
       const caption = document.getElementById('lightbox-caption');
 
-      img.src = imgSrc;
+      if (isVideo || mediaSrc.toLowerCase().endsWith('.mp4')) {
+        img.style.display = 'none';
+        video.src = mediaSrc;
+        video.style.display = 'block';
+      } else {
+        video.pause();
+        video.style.display = 'none';
+        img.src = mediaSrc;
+        img.style.display = 'block';
+      }
+
       caption.textContent = captionText || currentItemData.title;
       modal.style.display = 'flex';
       document.body.style.overflow = 'hidden';
@@ -410,6 +424,9 @@
 
     function closeLightbox(e) {
       const modal = document.getElementById('lightbox-modal');
+      const video = document.getElementById('lightbox-video');
+      video.pause();
+      video.src = '';
       modal.style.display = 'none';
       document.body.style.overflow = 'auto';
     }
