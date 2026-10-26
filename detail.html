@@ -172,7 +172,7 @@
         document.getElementById('detail-subtitle').textContent = currentItemData.subtitle || '';
         
         const heroImg = document.getElementById('detail-hero-img');
-        heroImg.src = currentItemData.heroImage || currentItemData.thumb || currentItemData.image || "Projects/ScapeGoat at the Granary.jpg";
+        heroImg.src = currentItemData.heroImage || currentItemData.hero || currentItemData.cover || currentItemData.thumb || currentItemData.image || (currentItemData.gallery && currentItemData.gallery[0] && (typeof currentItemData.gallery[0] === 'string' ? currentItemData.gallery[0] : currentItemData.gallery[0].url)) || '';
         heroImg.alt = currentItemData.title || "Detail View";
 
         // Render Narrative / Text File Content
