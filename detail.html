@@ -355,8 +355,9 @@
       } else if (currentItemData.subGalleries && currentItemData.subGalleries[activeKey]) {
         const subVal = currentItemData.subGalleries[activeKey];
         
-        if (subVal.heroImage) {
-          document.getElementById('detail-hero-img').src = subVal.heroImage;
+        const activeHero = subVal.heroImage || currentItemData.heroImage || currentItemData.thumb || currentItemData.image;
+        if (activeHero) {
+          document.getElementById('detail-hero-img').src = activeHero;
         }
 
         let html = `<h3 style="font-family: var(--font-to); font-size: 1.4rem; color: #ffffff; margin-bottom: 16px;">${subVal.title || activeKey}</h3>`;
