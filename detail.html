@@ -355,12 +355,14 @@
       } else if (currentItemData.subGalleries && currentItemData.subGalleries[activeKey]) {
         const subVal = currentItemData.subGalleries[activeKey];
         
-        // Resolve hero image with full fallback chain
-        const activeHero = (subVal && subVal.heroImage) || 
+        const activeHero = (subVal && (subVal.heroImage || subVal.hero || subVal.image || subVal.thumb)) || 
                            currentItemData.heroImage || 
+                           currentItemData.hero || 
+                           currentItemData.cover || 
                            currentItemData.thumb || 
                            currentItemData.image || 
-                           (currentItemData.gallery && currentItemData.gallery[0] && (typeof currentItemData.gallery[0] === 'string' ? currentItemData.gallery[0] : currentItemData.gallery[0].url));
+                           (currentItemData.gallery && currentItemData.gallery[0] && (typeof currentItemData.gallery[0] === 'string' ? currentItemData.gallery[0] : currentItemData.gallery[0].url)) || 
+                           '';
         
         if (activeHero) {
           const heroImgElem = document.getElementById('detail-hero-img');
