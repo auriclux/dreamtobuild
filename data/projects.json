@@ -86,10 +86,15 @@
       },
       "history": {
         "title": "Build Start & History",
-        "heroImage": "Projects/torky-t-hero.jpg",
+        "heroImage": "Projects/garage-find.jpg",
         "images": [
-          "Projects/torky-t-hero.jpg"
-        ]
+           "Projects/garage-find.jpg",
+            "Projects/shop-delivery.jpg",
+            "Projects/brake-front.jpg",
+            "Projects/brake-rear.jpg",
+            "Projects/magneto-bench.jpg",
+             "Projects/magneto-test.mp4"
+          ]
       }
     },
     "builderNotes": "Torky-T ignition timing and custom laser-cut pedal pad specs..."
@@ -138,7 +143,8 @@
         "heroImage": "Projects/20261021 X-member mock-up 01.jpg",
         "images": [
           "Projects/20261021 X-member mock-up 01.jpg",
-          "Projects/20261014 X-member start.jpg"
+          "Projects/20261014 X-member start.jpg",
+          "Projects/20261023 shaft retainer hoops fresh off new bender.jpg"
         ]
       }
     },
