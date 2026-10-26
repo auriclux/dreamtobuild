@@ -130,3 +130,91 @@ body {
   flex-direction: column;
   gap: 12px;
   background-color: var(--panel-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 16px;
+}
+
+.nav-label {
+  display: block;
+  font-family: var(--font-spec);
+  font-size: 0.85rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 4px;
+}
+
+.nav-thumb-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* TEXT BUTTONS (HOME, ABOUT & DETAIL TABS) */
+.nav-text-link {
+  display: block;
+  width: 100%;
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 10px 12px;
+  color: var(--text-main);
+  text-decoration: none;
+  font-family: var(--font-spec);
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  text-align: left;
+  cursor: pointer;
+}
+
+.nav-text-link:hover,
+.nav-text-link.active {
+  background-color: var(--panel-hover);
+  border-color: var(--accent-cyan);
+  color: #ffffff;
+}
+
+/* RICH THUMBNAIL BUTTONS */
+.nav-thumb-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 8px;
+  text-decoration: none;
+  color: var(--text-main);
+  transition: all 0.2s ease;
+}
+
+.nav-thumb-item img,
+.nav-thumb-item video {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.nav-thumb-info {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.nav-thumb-title {
+  font-family: var(--font-to);
+  font-size: 0.95rem;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.nav-thumb-sub {
+  font-family: var(--font-editorial
