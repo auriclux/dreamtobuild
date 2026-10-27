@@ -364,7 +364,7 @@
                            currentItemData.image || 
                            (currentItemData.gallery && currentItemData.gallery[0] && (typeof currentItemData.gallery[0] === 'string' ? currentItemData.gallery[0] : currentItemData.gallery[0].url)) || 
                            '';
-        
+        console.log("Tab Clicked:", activeKey, "| Resolved activeHero:", activeHero); // <--- Add this line
         if (activeHero) {
           console.log("Switching to subsection:", activeKey, "| Hero Path:", activeHero); // Add this line
           const heroImgElem = document.getElementById('detail-hero-img');
