@@ -369,6 +369,7 @@
           console.log("Switching to subsection:", activeKey, "| Hero Path:", activeHero); // Add this line
           const heroImgElem = document.getElementById('detail-hero-img');
           if (heroImgElem) heroImgElem.src = activeHero;
+          console.log("Image element updated. Current src:", heroImgElem.src, "Natural dimensions:", heroImgElem.naturalWidth, "x", heroImgElem.naturalHeight);
         }
 
         let html = `<h3 style="font-family: var(--font-to); font-size: 1.4rem; color: #ffffff; margin-bottom: 16px;">${subVal.title || activeKey}</h3>`;
