@@ -366,6 +366,7 @@
                            '';
         
         if (activeHero) {
+          console.log("Switching to subsection:", activeKey, "| Hero Path:", activeHero); // Add this line
           const heroImgElem = document.getElementById('detail-hero-img');
           if (heroImgElem) heroImgElem.src = activeHero;
         }
