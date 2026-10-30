@@ -572,6 +572,39 @@
     "featured": true
   },
   {
+    "id": "crackerbox-series",
+    "title": "Crackerbox Series",
+    "subtitle": "Blown Big-Block Inboard Speed Hull & 6x6 Hauler",
+    "category": "Fantasies",
+    "badgeText": "Pure Vision",
+    "badgeType": "badge-fantasy",
+    "summary": "A vintage wooden Crackerbox racing runabout powered by a superblown big-block Chevy, paired with a custom multi-axle 6x6 transport hauler study.",
+    "thumb": "Fantasies/Crackerbox 3.jpg",
+    "heroImage": "Fantasies/Crackerbox 3.jpg",
+    "thumbnail": "Fantasies/Crackerbox 3.jpg",
+    "detailUrl": "detail.html?type=fantasies&id=crackerbox-series",
+    "tags": ["Crackerbox", "Inboard", "Speed Hull", "Blown Big-Block", "6x6", "Hauler", "Vintage Racing"],
+    "specifications": {
+      "make": "Vintage Crackerbox / Custom Hauler",
+      "model": "Inboard Racing Runabout & 6x6 Transport Rig",
+      "engine": "Supercharged Big-Block Chevrolet V8",
+      "status": "Render Concept Study",
+      "dateAdded": "2026-10-18T14:15:00"
+    },
+    "narrative": [
+      "A high-speed study blending classic wooden Crackerbox inboard racing hull architecture with brute-force supercharged big-block power.",
+      "Accompanied by a heavy-duty custom 6x6 transport hauler designed to move the vintage watercraft through rugged terrain."
+    ],
+    "gallery": [
+      {"url": "Fantasies/Crackerbox 3.jpg", "caption": "Caption needed."},
+      {"url": "Fantasies/Crackerbox 1.jpg", "caption": "Caption needed."},
+      {"url": "Fantasies/Crackerbox 2.jpg", "caption": "Caption needed."},
+      {"url": "Fantasies/Crackerbox 4.jpg", "caption": "Caption needed."},
+      {"url": "Fantasies/Crackerbox 6x6.jpg", "caption": "Caption needed."}
+    ],
+    "featured": true
+  },
+  {
     "id": "juke-joint",
     "title": "Juke Joint",
     "subtitle": "Pure Vision Custom Concept Study",
