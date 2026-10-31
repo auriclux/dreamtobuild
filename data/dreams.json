@@ -110,31 +110,31 @@
     "featured": true
   },
   {
-    "id": "surrey-concept",
-    "title": "The Surrey",
-    "subtitle": "Custom Surrey Concept",
-    "category": "Dreams",
-    "badgeText": "Design Concept",
-    "badgeType": "badge-dream",
-    "summary": "Custom vintage-inspired Surrey build study.",
-    "thumb": "Dreams/surrey-hero-40s.jpg",
-    "heroImage": "Dreams/surrey-hero-40s.jpg",
-    "thumbnail": "Dreams/surrey-hero-40s.jpg",
-    "detailUrl": "detail.html?type=dreams&id=surrey-concept",
-    "tags": ["Surrey", "Custom", "Concept"],
-    "specifications": {
-      "make": "Custom",
-      "model": "Surrey",
-      "status": "Design Study",
-      "dateAdded": "2026-09-27T12:00:00"
-    },
-    "narrative": [
-      "Custom concept study for the Surrey build."
-    ],
-    "gallery": [
-      "Dreams/surrey-hero-40s.jpg",
-      "Dreams/20250914 Surrey Frame.jpg"
-    ],
-    "featured": true
-  }
+  "id": "surrey-concept",
+  "title": "The Surrey",
+  "subtitle": "Open-Air Surrey on a 1950s Chevy 1-Ton Frame",
+  "category": "Dreams",
+  "badgeText": "Design Concept",
+  "badgeType": "badge-dream",
+  "summary": "A Hawaii-style open surrey built on a borrowed-and-kept Chevy 1-ton frame: a hunted '40s/'50s nose, rows of weatherproof benches under a fringed top, and a rear-facing last row — built to carry the neighborhood to the beach at 35 mph.",
+  "tags": ["Surrey", "Chevrolet", "1-Ton", "Open-Air", "Beach", "Fringe Top", "Donor Wanted"],
+  "specifications": {
+    "chassis": "Chevrolet 1-ton pickup ladder frame (1950s, 3800 class), Dana 60 rear axle — in hand",
+    "wheelbase": "~137 in (1-ton long-bed class, est.)",
+    "front": "Donor wanted: 1940s/50s car or truck front section — windshield frame, firewall, door posts, front clip (free–$1,000; unsalvageable from the A-pillars back preferred)",
+    "rearBody": "Open platform, reproduction rear fenders",
+    "seating": "Driver's row + 3–4 weatherproof benches + rear-facing final row",
+    "top": "Full-length surrey canopy with fringe",
+    "engine": "TBD — small diesel brief: torque first, quiet, no clatter",
+    "performance": "~35 mph cruising, 50 mph max briefly; sand and waterline capable",
+    "status": "Frame in hand / donor front section hunted"
+  },
+  "narrative": [
+    "The Surrey is an open-air people-carrier in the Hawaii mold: a floor, a fringed surrey top, and rows of seats, built on the simplest platform in the fleet — a 1950s Chevrolet 1-ton ladder frame. Ahead of the platform, a donor front section supplies the windshield frame, firewall, door posts, and front clip; everything behind that is open air, weatherproof benches, and a final row facing backward so kids of all ages can dangle their feet off the back.",
+    "The frame was never supposed to stay. It was borrowed so Project Not for Higher could sit on a rolling chassis for its tare-weight registration run: the frame arrived without wheels, a set of tires and wheels turned up at a great price, the COE cab was strapped on, and the whole rig was towed to the weigh station. When the return was arranged, the lender said keep it. A big ladder frame with a Dana 60 rear and good rubber is not something you let go — and a platform this simple can carry anything, which is the whole Surrey philosophy.",
+    "Power is undecided, and the brief is a personality, not a part number: torque is the keyword, something neat and small and diesel, tractor-hearted without the clatter. Thirty-five miles an hour is the common speed and fifty is a brief maximum with passengers aboard. The capability that actually matters is at the end of the road — off the pavement, onto the sand, and down to the water.",
+    "The Surrey is a social vehicle. The Men of the Avenues down the street — an unofficial charitable crew whose premise is beer, barbecue, and silly games — are the shape of its intended passengers, along with the Elks at the pier and whoever else can be driven around or loaned a slow ride to a good time. It may be the easiest eventual sale in the fleet at the right offer, but it was dreamed up to be used, loaded, and lent."
+  ],
+  "gallery": ["Dreams/surrey-hero-40s.jpg", "Dreams/20250914 Surrey Frame.jpg"]
+}
 ]
