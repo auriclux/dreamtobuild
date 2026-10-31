@@ -75,39 +75,63 @@
     "featured": true
   },
   {
-    "id": "59-catalina-safari",
-    "title": "Trips",
-    "subtitle": "Road Trips & Long Haul Concepts",
-    "category": "Dreams",
-    "badgeText": "Design & Blueprints",
-    "badgeType": "badge-dream",
-    "summary": "Long-distance cross-country touring concepts engineered around the 1959 Pontiac Catalina Safari station wagon platform.",
-    "thumb": "Dreams/59 Catalina Safari.jpg",
-    "heroImage": "Dreams/59 Catalina Safari.jpg",
-    "thumbnail": "Dreams/59 Catalina Safari.jpg",
-    "detailUrl": "detail.html?type=dreams&id=59-catalina-safari",
-    "tags": ["Pontiac", "Catalina", "Safari Wagon", "1959", "Tri-Power", "FiTech EFI", "Air Suspension", "Long Haul", "Road Trip"],
-    "specifications": {
-      "platform": "1959 Pontiac Catalina Safari Wagon",
-      "induction": "Late Tri-Power Intake with FiTech Throttle Body EFI",
-      "drivetrain": "Modern Automatic Transmission & Ford 9-inch Rear Axle",
-      "suspension": "Airbags, Double A-Arm Front & Triangulated 4-Link Rear",
-      "purpose": "Friday Night Boulevard Cruiser & Cross-Country Long Haul",
-      "status": "Design Study / Waiting in Storage Yard",
-      "dateAdded": "2026-10-19T17:00:00"
+  "id": "59-catalina-safari",
+  "title": "Trips",
+  "subtitle": "1959 Pontiac Catalina Safari, Custom Cruiser",
+  "category": "Dreams",
+  "badgeText": "Design & Blueprints",
+  "badgeType": "badge-dream",
+  "summary": "A 1959 Pontiac Catalina Safari wagon built as a custom cruiser: a 461-cubic-inch Pontiac stroker purring out 500 hp under an updated Tri-Power, a ZF 8-speed behind it, and a mission stated as two passes, an easy lope over Sepulveda and the Grapevine at 5,000 pounds.",
+  "thumb": "Dreams/59 Catalina Safari.jpg",
+  "heroImage": "Dreams/59 Catalina Safari.jpg",
+  "thumbnail": "Dreams/59 Catalina Safari.jpg",
+  "detailUrl": "detail.html?type=dreams&id=59-catalina-safari",
+  "tags": [
+    "Pontiac",
+    "Catalina",
+    "Safari Wagon",
+    "1959",
+    "Tri-Power",
+    "FiTech EFI",
+    "Pontiac Stroker",
+    "ZF 8HP",
+    "Custom Cruiser",
+    "Long Haul"
+  ],
+  "specifications": {
+    "platform": "1959 Pontiac Catalina Safari Wagon",
+    "engine": "Pontiac 389 block, 4.25-in stroker, 461 cu in",
+    "output": "~500 hp / ~575 lb-ft, built to purr: aluminum D-port heads, mild hydraulic roller cam, pump gas",
+    "induction": "Updated Tri-Power: FiTech 3x2 throttle-body EFI, progressive linkage",
+    "transmission": "ZF 8HP90 8-speed automatic (Dodge), BOP adapter kit, standalone controller",
+    "rearAxle": "Ford 9-inch",
+    "suspension": "Air suspension, double A-arm front, triangulated 4-link rear",
+    "brakes": "Big brakes behind big wheels: not a racer, but a surprise in a corner",
+    "weight": "~5,000 lbs all-in",
+    "finish": "Bronze metallic, gold wheels, tan interior (as rendered; not a patina car)",
+    "interior": "Full creature comforts: entertainment, climate control, heated/cooled seats; rear-facing third row, folds flat for luggage; no cupholders",
+    "structure": "No visible cage; hidden stiffening",
+    "purpose": "Custom cruiser: easy lope over Sepulveda Pass and the Grapevine",
+    "status": "Dream: car in hand, waiting its turn to enter the Projects pipeline",
+    "dateAdded": "2026-10-19T17:00:00"
+  },
+  "narrative": [
+    "Trips is three of a kind. In poker, a prial of three is trips; on the road, trips are the journeys this wagon exists to take. The logo is a small fan of three aces, spades, diamonds and clubs: the Fantasy, Dream and Project ladder, with the diamond in the middle as the hinge, because a Dream is where a Fantasy either folds or becomes real. The ace of hearts stays home. In Three Card Brag the highest prial of all is three 3s, and the wordmark is set in Alfa Slab One.",
+    "The mission calibrates everything: a custom cruiser, not a drag car and not a show car, built to take Sepulveda Pass and the Grapevine in an easy lope at about 5,000 pounds all-in. The engine is the Pontiac block of the Tri-Power GTOs, a 389 stroked to 461 cubic inches, and the target is 500 horsepower that purrs. Displacement and head flow do the work so the cam stays mild, idling smooth and pulling from just off idle. The updated Tri-Power is FiTech throttle-body EFI on the three-deuce intake with progressive linkage: the center throttle body cruises, the outboards join when called. Behind it sits a ZF 8HP90 eight-speed automatic on a catalog BOP adapter kit, chosen because more gears mean a smoother ride and a cruise rpm that barely wakes the engine. The stiffening is hidden; there is no visible cage.",
+    "The car in the yard becomes the car in the render: bronze metallic over a tan interior, gold wheels, a full refinish. Trips is not a patina car. The cabin is full creature comfort: entertainment, climate control, heated and cooled seats on the spec sheet, three rows with the third row facing rearward, folding flat when the trip needs luggage instead of people. One cupholder rule stands: there are none. Big wheels carry big brakes, and the suspension brief lets the wagon surprise someone in a corner without ever pretending to be a racer.",
+    "For now the Safari waits its turn in the yard. The constraint is bandwidth, not intent: when a slot opens in the Projects pipeline, Trips promotes from Dream to Project and the build begins."
+  ],
+  "gallery": [
+    {
+      "url": "Dreams/59 Catalina Safari.jpg",
+      "caption": "Trips as envisioned, set against the Phipps Conservatory at dusk."
     },
-    "narrative": [
-      "Built around a 1959 Pontiac Catalina Safari station wagon, this concept explores the ultimate low-slung, long-distance road trip cruiser.",
-      "The 1959 Pontiac Catalina Safari Wagon represents the pinnacle of wide-track, long-roof styling—a pure boulevard cruiser designed for Friday night posing and effortless cross-country highway travel.",
-      "The powertrain concept pairs a classic late-version Tri-Power intake setup converted to modern FiTech throttle body EFI for turnkey reliability, backed by a modern automatic transmission and a heavy-duty 9-inch rear axle.",
-      "Underneath, the chassis is setup for ground-slammed stance on full air bags, supported by a front double A-arm system and a triangulated four-link rear suspension.",
-      "The physical Catalina Safari is currently waiting patiently in the storage yard awaiting its turn on the shop floor."
-    ],
-    "gallery": [
-      "Dreams/59 Catalina Safari.jpg",
-      "Dreams/59 Catalina Safari in yard.jpg"
-    ],
-    "featured": true
+    {
+      "url": "Dreams/59 Catalina Safari in yard.jpg",
+      "caption": "The 1959 Safari waiting its turn in the yard."
+    }
+  ],
+  "featured": true
   },
   {
   "id": "surrey-concept",
