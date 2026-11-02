@@ -7,7 +7,56 @@
       "lastUpdated": "2026-10-22T14:00:00"
     }
   },
-  {
+ {
+  "id": "mikey-stageway",
+  "title": "Mikey",
+  "subtitle": "Miguelito, the 1959 Stageway Tour Host",
+  "category": "Fantasies",
+  "badgeText": "Pure Vision",
+  "badgeType": "badge-fantasy",
+  "summary": "An eight-door 1959 Stageway airport limousine, never bought and never forgotten, reimagined as Miguelito: a Duramax-powered Angeleno tour host who kneels for grandmothers, seats fourteen friends, and runs tacos-to-lobster tours under an open roof.",
+  "thumb": "Fantasies/mikey-mulholland-tour.jpg",
+  "heroImage": "Fantasies/mikey-mulholland-tour.jpg",
+  "thumbnail": "Fantasies/mikey-mulholland-tour.jpg",
+  "detailUrl": "detail.html?type=fantasies&id=mikey-stageway",
+  "tags": ["Stageway", "Biscayne", "8-Door", "Duramax", "Miguelito", "Los Angeles", "Parade Cruiser"],
+  "specifications": {
+    "platform": "1959 Chevrolet Biscayne 8-door limousine, Armbruster-Stageway Airporter conversion",
+    "engine": "GM Duramax L5P 6.6L turbodiesel, compound turbocharged, tuned to purr: a kitten at cruise with the strength kept in reserve",
+    "output": "Compound-turbo house spec: about 650 hp and 1,300 lb-ft, turned down for company manners and delivered quietly",
+    "transmission": "Allison 1000 6-speed automatic, built for the torque",
+    "rearAxle": "GM/AAM 11.5-inch full-float 14-bolt, 3.73, narrowed to the Biscayne",
+    "suspension": "Air: lift-biased for breakover on the ~200-inch wheelbase, kneel-for-boarding mode, parade-crawl ride",
+    "steering": "Heavy-duty recirculating-ball box, hydraulic assist, chosen for strength",
+    "brakes": "Hydroboost, discs as big as the wheels allow",
+    "range": "200+ miles per tank, low-20s gallons, because a good host never watches the gauge",
+    "doors": "Eight: forward pairs conventional, rear pairs suicide, center pair opens as a pillar-free French-door gate",
+    "roof": "One long open aperture, twin folding canvas halves, grab bars inside (the stiffening ring) and out",
+    "seating": "10 to 14: two front singles with a walk-through, back-to-back bench, central cabinet, rear wraparound",
+    "amenities": "The Crystal in the central cabinet, icebox, intercom, narration mic, per-pod reading lights and USB, dual A/C",
+    "wheels": "Two sets by suit: hexagonal titanium, 22-in front / 24-in rear, for the tangerine car; painted 16-in steel with dog-dish caps for the green car",
+    "finish": "Tangerine candy over copper-bronze, split at the chrome spear, coffee canvas; the formal suit is Brewster greens",
+    "interior": "Coffee and cream leather in the tangerine car; deep green leather in the Torpedo manner in the green car",
+    "purpose": "Private sightseeing and parade cruising: bespoke Angeleno tours, Mercado tacos to Malibu lobster, sunsets from Mulholland and the Santa Monica Pier",
+    "status": "Fantasy: a fully specced design study. The Renton Stageway that inspired it was not purchased.",
+    "dateAdded": "2026-11-02T14:00:00"
+  },
+  "narrative": [
+    "Start with the confession, because Miguelito believes a tour should begin with the truth. The blue car in the last photograph is not mine. She is a 1959 Chevrolet Biscayne stretched by Armbruster-Stageway into an eight-door airport limousine, photographed where she sat in Renton, Washington: peeling paint, rust freckles, some glass gone, an Oldsmobile engine keeping her Chevrolet seat warm. I studied her, I priced her, I dreamed over her, and I did not buy her. What came home with me was the idea of her, and the idea has been gaining weight ever since.",
+    "The idea has a name and, by now, a face. Miguelito, Mikey to the valets, is a big silver güero of a tour host: a former airporter who spent his working life hauling other people's beginnings and endings, retired into the best job in Los Angeles. He kneels at the curb so your grandmother boards like royalty. He seats fourteen friends without anyone drawing the middle seat. He keeps the Crystal in a cabinet at his center, a microphone by the wheel, and a roof that opens the length of the cabin so the whole party can stand up in the golden hour and watch the city perform. A limousine keeps the world out. Miguelito keeps inviting it in.",
+    "Under the hospitality he is still a working vehicle, and proud of it. A compound-turbo Duramax L5P does the pulling, chosen to purr: a house-trained kitten with thirteen hundred pound-feet in reserve, breathing through an Allison automatic and a full-float truck axle, riding on air that can lift him over a bad driveway or settle him into a parade crawl. The brakes are as big as the wheels allow. The tank holds 200 miles of range, because a good host never watches the gauge. Eight doors do the rest: the forward pairs swing like gentlemen, the rear pairs swing like villains, and the center pair opens together as a French-door gate, the front door of a house that happens to travel.",
+    "His signature run works west with the light: tacos at the downtown Mercado, ordered in Spanish and eaten standing up, then the long climb to Mulholland with the passengers up top and Griffith Observatory riding its ridge, down to Malibu for lobster at a picnic table, and the Santa Monica Pier for sunset. Passing traffic should be warned that overtaking Miguelito is a serial event: the nose, the door, the door, the door, and then, just when you believe in endings, the fin. He keeps two suits, tangerine over copper-bronze on hexagonal titanium for the road and formal Brewster greens on painted steel when the occasion wants a collar, because a host dresses for the room. For now he is a fantasy, a full spec and a standing invitation with no car to run it. If the right Stageway ever follows me home, this card graduates. Until then the tour departs whenever you like, at parade pace, with the roof open and Miguelito already sure you are hungry."
+  ],
+  "gallery": [
+    { "url": "Fantasies/mikey-miguelito.jpg", "caption": "Miguelito, the host. Big, silver, and already sure you are hungry." },
+    { "url": "Fantasies/mikey-mulholland-tour.jpg", "caption": "The Mulholland tour at golden hour: passengers up top, the Observatory on its ridge, the basin below." },
+    { "url": "Fantasies/mikey-studio-three-quarter.jpg", "caption": "The neutral studio, in his road suit: tangerine over copper-bronze on hexagonal titanium, coffee canvas, cream within." },
+    { "url": "Fantasies/mikey-lax-theme-building.jpg", "caption": "Company manners at the Theme Building, LAX, with the center gate open." },
+    { "url": "Fantasies/mikey-the-advert.jpg", "caption": "The one that got away: the Renton car as advertised, nose first. Not mine. The idea was." }
+  ],
+  "featured": true
+ }. 
+ {
     "id": "marinas-beloved-corvette",
     "title": "Marina's Beloved Corvette",
     "subtitle": "1986 C4 Corvette Custom Styling & Treatment Study",
