@@ -620,39 +620,49 @@
     "gallery": [{"url": "Fantasies/51 Pacemaker.jpg", "caption": "1951 Hudson Pacemaker Custom — Step-down chassis air-ride stance."}],
     "featured": true
   },
-  {
-    "id": "crackerbox-series",
-    "title": "Crackerbox Series",
-    "subtitle": "Blown Big-Block Inboard Speed Hull & 6x6 Hauler",
-    "category": "Fantasies",
-    "badgeText": "Pure Vision",
-    "badgeType": "badge-fantasy",
-    "summary": "A vintage wooden Crackerbox racing runabout powered by a superblown big-block Chevy, paired with a custom multi-axle 6x6 transport hauler study.",
-    "thumb": "Fantasies/Crackerbox 3.jpg",
-    "heroImage": "Fantasies/Crackerbox 3.jpg",
-    "thumbnail": "Fantasies/Crackerbox 3.jpg",
-    "detailUrl": "detail.html?type=fantasies&id=crackerbox-series",
-    "tags": ["Crackerbox", "Inboard", "Speed Hull", "Blown Big-Block", "6x6", "Hauler", "Vintage Racing"],
-    "specifications": {
-      "make": "Vintage Crackerbox / Custom Hauler",
-      "model": "Inboard Racing Runabout & 6x6 Transport Rig",
-      "engine": "Supercharged Big-Block Chevrolet V8",
-      "status": "Render Concept Study",
-      "dateAdded": "2026-10-18T14:15:00"
-    },
-    "narrative": [
-      "A high-speed study blending classic wooden Crackerbox inboard racing hull architecture with brute-force supercharged big-block power.",
-      "Accompanied by a heavy-duty custom 6x6 transport hauler designed to move the vintage watercraft through rugged terrain."
-    ],
-    "gallery": [
-      {"url": "Fantasies/Crackerbox 3.jpg", "caption": "As maximal ramp delivering a rod."},
-      {"url": "Fantasies/Crackerbox 1.jpg", "caption": "Rough and practical."},
-      {"url": "Fantasies/Crackerbox 2.jpg", "caption": "Practical FC delivering civilian FC."},
-      {"url": "Fantasies/Crackerbox 4.jpg", "caption": "As a military."},
-      {"url": "Fantasies/Crackerbox 6x6.jpg", "caption": "Steroidal FC."}
-    ],
-    "featured": true
+{
+  "id": "crackerbox-series",
+  "title": "Crackerbox Series",
+  "subtitle": "The Least Aerodynamic Truck of the Postwar Era, Given Enough Power",
+  "category": "Fantasies",
+  "badgeText": "Pure Vision",
+  "badgeType": "badge-fantasy",
+  "summary": "Studies in a single question: what is the least aerodynamic truck of the postwar era, and what does it take to make the wall fast? Five GMC Crackerbox forward-control studies, ramp truck to 6x6, built around a Duramax and useful work.",
+  "thumb": "Fantasies/Crackerbox 3.jpg",
+  "heroImage": "Fantasies/Crackerbox 3.jpg",
+  "thumbnail": "Fantasies/Crackerbox 3.jpg",
+  "detailUrl": "detail.html?type=fantasies&id=crackerbox-series",
+  "tags": ["Crackerbox", "GMC", "Forward Control", "COE", "Duramax", "Compound Turbo", "6x6", "Hauler"],
+  "specifications": {
+    "platform": "GMC F/D-series Crackerbox forward-control COE: all-aluminum tilt cab, 48-inch bumper-to-back-of-cab, built 1959-1968, the whole run inside the smog-exempt years",
+    "nickname": "Crackerbox: the truckers' name for the upright cab, a saltine cracker box stood on end. Reserved for this GMC series; other makers' boxy COEs need not apply.",
+    "thesis": "What is the least aerodynamic truck of the postwar era, and what does it take to make the wall fast?",
+    "engine": "GM Duramax 6.6L turbodiesel, compound turbocharged: the house engine for forward-control trucks, because the V8 fits under the cab furthest",
+    "output": "Sized to the scare: roughly 500 hp at the wheels pushes the wall to 100 mph; torque and gearing own the mud and the loaded pass",
+    "transmission": "Allison automatic",
+    "chassis": "Almost a house recipe: cab swapped onto a spec donor chassis where one fits, otherwise a good set of parallel channel rails with a purpose-built performance suspension. The 6x6 keeps its M35A2 military frame, where everything already fits.",
+    "suspension": "Air, with real anti-roll control: the wall's enemies are roll and crosswind wander",
+    "brakes": "Air brakes, discs preferred; the donor choice sets the ceiling (detail parked for later research)",
+    "sound": "Unrestricted by design: in a power application the engine may announce the wall. The cab gets the engineered passenger environment instead.",
+    "purpose": "Private useful work, no towing and no OTR freight: car transport (flatbed or ramp), display transport in a permanent box, motorhome conversion, roll-off, recovery; road or off-road, two or three axles",
+    "status": "Fantasy: a study set across the big-truck trade space. The 6x6's placement (this card, the Wilderness Recovery Vehicle grouping, or both) is still open.",
+    "dateAdded": "2026-10-18T14:15:00"
   },
+  "narrative": [
+    "Start with a rude question: what is the least aerodynamic truck of the postwar era? My answer is a GMC. In 1959 GMC built a Class 8 cabover so short and square that the whole cab, bumper to back glass, measured 48 inches, an aluminum box that tilted forward for service and existed for one reason: length laws. A shorter tractor meant a longer trailer, and driver comfort was not in the budget. The truckers who had to live in it named it the Crackerbox, for a saltine cracker box stood on end, and they did not mean it kindly. I have adopted the insult as a title of honor, and I reserve it for this GMC series alone. Other makers built boxy forward-control trucks. This one is boxier, with the most vertical windshield of the lot.",
+    "The studies on this card ask the follow-up: what does it take to make the wall fast? Scary, in my usage, is a place to visit, not a place to live, and the visits come in three kinds. Fast and empty on the open road, which is a horsepower bill from the air: roughly 500 hp at the wheels to see 100 mph in something shaped like this. Chewing through a mud bog with ease, which is torque, low gears, and traction, with horsepower as a spectator. And passing traffic fully loaded, which is midrange reserve, speed gained at highway pace with weight aboard. That last one has an audience. Somewhere ahead is a driver watching a metal wall fill his mirror, then his window, then his memory.",
+    "The pictures are studies, not builds: five cells in a trade space my big-truck fantasies share. Car transport on a flatbed or a ramp, display transport in a permanent box, motorhome conversion, roll-off work (currently assigned to a Mack FC in another study), and recovery, crossed with road or off-road and two axles or three. Towing is out; I do not envision it as a primary function for any build. Commercial freight boxes are out too. I am a private owner with a real rollback project already, and these are explorations toward what I like best. The orange 6x6 may yet emigrate to a Wilderness Recovery Vehicle grouping, or live in both places. The other four are staying right here, variations on one theme.",
+    "The recipe is nearly a house recipe by now. A Duramax does the pushing, chosen for a packaging reason: the V8 fits under a forward-control cab furthest, and under-cab volume is the scarcest thing these trucks have. Compound turbos, an Allison, and no apologies for the sound: in a power application the engine is allowed to announce the wall, and the cab gets engineered insulation instead of a quieter engine. The cab goes onto a donor chassis that meets spec where one exists, or onto a good set of parallel rails with a suspension built for the purpose. The 6x6 keeps its M35A2 military frame, because everything on it already fits and only the cab needs re-engineering. Air brakes and tire speed ratings are the honest limits, noted for later research. The wall was never the problem. The wall is the point."
+  ],
+  "gallery": [
+    { "url": "Fantasies/Crackerbox 3.jpg", "caption": "Maximal ramp delivering a rod: blue GMC Crackerbox flatbed at a beachside gathering, ramps down, a red vintage open-top car aboard." },
+    { "url": "Fantasies/Crackerbox 1.jpg", "caption": "Rough and practical: weathered green GMC Crackerbox flatbed in a gravel lot." },
+    { "url": "Fantasies/Crackerbox 2.jpg", "caption": "Practical FC delivering civilian FC: green GMC Crackerbox flatbed carrying a rusty civilian FC pickup through a show field." },
+    { "url": "Fantasies/Crackerbox 4.jpg", "caption": "As a military: green GMC Crackerbox flatbed in desert canyon country, a military-style off-roader aboard." },
+    { "url": "Fantasies/Crackerbox 6x6.jpg", "caption": "Steroidal FC: GMC Crackerbox cab on an M35A2 6x6 chassis, Duramax 6.6 compound turbo and Allison into a Rockwell transfer case, 2.5-ton axles, on a forest track." }
+  ],
+  "featured": true
+},
   {
     "id": "juke-joint",
     "title": "Juke Joint",
