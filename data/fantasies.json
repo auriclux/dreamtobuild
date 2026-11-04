@@ -664,34 +664,47 @@
   "featured": true
 },
   {
-    "id": "juke-joint",
-    "title": "Juke Joint",
-    "subtitle": "Pure Vision Custom Concept Study",
-    "category": "Fantasies",
-    "badgeText": "Pure Vision",
-    "badgeType": "badge-fantasy",
-    "summary": "A moody Pure Vision custom styling study capturing raw stance and custom badging across atmospheric road settings.",
-    "thumb": "Fantasies/Juke Joint on a PV switchback.jpg",
-    "heroImage": "Fantasies/Juke Joint on a PV switchback.jpg",
-    "thumbnail": "Fantasies/Juke Joint on a PV switchback.jpg",
-    "detailUrl": "detail.html?type=fantasies&id=juke-joint",
-    "tags": ["Juke Joint", "Pure Vision", "Concept", "Styling Study"],
-    "specifications": {
-      "category": "Fantasies",
-      "type": "Pure Vision Concept Study",
-      "status": "Render Concept Study",
-      "dateAdded": "2026-10-22T14:00:00"
-    },
-    "narrative": [
-      "Juke Joint brings together atmospheric styling cues and custom badging in a distinctive Pure Vision conceptual exploration.",
-      "Ranging from winding switchback road settings to neutral studio backdrops, this study highlights unique proportions and bespoke design details."
-    ],
-    "gallery": [
-      {"url": "Fantasies/Juke Joint on a PV switchback.jpg", "caption": "Juke Joint — On a Pure Vision switchback road setting."},
-      {"url": "Fantasies/Juke Joint in Neutral setting.jpg", "caption": "Juke Joint — Neutral setting studio composition."},
-      {"url": "Fantasies/Crossroads Juke Joint.jpg", "caption": "Juke Joint — Crossroads atmospheric concept view."},
-      {"url": "Fantasies/Juke Joint badge 2.jpg", "caption": "Juke Joint — Custom script badge detail study."}
-    ],
-    "featured": true
-  }
+  "id": "juke-joint",
+  "title": "Juke Joint",
+  "subtitle": "The Whole 2011 Juke, Transplanted Into a 1964 Ranchero",
+  "category": "Fantasies",
+  "badgeText": "Pure Vision",
+  "badgeType": "badge-fantasy",
+  "summary": "Project Juke Joint: the complete driveline, subframes, harness, and brain of a wrecked 2011 Nissan Juke AWD, transplanted into the second of Scot's two 1964 Rancheros. Transverse turbo four, torque-vectoring all-wheel drive, metal flares, and one honest open question where the transmission goes.",
+  "thumb": "Fantasies/Juke Joint on a PV switchback.jpg",
+  "heroImage": "Fantasies/Juke Joint on a PV switchback.jpg",
+  "thumbnail": "Fantasies/Juke Joint on a PV switchback.jpg",
+  "detailUrl": "detail.html?type=fantasies&id=juke-joint",
+  "tags": ["Juke Joint", "Ranchero", "Nissan Juke", "MR16DDT", "AWD Transplant", "Metal Flares"],
+  "specifications": {
+    "shell": "1964 Ford Ranchero unibody, the second of two '64s; Floyd, the pink one running on its original inline six, is not this car",
+    "donor": "2011 Nissan Juke AWD, complete and running; bumper and front lights sheared off in a low-speed collision, everything else intact",
+    "engine": "Nissan MR16DDT 1.6L direct-injection turbo four, 188 hp and 177 lb-ft, factory ECU and tune retained",
+    "layout": "Transverse powertrain with power take-off unit, two-piece propshaft, and the Juke's torque-vectoring rear coupling: all-wheel drive in a 1964 unibody",
+    "transmission": "OPEN PROBLEM: the factory CVT keeps the AWD but caps practical torque near 200 lb-ft; the RS6F94R 6-speed manual is proven at 300 whp but was only ever sold as front-wheel drive, so manual plus AWD is unproven",
+    "subframes": "Juke front and rear subframes carried over as geometry jigs, on fabricated mounts with unibody reinforcement; rear subframe packaged under the bed with tank and exhaust",
+    "wheelbase": "109.5 in (Ranchero) vs 99.6 in (Juke): the 9.9 in gap is bridged by a two-piece propshaft whose carrier-bearing crossmember ties into structure, not floor pan",
+    "track": "About 5 in wider than the Falcon platform, split among deepened inner tubs, wheel offset, and fabricated METAL flares",
+    "suspension": "Juke MacPherson struts on fabricated turrets tied into the aprons and cowl; the Falcon's shock towers are removed",
+    "electronics": "The Juke's whole nervous system comes across: harness, cluster, EPS column, immobilizer, CVT, AWD, and ABS modules, so the torque vectoring keeps the sensors it reasons from",
+    "intercooler": "Front-mount, behind the Ranchero grille; a bolt-on the factory tune tolerates",
+    "power": "OPEN INVESTIGATION: the 'just swap' baseline is the plan (the Ranchero is roughly 600 lb lighter than the Juke, so stock power already goes further); practical wringing beyond that is under research",
+    "name": "Juke Joint: the donor is a Juke; the other half of the pun is the roadhouse",
+    "status": "Fantasy by ruling (2026-11-03): meets the Dream definition, donor in hand and shell assigned, but stays a Fantasy until it gets more real. No work has begun.",
+    "dateAdded": "2026-10-22T14:00:00"
+  },
+  "narrative": [
+    "Juke Joint started with somebody else's bad day. My wife's 2011 Nissan Juke caught a low-speed hit that sheared off its bumper and front lights, and left everything else intact: a complete, running, all-wheel-drive car with a turbocharged engine, suddenly worth more as an idea than as a Juke. I own two 1964 Rancheros. One is Floyd, pink and running on his original six, and he is not involved in this. The other one is a shell looking for a reason, and the name arrived before the plan did: the donor is a Juke, the venue is a joint, and the car is Juke Joint.",
+    "The build is a whole-car transplant, not an engine swap. Everything crosses over as a system: the MR16DDT turbo four, the transaxle, the power take-off, the torque-vectoring rear coupling, both subframes, the full wiring harness, the instrument cluster, the electric steering column, and every module that talks to them. Modern systems fail in cascades when you amputate pieces, so nothing gets amputated. The Juke subframes serve as geometry jigs on fabricated mounts, the Falcon's shock towers come out, and fabricated strut turrets tied into the aprons and cowl take their place. The Ranchero keeps its face and its bed. Underneath, it becomes a Juke that went to finishing school in 1964.",
+    "The two hard numbers are honest ones. The Ranchero's wheelbase is 109.5 inches and the Juke's is 99.6, so a two-piece propshaft with a carrier bearing bridges the 9.9 inches, its crossmember tied into structure rather than floor pan. The Juke's track is about five inches wider than the Falcon's, and the difference is split three ways: deepened inner tubs, wheel offset, and fabricated metal flares. Readers of the ScapeGoat card will note that car gets widened quarters and no flares, ever. Different car, different style. This one wears flares.",
+    "Two problems stay open on purpose, because solving them on paper would be lying. The transmission is a fork: keep the CVT and the all-wheel drive stays, but the CVT's practical ceiling is about 200 lb-ft of torque, a limit Nissan itself respected when it detuned the Nismo RS AWD. The 6-speed manual is proven at 300 wheel horsepower, but Nissan only ever sold it driving the front wheels, so manual plus all-wheel drive is unproven country. Power is the second: the stock swap already wins on arithmetic, since the Ranchero is roughly 600 pounds lighter than the Juke, and wringing out more is an investigation, not a promise. This card stays a Fantasy by my ruling. The build meets my own definition of a Dream, parts in hand and plan adjudicated, but the queue ahead of it is daunting and the parts deserve photographs before promotion. It promotes when it gets more real."
+  ],
+  "gallery": [
+    { "url": "Fantasies/Juke Joint on a PV switchback.jpg", "caption": "The styling study on a switchback road: the look the build is chasing." },
+    { "url": "Fantasies/Juke Joint in Neutral setting.jpg", "caption": "The styling study in a neutral studio setting." },
+    { "url": "Fantasies/Crossroads Juke Joint.jpg", "caption": "Crossroads: where a wrecked Juke and a spare Ranchero meet." },
+    { "url": "Fantasies/Juke Joint badge 2.jpg", "caption": "The script badge study: the name, in metal, before the car earns it." }
+  ],
+  "featured": true
+}
 ]
