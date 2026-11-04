@@ -181,41 +181,46 @@
     "featured": true
   },
   {
-    "id": "1962-fiat-600-hayabusa",
-    "title": "Pixels",
-    "subtitle": "Supercharged Hayabusa Power & Ligurian Coast Study",
-    "category": "Fantasies",
-    "badgeText": "Pure Vision",
-    "badgeType": "badge-fantasy",
-    "summary": "A 1962 Fiat 600 chopped 1\", powered by a 1,507cc supercharged Hayabusa engine delivering ~300 WHP through a 6-speed sequential transaxle, featuring flag-colored halftone dot livery on a fantasy Ligurian coast.",
-    "thumb": "Fantasies/62 Fiat 600 halftone flag colors on a fantasy Ligurian coast.jpg",
-    "heroImage": "Fantasies/62 Fiat 600 halftone flag colors on a fantasy Ligurian coast.jpg",
-    "thumbnail": "Fantasies/62 Fiat 600 halftone flag colors on a fantasy Ligurian coast.jpg",
-    "detailUrl": "detail.html?type=fantasies&id=1962-fiat-600-hayabusa",
-    "tags": ["Fiat", "600", "1962", "Hayabusa", "Supercharged", "Halftone", "Ligurian Coast", "Il Lungo"],
-    "specifications": {
-      "year": "1962",
-      "make": "Fiat",
-      "model": "600 Custom",
-      "engine": "1,507cc Supercharged Hayabusa Inline-4 (~300 WHP)",
-      "transmission": "6-speed sequential transaxle",
-      "suspension": "Short/Long Arm (SLA) double-wishbone suspension",
-      "performance": "1.35g lateral acceleration",
-      "status": "Render Concept Study",
-      "dateAdded": "2026-10-18T16:55:00"
-    },
-    "narrative": [
-      "1962 Fiat 600, chopped 1\", powered by a 1,507cc supercharged Hayabusa engine delivering ~300 WHP through a 6-speed sequential transaxle, is supported by Short/Long Arm (SLA) double-wishbone suspension for optimal handling and 1.35g of lateral acceleration.",
-      "Finished in a striking tricolor halftone flag dot livery cascading along a winding fantasy Ligurian coastal road.",
-      "Related Design Study: See also <a href=\"detail.html?type=fantasies&id=il-lungo-fiat\">Il Lungo: Stretched Fiat Paint Experiment</a> for an extended silhouette and experimental candy finish companion study."
-    ],
-    "gallery": [
-      {"url": "Fantasies/62 Fiat 600 halftone flag colors on a fantasy Ligurian coast.jpg", "caption": "Pixels — Halftone flag colors on a fantasy Ligurian coast."},
-      {"url": "Fantasies/62 Fiat 600.jpg", "caption": "Pixels — Cornering profile study."},
-      {"url": "Fantasies/62 Fiat 600 halftone flag colors.jpg", "caption": "Pixels — Halftone livery dot pattern detail view."}
-    ],
-    "featured": true
+  "id": "1962-fiat-600-hayabusa",
+  "title": "Pixels",
+  "subtitle": "Supercharged Hayabusa Power & Ligurian Coast Study",
+  "category": "Fantasies",
+  "badgeText": "Pure Vision",
+  "badgeType": "badge-fantasy",
+  "summary": "An engine in search of a car found a cute one. A 1962 Fiat 600 in Italian-flag halftone dots, powered by a stroked and supercharged Hayabusa at about 300 WHP: feral as a wildcat, agile as a cat, and aimed at the curvy roads of the Ligurian coast.",
+  "thumb": "Fantasies/62 Fiat 600 halftone flag colors on a fantasy Ligurian coast.jpg",
+  "heroImage": "Fantasies/62 Fiat 600 halftone flag colors on a fantasy Ligurian coast.jpg",
+  "thumbnail": "Fantasies/62 Fiat 600 halftone flag colors on a fantasy Ligurian coast.jpg",
+  "detailUrl": "detail.html?type=fantasies&id=1962-fiat-600-hayabusa",
+  "tags": ["Fiat", "600", "1962", "Hayabusa", "Supercharged", "Halftone", "Ligurian Coast", "Il Lungo"],
+  "specifications": {
+    "platform": "1962 Fiat 600 Custom, chopped 1 inch: the cute little car an unreasonable engine went looking for.",
+    "engine": "Suzuki Hayabusa inline-four, stroked to 1,507cc and supercharged. The displacement is the catalog 3mm-over, 5mm-stroke stroker combination, rated past 240 hp before boost.",
+    "output": "About 300 WHP, a conservative rung for the combination: bolt-on Rotrex supercharger kits for this engine are rated at 300 to 360 hp at the wheel.",
+    "transmission": "A repackaged car transaxle in the pattern the Hayabusa aftermarket already sells: the 6-speed sequential, with a reverse gear and a limited-slip differential added for car duty.",
+    "suspension": "Short/long-arm (SLA) double-wishbone suspension.",
+    "performance": "1.35g lateral acceleration. The number is the commitment: if it takes flares and lowering to reach it when the design nears project stage, that is what the car gets.",
+    "character": "Feral. Riding a wildcat: a cat's maneuverability, fun that runs active to violent, and no McLaren-style refinement anywhere in it.",
+    "finish": "Halftone dot livery in the colors of the Italian flag. The dots are the pixels.",
+    "name": "Pixels, named on 2026-10-20: a halftone image is built out of dots, and dots are pixels.",
+    "setting": "A curvy road on the Ligurian coast, a town and what looks like an impressive old Roman bridge in the background: a romantic, fun Italian setting, chosen because the curves exist to really drive the car.",
+    "purpose": "A road car built around one sentence: hey, that would be fun. Not a race car, and nobody is making grocery runs in it.",
+    "status": "Fantasy: an engine-first design study, verified against the real Hayabusa car-conversion aftermarket. Fitment details stay open until the design gets close to becoming a project.",
+    "dateAdded": "2026-10-18T16:55:00"
   },
+  "narrative": [
+    "Pixels starts with an engine, the way the Fireball does. At a car show, my buddy got excited over a motorcycle engine in a Mini, and the engine was, I believe, a Hayabusa. I like weird engine combinations, so I went and investigated the Hayabusa, and the investigation sold it: serious output from the factory, and a real aftermarket behind it, clear down to cradles and repackaged car units built to put that engine into small cars. Which raised the obvious question. If not the Mini, what car? A Fiat turned up about then, and it seemed like a good fit.",
+    "Understand the numbers and the cute falls away. A stroked, supercharged Hayabusa making about 300 horsepower at the wheels, in a car that started life at about 1,300 pounds, is not a refined instrument. Pixels is feral. Present it as riding a wildcat: a cat brings impressive maneuverability to the fight, so the agility here is feline reflex rather than supercar polish, and the fun runs active to violent, nothing like the refined power of a McLaren. It stays a road car. It is not a race car, and nobody is making grocery runs in it a few days a week.",
+    "The specification is not hand-waving, either. The 1,507cc displacement is a catalog stroker combination for the Hayabusa, three millimeters over and five millimeters of stroke, rated past 240 horsepower before boost. Bolt-on Rotrex supercharger kits for the engine are rated at 300 to 360 horsepower at the wheel, so Pixels at about 300 is running a conservative tune, not a hopeful one. The transmission follows the repackaged car units the aftermarket already builds: the Hayabusa six-speed sequential, with a reverse gear and a limited-slip differential added for car duty. The 1.35g on the skidpad is the commitment the rest of the car answers to. If reaching it takes flares and lowering when the design gets close to a project, then flares and lowering are what it gets. The numbers rule. The hardware list can wait.",
+    "The paint came out of the same noodling season as the engine. I was looking at halftone schemes at the time, so the Fiat got the colors of the Italian flag built out of halftone dots, and a halftone dot is a pixel from the printing world: that is where the name lives. For the hero shot I asked for a romantic, fun setting in Italy and got a curvy road on the Ligurian coast, a town in the background, and what looks like an impressive old Roman bridge. The curves are the point. That road exists to really drive the car, and driving it is the whole fantasy: a cute little car, an unreasonable engine, and a wildcat underneath. Related design study: see <a href=\"detail.html?type=fantasies&id=il-lungo-fiat\">Il Lungo: Stretched Fiat Paint Experiment</a>, the same Italian proportions stretched long."
+  ],
+  "gallery": [
+    {"url": "Fantasies/62 Fiat 600 halftone flag colors on a fantasy Ligurian coast.jpg", "caption": "Pixels — Halftone flag colors on a fantasy Ligurian coast."},
+    {"url": "Fantasies/62 Fiat 600.jpg", "caption": "Pixels — Cornering profile study."},
+    {"url": "Fantasies/62 Fiat 600 halftone flag colors.jpg", "caption": "Pixels — Halftone livery dot pattern detail view."}
+  ],
+  "featured": true
+},
   {
     "id": "1965-valiant-mid-engine",
     "title": "1965 Plymouth Valiant Mid-Engine",
