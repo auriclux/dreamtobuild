@@ -542,3 +542,217 @@ dt {
   border-radius: 6px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
   background-color:
+  background-color: #050608;
+}
+/* ==========================================================================
+   DREAM TO BUILD — MOBILE & TABLET LAYER (added 2026-11-05)
+
+   READ FIRST: Paste this whole block after that closing
+   brace, at the very END of style.css. It changes nothing
+   on desktop: every rule lives inside a width breakpoint, and the desktop
+   wireframe above it stays untouched. To undo, delete this block.
+   Breakpoints: 1024px (small laptop), 860px (tablet), 560px (phone).
+   ========================================================================== */
+
+/* ---------- 1024px and under: gallery 4 -> 3 columns, slimmer rails ---------- */
+@media (max-width: 1024px) {
+
+  #gallery-grid,
+  .card-grid,
+  #detail-gallery,
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  .detail-grid-layout {
+    grid-template-columns: 240px 1fr 220px;
+    gap: 18px;
+  }
+}
+
+/* ---------- 860px and under: stack the stage, gallery 2 columns ---------- */
+@media (max-width: 860px) {
+
+  body {
+    padding: 16px;
+    overflow-x: hidden;
+  }
+
+  /* Upper stage: sidebar stops being a 280px column and becomes a
+     navigation strip across the top; the hero gets the full width. */
+  .main-layout {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .main-layout .sidebar-nav {
+    width: 100% !important;
+    flex-shrink: 1;
+  }
+
+  .sidebar-nav {
+    padding: 12px;
+  }
+
+  /* Nav links and thumbnails become a two-column tap grid */
+  .nav-thumb-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .nav-text-link,
+  .nav-thumb-item {
+    min-height: 48px;
+  }
+
+  /* Detail pages: one column in reading order — nav, story, specs rail */
+  .detail-grid-layout {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  #gallery-grid,
+  .card-grid,
+  #detail-gallery,
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 14px !important;
+  }
+
+  .spotlight-media {
+    height: 300px;
+  }
+}
+
+/* ---------- 560px and under: phones — single column, phone-sized type ---------- */
+@media (max-width: 560px) {
+
+  body {
+    padding: 12px;
+    font-size: 1.05rem;
+    line-height: 1.65;
+  }
+
+  /* Brand bar: the three-word title wraps instead of overflowing */
+  .site-header {
+    padding: 12px 10px;
+    margin-bottom: 16px;
+  }
+
+  .brand-title {
+    flex-wrap: wrap;
+    gap: 6px 10px;
+  }
+
+  .font-dream {
+    font-size: 2.1rem;
+  }
+
+  .font-to {
+    font-size: 1rem;
+  }
+
+  .font-build {
+    font-size: 1.65rem;
+    letter-spacing: 1px;
+  }
+
+  .site-tagline {
+    font-size: 0.92rem;
+  }
+
+  .nav-thumb-list {
+    gap: 8px;
+  }
+
+  .nav-thumb-item img,
+  .nav-thumb-item video {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Hero: shorter frame, caption type sized for the narrow column */
+  .spotlight-media {
+    height: 220px;
+  }
+
+  .spotlight-caption {
+    padding: 14px 16px;
+  }
+
+  .spotlight-caption h2 {
+    font-size: 1.25rem;
+  }
+
+  .spotlight-caption p {
+    font-size: 1.08rem;
+    line-height: 1.6;
+  }
+
+  /* Cards: one per row, full width, image on top */
+  #gallery-grid,
+  .card-grid,
+  #detail-gallery,
+  .gallery-grid {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+
+  .card-image-wrapper,
+  .gallery-thumb-wrapper {
+    height: 200px;
+  }
+
+  .card-body {
+    padding: 14px;
+  }
+
+  .card-summary,
+  .card-body p,
+  .narrative-text {
+    font-size: 1.08rem !important;
+    line-height: 1.65 !important;
+  }
+
+  /* Detail narrative: still generous, fitted to a phone column */
+  #detail-content,
+  #detail-narrative,
+  .detail-narrative,
+  .overview-content,
+  .detail-container p,
+  #detail-narrative p,
+  .detail-body p {
+    font-size: 1.16rem !important;
+    line-height: 1.7 !important;
+  }
+
+  #detail-content h2,
+  #detail-narrative h2,
+  .detail-container h2 {
+    font-size: 1.45rem !important;
+  }
+
+  /* Spec tables scroll sideways inside their own box instead of crushing */
+  table.specs-table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .specifications-block,
+  .spec-list,
+  .spec-item,
+  .spec-label,
+  .spec-value,
+  table.specs-table,
+  .specifications,
+  .tech-specs,
+  dl.spec-details {
+    font-size: 0.98rem;
+  }
+
+  .lightbox-overlay {
+    padding: 8px;
+  }
+}
