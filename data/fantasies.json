@@ -711,5 +711,490 @@
     { "url": "Fantasies/Juke Joint badge 2.jpg", "caption": "The script badge study: the name, in metal, before the car earns it." }
   ],
   "featured": true
+},{
+  "id": "van-nuys-blvd-firebird-caddy",
+  "title": "Van Nuys Blvd Cruisin' Situation",
+  "subtitle": "Omar's Firebird & '63 Caddy Imagined Back in the Day",
+  "category": "Fantasies",
+  "badgeText": "Pure Vision",
+  "badgeType": "badge-fantasy",
+  "summary": "A nostalgic period scene placing Omar's custom Firebird alongside a classic '63 Cadillac cruising Van Nuys Boulevard during the golden era of SoCal street culture.",
+  "thumb": "Fantasies/Firebird on Van Nuys blvd.jpg",
+  "heroImage": "Fantasies/Firebird on Van Nuys blvd.jpg",
+  "thumbnail": "Fantasies/Firebird on Van Nuys blvd.jpg",
+  "detailUrl": "detail.html?type=fantasies&id=van-nuys-blvd-firebird-caddy",
+  "tags": [
+    "Pontiac",
+    "Firebird",
+    "Cadillac",
+    "1963",
+    "Van Nuys",
+    "Cruising",
+    "SoCal",
+    "Double-O Garage"
+  ],
+  "specifications": {
+    "setting": "Van Nuys Boulevard, SoCal",
+    "vehicles": "Omar's Firebird & '63 Cadillac Convertible",
+    "status": "Fantasy Situation Render",
+    "dateAdded": "2026-10-17T16:11:00"
+  },
+  "narrative": [
+    "Rather than a single vehicle build concept, this is a fantasy situation—a period-authentic homage to Wednesday night cruising on Van Nuys Boulevard.",
+    "Captured under the boulevard neon lights, Double-O Garage owner Omar's Firebird rolls alongside a low-slung '63 Cadillac, recreating the peak era of South Bay and San Fernando Valley cruising history."
+  ],
+  "gallery": [
+    "Fantasies/Firebird on Van Nuys blvd.jpg"
+  ],
+  "featured": true
+},
+{
+  "id": "1950-plymouth-suburban",
+  "title": "1950 Plymouth Suburban Station Wagon",
+  "subtitle": "Early All-Steel Wagon Lowrider & Custom Concept",
+  "category": "Fantasies",
+  "badgeText": "Pure Vision",
+  "badgeType": "badge-fantasy",
+  "summary": "An exploratory design concept reviving Plymouth's iconic 1950 all-steel 2-door wagon with slammed stance, custom brightwork, and modern proportions.",
+  "thumb": "Fantasies/50 Plymouth Suburban.jpg",
+  "heroImage": "Fantasies/50 Plymouth Suburban.jpg",
+  "thumbnail": "Fantasies/50 Plymouth Suburban.jpg",
+  "detailUrl": "detail.html?type=fantasies&id=1950-plymouth-suburban",
+  "tags": [
+    "Plymouth",
+    "Suburban",
+    "Wagon",
+    "1950",
+    "Custom",
+    "Restomod",
+    "Steel Wagon"
+  ],
+  "specifications": {
+    "year": "1950",
+    "make": "Plymouth",
+    "model": "Suburban 2-Door Station Wagon",
+    "engine": "Custom Crate Powertrain",
+    "suspension": "Air Ride / Bagged Low Stance",
+    "status": "Render Concept Study",
+    "dateAdded": "2026-10-17T15:15:00"
+  },
+  "narrative": [
+    "The 1950 Plymouth Suburban was a pioneer in American automotive history as one of the first all-steel station wagons brought to market.",
+    "This fantasy concept reimagines the classic 2-door wagon silhouette with modern air suspension geometry, smoothed body contours, and a street-cruiser stance while honoring its vintage chrome grille and fastback roofline."
+  ],
+  "gallery": [
+    "Fantasies/50 Plymouth Suburban.jpg"
+  ],
+  "featured": true
+},
+{
+  "id": "1969-chevrolet-suburban",
+  "title": "1969 Chevrolet Suburban Custom Hauler",
+  "subtitle": "3-Door Action Line Pro-Touring & Stance Study",
+  "category": "Fantasies",
+  "badgeText": "Pure Vision",
+  "badgeType": "badge-fantasy",
+  "summary": "A high-concept styling study on the legendary 1969 Action Line 3-door Suburban, featuring tucked big wheels, clean bodywork, and modern muscle attitude.",
+  "thumb": "Fantasies/69 Suburban.jpg",
+  "heroImage": "Fantasies/69 Suburban.jpg",
+  "thumbnail": "Fantasies/69 Suburban.jpg",
+  "detailUrl": "detail.html?type=fantasies&id=1969-chevrolet-suburban",
+  "tags": [
+    "Chevrolet",
+    "Suburban",
+    "1969",
+    "C10",
+    "Action Line",
+    "3-Door",
+    "Pro-Touring"
+  ],
+  "specifications": {
+    "year": "1969",
+    "make": "Chevrolet",
+    "model": "Suburban 3-Door",
+    "engine": "Forced Induction V8",
+    "suspension": "Custom Drop Chassis / Coilovers",
+    "status": "Render Concept Study",
+    "dateAdded": "2026-10-17T15:14:00"
+  },
+  "narrative": [
+    "Built on the unique 1967-1972 C10/C20 Action Line 3-door body style (one door on the driver side, two on the passenger side), the 1969 Suburban remains an iconic utility canvas.",
+    "This study examines slamming the heavy-duty hauler over oversized forged wheels, shaving trim for ultra-clean flanks, and delivering pure street-hauler presence."
+  ],
+  "gallery": [
+    "Fantasies/69 Suburban.jpg"
+  ],
+  "featured": true
+},
+{
+  "id": "wicked-j-gtr",
+  "title": "Wicked J GTR Concept",
+  "subtitle": "1951 Henry J TDI Transverse Track Weapon",
+  "category": "Fantasies",
+  "badgeText": "Pure Vision",
+  "badgeType": "badge-fantasy",
+  "summary": "A radical track-focused restomod concept dropping a high-output 1.9L TDI turbodiesel and 02M 6-speed transmission into a flared 1951 Henry J shell.",
+  "thumb": "Fantasies/Henry J striped.png",
+  "heroImage": "Fantasies/Henry J striped.png",
+  "thumbnail": "Fantasies/Henry J striped.png",
+  "detailUrl": "detail.html?type=fantasies&id=wicked-j-gtr",
+  "tags": [
+    "Kaiser",
+    "Henry J",
+    "TDI",
+    "VW 02M",
+    "6-Speed",
+    "GTR",
+    "Track Weapon",
+    "Turbo Diesel"
+  ],
+  "specifications": {
+    "year": "1951",
+    "make": "Kaiser-Frazer",
+    "model": "Henry J GTR",
+    "engine": "1.9L TDI Turbodiesel (High Boost)",
+    "transmission": "VW 02M 6-Speed Manual",
+    "chassis": "Custom Tube Space Frame w/ Track Geometry",
+    "status": "Render Concept Study",
+    "dateAdded": "2026-10-16T17:10:00"
+  },
+  "narrative": [
+    "The Wicked J GTR explores taking one of America's original economy compacts—the 1951 Henry J—and transforming it into an ultra-agile, high-torque track beast.",
+    "Underneath the aggressively widened fenders sits a tuned 1.9L TDI turbodiesel engine backed by a VW 02M 6-speed manual transmission, offering extreme low-end torque and bulletproof gearing in a featherweight chassis.",
+    "Featured here in two distinct visual directions: an iconic classic racing-striped livery and a high-visibility Toxic track specification."
+  ],
+  "gallery": [
+    {
+      "url": "Fantasies/Henry J striped.png",
+      "caption": "Wicked J GTR — Heritage Motorsport Livery with dual center stripes and aggressively radiused wheel arches."
+    },
+    {
+      "url": "Fantasies/Henry J toxic.png",
+      "caption": "Wicked J GTR — Toxic Green Track Spec showcasing maximum aero stance and wide-bore side exhaust setup."
+    }
+  ],
+  "featured": true
+},
+{
+  "id": "1939-ford-coe-rv",
+  "title": "1939 Ford COE Carnivore RV Restomod",
+  "subtitle": "Supercharged 5.2L Long-Haul Overland Hauler",
+  "category": "Fantasies",
+  "badgeText": "Pure Vision",
+  "badgeType": "badge-fantasy",
+  "summary": "A 1939 Ford Cab-Over-Engine RV restomod powered by a supercharged 5.2L Carnivore V8 (720 hp / 640 lb-ft) and 10R140 10-speed transmission, engineered specifically for high-speed desert blasts and steep mountain passes.",
+  "thumb": "Fantasies/1939 Ford COE RV.jpg",
+  "heroImage": "Fantasies/1939 Ford COE RV.jpg",
+  "thumbnail": "Fantasies/1939 Ford COE RV.jpg",
+  "detailUrl": "detail.html?type=fantasies&id=1939-ford-coe-rv",
+  "tags": [
+    "Ford",
+    "COE",
+    "1939",
+    "RV",
+    "Carnivore V8",
+    "Supercharged",
+    "10R140",
+    "Restomod",
+    "Overland"
+  ],
+  "specifications": {
+    "year": "1939",
+    "make": "Ford",
+    "model": "COE Custom RV Restomod",
+    "engine": "Supercharged 5.2L Carnivore V8 (720 hp / 640 lb-ft)",
+    "transmission": "Ford 10R140 TorqShift 10-Speed Automatic",
+    "chassis": "Custom Boxed Chassis w/ IFS & Coilovers",
+    "status": "Render Concept Study",
+    "dateAdded": "2026-10-11T16:40:00"
+  },
+  "narrative": [
+    "Forged from the bones of a 1939 Ford COE, the heart of this restomod is Ford's supercharged 5.2-liter Carnivore V8 delivering 640 lb-ft of torque and 720 horsepower managed by Ford's heavy-duty 10R140 TorqShift 10-speed automatic transmission, delivering lightning-fast gear changes and relentless acceleration without missing a beat under load.",
+    "Riding on a custom boxed chassis fitted with independent front suspension and adjustable coil-over shocks, the rig is built for effortless highway cruising and confident mountain ascents. It is spec'd directly for purpose-driven long-haul runs out of Los Angeles: effortlessly holding pace during high-speed desert blasts to Las Vegas, tackling the steep grade and sub-zero conditions on ski trips up to Mammoth, or carving through the sweepers along Highway 395 and the Pacific Coast Highway. Engineering precision meets raw, unstoppable capability."
+  ],
+  "gallery": [
+    "Fantasies/1939 Ford COE RV.jpg"
+  ],
+  "featured": true
+},
+{
+  "id": "torino-talladega-transaxle",
+  "title": "The Talladega Transaxle: '69 Mid-Engine Concept",
+  "subtitle": "The Cancelled '69 Supercar Study",
+  "category": "Fantasies",
+  "badgeText": "Pure Vision",
+  "badgeType": "badge-fantasy",
+  "summary": "A radical, mid-engine concept fusing Ford's low-drag 1969 Torino Talladega aero nose with a mid-mounted 427 Cammer SOHC V8 and GT40 Hewland transaxle.",
+  "thumb": "Fantasies/1969 Torino Talledega Supercar dynamic.jpg",
+  "heroImage": "Fantasies/1969 Torino Talledega Supercar dynamic.jpg",
+  "thumbnail": "Fantasies/1969 Torino Talledega Supercar dynamic.jpg",
+  "detailUrl": "detail.html?type=fantasies&id=torino-talladega-transaxle",
+  "tags": [
+    "Ford",
+    "Torino",
+    "Talladega",
+    "Cammer",
+    "427 SOHC",
+    "Mid-Engine",
+    "Hewland",
+    "GT40"
+  ],
+  "specifications": {
+    "year": "1969",
+    "make": "Ford",
+    "model": "Torino Talladega T-Transaxle",
+    "engine": "7.0L (427 ci) Cammer SOHC V8 (Mid-Ship)",
+    "transaxle": "Hewland LG 4-Speed Manual",
+    "status": "Alternate History Concept Study",
+    "dateAdded": "2026-10-11T16:09:00"
+  },
+  "narrative": [
+    "HISTORICAL DISCLAIMER: This vehicle concept, narrative, and historical background are entirely fictional. Project 69-M is an alternate-history design study exploring a what if crossover between Ford's NASCAR aero program and Le Mans mid-engine architecture.",
+    "This single prototype is all that remains of Project 69-M, Ford's radical, black-budget attempt to rewrite the rules of both NASCAR and the street. The concept was a direct fusion: take the low-drag, extended nose and flush grille of the homologation-bound 1969 Torino Talladega and mount it on a mid-engine chassis.",
+    "While the race cars would always be front-engine (NASCAR rules demanded it), Ford planned to sell 500 mid-engine T-Transaxles as a production vehicle, creating an exotic aero-king to beat Ferrari on the street and Dodge on the high banks. The large mid-body intakes, seen on the production C8 Corvette-like profile, were designed to feed a planned massive mid-ship powertrain.",
+    "To explain its mid-engine architecture, Ford engineers created the ultimate what if setup: They took a race-ready 7.0-liter (427 cu in) Ford Cammer SOHC V8, but instead of mounting it in the front, they reversed it, mounting it directly behind the driver. The original Ford Toploader transmission was scrapped. Instead, the Cammer was mated to a custom-cast, heavy-duty Hewland LG transaxle—the same reliable box used in Ford's GT40 program.",
+    "This '69 prototype, thus, was not just a styling exercise; it was an authentic integration of Ford's two greatest performance eras, pairing the high-drag oval-track nose with the mid-ship transaxle of Le Mans. The modern, 5-spoke alloys and updated side intakes were added decades later during a modern sympathetic restoration, preparing it for a single, high-speed test run on the gravel road of the skunkworks' private facility."
+  ],
+  "gallery": [
+    "Fantasies/1969 Torino Talledega Supercar dynamic.jpg"
+  ],
+  "featured": true
+},
+{
+  "id": "blown-gremlin",
+  "title": "Blown '70 Gremlin",
+  "subtitle": "Bridge Donut & Blower Study",
+  "category": "Fantasies",
+  "badgeText": "Pure Vision",
+  "badgeType": "badge-fantasy",
+  "summary": "This was a quick study of a '70 Gremlin doing donuts on the 7th Street Bridge. SBC with a 6-71.",
+  "thumb": "Fantasies/blown-gremlin.png",
+  "heroImage": "Fantasies/blown-gremlin.png",
+  "thumbnail": "Fantasies/blown-gremlin.png",
+  "detailUrl": "detail.html?type=fantasies&id=blown-gremlin",
+  "tags": [
+    "AMC",
+    "Gremlin",
+    "SBC",
+    "6-71",
+    "Supercharged",
+    "Street Concept"
+  ],
+  "specifications": {
+    "year": "1970",
+    "make": "AMC",
+    "model": "Gremlin",
+    "engine": "SBC w/ 6-71 Blower",
+    "suspension": "Street / Drag Stance",
+    "status": "Render Concept",
+    "dateAdded": "2026-09-27T12:00:00"
+  },
+  "narrative": [
+    "This was a quick study of a '70 Gremlin doing donuts on the 7th Street Bridge. SBC with a 6-71.",
+    "A short-wheelbase riot featuring high-rise forced induction, street-drag rake, and aggressive rubber."
+  ],
+  "gallery": [
+    "Fantasies/blown-gremlin.png"
+  ],
+  "featured": true
+},
+{
+  "id": "nimr-camaro-trophy-truck",
+  "title": "Nimr: Mid-Engine Camaro Trophy Truck",
+  "subtitle": "Extreme Off-Road Performance Fusion",
+  "category": "Fantasies",
+  "badgeText": "Pure Vision",
+  "badgeType": "badge-fantasy",
+  "summary": "A mid-engine, trophy-truck-based concept merging a Camaro body shell with extreme off-road capability.",
+  "thumb": "Fantasies/nimr-camaro.jpg",
+  "heroImage": "Fantasies/nimr-camaro.jpg",
+  "thumbnail": "Fantasies/nimr-camaro.jpg",
+  "detailUrl": "detail.html?type=fantasies&id=nimr-camaro-trophy-truck",
+  "tags": [
+    "Chevy",
+    "Camaro",
+    "Mid-Engine",
+    "Trophy Truck",
+    "Offroad"
+  ],
+  "specifications": {
+    "year": "1969",
+    "make": "Chevrolet",
+    "model": "Camaro",
+    "engine": "Mid-Engine V8",
+    "suspension": "Long-Travel Trophy Truck",
+    "status": "Render Concept",
+    "dateAdded": "2026-09-27T12:00:00"
+  },
+  "narrative": [
+    "A mid-engine, trophy-truck-based concept merging a classic Camaro shell with extreme off-road capability.",
+    "Built over an all-terrain tube chassis designed to soak up desert high-speed runs while keeping muscle car proportions."
+  ],
+  "gallery": [
+    "Fantasies/nimr-camaro.jpg"
+  ],
+  "featured": true
+},
+{
+  "id": "evans-ride-riviera",
+  "title": "Evan's Ride: Boattail Riviera Concept",
+  "subtitle": "Modern Tailored Muscle & Sweeping Lines",
+  "category": "Fantasies",
+  "badgeText": "Pure Vision",
+  "badgeType": "badge-fantasy",
+  "summary": "Design explorations centered around the iconic Boattail Buick Riviera chassis.",
+  "thumb": "Fantasies/Evans Ride in Charcoal Mist with a custom camel interior.jpg",
+  "heroImage": "Fantasies/Evans Ride in Charcoal Mist with a custom camel interior.jpg",
+  "thumbnail": "Fantasies/Evans Ride in Charcoal Mist with a custom camel interior.jpg",
+  "detailUrl": "detail.html?type=fantasies&id=evans-ride-riviera",
+  "tags": [
+    "Buick",
+    "Riviera",
+    "Boattail",
+    "Concept",
+    "Classic",
+    "Le Marteau"
+  ],
+  "specifications": {
+    "year": "1971",
+    "make": "Buick",
+    "model": "Riviera",
+    "engine": "Concept Powertrain",
+    "suspension": "Custom Lowered Stance",
+    "status": "Render Concept",
+    "dateAdded": "2026-09-27T12:00:00"
+  },
+  "narrative": [
+    "Design explorations centered around the iconic Boattail Buick Riviera chassis.",
+    "Highlighting the extreme rear fastback profile and boat-tail decklid contouring with aggressive fitment and refined brightwork."
+  ],
+  "gallery": [
+    {
+      "url": "Fantasies/Evans Ride in Charcoal Mist with a custom camel interior.jpg",
+      "caption": "Evan's Ride in Charcoal Mist with a custom camel interior."
+    },
+    {
+      "url": "Fantasies/evans-ride-rivvy-1.jpg",
+      "caption": "Evan's Ride — Boattail Riviera Concept primary profile view."
+    },
+    {
+      "url": "Fantasies/Le Marteau.jpg",
+      "caption": "Evan's Ride — Le Marteau styling and attitude study."
+    },
+    {
+      "url": "Fantasies/Rivvy and Caprice.jpg",
+      "caption": "Rivvy and Caprice — Sunset coastal stance exploration."
+    }
+  ],
+  "featured": true
+},
+{
+  "id": "fabian-buick-wagon",
+  "title": "Fabian's Buick Estate Wagon",
+  "subtitle": "Lowrider & Custom Stance Exploration",
+  "category": "Fantasies",
+  "badgeText": "Pure Vision",
+  "badgeType": "badge-fantasy",
+  "summary": "LS3 swap, bagged stance, shaved suicide doors, and dual custom/lowrider paint directions.",
+  "thumb": "Fantasies/fabian-buick-wagon-custom.jpg",
+  "heroImage": "Fantasies/fabian-buick-wagon-custom.jpg",
+  "thumbnail": "Fantasies/fabian-buick-wagon-custom.jpg",
+  "detailUrl": "detail.html?type=fantasies&id=fabian-buick-wagon",
+  "tags": [
+    "Buick",
+    "Wagon",
+    "LS3",
+    "Bagged",
+    "Suicide Doors",
+    "Lowrider"
+  ],
+  "specifications": {
+    "year": "1970",
+    "make": "Buick",
+    "model": "Estate Wagon",
+    "engine": "LS3 V8",
+    "suspension": "Air Ride / Bagged",
+    "status": "Render Concept",
+    "dateAdded": "2026-09-27T12:00:00"
+  },
+  "narrative": [
+    "LS3 swap, bagged stance, shaved suicide doors, and dual custom/lowrider paint directions.",
+    "A high-concept exploration into long-roof styling, blending classic Buick cruiser lines with modern air-ride geometry and striking custom paint schemes."
+  ],
+  "gallery": [
+    {
+      "url": "Fantasies/fabian-buick-wagon-custom.jpg",
+      "caption": "Fabian's Buick Estate Wagon — Custom paint study."
+    },
+    {
+      "url": "Fantasies/fabian-buick-wagon-urban.jpg",
+      "caption": "Fabian's Buick Estate Wagon — Urban lowrider street view."
+    }
+  ],
+  "featured": true
+},
+{
+  "badgeText": "Pure Vision",
+  "badgeType": "badge-fantasy",
+  "category": "Fantasies",
+  "detailUrl": "detail.html?type=fantasies&id=ariel-jaguar-mark-ix",
+  "featured": true,
+  "gallery": [
+    {
+      "url": "Fantasies/Ariel - hero Hearst Castle.jpg",
+      "caption": "Ariel at speed on Highway 1 below Hearst Castle at dawn: the landfall, open road, California, and wealth in one frame."
+    },
+    {
+      "url": "Fantasies/Ariel - finished studio.jpg",
+      "caption": "Ariel finished: studio front three-quarter, clipper livery, ruddy-tinted forged twenties, lowered on bags."
+    },
+    {
+      "url": "Fantasies/Ariel - 1960 Jaguar Mark IX.jpg",
+      "caption": "The donor car in Redondo Beach, as found."
+    }
+  ],
+  "heroImage": "Fantasies/Ariel - hero Hearst Castle.jpg",
+  "id": "ariel-jaguar-mark-ix",
+  "narrative": [
+    "This one starts with a car I have not bought. A 1960 Jaguar Mark IX turned up in Redondo Beach, factory right-hand drive, black on black, factory sunroof, the complete original 3.8 and automatic still in it, standing at the curb with its headlamps out like a dowager who has mislaid her spectacles. It is a fantasy, and a fantasy can be built all the way.",
+    "The big Marks were saloons, and a saloon, properly understood, is a private room that moves. Jaguar sold Grace, Space, and Pace, and the stock car delivers the first two beautifully and the third in the manner of 1960, which is to say eventually. The fantasy keeps the room exactly as it is, picnic tables in the seatbacks and all, and attends to the pace.",
+    "Three affordable V12s presented themselves, and the choice was made on character as much as engineering. The Mercedes M120 is the most modern core, the BMW M73 the most dependable as bought, but the Jaguar's own V12 is the narrowest of the three, has the deepest aftermarket in the world, and suffers from failure modes that are all ancillary: heat, hoses, ignition, management, every one of them with a published cure. A long, narrow twelve in a long, narrow engine bay. The romantic pick and the defensible pick turned out to be the same engine.",
+    "So the V12 is stroked to 6.1 litres on its stock bore, forged pistons, flat-head architecture, and two small turbos exiled to the front wings where their heat cannot cook the bay, blowing 10 psi through a charge cooler hidden behind that tall grille. The result is about 675 hp and 740 lb-ft arriving as a plateau rather than a peak, because a saloon should waft first and strike second. A built 4L80E does the shifting, independent suspension minds both ends, new discs as big as the wheels will accept do the stopping, and the gearing is chosen so the car cruises at highway speed sitting on the torque peak in third, direct drive, ready to climb a grade or leave a light without consulting the overdrive. The wheels are forged three-piece twenties, centres tinted toward copper, the car lowered on air bags until the great hull settles into something sleeker, the rubber tucked into the wells like a secret kept politely.",
+    "The name took the longest of anything on this card. I have some sympathy for the men who named racing ships, because they had the same problem: a fast thing that must also behave in company. In 1938 a young Eric Newby signed aboard the four-masted barque Moshulu for the last of the grain races out of Australia, and wrote the best book ever made from inside that world, funny and unsentimental and exact about what a ship is. The tea clippers were gone by his time, but the standard he describes is theirs: speed was a cargo, dignity was the ballast. Ariel was a tea clipper of 1865, built by Robert Steele of Greenock, reckoned by her contemporaries the most beautiful of the fleet, and famous for a race in 1866 when she and Taeping came home from China 14,000 miles and docked twenty minutes apart after 99 days at sea. She was not the overlord of the clippers. She was the one inspired by dignity, and competently fast, first home in 1868. That is precisely the brief for this car. Her name carries a second cargo, buried where only the curious dig: Ariel is Hebrew for Lion of God, the archangel set over the earth and its creatures, centuries before Shakespeare borrowed the name for his airy spirit. A lion is a cat. This cat is a Jaguar. The clipper, the spirit, and the lion were travelling together all along.",
+    "Her livery came off a model of the ship and is a working vessel's uniform translated into deep lacquer. Black topsides above the waterline, copper sheathing below it, and a pale sheer stripe at the join: so the Jaguar wears warm brown-black above its swage line, a ruddy copper below it, evolved into an elegant automotive finish rather than raw hull metal, and a stripe between them in a very slight rose cream. Inside, the copper comes aboard as leather, the famous reddish tan the Italians simply call Cuoio, with cream piping in the stripe's own rose cream and the picnic-table wood warm alongside. The honest numbers for the whole arrangement: nought to sixty in the mid fours, the quarter in the high elevens at about 120, nine-tenths of a g on street rubber, and understeer when dignity finally runs out, because 4,550 pounds of saloon should bow before it misbehaves. A gentleman's rocket, crewed by a lion, named for the most beautiful ship in the tea trade."
+  ],
+  "specifications": {
+    "brakes": "New discs all around, as big as will fit",
+    "car": "1960 Jaguar Mark IX saloon, the Redondo Beach car: factory right-hand drive, factory sunroof, complete original 3.8 and automatic, clean title",
+    "dateAdded": "2026-11-07T12:00:00",
+    "engine": "Jaguar V12 stroked to 6.1 litres on the stock 90 mm bore with an 80 mm crank, flat-head architecture, forged pistons at about 8.5:1, aftermarket rods, standalone engine management",
+    "frontSuspension": "Custom SLA double-wishbone front suspension",
+    "gearing": "Final drive follows the wheel and tyre choice, with a stated intent: highway speed should sit at the torque peak in 3rd gear, direct, not overdrive, for a good leave, hill climbing, and respectable times on the open road. On the chosen 28.7 in tyre, a final drive in the 3.55 to 3.73 window puts 75 mph between about 3,100 and 3,300 rpm in 3rd, inside the plateau",
+    "induction": "Twin small turbos mounted in the front wings at 10 psi, chosen to exile turbo heat from the engine bay; charge cooler packaged behind the Mark IX's tall grille",
+    "interior": "The saloon as a private room: ceremony, enclosure, and picnic tables in the seatbacks. The leather is the famous copper-red luxury hide tone, Ferrari's Cuoio and Hermès' fauve family: a rich reddish-copper tan matched to the ruddy lower body, carried across seats and door cards and set off with cream piping in the same slight rose cream as the body's dividing stripe. Black retreats to the dash top and headliner, and the seatback wood stays in the same warm family (Scot's calls, 2026-11-07)",
+    "livery": "Clipper two-tone from the tea clipper Ariel, in deep lacquer: warm brown-black gloss above the swage line (roof, pillars, bonnet, upper doors and wings) over ruddy copper below it (lower doors, sills, lower wings and quarters), the copper a morphed, elegant automotive finish rather than raw hull metal, separated by a thin stripe in a very slight rose cream",
+    "name": "Ariel, the tea clipper of 1865: not the overlord of the fleet, but the one inspired by dignity and competently fast, first home in the 1868 tea season after her photo-finish race of 1866",
+    "performance": "Estimated 0 to 60 in 4.4 to 4.8 seconds; quarter mile 11.6 to 12.1 at 117 to 121 mph on street tyres, about 11.2 to 11.5 on drag radials; skidpad 0.85 to 0.90 g on 300-treadwear street rubber, 0.95 to 1.00 g on track rubber; limit behaviour is dignified understeer",
+    "power": "An estimated 675 hp and 740 lb-ft, with the torque plateau running from about 2,400 to 4,800 rpm (assistant's estimates, not promises)",
+    "rearSuspension": "Independent rear suspension on a hardened cradle; the centre section (hardened Ford 8.8 or an aftermarket 9-inch IRS) is an engineering detail for build time, since both stand up to the load at this boost",
+    "status": "Fantasy, complete as a card. The car itself is not bought.",
+    "transmission": "Built GM 4L80E automatic, the gearbox Jaguar itself paired with the 6.0 V12, with lockup converter and 0.75 overdrive",
+    "wheels": "Forged three-piece wheels in the Forgeline pattern, the consensus choice on big-car restomod builds: 20 x 8.5 in front and 20 x 10 in rear, medium-profile rubber (245/45 front, 275/40 rear, overall diameter about 28.7 in, close to stock) tucked into the wells, the car lowered on air bags to a sleeker ride height. Centers are tinted toward the ruddy copper of the lower body (Scot's call, 2026-11-07), polished lips",
+    "suspension": "SLA front and IRS rear (see frontSuspension and rearSuspension), ride height on air bags, lowered from stock for a sleeker line"
+  },
+  "subtitle": "1960 Jaguar Mark IX, Twin-Turbo V12 Saloon",
+  "summary": "A 1960 Jaguar Mark IX saloon from Redondo Beach, factory right-hand drive, black on black with a factory sunroof, reimagined around a 6.1-litre stroker Jaguar V12 with twin turbos in the front wings. About 675 hp in a private room with picnic tables, painted like the tea clipper she is named for: warm black over ruddy copper.",
+  "tags": [
+    "Ariel",
+    "Jaguar",
+    "Mark IX",
+    "V12",
+    "Twin Turbo",
+    "Tea Clipper",
+    "Saloon"
+  ],
+  "thumb": "Fantasies/Ariel - hero Hearst Castle.jpg",
+  "thumbnail": "Fantasies/Ariel - hero Hearst Castle.jpg",
+  "title": "Ariel"
 }
 ]
