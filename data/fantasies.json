@@ -1106,11 +1106,11 @@
 {
   "id": "evans-ride-riviera",
   "title": "Evan's Ride: Boattail Riviera Concept",
-  "subtitle": "1971 Boattail Riviera, Turbo 455, Charcoal Mist over Camel",
+  "subtitle": "1971 Boattail Riviera, 455 with FiTech, Charcoal Mist over Camel",
   "category": "Fantasies",
   "badgeText": "Pure Vision",
   "badgeType": "badge-fantasy",
-  "summary": "Evan's dream car since high school, a 1971 boattail Riviera, in the colors he picked himself: Charcoal Mist over a custom camel interior. His 455 gets a turbo, a bottle, and the FiTech he was actually offered, on big Forgelines, lowered on bags.",
+  "summary": "Evan's dream car since high school, a 1971 boattail Riviera, in the colors he picked himself: Charcoal Mist over a custom camel interior. The Buick 455 stays, with a FiTech on it, on big Forgelines, lowered on bags. The turbo and the bottle were Scot's separate daydream, and this card now says so.",
   "thumb": "Fantasies/Evans Ride in Charcoal Mist with a custom camel interior.jpg",
   "heroImage": "Fantasies/Evans Ride in Charcoal Mist with a custom camel interior.jpg",
   "thumbnail": "Fantasies/Evans Ride in Charcoal Mist with a custom camel interior.jpg",
@@ -1120,30 +1120,29 @@
     "Riviera",
     "Boattail",
     "455",
-    "Turbo",
     "FiTech",
     "Charcoal Mist",
     "Le Marteau"
   ],
   "specifications": {
-    "brakes": "Modern disc brakes at all four corners, sized for a boosted big block in a 4,650-pound car",
+    "brakes": "Modern disc brakes at all four corners",
     "car": "1971 Buick Riviera boattail, Evan Jay's dream car since high school; he owned one then, and the shape carries his high school years with it",
     "dateAdded": "2026-09-27T12:00:00",
-    "engine": "Buick 455 V8, turbocharged and FiTech fuel injected, with a nitrous bottle in reserve; the turbo and the bottle were Scot's prescriptions in their text exchange, the FiTech his answer to Evan's own verdict that the 455 was a guzzler",
+    "engine": "Buick 455 V8, kept, with FiTech electronic fuel injection. Evan's own choice, confirmed when Scot asked him directly: the original big block stays in the car, and the FiTech is the cure for his own verdict that the 455 was a guzzler. No turbo, no bottle on this car: those were Scot's prescriptions, and that build is a separate daydream, recorded in the narrative where it belongs",
     "interior": "Custom camel, tailored: Evan's own words on the pairing were that Charcoal Mist with a custom camel interior gets my juices flowing",
     "livery": "Charcoal Mist, from the 1972 Buick factory color chart Evan sent: deep charcoal gray with the metallic mist in it",
-    "performance": "Estimated 0 to 60 in 4.6 to 5.0 seconds; quarter mile 12.3 to 12.8 at about 112 mph; skidpad about 0.85 g on modern rubber; weight about 4,650 lb with driver",
-    "power": "An estimated 550 hp and 640 lb-ft on boost, roughly 125 hp more on the bottle (assistant's estimates, not promises)",
-    "status": "Fantasy, rebuilt 2026-11-07 with Evan's own words in it. The car is Evan's dream; the specification is Scot's prerogative.",
+    "performance": "Estimated 0 to 60 in about 6 seconds; quarter mile about 14.5 at 98 mph; skidpad about 0.85 g on modern rubber; weight about 4,650 lb with driver",
+    "power": "An estimated 350 hp and 480 lb-ft from the kept 455 on FiTech (assistant's estimates, not promises)",
+    "status": "Fantasy, reconciled 2026-11-08: this card tells the truth about whose build it is. The car is Evan's, the colors and the 455 with FiTech are Evan's choices, and Scot's turbo-and-bottle version is a separate build that does not live on this card.",
     "transmission": "Built GM Turbo 400 automatic",
     "wheels": "Forgeline three-piece forged wheels, 20 x 9 in front and 20 x 10.5 in rear, medium-sidewall rubber (255/45 front, 285/40 rear), the car lowered on air bags until the tires tuck slightly into the fenders"
   },
   "narrative": [
     "Some cars on this site are mine. This one is Evan's, and it has been his since high school. The boattail Riviera is the dream ride he never got over, partly because he had one back then, and a car you own at seventeen does not stay a car. It becomes the container for everything that happened around it, and Evan's memory of that Riviera carries a full load of high school shenanigans. I file boattail listings for him the way other people forward jokes. This card is the fantasy version of the car he has been describing, in pieces, for decades.",
-    "Evan picked the colors himself, out of a 1972 Buick factory color chart he sent me, and his verdict deserves quoting exactly: Charcoal Mist with a custom camel interior gets my juices flowing. So the car wears a deep charcoal gray with the metallic mist in it, over a camel interior tailored the way a custom shop means it, not the way a 1971 option sheet did. Asked whether the build should be a restoration or a restomod, Evan allowed that he leans toward some non factory upgrades. That sentence is doing a lot of work on this card, because my fantasy card is my prerogative, and the upgrades below go considerably further than some.",
-    "Start with his own complaint. Evan concedes the 455 was a guzzler, and he is right, a stock 1971 455 made its 450 lb-ft and drank like it was proud of it. In our text exchange I prescribed three cures, only one of which addresses the complaint. The FiTech electronic fuel injection is the respectable one: it meters the big block properly, tames the idle, and takes the worst of the guzzling out of cruising. The other two prescriptions were a turbocharger and a bottle of nitrous, which solve the tire consumption problem he also has, by making it dramatically worse. Together they take the 455 to an estimated 550 hp and 640 lb-ft on boost alone, with the bottle adding roughly 125 more for the moments that call for it. A built Turbo 400 handles the arithmetic. Nobody involved in this specification was asked to approve it, which is what a fantasy is for.",
-    "The stance follows the formula that works on big cars, the same words as Ariel because the physics does not care whose name is on the card: big Forgeline three-piece wheels, 20 by 9 in front and 20 by 10.5 behind, rubber with a real medium sidewall rather than a rubber band, the car lowered on air bags until the tires tuck slightly into the fenders. A boattail is a piece of sculpture that happens to have a drivetrain, and the whole car reads as one long sweep from the prow to that tapered tail. The wheels and the drop exist to serve the sweep, filling the arches the way the designers' sketches promised and the production ride height never did.",
-    "The honest numbers: an estimated nought to sixty in the high fours, the quarter in the low twelves at about 112, and around 0.85 g on modern rubber, in a car that weighs about 4,650 pounds with its driver and still cruises like a Riviera, because that is the point. Evan's high school car could do none of this, and it did not need to. It only needed to be a boattail with him in it, at the age when a car is freedom with a key. This one is the grown man's answer to the kid's memory: same shape, same colors he picked himself, every shenanigan preserved, and a turbo where the innocence used to be."
+    "Evan picked the colors himself, out of a 1972 Buick factory color chart he sent me, and his verdict deserves quoting exactly: Charcoal Mist with a custom camel interior gets my juices flowing. So the car wears a deep charcoal gray with the metallic mist in it, over a camel interior tailored the way a custom shop means it, not the way a 1971 option sheet did. Asked whether the build should be a restoration or a restomod, Evan allowed that he leans toward some non factory upgrades. This card takes him at his word, and no further than his word, which brings us to a correction this card owes him.",
+    "The first version of this card carried a turbocharger and a bottle of nitrous on Evan's 455, and both were mine, prescribed over text messages to solve his tire consumption habit by making it worse. The FiTech fuel injection was mine too, offered as the cure for his own complaint, delivered in his words: yup, the 455 was a guzzler. Since then I have asked the man himself, and Evan's answer settles it: he would rather keep the Buick 455, with the FiTech on it, than run any swap or boost program of mine. The reconciliation is the truth. I put this card together, but it is Evan's car, so Evan's build is the one on it: the original big block, kept and properly metered, an estimated 350 hp and 480 lb-ft, in a car that cruises like a Riviera because cruising is what it is for. The turbo and the bottle have not been deleted from the universe. They are a separate build now, a daydream of mine with no claim on the charcoal car, and they can wait for a card of their own.",
+    "What does stay from my side of the drafting table is the stance, because it sits inside Evan's own non factory upgrades and because the formula works on big cars: big Forgeline three-piece wheels, 20 by 9 in front and 20 by 10.5 behind, rubber with a real medium sidewall rather than a rubber band, the car lowered on air bags until the tires tuck slightly into the fenders. A boattail is a piece of sculpture that happens to have a drivetrain, and the whole car reads as one long sweep from the prow to that tapered tail. The wheels and the drop exist to serve the sweep, filling the arches the way the designers' sketches promised and the production ride height never did.",
+    "The honest numbers for Evan's version: an estimated nought to sixty in about six seconds, the quarter in about fourteen and a half at 98, around 0.85 g on modern rubber, and 4,650 pounds of boattail moving the way a big Buick should, quickly and without theater. His high school car could do none of this either, except the part that mattered, which was being a boattail with him in it at the age when a car is freedom with a key. This one is the grown man's answer to the kid's memory: same shape, his colors, his engine, every shenanigan preserved. The innocence stays stock. So does the 455."
   ],
   "gallery": [
     {
