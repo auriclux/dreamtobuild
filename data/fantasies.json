@@ -1036,6 +1036,70 @@
   "featured": true
 },
 {
+  "badgeText": "Pure Vision",
+  "badgeType": "badge-fantasy",
+  "category": "Fantasies",
+  "detailUrl": "detail.html?type=fantasies&id=omars-shop-truck",
+  "featured": false,
+  "gallery": [
+    {
+      "caption": "The finished truck in its natural habitat: a salvage yard the size of a small town, and the only finished thing in it. Omar's whole fleet hides in the stacks as junkers, and at the right edge of the clearing a rusty Ford pickup sits on his GTO.",
+      "url": "Fantasies/1969 GMC Stakebed - salvage yard.jpg"
+    },
+    {
+      "caption": "The fantasy finished: toxic yellow gloss, beefy push bar, portal stance on super-singles, satin black stake sides lettered in Omar's own white on black.",
+      "url": "Fantasies/1969 GMC Stakebed - toxic yellow 3-4.jpg"
+    },
+    {
+      "caption": "The truck as Omar bought it in November 2026: maroon-brown patina, quad lamps, long stake bed, tuck-under liftgate, and a previous life lettered on the mudflaps.",
+      "url": "Fantasies/1969 GMC Stakebed - as found.jpg"
+    }
+  ],
+  "heroImage": "Fantasies/1969 GMC Stakebed - salvage yard.jpg",
+  "id": "omars-shop-truck",
+  "narrative": [
+    "This truck is not mine, and that is the whole point of the card. Omar bought himself a 1969 GMC 2500 stake bed for the shop in November 2026: quad lamps, cab markers, maroon-brown patina, a long stake bed with a tuck-under liftgate, and mudflaps still lettered for a previous life. He believes he is going to use it as a shop truck, and he may be right. My own guess, offered with love, is that nothing changes for a year or so and it serves as a very handsome yard storage locker. Omar's direction with it would be his own, restoration with a lowrider lean. This card is my fantasy for his truck, built at a deliberate distance from everything he would actually do, so it never reads as advice.",
+    "The rules of distance wrote the spec. Omar would pick black or blue, so the truck wears the loudest toxic yellow I could justify, over satin black stake sides. A lowrider goes down, so this one goes up: Volvo C303 portal axles at all four corners, matched reductions, about six to one all in. Portal trucks cannot carry duals, the boxes stack them too far outboard of the hub bearings, so the duals are deleted for wide super-singles on 37-inch rubber. Links and air bags hold the truck at three heights, kneeled for loading, road, and raised, and because the differential clearance comes from the portal geometry rather than the ride height, it kneels for a load without surrendering an inch of clearance underneath.",
+    "The engine was already in the building. Omar has a built 454 big block lying around the shop, so the fantasy borrows it, with a clean-up bore taking it to 460 cubic inches. Chevrolet inches, to be clear, not the Ford engine of the same number. A big block was a factory option class in this truck, so the swap even counts as period manners. On top goes a FiTech Go EFI throttle body, not for the dyno number, which barely moves, but because a carburetor makes its torque on its best day and the FiTech makes it on every day: on grades, leaned over, and after a month of sitting in the yard. The result is an estimated 460 to 500 hp and 520 to 560 lb-ft arriving low and staying, a built 4L80E whose overdrive makes the portal gearing livable at a 2,650 rpm cruise at 65, and an NP205 behind it. Altogether the truck crawls at about 29 to one before the converter multiplies, reaches sixty in about eight seconds, runs the quarter in about sixteen, and tops out near a hundred miles an hour, where aerodynamics files its objection.",
+    "The bed is where the truck earns its keep in the fantasy. The stake sides are sign-painter work on the outside, hand-lettered Double-O Garage script and pinstriping, and only those words. Then the sides fold out flat on their hinges and become counters, their inner faces a durable black wipe-down finish fit for drinks, tools, and plates, and the liftgate lowers behind them as the third side of a platform ring. In one motion the truck becomes a stage, a workbench, and a grandstand. The mudflaps carry the shop name in white script straight on the black rubber, which is Omar's own house style, big disc brakes stand at all four corners as big as will fit, and the cab stays black vinyl, plain as a work truck should be.",
+    "The picture at the top of this card is the fantasy's home address: a salvage yard the size of a small town, endless stacks of other people's finished projects, and this truck the only finished thing in it. Look closer and the yard is stocked with Omar's whole fleet, the Scout and the C10 and the Vista Cruiser and the Econoline in their shared meh blue, the little Yaris, the white Flex riding high on a stack, every one of them weathered down to junk. At the right edge of the clearing a rusty Ford pickup sits squarely on top of his Alpine Blue 1968 GTO. BillyGoat deserved better, which is exactly why it is funny. The real truck will get whatever Omar decides it gets, in his own time, and it will be his. This one is mine."
+  ],
+  "specifications": {
+    "axles": "Volvo C303 portal axles at all four corners, matched reductions, about 6:1 total; differential clearance comes from the portal geometry, so it does not change with ride height",
+    "bed": "Long stake bed with fold-out sides: sign-painter outside (hand-lettered Double-O Garage script and pinstriping, those words only), durable black wipe-down finish inside, the sides folding flat on bottom hinges to become counters. The tuck-under liftgate lowers as a drawbridge, and sides out plus gate down makes a three-sided platform ring",
+    "brakes": "Big disc brakes all around, as big as will fit (Scot's call, 2026-11-07)",
+    "car": "1969 GMC 2500 heavy utility stake bed, Omar's truck, bought 2026-11-06: quad GMC lamps, cab markers, dark maroon-brown patina, long stake flatbed, tuck-under liftgate",
+    "dateAdded": "2026-11-07T16:00:00",
+    "engine": "Chevrolet big-block 454, built, Omar's own spare engine, with a clean-up bore to 460 cu in (Chevrolet inches, not the Ford 460). A big block was a factory option class in this truck (the 396), so the swap is period-family correct",
+    "fuel": "FiTech Go EFI throttle-body injection (Scot's call, 2026-11-07): the peak number barely moves versus a tuned carburetor, and the same torque shows up at angles, at crawl, and after the truck has sat",
+    "interior": "Black vinyl only (Scot's call, 2026-11-07): plain work-truck cab, bench seat, no frills",
+    "livery": "Toxic yellow, the loudest high-visibility yellow available, chosen for distance: Omar would pick black or blue. Stake sides satin black so the white script reads, a yellow and black hazard palette",
+    "mudflaps": "Double-O Garage in white script directly on the black rubber, Omar's own house standard, white on black, no green disc",
+    "performance": "Estimated 0 to 60 in about 8 seconds; quarter mile about 16 seconds; top speed near 100 mph (aerodynamics and gearing); skidpad about 0.68 g, honest for a tall truck; crawl ratio about 29:1 before converter multiplication; cruise about 2,650 rpm at 65 mph in overdrive",
+    "power": "An estimated 460 to 500 hp and 520 to 560 lb-ft, the torque plateau sitting in the cruise band (assistant's estimates, not promises)",
+    "status": "Fantasy, complete as a card. The truck is Omar's and his call; this build exists only here, at deliberate distance from what he would actually do.",
+    "suspension": "Links and air bags: parallel four-link with panhard at the rear, link front with panhard, bags with separate shocks, sway bars at both ends, per-corner height sensing. Three heights: kneeled, road, and raised",
+    "transferCase": "NP205, its passenger-side front output matching the Volvo front differential offset",
+    "transmission": "Built GM 4L80E automatic; the 0.75 overdrive with lockup makes the portal gearing highway-livable",
+    "wheels": "37-inch super-singles all around; the duals are deleted because portal boxes stack dual wheels too far outboard of the hub bearings. Beefy front push bar with tow eyes"
+  },
+  "subtitle": "1969 GMC 2500 Stake Bed on Portal Axles, Against Orders",
+  "summary": "Omar's new shop truck, a patina'd 1969 GMC 2500 stake bed, reimagined in the opposite direction from everything he would do: toxic yellow, Volvo portal axles, his own spare 454 bored to 460 under a FiTech, fold-out sign-painted stake sides, and a home address in a salvage yard full of his own fleet.",
+  "tags": [
+    "Omar",
+    "GMC",
+    "Stake Bed",
+    "Portal Axles",
+    "Big Block",
+    "Double-O Garage",
+    "Shop Truck",
+    "Salvage Yard"
+  ],
+  "thumb": "Fantasies/1969 GMC Stakebed - salvage yard.jpg",
+  "thumbnail": "Fantasies/1969 GMC Stakebed - salvage yard.jpg",
+  "title": "Omar's Shop Truck"
+},
+{
   "id": "evans-ride-riviera",
   "title": "Evan's Ride: Boattail Riviera Concept",
   "subtitle": "Modern Tailored Muscle & Sweeping Lines",
