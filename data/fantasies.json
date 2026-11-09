@@ -312,45 +312,63 @@
     "featured": true
   },
   {
-    "id": "1959-dodge-custom-royal-lancer-dazzle",
-    "title": "1959 Dodge Custom Royal Lancer GT",
-    "subtitle": "Urban Adversarial Dazzle Scheme",
-    "category": "Fantasies",
-    "badgeText": "Pure Vision",
-    "badgeType": "badge-fantasy",
-    "summary": "Parked in front of The Broad Museum on Grand Avenue in downtown Los Angeles, this 1959 Dodge Royal Lancer GT combines forward-facing sweep styling with an urban adversarial dazzle camouflage pattern.",
-    "thumb": "Fantasies/1959 Dodge Custom Royal Lancer in an urban adversarial dazzle scheme.jpg",
-    "heroImage": "Fantasies/1959 Dodge Custom Royal Lancer in an urban adversarial dazzle scheme.jpg",
-    "thumbnail": "Fantasies/1959 Dodge Custom Royal Lancer in an urban adversarial dazzle scheme.jpg",
-    "detailUrl": "detail.html?type=fantasies&id=1959-dodge-custom-royal-lancer-dazzle",
-    "tags": ["Dodge", "Custom Royal Lancer", "1959", "Dazzle Camo", "BMW M57", "Diesel", "The Broad"],
-    "specifications": {
-      "year": "1959",
-      "make": "Dodge",
-      "model": "Royal Lancer GT",
-      "length": "217 in",
-      "wheelbase": "122 in",
-      "engine": "BMW M57 3.0L inline-6 diesel, compound twin-turbocharger system, single 10mm/12mm Stroker CP3 pump, 100%+ oversized injectors",
-      "transmission": "ZF 8-speed automatic",
-      "chassis": "Custom chassis, hidden 6-point DOM roll cage linked to suspension points, custom SLA front wishbones, EPAS rack-and-pinion steering, aftermarket Ford 9\" IRS",
-      "wheels": "20\" wheels with Michelin Pilot Sport 4S tires (275/35R20 front, 315/35R20 rear), tubbed rear wheel arches",
-      "performance": "700 hp, 1,000–1,050 lb-ft torque, ~4,300 lbs curb weight, 0-60 mph in ~3.2 seconds, 1/4-mile in ~10.9 seconds @ 128 mph, ~1.03g skidpad grip",
-      "status": "Render Concept Study",
-      "dateAdded": "2026-10-18T14:15:00"
-    },
-    "narrative": [
-      "Vehicle: 1959 Dodge Royal Lancer GT, 217 in in length, 122 in in wheelbase, custom chassis, hidden 6-point DOM roll cage linked to suspension points, custom SLA front wishbones, EPAS rack-and-pinion steering, aftermarket Ford 9\" IRS, 20\" wheels, Michelin Pilot Sport 4S tires (275/35R20 front, 315/35R20 rear), tubbed rear wheel arches, urban adversarial dazzle scheme.",
-      "Powertrain: BMW M57 3.0L inline-6 diesel, compound twin-turbocharger system, single 10mm/12mm Stroker CP3 pump, 100%+ oversized injectors, ZF 8-speed automatic transmission.",
-      "Performance: 700 hp, 1,000-1,050 lb-ft torque, ~4,300 lbs curb weight, 0-60 mph in ~3.2 seconds, 1/4-mile in ~10.9 seconds @ 128 mph, ~1.03g skidpad grip.",
-      "Setting: Parked on Grand Avenue in downtown Los Angeles, the car sits directly in front of The Broad Museum. The shot captures the building's complete honeycomb facade from ground level to roofline, including the entrance glazing and central oculus window. Adjacent downtown architecture and the curved steel structure of the Walt Disney Concert Hall frame the background."
-    ],
-    "gallery": [
-      {"url": "Fantasies/1959 Dodge Custom Royal Lancer in an urban adversarial dazzle scheme.jpg", "caption": "1959 Dodge Custom Royal Lancer — Primary view at The Broad Museum."},
-      {"url": "Fantasies/1959 Dodge Custom Royal Lancer in an urban adversarial dazzle scheme at the Broad.jpg", "caption": "1959 Dodge Custom Royal Lancer — Architectural context framing."},
-      {"url": "Fantasies/1959 Dodge Custom Royal Lancer in an urban adversarial dazzle scheme profiles.jpg", "caption": "1959 Dodge Custom Royal Lancer — Profile, top-down, and head-on technical layouts."}
-    ],
-    "featured": true
+  "id": "1959-dodge-custom-royal-lancer-dazzle",
+  "title": "1959 Dodge Custom Royal Lancer GT",
+  "subtitle": "Urban Adversarial Dazzle Scheme",
+  "category": "Fantasies",
+  "badgeText": "Pure Vision",
+  "badgeType": "badge-fantasy",
+  "summary": "The paint came first: an urban dazzle livery in search of a car found the fins of a 1959 Dodge Custom Royal Lancer. A compound-turbo BMW diesel answers the car's weight, the engine bay is a jewel box, and the whole piece works against being recognized, spotted, or measured.",
+  "thumb": "Fantasies/1959 Dodge Custom Royal Lancer in an urban adversarial dazzle scheme.jpg",
+  "heroImage": "Fantasies/1959 Dodge Custom Royal Lancer in an urban adversarial dazzle scheme.jpg",
+  "thumbnail": "Fantasies/1959 Dodge Custom Royal Lancer in an urban adversarial dazzle scheme.jpg",
+  "detailUrl": "detail.html?type=fantasies&id=1959-dodge-custom-royal-lancer-dazzle",
+  "tags": [
+    "Dodge",
+    "Custom Royal Lancer",
+    "1959",
+    "Dazzle Camo",
+    "BMW M57",
+    "Diesel",
+    "Fins",
+    "Art"
+  ],
+  "specifications": {
+    "car": "1959 Dodge Custom Royal Lancer, 217 in long on a 122 in wheelbase; the donor car's whereabouts are currently unknown",
+    "chassis": "Custom chassis with a hidden 6-point DOM roll cage linked to the suspension points, custom SLA front wishbones, EPAS rack-and-pinion steering, aftermarket Ford 9-inch independent rear suspension",
+    "dateAdded": "2026-10-18T14:15:00",
+    "engine": "BMW M57 3.0L inline-6 diesel, compound twin-turbocharger system, single 10mm/12mm stroker CP3 pump, 100%+ oversized injectors. The diesel is the answer to the car's weight: the build problem was making a big, heavy car fun, and torque was the tool",
+    "engineBay": "Jewel box presentation: the compound-turbo engine bay finished as an exhibit, with color used to differentiate functions (boost, fuel, cooling, oil, electrics) for those who know how to read it",
+    "livery": "Urban adversarial dazzle camouflage, the livery that started the whole card: the paint came first and the car was chosen to carry it. Dazzle is the confusion component, intended to disguise speed; adversarial works against being recognized, spotted, or measured",
+    "performance": "Estimated, in touring trim: 0 to 60 in 3.7 to 4.2 seconds (traction, not power, sets the launch at this weight); quarter mile about 11.3 to 11.8 at 126 to 129 mph; skidpad 0.95 to 1.00 g; cruise about 1,800 rpm at 75 mph in eighth gear; top speed a drag question on a brick, roughly 160 mph of arithmetic the car will never be asked to use (assistant's estimates, replacing the concept study's claims, at Scot's direction 2026-11-08)",
+    "power": "The hardware at maximum effort is capable of about 700 hp and 1,000 to 1,050 lb-ft; the car as designed is tuned and used in touring trim, an estimated 550 to 600 hp and 850 to 950 lb-ft (assistant's re-analysis, 2026-11-08)",
+    "status": "Fantasy, rewritten 2026-11-08 from Scot's interview. An art piece first and a comfortable touring car second; the images are as rendered and uncurated, and the performance description now matches the touring brief",
+    "transmission": "ZF 8-speed automatic",
+    "wheels": "20-inch wheels with Michelin Pilot Sport 4S tires, 275/35R20 front and 315/35R20 rear, tubbed rear wheel arches"
   },
+  "narrative": [
+    "This one started with the paint. I had a run with the urban dazzle livery, it turns out I simply like it, and I went looking for a car that could carry it. The search ended at a 1959 Dodge Custom Royal Lancer, because the styling and the livery worked out together on sight. Only then did the engineering problem show up: it is a big, heavy car, 217 inches of it on a 122-inch wheelbase, and a big heavy car has to be made fun deliberately or it is just furniture. The answer was a diesel. Everything after that, the driveline, the suspension, the chassis, was matched up to the diesel decision.",
+    "What the '59 brings is fins, and more generally the whole over-the-top styling of that year, and the dazzle needs exactly that. Naval dazzle was never about hiding. It broke up a ship's outline so her speed and heading could not be read, and it needs a surface with something on it to break up. A clean modern shell gives the pattern nothing to do. The fins, the sweep, the chrome exuberance give it a hundred edges to argue with, so the eye gets the confusion and loses the car.",
+    "Underneath sits a BMW M57 3.0-litre diesel, compound twin turbos, a stroker CP3 pump and oversized injectors, breathing through a ZF 8-speed and a Ford 9-inch independent rear, the whole car on a custom chassis with a hidden six-point cage tied into the suspension points. The design brief is a mostly comfortable touring car, and the description on this card now matches what the diesel can actually do in that trim. The hardware at maximum effort is capable of about 700 hp and over 1,000 lb-ft, and the car is tuned and used well inside that, at an estimated 550 to 600 hp and 850 to 950 lb-ft, because a touring car should be able to do its trick all day. What that buys is the pull: 850-plus lb-ft arriving from about 1,800 rpm, a 75 mph cruise at about 1,800 rpm in eighth gear, grades and passes taken in the cruise gear without downshift or drama. The stopwatch claims the old card made are retired. At 4,300 pounds on street tires, Physics sets the launch, so nought to sixty is about 3.7 to 4.2 seconds, the quarter about 11.5 at 128, and the skidpad an honest 0.95 to 1.00 g. It is a brick on tip toe, and the cage and the independent suspension are there to keep the brick composed rather than to pretend it is a scalpel.",
+    "The car is an art piece first, and the engine is part of the art. With the hood up, car people pause, and what they are looking at is a jewel box: the compound-turbo plumbing presented like an exhibit, with color used to differentiate functions for those who know. Boost, fuel, cooling, oil, electrics, each legible by its color to a knowledgeable eye, while everyone else just sees treasure. That is the pairing at the heart of the car: dazzle outside scrambles the reading, order inside rewards it.",
+    "As for the words in the subtitle, they are doing honest work. Dazzle is the confusion component, there to disguise speed. Adversarial is largely a grandiose word, chosen because it sounds intimidating, and I own that. Underneath the theater it keeps its original meaning, to work against: against being recognized, being spotted, being measured. The settings tell the same two-sided story. The Broad appears in one panel of the fold-out because I asked the renderer for a setting angular and sharp to match the car, and a museum of contemporary art is what angular and sharp looks like on Grand Avenue. The hero picture at the top of this card is the renderer choosing otherwise, the car in a downtown alley that looks about a block from Skid Row, and I have never had the chance or the motivation to overrule it. An art piece can have both addresses. This one does, and the diesel under the jewel box can pull it to either, in any scenario, which remains the fun of it."
+  ],
+  "gallery": [
+    {
+      "caption": "The hero portrait as it stands: the car in a downtown alley a block or so from Skid Row. The renderer chose the street; the card keeps it.",
+      "url": "Fantasies/1959 Dodge Custom Royal Lancer in an urban adversarial dazzle scheme.jpg"
+    },
+    {
+      "caption": "One panel of the fold-out: The Broad, chosen when the setting brief was angular and sharp to match the car.",
+      "url": "Fantasies/1959 Dodge Custom Royal Lancer in an urban adversarial dazzle scheme at the Broad.jpg"
+    },
+    {
+      "caption": "Profile, top-down, and head-on layouts: the fins and the sweep are the canvas the dazzle works on.",
+      "url": "Fantasies/1959 Dodge Custom Royal Lancer in an urban adversarial dazzle scheme profiles.jpg"
+    }
+  ],
+  "featured": true
+},
   {
     "id": "white-super-power-wrv",
     "title": "White Super Power WRV",
