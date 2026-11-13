@@ -826,28 +826,6 @@ dt {
     padding: 10px 14px;
   }
 
-  /* --- The existing nav, pinned small to the bottom of the phone --- */
-  .detail-nav {
-    position: fixed;
-    left: 12px;
-    right: 12px;
-    bottom: calc(10px + env(safe-area-inset-bottom, 0px));
-    z-index: 900;
-    display: flex;
-    justify-content: center;
-    pointer-events: none;
-  }
-
-  .detail-nav .back-link {
-    pointer-events: auto;
-    margin-bottom: 0 !important;
-    border-radius: 999px;
-    background-color: rgba(24, 27, 33, 0.92) !important;
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
-  }
-
   /* --- Room at the foot of the page so the fixed pill covers nothing --- */
   body {
     padding-bottom: 76px;
