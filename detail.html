@@ -458,69 +458,13 @@
 
     window.onload = loadDetailPage;
   </script>
-/* ==========================================================================
-   OPTIONAL — FIVE-DESTINATION PILL (needs the HTML below, NOT CSS-only)
+  <nav class="phone-section-nav">
+    <a href="index.html">Home</a>
+    <a href="index.html#projects">Projects</a>
+    <a href="index.html#dreams">Dreams</a>
+    <a href="index.html#fantasies">Fantasies</a>
+    <a href="index.html#about">About</a>
+  </nav>
 
-   1. Add this inside detail.html, just before </body> (or just after
-      the <nav class="detail-nav"> element):
-        <nav class="phone-section-nav">
-          <a href="index.html">Home</a>
-          <a href="index.html#projects">Projects</a>
-          <a href="index.html#dreams">Dreams</a>
-          <a href="index.html#fantasies">Fantasies</a>
-          <a href="index.html#about">About</a>
-        </nav>
-      VERIFY FIRST: only index.html#projects is confirmed working from
-      a detail page (the live Back link uses it). The home sidebar's
-      Dreams / Fantasies / About links are JS-driven, and the index
-      source shows no plain #dreams / #fantasies / #about anchors, so
-      those three hashes may land on the home page without scrolling
-      to the section. Check gallery-loader.js for hash handling before
-      relying on them; if they do not scroll, the pill should link
-      plainly to index.html and let the section be picked there.
-   2. Uncomment the rules below and REMOVE the .detail-nav fixed
-      rules above (two fixed bottom bars would stack).
-      The pill then carries the five destinations; the Back link stays
-      a normal link at the top of the page.
-   ========================================================================== */
-@media (max-width: 560px) {
-  .phone-section-nav {
-    position: fixed;
-    left: 12px;
-    right: 12px;
-    bottom: calc(10px + env(safe-area-inset-bottom, 0px));
-    z-index: 900;
-    display: flex;
-    justify-content: space-between;
-    gap: 4px;
-    background-color: rgba(24, 27, 33, 0.92);
-    border: 1px solid var(--border-color);
-    border-radius: 999px;
-    padding: 6px;
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
-  }
-
-  .phone-section-nav a {
-    flex: 1 1 auto;
-    min-height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: var(--font-spec);
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: var(--text-main);
-    text-decoration: none;
-    border-radius: 999px;
-    white-space: nowrap;
-  }
-
-  .phone-section-nav a:active {
-    background-color: var(--panel-hover);
-    color: #ffffff;
-  }
-}
 </body>
 </html>
