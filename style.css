@@ -831,4 +831,47 @@ dt {
     padding-bottom: 76px;
   }
 }
+.phone-section-nav {
+  display: none;
+}
+
+@media (max-width: 560px) {
+  .phone-section-nav {
+    position: fixed;
+    left: 12px;
+    right: 12px;
+    bottom: calc(10px + env(safe-area-inset-bottom, 0px));
+    z-index: 900;
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+    background-color: rgba(24, 27, 33, 0.92);
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    padding: 6px;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+  }
+
+  .phone-section-nav a {
+    flex: 1 1 auto;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-spec);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-main);
+    text-decoration: none;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+
+  .phone-section-nav a:active {
+    background-color: var(--panel-hover);
+    color: #ffffff;
+  }
+}
 
