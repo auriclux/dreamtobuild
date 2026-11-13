@@ -541,7 +541,6 @@ dt {
   border: 1px solid var(--border-color);
   border-radius: 6px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
-  background-color:
   background-color: #050608;
 }
 /* ==========================================================================
@@ -756,3 +755,102 @@ dt {
     padding: 8px;
   }
 }
+/* ==========================================================================
+   DREAM TO BUILD — PHONE RESTRUCTURE, SECOND PASS (Scot's spec, 2026-11-12)
+
+   WHAT IT DOES (detail pages only, phones 560px and under):
+   - Order becomes: hero -> gallery navigation (Project Sections tabs)
+     -> gallery -> specs -> narrative LAST. Header untouched.
+   - The detail page's nav (the Back link) becomes a small fixed pill
+     pinned to the bottom of the phone, inside the thumb zone, with the
+     iPhone home-indicator inset respected.
+   - Project Section tabs become a sideways-scrolling chip row under
+     the hero instead of a vertical stack.
+   - Tap targets are at least 44px tall anywhere this block touches.
+   ========================================================================== */
+
+@media (max-width: 560px) {
+
+  /* --- Detail grid becomes a flex column so children can reorder --- */
+  .detail-grid-layout {
+    display: flex !important;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  /* --- Dissolve the center frame so its children join the stack --- */
+  #center-frame {
+    display: contents;
+  }
+
+  /* --- Scot's order: hero 1, tabs 2, gallery 3, specs 4, narrative 5 --- */
+  #spotlight-frame {
+    order: 1;
+  }
+
+  /* Right aside (label + Project Sections tabs) rides as one box. */
+  #sidebar-nav-right {
+    order: 2;
+    background: transparent;
+    border: 0;
+    padding: 0;
+  }
+
+  #active-tab-display,
+  #standard-gallery-container {
+    order: 3;
+  }
+
+  #detail-specs-container {
+    order: 4;
+  }
+
+  #detail-narrative {
+    order: 5;
+  }
+
+  /* --- Gallery navigation as a sideways-scrolling chip row --- */
+  #gallery-tabs {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 6px;
+  }
+
+  #gallery-tabs .nav-text-link {
+    flex: 0 0 auto;
+    width: auto;
+    white-space: nowrap;
+    min-height: 44px;
+    padding: 10px 14px;
+  }
+
+  /* --- The existing nav, pinned small to the bottom of the phone --- */
+  .detail-nav {
+    position: fixed;
+    left: 12px;
+    right: 12px;
+    bottom: calc(10px + env(safe-area-inset-bottom, 0px));
+    z-index: 900;
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
+  }
+
+  .detail-nav .back-link {
+    pointer-events: auto;
+    margin-bottom: 0 !important;
+    border-radius: 999px;
+    background-color: rgba(24, 27, 33, 0.92) !important;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+  }
+
+  /* --- Room at the foot of the page so the fixed pill covers nothing --- */
+  body {
+    padding-bottom: 76px;
+  }
+}
+
