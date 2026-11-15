@@ -100,59 +100,61 @@
     },
     "builderNotes": "Torky-T ignition timing and custom laser-cut pedal pad specs..."
   },
-  {
-    "id": "scapegoat",
-    "title": "Project ScapeGoat",
-    "subtitle": "1968 Pontiac Street & Strip Outlaw Drag Car",
-    "thumb": "Projects/ScapeGoat rear widened split bumper.jpg",
-    "heroImage": "Projects/ScapeGoat rear widened split bumper.jpg",
-    "image": "Projects/ScapeGoat rear widened split bumper.jpg",
-    "narrative": [
-      "Project ScapeGoat transforms a 1968 Pontiac into a full street-and-strip outlaw drag car, built as the high-horsepower outlaw counterpart to its factory-bodied 'Body Brother' restomod."
-    ],
-    "specifications": {
-      "Year": "1968",
-      "Make": "Pontiac",
-      "Model": "Outlaw Drag Car",
-      "Engine": "Built 6.2L L94 V8 (VVT & DOD Delete)",
-      "Transmission": "Tremec T56 Magnum 6-Speed (2.66:1 First Gear / QuickTime RM-6037 Bellhousing)",
-      "Drivetrain": "4.0-inch Aluminum Driveshaft / Weld ProStar 15x15 Rear Wheels",
-      "Chassis": "1-inch Frame Rail Notch & Custom Central X-Member Cage Integration",
-      "Management": "Holley Terminator X MAX ECU",
-      "Badge": "Laser-Cut Stainless 'SCAPEGOAT' Grille Badge"
-    },
-    "subGalleries": {
-      "concepts": {
-        "title": "AI Concepts",
-        "heroImage": "Projects/ScapeGoat rear widened split bumper.jpg",
-        "images": [
-          "Projects/ScapeGoat Foldout.jpg",
-          "Projects/ScapeGoat at the car show.jpg",
-          "Projects/ScapeGoat rear widened split bumper.jpg"
-        ]
-      },
-      "funnies": {
-        "title": "The Funnies",
-        "heroImage": "Projects/Stuffing Slicks.jpg",
-        "images": [
-          "Projects/Stuffing Slicks.jpg",
-          "Projects/ScapeGoat at the Granary.jpg",
-          "Projects/Omar as passenger in ScapeGoat on the blvd..jpg"
-        ]
-      },
-      "history": {
-        "title": "Build Start & History",
-        "heroImage": "Projects/20261021 X-member mock-up 01.jpg",
-        "images": [
-          "Projects/20261021 X-member mock-up 01.jpg",
-          "Projects/20261014 X-member start.jpg",
-          "Projects/20261023 shaft retainer hoops fresh off new bender.jpg",
-          "Projects/20261107 Scapegoat driveshaft retainer cage under construction.jpg"
-        ]
-      }
-    },
-    "builderNotes": "Confidential chassis fabrication specs: Frame rail notch requires inner 3/16-inch plate reinforcement prior to x-member cross-member welded tie-in."
+{
+  "id": "scapegoat",
+  "title": "Project ScapeGoat",
+  "subtitle": "1968 Pontiac Street & Strip Outlaw Drag Car",
+  "thumb": "Projects/ScapeGoat rear widened split bumper.jpg",
+  "heroImage": "Projects/ScapeGoat rear widened split bumper.jpg",
+  "image": "Projects/ScapeGoat rear widened split bumper.jpg",
+  "narrative": [
+    "Project ScapeGoat transforms a 1968 Pontiac into a full street-and-strip outlaw drag car, built as the high-horsepower outlaw counterpart to its factory-bodied 'Body Brother' restomod.",
+    "The build started in October 2026 at the chassis. The central X-member was started on Oct 14 and mocked up on Oct 21. The driveshaft retainer hoops came fresh off the new bender on Oct 23, and the center shaft retainer cage was under construction by Nov 7, its plate plasma-cut on Nov 11. The rear frame is still unmodified: the 1-inch notch comes later, cut clear of the frame's CON-VIN stamp zone, and the wide rear tires get covered by moving the rear fenders' outer sheet metal out, not flares. The drivetrain is decided (built 6.2L L94, T56 Magnum, Ford 9-inch) and the hunt for the engine and gearbox is live. The car's Alpine Blue is confirmed by original paint still on the body; its VIN is still unknown, narrowed to the 242378Z1346xx block."
+  ],
+  "specifications": {
+    "Year": "1968",
+    "Make": "Pontiac",
+    "Model": "Outlaw Drag Car",
+    "Engine": "Built 6.2L L94 V8 (VVT & DOD Delete)",
+    "Transmission": "Tremec T56 Magnum 6-Speed (2.66:1 First Gear / QuickTime RM-6037 Bellhousing)",
+    "Drivetrain": "4.0-inch Aluminum Driveshaft / Weld ProStar 15x15 Rear Wheels",
+    "Chassis": "Custom central X-member (in fabrication); 1-inch frame rail notch planned, clear of the CON-VIN stamp zone",
+    "Management": "Holley Terminator X MAX ECU",
+    "Badge": "Laser-Cut Stainless 'SCAPEGOAT' Grille Badge"
   },
+  "subGalleries": {
+    "concepts": {
+      "title": "AI Concepts",
+      "heroImage": "Projects/ScapeGoat rear widened split bumper.jpg",
+      "images": [
+        "Projects/ScapeGoat Foldout.jpg",
+        "Projects/ScapeGoat at the car show.jpg",
+        "Projects/ScapeGoat rear widened split bumper.jpg"
+      ]
+    },
+    "funnies": {
+      "title": "The Funnies",
+      "heroImage": "Projects/Stuffing Slicks.jpg",
+      "images": [
+        "Projects/Stuffing Slicks.jpg",
+        "Projects/ScapeGoat at the Granary.jpg",
+        "Projects/Omar as passenger in ScapeGoat on the blvd..jpg"
+      ]
+    },
+    "history": {
+      "title": "Build Start & History",
+      "heroImage": "Projects/20261021 X-member mock-up 01.jpg",
+      "images": [
+        "Projects/20261021 X-member mock-up 01.jpg",
+        "Projects/20261014 X-member start.jpg",
+        "Projects/20261023 shaft retainer hoops fresh off new bender.jpg",
+        "Projects/20261107 Scapegoat driveshaft retainer cage under construction.jpg",
+        "Projects/20261111 Scapegoat retainer cage plasma cuts.jpg"
+      ]
+    }
+  },
+  "builderNotes": "Shop punchlist: 1) Finish center shaft retainer cage including lower plate. 2) Weld in retainer cage and X-member. 3) Notch and box the frame. 4) Weld in new coilover mounts from BMR Suspension. 5) Grind and sand frame; prep for paint and rust inhibition. 6) Define the suspension installation."
+},
   {
     "id": "not-for-higher",
     "title": "Project 'Not for Higher'",
