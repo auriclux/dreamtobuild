@@ -1290,5 +1290,97 @@
   "thumb": "Fantasies/Ariel - hero Hearst Castle.jpg",
   "thumbnail": "Fantasies/Ariel - hero Hearst Castle.jpg",
   "title": "Ariel"
+},
+{
+  "id": "clyde-c600",
+  "title": "Clyde",
+  "subtitle": "Ford C600 Cab and Chassis with a Roll-Up Box System",
+  "category": "Fantasies",
+  "badgeText": "Pure Vision",
+  "badgeType": "badge-fantasy",
+  "summary": "A Ford C600 tilt-cab tractor named for a Clydesdale, built around a cable roll-off that loads styled boxes like luggage: a living quarters, a freight container, a glass display case for cars, a party kitchen for 24, and a workshop that follows restomod cruises. Warm white and chestnut, Duramax and Allison, one Eaton two-speed axle re-geared to cruise at 1,570 rpm.",
+  "thumb": "Fantasies/Clyde - long frame tractor.png",
+  "heroImage": "Fantasies/Clyde - long frame tractor.png",
+  "thumbnail": "Fantasies/Clyde - long frame tractor.png",
+  "detailUrl": "detail.html?type=fantasies&id=clyde-c600",
+  "tags": [
+    "Ford",
+    "C600",
+    "COE",
+    "Cabover",
+    "Roll-Up Box",
+    "Duramax",
+    "Clyde",
+    "Working Truck"
+  ],
+  "specifications": {
+    "access": "External only (Scot's call, 2026-11-14). No cab pass-through: the cab stays free to tilt for engine access, and every box is entered from the ground",
+    "boxes": "Five boxes designed, all operated while mounted on the truck (Scot's call, 2026-11-14): Living quarters (bed front, galley and wet bath amidships, living space at the rear door); Freight (a plain container in the family finish); Jewel Box (display transport: platform, corner posts, barrel-vault chestnut canopy, cloth uppers over solid lowers); Pantry/Kitchen (a professional kitchen scaled to serve a plated meal for 24, fold-down serving counter, no food-truck signage); Workshop (restomod-cruise support: half-length fold-down workbench, walk-in tool crib with dispensing counter, welder hatch, two plain red extinguishers on the closed front wall)",
+    "car": "Ford C600 tilt cab, cab and chassis. The Budd cab ran essentially unchanged from 1957 to 1990, so the donor hunt judges sheet metal, cab condition, and title posture, not year, engine, or transmission, which all get changed anyway",
+    "dateAdded": "2026-11-14T19:35:00",
+    "engine": "Duramax 6.6L diesel (Scot's call, 2026-11-14). The Cat 3208 was rejected on fuel efficiency, and the Cummins 6BT, liked as an engine, was set aside because a long inline six does not package in this cab. Variant and tune level are open engineering items",
+    "engineering": "Deferred until the build gets serious (Scot's call, 2026-11-14): a weights and GVWR budget across the box set, Duramax variant and cooling package in the tilt cab, final wheels and tires (10.00-20 versus 22.5 tubeless), fuel tanks, cab interior and gauges for an electronic engine, and house electrical for the boxes",
+    "frame": "Sized by the roll-up mechanism, not the other way around (Scot's ruling, 2026-11-14): the mechanism's capacity and rail length set the frame, and the boxes follow. The long-frame reference in the gallery is the working geometry",
+    "hoist": "Cable roll-off (Scot's call, 2026-11-14), with the winch at the front of the rails directly behind the cab and the roller at the rear",
+    "livery": "Warm white, white with the slightest yellow, on the roof, pillars, and face band continuing around the side; Clyde Chestnut (sampled at #7D452D and #8A4D32) in a band under the windshield wrapping front and sides, the rear cab corner, the arch surround, and the panel in front of the front tire. Every color break lands on a body line, the upper or lower swage line, never freeform. Chrome grille and mirror; black bumper, substantial and plain, not a ram; black wheels and chassis. The boxes wear cab white with chestnut borders on their frames",
+    "operation": "All boxes are worked while mounted. Nothing in the system is designed to be set down and lived in or worked out of on the ground",
+    "rearAxle": "Eaton 17221 two-speed, 18,500 lb capacity, targeted with a gear swap to the 4.88/6.65 set (Scot's call, 2026-11-14): about 1,570 rpm at 65 mph in high range behind the Allison overdrive, with the low range kept for maneuvering a loaded box on site. Electric shift unit, because a diesel makes no manifold vacuum. Hubs, brakes, and selector hardware to be matched to the donor as found; more parts to investigate",
+    "status": "Fantasy, spec complete at the fantasy level on 2026-11-14. No donor bought. A 1970 C-series tandem in Nuevo, California was filed as a gallery reference only; Clyde is a single-axle truck, and that truck's length is the mechanism question made visible, not a candidate",
+    "transmission": "Allison 1000-series automatic. The 3000-series is Not for Higher's transmission by the standing drivetrain mapping; Clyde takes the 1000"
+  },
+  "narrative": [
+    "The truck is a Ford C600, a tilt-cab cabover whose face has been called a lot of things, and handsome is not high on the list. It has one ugly mug with a worse gob, so the build leans into the ugly instead of apologizing for it. The name is Clyde, from Clydesdale: a big working horse with a plain name, no elegance promised and none needed. An earlier name, Le Percheron Paré, came with a whole French paint philosophy, and that system is parked intact, waiting for a more elegant truck to claim it. Clyde is not that truck.",
+    "The idea is a tractor that carries boxes the way a horse carries loads, one at a time, each dressed for its job. A cable roll-off runs the length of the frame, winch at the front of the rails behind the cab, roller at the rear, and the boxes roll up and down the tilt like luggage. The frame is not the fixed point of the design: the mechanism is sized first, and the frame and boxes follow it. Five boxes are designed. A living quarters with the bed forward, a galley and wet bath amidships, and the living space at the rear door. A plain freight container. A Jewel Box for carrying cars to be looked at, all corner posts and barrel-vault canopy. A pantry and kitchen scaled to plate a meal for twenty-four. And a workshop built to follow restomod cruises and be the reason Clyde gets invited: the box is the sag wagon, the tool crib, and the grill, all in one.",
+    "The paint took the longest of anything on this card, and the lesson was the cab itself: on this body, color changes belong on the body lines, and nowhere else. An early try at freeform patches in the manner of a piebald horse produced, in the owner's words, a cow. The finished scheme puts warm white, white with the slightest yellow, over the roof and face, and a chestnut sampled from the work itself under the windshield and around the arches and rear corner, every break landing exactly on the upper or lower swage line. The boxes follow the same law, white walls inside chestnut frames, so the whole turnout reads as one dressed unit whichever box is up.",
+    "The driveline was settled in one sitting. The Cat 3208 is the engine Ford built this cab around, and it was rejected for drinking like it was still 1978. The Cummins 6BT is a liked engine that simply does not fit: forty inches of inline six in a cab packaged for a V8. What remains is the Duramax, short like the Cat and modern like nothing this cab ever met, with an Allison 1000 behind it. At the back, a single Eaton 17221 two-speed axle, re-geared to its 4.88 high set, cruises near 1,570 rpm at 65 and keeps a 6.65 low range for creeping a loaded living box into its spot. Access to every box is external, the cab tilts free, and every box does its work mounted on the truck.",
+    "No donor has been bought, and the hunt has one rule: sheet metal first. The Budd cab barely changed from 1957 to 1990, the engine and transmission are being replaced regardless, and a factory diesel truck of any year up the ladder stays smog exempt, so the right truck is the straightest cab at the right price, whenever it surfaces. The photographs at the end of the gallery show a 1970 tandem in Nuevo wearing its thirty-foot flatbed: filed as a reference for what length does to this cab, not as a candidate, because Clyde is a single-axle truck. What is left is a list of engineering questions, weights and cooling and gauges and tanks, deliberately deferred until the fantasy gets serious. For now the spec is done, the boxes are drawn, and the horse has his name."
+  ],
+  "gallery": [
+    {
+      "caption": "The tractor of record: the long-frame reference, warm white and Clyde Chestnut, roll-up rails empty, winch at the front of the rails behind the cab and the roller at the rear.",
+      "url": "Fantasies/Clyde - long frame tractor.png"
+    },
+    {
+      "caption": "The livery as it was declared finished on November 11, 2026: every color break on a body line, chestnut under the windshield and around the arch and rear corner, chrome grille and mirror, black bumper, black wheels.",
+      "url": "Fantasies/Clyde - livery success.png"
+    },
+    {
+      "caption": "Box No. 1, the living quarters, loaded: bed forward behind the cab, services amidships, living space at the rear door, riding level on the long frame.",
+      "url": "Fantasies/Clyde - living box loaded.png"
+    },
+    {
+      "caption": "The living box alone: smooth walls, rounded corners, chestnut borders over cab white, windows placed by the floor plan rather than by habit.",
+      "url": "Fantasies/Clyde - living box.png"
+    },
+    {
+      "caption": "The living box floor plan: three zones in a line, bed, then galley and wet bath sharing a plumbing wall, then living space at the door. No hallway; a box this size cannot afford one.",
+      "url": "Fantasies/Clyde - living box floor plan.png"
+    },
+    {
+      "caption": "The freight box: a plain corrugated container wearing the family finish, chestnut on the corner posts, top and base bands, and door frame, warm white on the walls.",
+      "url": "Fantasies/Clyde - freight box.png"
+    },
+    {
+      "caption": "The Jewel Box, closed and open: cream lowers and cloth uppers draw down into one clean volume, and open into a barrel-vaulted display case with Reiver inside.",
+      "url": "Fantasies/Clyde - jewel box.png"
+    },
+    {
+      "caption": "The Pantry/Kitchen box, closed and open for service: a professional kitchen for a plated meal of 24 covers, fold-down counter on the serving side, everything inside latched for the tilt of loading.",
+      "url": "Fantasies/Clyde - pantry kitchen box.png"
+    },
+    {
+      "caption": "The Workshop box, one elevation in two states: closed wall forward with the welder hatch and two plain red extinguishers, workbench and tool-crib counter open aft.",
+      "url": "Fantasies/Clyde - workshop box.png"
+    },
+    {
+      "caption": "Reference only, not a candidate: a 1970 Ford C-series tandem in Nuevo, California, thirty feet of flatbed behind the same cab. Clyde is a single-axle truck; this photograph is what length does to the proportions.",
+      "url": "Fantasies/Clyde - donor candidate Nuevo side.jpg"
+    },
+    {
+      "caption": "The Nuevo truck's face: the same ugly mug, worn white over red. Filed for the cab, which the seller called a great cab for a project. He was not wrong about the cab.",
+      "url": "Fantasies/Clyde - donor candidate Nuevo front.jpg"
+    }
+  ],
+  "featured": false
 }
 ]
