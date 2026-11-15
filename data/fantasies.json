@@ -1299,9 +1299,9 @@
   "badgeText": "Pure Vision",
   "badgeType": "badge-fantasy",
   "summary": "A Ford C600 tilt-cab tractor named for a Clydesdale, built around a cable roll-off that loads styled boxes like luggage: a living quarters, a freight container, a glass display case for cars, a party kitchen for 24, and a workshop that follows restomod cruises. Warm white and chestnut, Duramax and Allison, one Eaton two-speed axle re-geared to cruise at 1,570 rpm.",
-  "thumb": "Fantasies/Clyde - long frame tractor.png",
-  "heroImage": "Fantasies/Clyde - long frame tractor.png",
-  "thumbnail": "Fantasies/Clyde - long frame tractor.png",
+  "thumb": "Fantasies/Clyde - living box loaded.png",
+  "heroImage": "Fantasies/Clyde - living box loaded.png",
+  "thumbnail": "Fantasies/Clyde - living box loaded.png",
   "detailUrl": "detail.html?type=fantasies&id=clyde-c600",
   "tags": [
     "Ford",
@@ -1337,12 +1337,8 @@
   ],
   "gallery": [
     {
-      "caption": "The tractor of record: the long-frame reference, warm white and Clyde Chestnut, roll-up rails empty, winch at the front of the rails behind the cab and the roller at the rear.",
+      "caption": "The tractor of record: the long-frame reference, warm white and Clyde Chestnut, roll-up rails empty, winch at the front of the rails behind the cab and the roller at the rear. The livery was declared finished on November 11, 2026: every color break on a body line, chestnut under the windshield and around the arch and rear corner, chrome grille and mirror, black bumper, black wheels.",
       "url": "Fantasies/Clyde - long frame tractor.png"
-    },
-    {
-      "caption": "The livery as it was declared finished on November 11, 2026: every color break on a body line, chestnut under the windshield and around the arch and rear corner, chrome grille and mirror, black bumper, black wheels.",
-      "url": "Fantasies/Clyde - livery success.png"
     },
     {
       "caption": "Box No. 1, the living quarters, loaded: bed forward behind the cab, services amidships, living space at the rear door, riding level on the long frame.",
