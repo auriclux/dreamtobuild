@@ -1436,5 +1436,64 @@
     }
   ],
   "featured": false
+},
+{
+  "id": "the-fear-dearg",
+  "title": "The Fear Dearg",
+  "subtitle": "1964 Lincoln Continental, Moving Through the Dark on Purpose",
+  "category": "Fantasies",
+  "badgeText": "Pure Vision",
+  "badgeType": "badge-fantasy",
+  "summary": "A 1964 Lincoln Continental in oxblood that goes black early, bagged on 20s, powered by a twincharged 6.7 Power Stroke diesel. Named for the Irish fear dearg, the Red Man: something moving through the dark purposefully, its intent unreadable.",
+  "thumb": "Fantasies/Fear Dearg - hero crossroads night.png",
+  "heroImage": "Fantasies/Fear Dearg - hero crossroads night.png",
+  "thumbnail": "Fantasies/Fear Dearg - hero crossroads night.png",
+  "detailUrl": "detail.html?type=fantasies&id=the-fear-dearg",
+  "tags": [
+    "Lincoln",
+    "Continental",
+    "1964",
+    "Power Stroke",
+    "Diesel",
+    "Twincharged",
+    "Paxton",
+    "Oxblood",
+    "Fae"
+  ],
+  "specifications": {
+    "dateAdded": "2026-11-17T17:46:00",
+    "engine": "Ford 6.7L Power Stroke V8 diesel, twincharged: a Paxton centrifugal supercharger feeding the factory turbocharger in series. Fantasy estimate near 600 hp and 1,400 lb-ft. The blower buys boost from idle and pushes the torque wall down toward 1,100 rpm; the turbo was never the bottleneck, the fueling is.",
+    "glass": "Tinted glass throughout. An anti-reflective coating on the protected inner faces of the laminate is carried on this card as a research project, not a settled spec: the technology is real in optics and architecture, and no off-the-shelf automotive version exists.",
+    "livery": "Oxblood that goes black early, in a finish gradient mapped to height: matte roof, satin hood and trunk, diamond gloss lower body. The roof wears a ghost vinyl top, the vinyl top's exact shape rendered in matte paint with no material and no color change. A ghost stripe runs the fender peak and a ghost Lincoln star crest sits low on the rear quarters, both finish only. Bumpers and wheels are gloss oxblood. Trim is blacked out.",
+    "name": "Irish fear dearg, the Red Man: a solitary fairy in a red cap and coat, where the trooping fairies wear green. Yeats has him busy with practical joking, especially gruesome joking. The spelling is the modern Irish form, chosen over the Victorian folklorists' Far Darrig. He is the first of a planned series of colored fae; La Fée Verte is reserved for a green car.",
+    "performance": "Estimates: 0 to 60 in about 4.6 seconds, the quarter mile in about 12.8 seconds at 109 mph, at roughly 5,400 lb. At 75 mph the engine turns about 1,450 rpm, sitting on its torque plateau, with gearing in hand for far more speed than the car will ever be asked to use.",
+    "rearAxle": "Ford 9-inch live axle, four-link, air bags, geared tall at 2.75 to 3.08. The unibody's stock load paths are live-axle paths, and the mission, smooth interstate at night, never uses what an independent rear end would add.",
+    "roof": "The glass house is sunk as a unit by about the extent of a side mirror stem, the roof carried closer to the beltline with the glass band itself unchanged. The treatment was set by hand edit and held through every render after.",
+    "stance": "Air suspension, bagged from laying the car out flat to clearing driveways, dead level at ride height. 20-inch wheels painted gloss oxblood, low-profile tires, the rears wide.",
+    "status": "Fantasy. The spec was settled on November 16, 2026. The seed was a blue 1964 Continental in Hesperia, California, at $6,500 with a clean title; the car was not bought, and its running state was never stated.",
+    "transmission": "The Power Stroke's native Ford 10R140 10-speed automatic with its factory controller. On a modern automatic the transmission choice is the gearing decision, and this one's spread was designed around this engine's curve."
+  },
+  "narrative": [
+    "The name is Irish: fear dearg, the Red Man. In the folklore the solitary fairies wear red and the trooping fairies wear green, and this one wears a red cap and coat head to toe. Yeats says he busies himself with practical joking, especially gruesome joking. The name was picked because people would have to look it up. What it means for the car was defined before the folklore was ever opened: something moving through the dark purposefully. Intent. The intent is never specified, because specifying it shrinks it. The menace is that the intent exists and cannot be read. Underneath the menace the car has a loyal errand: it goes out at night to bring somebody home. From the outside that reads exactly like a threat. From the inside it is a rescue. Both readings ride in the same car.",
+    "The seed was a blue 1964 Continental in Hesperia at $6,500, clean title, a restoration the seller's family health had stopped. The four-door rule never applied to this car; the slab-sided unibody and the suicide doors were the point. The first engine guess made for it was a diesel, on the theory that a big heavy car wants one, and the guess was wrong: he was not thinking diesel. The diesel arrived later by a different road, brand correctness, and stayed.",
+    "The livery protects the car's one great horizontal line. The color is oxblood that goes black early, laid out as a finish gradient mapped to height: matte roof, satin hood and trunk, diamond gloss lower body, every transition landing on a body line. The roof carries a ghost vinyl top, the vinyl top's shape in matte paint only, no material, no second color. A ghost stripe runs the fender peak and a ghost Lincoln star crest sits low on the rear quarters. The bumpers and the wheels are gloss oxblood, the trim is blacked out, the glass is tinted, and the glass house sits sunk by about a mirror stem, which does the work a chop would do without cutting the car.",
+    "A Lincoln is a Ford, and Ford's diesel is the Power Stroke, so the engine is the 6.7 liter Power Stroke V8 with its native 10R140 ten-speed and factory controller. Because this is a fantasy, the turbo is compounded: a Paxton centrifugal supercharger feeds it in series, boost from idle, the torque wall pushed down toward 1,100 rpm. A Ford 9-inch live axle geared tall, 2.75 to 3.08, puts the launch on torque and the cruise at 75 mph at about 1,450 rpm, on the plateau, grades and passes taken without a downshift. The estimates say 0 to 60 in about 4.6 seconds in a car of roughly 5,400 pounds. The numbers are not the point. The point is the surge, and that quiet wins.",
+    "The hero image is the car in its element: mid-turn onto a main road under a rose moon, gravel just leaving the rear tires, a low stone wall behind him and a red fox frozen mid-stalk on top of it, watching the taillights of the car ahead. The prey had to be some kind of joke, and it is: a Firebird, all volume, dissolving into the mist past the crossroads, unaware. The Fear Dearg is the first of a series. Other colored members of the fae will follow, and La Fée Verte is already reserved for a green one."
+  ],
+  "gallery": [
+    {
+      "url": "Fantasies/Fear Dearg - hero crossroads night.png",
+      "caption": "The hero: the Fear Dearg mid-turn onto a main road under a rose moon, gravel at his rear tires, a red fox frozen mid-stalk on the stone wall, and the car he is following dissolving into the mist beyond the crossroads."
+    },
+    {
+      "url": "Fantasies/Fear Dearg - portrait studio.png",
+      "caption": "The portrait of record, on 80 percent grey: the finish gradient legible, matte roof, satin hood and trunk, diamond gloss lowers, gloss oxblood bumpers and wheels, the glass house sunk, the ghost crest low on the rear quarter."
+    },
+    {
+      "url": "Fantasies/Fear Dearg - as found Hesperia.jpg",
+      "caption": "As found: the seed car in Hesperia, blue and straight on a dirt lot, a restoration stopped by family health, $6,500 with a clean title. Everything on this card starts from this car."
+    }
+  ],
+  "featured": false
 }
 ]
