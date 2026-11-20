@@ -1495,5 +1495,78 @@
     }
   ],
   "featured": false
+},
+  {
+  "id": "the-white",
+  "title": "The White",
+  "subtitle": "1966 White Compact COE, Already in Your Mirror",
+  "category": "Fantasies",
+  "badgeText": "Pure Vision",
+  "badgeType": "badge-fantasy",
+  "summary": "A 1966 White Compact COE rebuilt as a study in predator focus: graphite, quiet, and still, with a Duramax's worth of capability held in reserve. Named for the make, not a color. There is no white on it at all.",
+  "thumb": "Fantasies/The White - hero mirror.png",
+  "heroImage": "Fantasies/The White - hero mirror.png",
+  "thumbnail": "Fantasies/The White - hero mirror.png",
+  "detailUrl": "detail.html?type=fantasies&id=the-white",
+  "tags": [
+    "White",
+    "COE",
+    "1966",
+    "Duramax",
+    "Allison",
+    "Diesel",
+    "Box",
+    "Predator"
+  ],
+  "specifications": {
+    "brakes": "Air brakes retained, native to the replacement rear axle, as the truck was built with. The system is part of the truck's working tenure, not a conversion.",
+    "dateAdded": "2026-11-20T13:36:00",
+    "engine": "GM 6.6L Duramax V8 turbodiesel, the pickup calibration of roughly 470 hp and 975 lb-ft with a mild tune past both, tuned for the middle of the torque curve rather than the peak. It replaces the original gasoline straight six and five-speed.",
+    "face": "The factory flat face kept and darkened: twin windshields under a restored brow, a single tall grille opening recessed in matte black with a midline separator, two vertical push-bar uprights with checkered stainless faces in satin black diamond-like carbon, and the WHITE badge retained in semi black.",
+    "finish": "Warm graphite grey, starting point #4B4743, as a fine-grain UV-stable textured coating over the cab and box; voids and recesses in matte black near #17181A; chassis, wheels, and hardware in satin or cast-texture black. No chrome anywhere. No red survives. The only saturated color the truck owns is emitted light.",
+    "lighting": "Rectangular LED modules throughout, recessed and dark-lensed at rest. Vertical corner pods built from the headlights outward: headlight at legal height, turn signal above, auxiliaries filling up and down. A forehead row under the brow for distance, a low amber fog bank, and lamps in the mirrors for near side light. All lamps fire together as the truck's one change of state.",
+    "name": "The White. The The is part of the name: not a White truck, the White. There is no white color on the truck; the name is the make, carried by the retained grille badge.",
+    "payload": "A smooth box in the same graphite fine-grain finish as the cab, rounded edges, thin seam lines only, no corrugation, no rivets, no windows, no lettering. Cab and box read as one unbroken dark volume. The as-found hydraulic tilt flatbed is the seed truck's truth, kept in the gallery.",
+    "performance": "Brief: a regular working truck that catches the family sedan easily despite being a brick. The metric is roll-on, not launch: at highway speed the engine sits on its torque plateau with the surplus to pay the flat face's aerodynamic tax and still close a gap without drama. Estimates are directional; the truck is geared to cruise at 75 mph at roughly 1,300 to 1,500 rpm.",
+    "rearAxle": "A modern medium-duty single drive axle of the Meritor class, 23,000 lb rating, air-brake native, geared in the mid-3s, about 3.42 to 3.58, so the Allison's overdrive puts highway cruise at the floor of the torque plateau.",
+    "stance": "Ride height stays truck height. Front: the solid axle and leaf springs rebuilt, modern dampers, a heavier sway bar. Rear: air ride of the Hendrickson type, keeping the box level under load and the truck settled and still at speed. Nothing slams and nothing kneels.",
+    "steering": "Modern power steering replaces the original manual box. The brief's word easily applies at parking speed as much as on the highway.",
+    "transmission": "Allison automatic, six-speed with deep overdrive, the Duramax's production partner in GM's medium-duty trucks. The automatic is part of the concept: the catch happens with no shift theater and no audible effort.",
+    "wheels": "11R22.5 tubeless tires on black steel wheels. The as-found red Dayton spoke wheels and tube tires retire; the 22.5 is what a working truck wears now."
+  },
+  "narrative": [
+    "The name is The White, and the The is part of it. Not a White truck, of which a few hundred survive in fields and fleets, but this one. There is no white paint on it anywhere; the name was never a color. It is the make, carried on the grille badge the build keeps, gone semi black so it reads up close and vanishes at mirror distance. A white truck named White would be a description. This is a name.",
+    "The seed is a 1966 White Compact COE flatbed out of Aberdeen, South Dakota, eighteen hundred dollars, complete with a clear title, wearing its working life openly: faded Brady fleet lettering, ICC numbers, unit 853, red spoke wheels, a straight six and a five-speed and a tilt bed, not run in years. The idea came from Kenya, from watching a lioness drink at a water hole among the prey and stroll a herd without starting a stampede. The fear in that scene is not the attack. It is being noticed by something that has not decided yet, whose capability is known to everyone present, and whose attention costs the herd constant vigilance. That is the truck: predator focus, the scary that accompanies respect.",
+    "The face is the instrument, and the build keeps what the factory gave it: the twin windshields as a brow, the low-set eyes, the wide flat front, gaze level and unsnarling, because a predator does not snarl, it looks. The remodel works in three materials only, dark glass, textured graphite steel, and black void, on one datum, in absolute symmetry. The grille is a single tall opening recessed in shadow. The push bars stand as two vertical uprights with checkered stainless faces under black diamond-like carbon, bright only where work will earn it bright. Nothing on the face speaks. Nothing on it performs.",
+    "The lights sleep. Rectangular LED modules fill vertical pods at the corners, built outward from the headlights at their legal height, a forehead row under the restored brow, lamps in the mirrors, and a low fog bank in amber, all of it recessed and dark-lensed at rest. The truck's one visible cue of its other state is not a bed or a stance. It is illumination: the moment every lamp fires at once and the road ahead of it is lit like midday. The hero image is the truck where it will most often be met, in a rearview mirror, having been noticed a moment after it noticed you.",
+    "Underneath, it stays a regular truck. The payload is a smooth graphite box, no corrugation, no rivets, no lettering, so cab and body read as one dark volume. The brief was a working truck that catches the family sedan easily despite being a brick, and the drivetrain is that sentence built: a Duramax diesel and an Allison automatic, a modern medium-duty rear axle geared so that 75 miles an hour sits at the floor of the torque plateau, steel springs in front and air ride behind to keep it level and settled. It uses a fraction of what it has, at a murmur, in no hurry. The capability is the point. The using of it is almost incidental."
+  ],
+  "gallery": [
+    {
+      "url": "Fantasies/The White - hero mirror.png",
+      "caption": "The hero: the truck as it will most often be met, in a rearview mirror, all lights burning."
+    },
+    {
+      "url": "Fantasies/The White - studio box.png",
+      "caption": "The studio view: cab and box as one graphite volume, smooth, rounded, unlettered."
+    },
+    {
+      "url": "Fantasies/The White - face.png",
+      "caption": "The face of record: one grille opening, checkered push plates, pods built from the headlights out, lamps asleep."
+    },
+    {
+      "url": "Fantasies/The White - hero forest.png",
+      "caption": "The forest hero: the same moment from outside the mirror, leaves settling in its wake."
+    },
+    {
+      "url": "Fantasies/The White - as found front quarter.jpg",
+      "caption": "As found: the seed truck's front quarter, Brady door lettering, red spoke wheel, the bed's edge."
+    },
+    {
+      "url": "Fantasies/The White - as found face.jpg",
+      "caption": "As found: the dead-front the face was built from, twin windshields, fleet number 853."
+    }
+  ],
+  "featured": false
 }
 ]
