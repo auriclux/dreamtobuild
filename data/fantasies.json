@@ -1568,5 +1568,90 @@
     }
   ],
   "featured": false
+},
+{
+  "id": "big-mack",
+  "title": "Big Mack",
+  "subtitle": "Honda Acty Kei Truck in a Mack F Face, Built for the Tight Places",
+  "category": "Fantasies",
+  "badgeText": "Pure Vision",
+  "badgeType": "badge-fantasy",
+  "summary": "A Honda Acty kei truck wearing the face of a Mack F cab-over at full seriousness: a VW TDI at a 310 lb-ft tune, Suzuki Samurai running gear, and a winch bumper, under a cab stood up to the Mack's own 15 degrees. A toy, a joke, and a working recovery rig for the places full-size trucks cannot reach.",
+  "thumb": "Fantasies/Big Mack - hero ledge.png",
+  "heroImage": "Fantasies/Big Mack - hero ledge.png",
+  "thumbnail": "Fantasies/Big Mack - hero ledge.png",
+  "detailUrl": "detail.html?type=fantasies&id=big-mack",
+  "tags": [
+    "Acty",
+    "Kei Truck",
+    "Mack F",
+    "COE",
+    "TDI",
+    "Diesel",
+    "Recovery",
+    "4x4"
+  ],
+  "specifications": {
+    "axles": "Suzuki Samurai axles at the stock 3.73 ratio, ARB air lockers at both ends, and the ruggedizing catalog the tune demands: chromoly Birfield joints and front shafts, chromoly rear shafts, and trussed housings. The 3.73 was not a default; the gearing math chose it, because the transfer case's high range already multiplies the driveline for the highway.",
+    "bumper": "A hybrid bar: a steel winch core and load path tied into the front subframe cradle, wrapped in an aluminum shell, black powder coat over both. The bar is sized to hide the 8,000 lb winch behind it. The cable exits through a roller fairlead at the bar's center, two recovery eyes protrude through the face and tie to the steel structure behind, never to the shell, and the winch hook stows hooked on one eye.",
+    "cooling": "The cooling pack lives behind the seats: radiator, intercooler, and air conditioning condenser in one fan-driven stack, intruding into the bed as far as it must, with the fans sized for full load at zero road speed. The consequence is the face's freedom: with no air to feed, the grille owes nothing to airflow and can be a flat display panel.",
+    "dateAdded": "2026-11-23T09:35:00",
+    "donor": "The cab shell and footprint of a Honda Acty kei truck, the 1999 to 2001 HA6 and HA7 frozen as the donor spec, with everything mechanical discarded. The truck in the before photograph is the current candidate: a 1998 HA4 in Brea, unregistered, import papers in hand, sound and honestly worn.",
+    "engine": "Volkswagen 1.9 TDI, the ALH, kept on its factory ECU and built to the 310 lb-ft package, about 175 hp: VNT-17 turbo, front-mount intercooler, the automatic's 11 mm injection pump, .216 to .230 nozzles, 2.5 inch exhaust, and a 3-bar MAP sensor with its matched tune. The spec carries its own warning: the application needs engineering review. At 310 lb-ft the Samurai gearbox, for which no stronger internals exist, is the designated fuse in the driveline.",
+    "face": "The Mack F-model's face at Acty scale. The windshield stands at 15 degrees from vertical, the Mack's own angle against the Acty's stock 29, in two flat panes under a cab top squared to the Mack's squareness. The grille fills the aperture in the F's shape, a flat laser-cut stainless panel carrying a happy bulldog puppy over horizontal slats, paws draped over the bottom rail. MACK stands in block letters above it, with Big in brush script rising over the M.",
+    "finish": "Toxic orange, a vivid safety orange, under a high-gloss diamond clear coat: one solid color, no stripe, no band, no two-tone. The gallery keeps the livery study that settled it.",
+    "fuel": "A tank of about 12 gallons under the bed, in the stock tank's neighborhood aft of midships, against a range target of 200 miles with reserve. Cruise economy at 60 mph estimates near 30 mpg until the tank is specced and the truck is real.",
+    "interior": "Simple and washable. Upholstered bucket seats in medium cocoa brown, Sunbrella Canvas in the shade Cocoa, a solution-dyed acrylic that is bleach-cleanable and fade-proof. No carpet: the cab floor is spray-on bedliner under a heavy rubber mat cut to fit, a hose-out floor. Air conditioning, audio, and a pillar pod carrying boost and exhaust gas temperature gauges, the second close to mandatory at this tune.",
+    "name": "Big Mack. The name is the joke and the spec sheet in two words: the full-size Mack F cab-over, shrunk to a kei truck's footprint, with Big written over the MACK in script so the face itself tells you the proportions are deliberate.",
+    "performance": "On 31-inch tires through the 4.16 case and 3.73 axles: 55 mph at 2,840 rpm in fifth, 65 at 3,355, and a redline-limited top speed near 87. The crawl ratio is 56.7 to 1, about 1.2 mph at idle. At the 310 lb-ft tune the passing measure is 40 to 60 mph in 2.3 seconds, 2.7 up a six percent grade, figures from the model, not a dyno. Target weight is about 2,400 lb with driver and fuel, distributed 55/45 or better, verified on corner scales before the coilover rates are set.",
+    "structure": "No frame is inserted; the Acty stays a monocoque. Boxed subframe cradles front and rear carry every hard point the driveline adds: the four-link and panhard mounts, the engine and transmission mounts, the divorced transfer case on its own crossmember, and the fabricated winch bumper, all spread into the shell's sills and floor crossmembers. Longitudinal ties along both sills join the cradles against twist, and a cab core, an internal hoop with A-pillar reinforcement, re-closes the cab after the windshield surgery and ties through the floor into the front cradle.",
+    "suspension": "Parallel four-link with a panhard bar at both ends, on coilovers, for 3 inches of lift, with about 2 more inches won by opening the wheel arches. The fenders widen about 3 inches a side to cover the tires, and final clearance trimming waits for mock-up at full lock. Spring rates are deliberately unwritten until the truck sits on corner scales.",
+    "transferCase": "A divorced Samurai transfer case on its own crossmember, carrying the 4.16 gear set: 1.58 to 1 in high range, 4.16 in low. The case is the driveline's great multiplier and the reason the axle ratio could stay at 3.73.",
+    "transmission": "Suzuki Samurai five-speed manual, ratios 3.652, 1.947, 1.423, 1.000, and 0.795, coupled to the TDI with the Acme adapter kit. The gearbox sits upstream of the transfer case and sees engine torque only, which is the entire basis of the fuse calculation in the engine spec.",
+    "wheels": "BFGoodrich KO2 LT31x10.50R15 tires, 30.5 inches in true diameter, on Mickey Thompson Classic III polished wheels, 15 by 8, in the Samurai's 5 on 5.5 pattern with 3.63 inches of backspace. The same at all four corners, with a full-size spare carried at the very back of the bed, where its weight works for the distribution."
+  },
+  "narrative": [
+    "Big Mack is a toy, a joke, and meant to bring a smile when seen, and when driven. Under the joke sits a real brief. On the granite trails, the recoveries that go undone are the ones up the tight slots: a Jeep bellied in a notch, the only pulling ground a shelf reached through a gap a little over five feet wide, and every proper recovery rig at the event too broad to reach it. Big Mack is the truck built for that gap: a Mack F cab-over's face and bearing on a Honda Acty kei truck's footprint, 11 feet 2 inches long, with a winch, lockers, and gearing enough to do the work when it gets there.",
+    "The donor gives a cab shell and a footprint, and nothing else. Every mechanical part of the Acty is discarded. What the build keeps is the one thing no catalog sells: a complete, upright, narrow cab on a 2,420 mm wheelbase. The face is then rebuilt as the Mack's. The Acty's windshield rakes 29 degrees from vertical; the Mack F's rakes 15, measured from true profiles of both trucks, and the build takes the Mack's angle in two flat panes under a cab top squared to the F's squareness. In the grille aperture, scaled from the F's own shape, a bulldog puppy drapes its paws over the bottom rail of a laser-cut stainless panel, because the real Mack's mascot is a bulldog and this one's truck is a puppy. MACK stands over it in block letters, and Big rises over the M in brush script, so the face announces the proportions before anyone measures them.",
+    "The running gear is Suzuki Samurai, chosen because it is the one light 4x4 driveline that fits under a kei cab: five-speed gearbox, divorced transfer case with 4.16 gears, Samurai axles at 3.73, parallel four-links on coilovers, air lockers at both ends. The engine is Volkswagen's 1.9 TDI on its own electronics, tuned to 310 lb-ft, and the gearing math is the build's quiet triumph: a 56.7 to 1 crawl at walking pace, 55 mph at 2,840 rpm on the highway, and a 40 to 60 passing run of 2.3 seconds in a truck that looks like a toy. The spec is honest about its own limit. Nothing stronger exists inside a Samurai gearbox, so at this tune the gearbox is the designated fuse, and the card says the application needs engineering review, because it does.",
+    "The structure keeps the Acty's monocoque and adds boxed subframe cradles, sill ties, and a cab core to re-close the cab after the windshield surgery, so every load the links, the case, and the winch generate lands on real structure. The details serve the work. The cooling pack sits behind the seats and breathes through fans sized for zero road speed, which frees the grille to be a portrait instead of a radiator. The winch is 8,000 lb, oversize for the truck itself and correctly sized for its patients, CJs and TJs and loaded JKs, with the recovery math's true limit named plainly: past about 2,000 lb of line tension, an unanchored Mack drags toward the casualty, so the truck straps itself to the country it is standing on. The diesel sits behind the front axle as a counterweight, the spare and batteries ride at the back, and the target is 55/45 on corner scales.",
+    "The finish took the longest of any decision on the card. Light colors with a band, lilac with red, powder blue with red, read as a mail truck, every time, so the study in the gallery ends at toxic orange: a vivid safety orange under a high-gloss diamond clear, one solid color with nothing to argue with it. Inside, cocoa brown buckets over a bedliner floor, washable end to end. What the fantasy waits on now is a donor. The current candidate is photographed in the gallery, a 1998 Acty in Brea with its papers in order, and when a cab is in hand the last open numbers fall: the grille panel's final size, measured off real sheet metal, and the coilover rates, measured off real corner weights."
+  ],
+  "gallery": [
+    {
+      "url": "Fantasies/Big Mack - hero ledge.png",
+      "caption": "The hero: threading a granite ledge between two squeezes, driver at the wheel, the bowl behind."
+    },
+    {
+      "url": "Fantasies/Big Mack - studio.png",
+      "caption": "The studio portrait: the face of record, toxic orange under diamond clear, Big in brush script over the MACK block."
+    },
+    {
+      "url": "Fantasies/Big Mack - before.jpg",
+      "caption": "Before: the current candidate donor, a 1998 Honda Acty SDX in Brea, unregistered with its import papers, photographed as found. The cab shell is the purchase; everything mechanical goes."
+    },
+    {
+      "url": "Fantasies/Big Mack - donor profile.jpg",
+      "caption": "The candidate in profile: the Acty's true side, the proportions the Mack face is built onto."
+    },
+    {
+      "url": "Fantasies/Big Mack - jamboree.png",
+      "caption": "The granite bowl jamboree: winched onto the one shelf the big recovery rigs cannot reach, cable down to a CJ in the slot, rear strapped to a boulder as its own anchor."
+    },
+    {
+      "url": "Fantasies/Big Mack - car show.png",
+      "caption": "Scale, documented: on a show lawn between Reiver and Pixels, standing a hair taller than a Task Force Chevy, which is what the factory figures say it should do."
+    },
+    {
+      "url": "Fantasies/Big Mack - livery study.png",
+      "caption": "The livery study: four finishes considered, Mack red, deep Mack green over cream, fawn over cream, and safety orange. The light colors with bands read as a mail truck, every one. The orange was chosen, specified toxic, under a high-gloss diamond clear."
+    },
+    {
+      "url": "Fantasies/Big Mack - the real Mack F.jpg",
+      "caption": "The namesake: a factory Mack F-700 front, the face the build scales down, puppy and all."
+    }
+  ],
+  "featured": false
 }
 ]
+
