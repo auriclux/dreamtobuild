@@ -1654,69 +1654,6 @@
   "featured": false
 },
   {
-  "id": "64-park-lane",
-  "title": "64 Park Lane",
-  "subtitle": "A 1964 Mercury Park Lane Breezeway in deep bottle green, built to be imposing",
-  "category": "Fantasies",
-  "badgeText": "Pure Vision",
-  "badgeType": "badge-fantasy",
-  "summary": "A 1964 Mercury Park Lane Breezeway boulevard cruiser: 215 inches of formal Mercury in a bottle green so dark it is almost black, shimmering like silk, rocker trim deleted, bumpers flush and body color, a 7.3 Godzilla under the hood, and a rear window that disappears into the body.",
-  "thumb": "park-lane-hero-final.png",
-  "heroImage": "park-lane-hero-final.png",
-  "thumbnail": "park-lane-hero-final.png",
-  "detailUrl": "detail.html?type=fantasies&id=64-park-lane",
-  "tags": [
-    "Mercury",
-    "Park Lane",
-    "Breezeway",
-    "Boulevard Cruiser",
-    "Godzilla",
-    "Green"
-  ],
-  "specifications": {
-    "bumpers": "Body color, pulled in flush against the body, front and rear",
-    "donor": "1964 Mercury Park Lane Breezeway 2-door hardtop, Four Lakes WA, $2,500 (Craigslist, posted Nov 1, 2026): 390 Marauder V8 with a Holley 4-barrel, ran when parked 20 years ago, tarp-worn paint, surface rust, mice damage in the interior, sun-damaged dash, broken trunk lock, no battery",
-    "engine": "7.3L Godzilla V8; a centrifugal supercharger is under consideration",
-    "finish": "Deep bottle green, almost black, black in the shadow and unmistakably green where the light falls, with a silky shimmer from a fine pearl lustre inside the color under a gloss clear; not a metallic, no flake, no sparkle",
-    "glass": "Breezeway retractable rear window in the reverse-slant pillar; its role in the build is TBD",
-    "interior": "TBD",
-    "name": "None yet; the car is simply the 64 Park Lane for now",
-    "platform": "1964 Mercury Park Lane: 215 inches long, 80 inches wide, about 4,200 pounds stock",
-    "purpose": "Boulevard cruiser. Large, imposing, angular; every design decision serves the mass",
-    "rearAxle": "Ford 9-inch",
-    "status": "Fantasy: studio and hero of record in hand. Interior, the glass role, and suspension detail are TBD",
-    "suspension": "Air bags; linkage detail TBD",
-    "transmission": "10R80 ten-speed automatic",
-    "trim": "Rocker trim deleted entirely; the flanks run clean and unbroken from wheel well to wheel well",
-    "wheels": "20-inch with low-profile tires, body color per specification. The studio and hero images show a dark finish; the difference is noted, not corrected"
-  },
-  "narrative": [
-    "The donor is a 1964 Mercury Park Lane Breezeway out of Four Lakes, Washington, at $2,500: a 25th Anniversary two-door hardtop with the 390 Marauder V8 and a Holley four-barrel, ran when parked twenty years ago, now wearing tarp-worn paint and surface rust, with mice in the interior, a sun-damaged dash, a broken trunk lock, and no battery. What it has is the trick: the Breezeway rear window powers down and disappears into the body, leaving a long formal roofline on a reverse-slant pillar with nothing between the front and rear glass. The fantasy before this one was a wagon whose raised roof glass stays. This one's glass leaves.",
-    "The car is enormous and makes no apology for it: 215 inches long, 80 inches wide, about 4,200 pounds before anything is touched. The design brief is to serve that mass, never to disguise it. Visual weight follows rules: dark colors read heavier than light ones, a single unbroken color reads heavier than a two-tone split, bright trim slices a flank into pieces that each read smaller, and dark glass reads as body rather than hole. So the car goes monochrome. The rocker trim is deleted entirely, the flanks running clean from wheel well to wheel well. The bumpers are painted body color and pulled in flush. A black survivor of the same car, factory Onyx, proved the shape carries the treatment; this build closes the leaks that car left open, the whitewalls, the spinner covers, the chrome rocker band.",
-    "The color is a bottle green so dark it is almost black, and getting it onto the car took three studio passes: the first read as plain black, the second came back with a coarse metallic sparkle, and the third landed it, black in the shadow, green where the light falls, with a fine pearl lustre moving across the panels like light on silk. The hero puts the finished car in motion in a brick and terra cotta courtyard, a driver at the wheel, bougainvillea petals settling in its wake. The petals obey physics, because this shop has fought that fight before: a thin trail over the ground the car has already crossed, densest behind the rear tires, thinning to nothing within two car lengths, almost none still in the air and those low. Getting the studio car into that courtyard took a transplant between two image tools; the car in the hero is the studio car, copied, not redescribed.",
-    "Underneath, the build is modern Ford and torque-first: the 7.3-liter Godzilla V8, an engine Ford built to move Super Duty trucks and motorhomes, with a centrifugal supercharger under consideration, a 10R80 ten-speed automatic, a Ford 9-inch rear, and air bags setting the stance the studio shows. It is a boulevard cruiser, imposing rather than fast, and the driveline is chosen to move weight without ever sounding strained. Three things are deliberately undecided and recorded as such: the interior, the role the disappearing glass plays in the finished build, and a name. For now the car is simply the 64 Park Lane, and that is enough."
-  ],
-  "gallery": [
-    {
-      "url": "park-lane-hero-final.png",
-      "caption": "Hero: the courtyard, brick and terra cotta, a driver at the wheel, bougainvillea petals settling in the wake at honest physics."
-    },
-    {
-      "url": "park-lane-studio-v4-dual.png",
-      "caption": "Studio of record, dual pane: front and rear three-quarter, deep bottle green silk shimmer, flanks clean, bumpers body color and flush."
-    },
-    {
-      "url": "park-lane-as-found-profile.jpg",
-      "caption": "As found: the Four Lakes car in profile, the long formal roofline and the reverse-slant Breezeway pillar."
-    },
-    {
-      "url": "park-lane-as-found-rear.jpg",
-      "caption": "As found, from the rear: the Breezeway glass in its frame over the full-width taillight panel. The whole pane powers down into the body."
-    }
-  ],
-  "featured": false
-},
-  {
   "id": "la-dona-vista-cruiser",
   "title": "La Doña",
   "subtitle": "A 1969 Vista Cruiser in shimmering sapphire, embroidered for the Virgin of Guadalupe",
@@ -1724,9 +1661,9 @@
   "badgeText": "Pure Vision",
   "badgeType": "badge-fantasy",
   "summary": "La Doña: a 1969 Oldsmobile Vista Cruiser show cruiser in shimmering sapphire candy, one continuous embroidered floral band framing the raised roof glass, suicide rear doors, LS3 with a centrifugal charger, and a procession hero: a car Omar delivers, not drives.",
-  "thumb": "vista-hero-procession-v6.png",
-  "heroImage": "vista-hero-procession-v6.png",
-  "thumbnail": "vista-hero-procession-v6.png",
+  "thumb": "Fantasies/vista-hero-procession-v6.png",
+  "heroImage": "Fantasies/vista-hero-procession-v6.png",
+  "thumbnail": "Fantasies/vista-hero-procession-v6.png",
   "detailUrl": "detail.html?type=fantasies&id=la-dona-vista-cruiser",
   "tags": [
     "Vista Cruiser",
@@ -1766,23 +1703,86 @@
   "gallery": [
     {
       "caption": "Studio of record: shimmering sapphire candy, continuous embroidered band with the corner wrap, body-color spoke 20-inch wheels, suicide-door handle at the forward edge of the rear door.",
-      "url": "vista-studio-v12-final.png"
+      "url": "Fantasies/vista-studio-v12-final.png"
     },
     {
       "caption": "As found: 1969 Oldsmobile Vista Cruiser, Simi Valley, rear three-quarter: the raised roof glass over the second row that started the whole build.",
-      "url": "vista02.png"
+      "url": "Fantasies/vista02.png"
     },
     {
       "caption": "Hero: the Guadalupe procession on Cesar Chavez Avenue: the framed Virgin on her rose shrine visible through the rear glass, dancers ahead, the child with the rose cart in her wake, and the suicide-door handles paired at the center pillar.",
-      "url": "vista-hero-procession-v6.png"
+      "url": "Fantasies/vista-hero-procession-v6.png"
     },
     {
       "caption": "Gallery alternate: procession v2: the rose cart landed here, a child in festival dress pushing a small wooden cart piled with roses behind the car.",
-      "url": "vista-hero-procession-v2.png"
+      "url": "Fantasies/vista-hero-procession-v2.png"
     },
     {
       "caption": "Gallery alternate: Cathedral Plaza at dusk, v1: the composition that taught the lesson: a car in the middle of a pedestrian plaza needs a reason to be there.",
-      "url": "vista-hero-v1.png"
+      "url": "Fantasies/vista-hero-v1.png"
+    }
+  ],
+  "featured": false
+},
+{
+  "id": "64-park-lane",
+  "title": "64 Park Lane",
+  "subtitle": "A 1964 Mercury Park Lane Breezeway in deep bottle green, built to be imposing",
+  "category": "Fantasies",
+  "badgeText": "Pure Vision",
+  "badgeType": "badge-fantasy",
+  "summary": "A 1964 Mercury Park Lane Breezeway boulevard cruiser: 215 inches of formal Mercury in a bottle green so dark it is almost black, shimmering like silk, rocker trim deleted, bumpers flush and body color, a 7.3 Godzilla under the hood, and a rear window that disappears into the body.",
+  "thumb": "Fantasies/park-lane-hero-final.png",
+  "heroImage": "Fantasies/park-lane-hero-final.png",
+  "thumbnail": "Fantasies/park-lane-hero-final.png",
+  "detailUrl": "detail.html?type=fantasies&id=64-park-lane",
+  "tags": [
+    "Mercury",
+    "Park Lane",
+    "Breezeway",
+    "Boulevard Cruiser",
+    "Godzilla",
+    "Green"
+  ],
+  "specifications": {
+    "bumpers": "Body color, pulled in flush against the body, front and rear",
+    "donor": "1964 Mercury Park Lane Breezeway 2-door hardtop, Four Lakes WA, $2,500 (Craigslist, posted Nov 1, 2026): 390 Marauder V8 with a Holley 4-barrel, ran when parked 20 years ago, tarp-worn paint, surface rust, mice damage in the interior, sun-damaged dash, broken trunk lock, no battery",
+    "engine": "7.3L Godzilla V8; a centrifugal supercharger is under consideration",
+    "finish": "Deep bottle green, almost black, black in the shadow and unmistakably green where the light falls, with a silky shimmer from a fine pearl lustre inside the color under a gloss clear; not a metallic, no flake, no sparkle",
+    "glass": "Breezeway retractable rear window in the reverse-slant pillar; its role in the build is TBD",
+    "interior": "TBD",
+    "name": "None yet; the car is simply the 64 Park Lane for now",
+    "platform": "1964 Mercury Park Lane: 215 inches long, 80 inches wide, about 4,200 pounds stock",
+    "purpose": "Boulevard cruiser. Large, imposing, angular; every design decision serves the mass",
+    "rearAxle": "Ford 9-inch",
+    "status": "Fantasy: studio and hero of record in hand. Interior, the glass role, and suspension detail are TBD",
+    "suspension": "Air bags; linkage detail TBD",
+    "transmission": "10R80 ten-speed automatic",
+    "trim": "Rocker trim deleted entirely; the flanks run clean and unbroken from wheel well to wheel well",
+    "wheels": "20-inch with low-profile tires, body color per specification. The studio and hero images show a dark finish; the difference is noted, not corrected"
+  },
+  "narrative": [
+    "The donor is a 1964 Mercury Park Lane Breezeway out of Four Lakes, Washington, at $2,500: a 25th Anniversary two-door hardtop with the 390 Marauder V8 and a Holley four-barrel, ran when parked twenty years ago, now wearing tarp-worn paint and surface rust, with mice in the interior, a sun-damaged dash, a broken trunk lock, and no battery. What it has is the trick: the Breezeway rear window powers down and disappears into the body, leaving a long formal roofline on a reverse-slant pillar with nothing between the front and rear glass. The fantasy before this one was a wagon whose raised roof glass stays. This one's glass leaves.",
+    "The car is enormous and makes no apology for it: 215 inches long, 80 inches wide, about 4,200 pounds before anything is touched. The design brief is to serve that mass, never to disguise it. Visual weight follows rules: dark colors read heavier than light ones, a single unbroken color reads heavier than a two-tone split, bright trim slices a flank into pieces that each read smaller, and dark glass reads as body rather than hole. So the car goes monochrome. The rocker trim is deleted entirely, the flanks running clean from wheel well to wheel well. The bumpers are painted body color and pulled in flush. A black survivor of the same car, factory Onyx, proved the shape carries the treatment; this build closes the leaks that car left open, the whitewalls, the spinner covers, the chrome rocker band.",
+    "The color is a bottle green so dark it is almost black, and getting it onto the car took three studio passes: the first read as plain black, the second came back with a coarse metallic sparkle, and the third landed it, black in the shadow, green where the light falls, with a fine pearl lustre moving across the panels like light on silk. The hero puts the finished car in motion in a brick and terra cotta courtyard, a driver at the wheel, bougainvillea petals settling in its wake. The petals obey physics, because this shop has fought that fight before: a thin trail over the ground the car has already crossed, densest behind the rear tires, thinning to nothing within two car lengths, almost none still in the air and those low. Getting the studio car into that courtyard took a transplant between two image tools; the car in the hero is the studio car, copied, not redescribed.",
+    "Underneath, the build is modern Ford and torque-first: the 7.3-liter Godzilla V8, an engine Ford built to move Super Duty trucks and motorhomes, with a centrifugal supercharger under consideration, a 10R80 ten-speed automatic, a Ford 9-inch rear, and air bags setting the stance the studio shows. It is a boulevard cruiser, imposing rather than fast, and the driveline is chosen to move weight without ever sounding strained. Three things are deliberately undecided and recorded as such: the interior, the role the disappearing glass plays in the finished build, and a name. For now the car is simply the 64 Park Lane, and that is enough."
+  ],
+  "gallery": [
+    {
+      "url": "Fantasies/park-lane-hero-final.png",
+      "caption": "Hero: the courtyard, brick and terra cotta, a driver at the wheel, bougainvillea petals settling in the wake at honest physics."
+    },
+    {
+      "url": "Fantasies/park-lane-studio-v4-dual.png",
+      "caption": "Studio of record, dual pane: front and rear three-quarter, deep bottle green silk shimmer, flanks clean, bumpers body color and flush."
+    },
+    {
+      "url": "Fantasies/park-lane-as-found-profile.jpg",
+      "caption": "As found: the Four Lakes car in profile, the long formal roofline and the reverse-slant Breezeway pillar."
+    },
+    {
+      "url": "Fantasies/park-lane-as-found-rear.jpg",
+      "caption": "As found, from the rear: the Breezeway glass in its frame over the full-width taillight panel. The whole pane powers down into the body."
     }
   ],
   "featured": false
