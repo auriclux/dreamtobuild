@@ -1715,6 +1715,77 @@
     }
   ],
   "featured": false
+},
+  {
+  "id": "la-dona-vista-cruiser",
+  "title": "La Doña",
+  "subtitle": "A 1969 Vista Cruiser in shimmering sapphire, embroidered for the Virgin of Guadalupe",
+  "category": "Fantasies",
+  "badgeText": "Pure Vision",
+  "badgeType": "badge-fantasy",
+  "summary": "La Doña: a 1969 Oldsmobile Vista Cruiser show cruiser in shimmering sapphire candy, one continuous embroidered floral band framing the raised roof glass, suicide rear doors, LS3 with a centrifugal charger, and a procession hero: a car Omar delivers, not drives.",
+  "thumb": "vista-hero-procession-v6.png",
+  "heroImage": "vista-hero-procession-v6.png",
+  "thumbnail": "vista-hero-procession-v6.png",
+  "detailUrl": "detail.html?type=fantasies&id=la-dona-vista-cruiser",
+  "tags": [
+    "Vista Cruiser",
+    "Oldsmobile",
+    "Wagon",
+    "Sapphire",
+    "Embroidery",
+    "La Doña",
+    "Guadalupe",
+    "Show Cruiser"
+  ],
+  "specifications": {
+    "band": "One continuous embroidered floral band, San Antonino / rotulo tradition, framing the glasshouse at a uniform width, unbroken around the rear corner; roof panel kept clean sapphire; woodgrain deleted",
+    "dash": "Stock-looking dash; details left as an exercise",
+    "donor": "1969 Oldsmobile Vista Cruiser, Simi Valley CA, $4,500 OBO (FB 2005166956841566): Olds 350 V8, runs and moves, overheating issue of unknown cause, factory wheels and hubcaps, third-row seat, sat several years",
+    "doors": "Suicide rear doors: the cue is the rear handle at the forward edge of the rear door, beside the front handle at the center pillar",
+    "engine": "LS3 with centrifugal supercharger",
+    "finish": "Shimmering sapphire candy: fine pearl lustre inside the candy under a gloss clear; the sapphire's own silk, not satin, not glitter",
+    "interior": "Ivory cloth with vachetta-tan (parchment) second tone, all seats cloth; sapphire carpet; sapphire piping; no embroidery inside",
+    "name": "La Doña, after Maria Felix: composed, elegant, in command. Omar delivers her; he does not drive her.",
+    "platform": "1969 Oldsmobile Vista Cruiser wagon with factory raised-roof side glass over the second row and dual-action tailgate",
+    "purpose": "Show and short-trip cruiser; the glass is the showcase, the procession is the job",
+    "rearAxle": "Ford 9-inch",
+    "status": "Fantasy, complete: studio, hero and as-found set in hand; ready to publish.",
+    "suspension": "SLA front, triangulated 4-link rear, air bags: stance is bags, not static",
+    "thesis": "A wagon whose glass is the cherry, dressed very, very feminine for the Virgin's feast: sapphire shimmer outside, embroidery framing the glasshouse, and a name Omar has to answer to.",
+    "transmission": "10L80 ten-speed",
+    "wheels": "Body-color sapphire spoke 20-inch wheels, low-profile tires"
+  },
+  "narrative": [
+    "The donor is a 1969 Oldsmobile Vista Cruiser out of Simi Valley, $4,500 or best offer: a 350 V8 that runs and moves with an overheating problem of unknown cause, factory wheels and hubcaps, a third-row seat, sat for several years. What caught me was the factory raised-roof glass wrapping up over the second row: a wagon that looks out as much as it carries. The glass is the extra wow, a cherry on top; it will influence the build, but it does not guide it. The build's center is something else.",
+    "The finish is shimmering sapphire candy: deep blue with a fine pearl lustre glowing inside the color, light shifting across the panels as it moves, under a wet-look gloss clear. A sapphire's soft shimmer is called its silk, rutile needles inside the stone: the satin idea was retired because a matte clear scatters the light that shimmer needs. The one ornate element is a single embroidered floral band in the San Antonino and rotulo tradition, framing the glasshouse in one continuous ribbon of the same width, flowers and colors unbroken around the rear corner, the roof itself kept clean sapphire. The woodgrain is deleted, the trim is dechromed, and the flowers stay outside.",
+    "The channel is very, very feminine: elegant, composed, Mexican-rooted, dignified, in the register of Claudia Sheinbaum's responsible daughter. The seed was a truck wearing ribbons of flowers, a treatment no macho Mexican hombre would dare drive, and this car is the proper application of it: not pink, not literal ribbons, a tailored suit with one ornate element. Her name is La Doña, after Maria Felix, composed and elegant and absolutely in command. Omar does not drive La Doña anywhere. He delivers her, he parks her where she can be seen, and he answers questions about her.",
+    "Her setting is the Dia de la Virgen de Guadalupe, with many roses: the miracle itself is roses, Juan Diego gathering Castilian roses in December into his tilma. In the procession she carries a framed image of the Virgin on a small shrine banked with red and pink roses, visible through the rear glass and the raised roof glass, roses on her hood, moving at walking pace down Cesar Chavez Avenue with folklorico dancers ahead and a mariachi behind, a child pushing a small wooden cart piled with roses in her wake. A car in the middle of a pedestrian plaza has no reason to be there; a car in the procession has a job, and the glass is the showcase it was built for.",
+    "Underneath she is a show and short-trip cruiser: an LS3 with a centrifugal supercharger, a 10L80 ten-speed, a Ford 9-inch, SLA front suspension and a triangulated four-link rear, sitting on air bags: the stance is bags, not static. Inside, ivory cloth with a vachetta tan, the pale natural hide that deepens to honey with age, sapphire carpet underfoot and sapphire piping tracing the seats, a stock-looking dash with the details left as an exercise. No embroidery inside; the flowers stay outside, where Omar has to look at them."
+  ],
+  "gallery": [
+    {
+      "caption": "Studio of record: shimmering sapphire candy, continuous embroidered band with the corner wrap, body-color spoke 20-inch wheels, suicide-door handle at the forward edge of the rear door.",
+      "url": "vista-studio-v12-final.png"
+    },
+    {
+      "caption": "As found: 1969 Oldsmobile Vista Cruiser, Simi Valley, rear three-quarter: the raised roof glass over the second row that started the whole build.",
+      "url": "vista02.png"
+    },
+    {
+      "caption": "Hero: the Guadalupe procession on Cesar Chavez Avenue: the framed Virgin on her rose shrine visible through the rear glass, dancers ahead, the child with the rose cart in her wake, and the suicide-door handles paired at the center pillar.",
+      "url": "vista-hero-procession-v6.png"
+    },
+    {
+      "caption": "Gallery alternate: procession v2: the rose cart landed here, a child in festival dress pushing a small wooden cart piled with roses behind the car.",
+      "url": "vista-hero-procession-v2.png"
+    },
+    {
+      "caption": "Gallery alternate: Cathedral Plaza at dusk, v1: the composition that taught the lesson: a car in the middle of a pedestrian plaza needs a reason to be there.",
+      "url": "vista-hero-v1.png"
+    }
+  ],
+  "featured": false
 }
 ]
 
