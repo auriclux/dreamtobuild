@@ -7,7 +7,7 @@
   "heroImage": "Projects/20260412 three-quarter w roll bar.png",
   "image": "Projects/20260412 three-quarter w roll bar.png",
   "narrative": [
-    "Project Midnight Caprice transforms a 1974 Chevrolet Caprice Classic convertible into an aggressive twin-turbo restomod, featuring twin VSR 70/70 billet T4 turbochargers on an LS3 408 stroker engine, Morimoto bi-LED projector headlights, custom stainless script badges, and a integrated roll bar with dove grey interior.",
+    "Project Midnight Caprice transforms a 1974 Chevrolet Caprice Classic convertible into an aggressive twin-turbo restomod, featuring twin VSR 70/70 billet T4 turbochargers on an LS3 408 stroker engine, Morimoto bi-LED projector headlights, custom stainless script badges, and an integrated roll bar with dove grey interior.",
     "Views of the finished car are AI concepts; the photographs are the car as it stands."
   ],
   "specifications": {
@@ -21,7 +21,8 @@
     "Interior": "Dove Grey Interior / Custom Integrated Roll Bar",
     "Suspension": "Modified SLA front and triangulated 4-link rear, using the factory frame mount locations with the axle mounts adjusted. Air bags at all four corners: the car lays frame and still clears a driveway",
     "Steering": "Rack and pinion, a little tighter than most",
-    "Structure": "Suspension loads front and rear transfer into an inner stiffening structure: an underdash hoop tied to truss work low in the door openings, up to the overhead roll bar, with down bars hidden inside the body panels. Only the roll bar is plainly visible. It is not a cage, because that aesthetic does not go with a convertible; the truss takes the hinge out of the car. The truss work is not finished yet; much of the rest is"
+    "Structure": "Suspension loads front and rear transfer into an inner stiffening structure: an underdash hoop tied to truss work low in the door openings, up to the overhead roll bar, with down bars hidden inside the body panels. Only the roll bar is plainly visible. It is not a cage, because that aesthetic does not go with a convertible; the truss takes the hinge out of the car. The truss work is not finished yet; much of the rest is",
+    "Tires & Wheels": "C8 Corvette take-offs, run for break-in: Michelin Pilot Sport 4 S, 245/35ZR19 (89Y) front and 305/30ZR20 (99Y) rear, GM TPC spec, on black C8 split-five-spoke wheels with machined rim edges and crossed-flags caps. The intent is to go as large as the car will take once it is running; these roll the car through break-in, expendable if they get injured. The wheel style is liked; it may stay, or it may change."
   },
   "subGalleries": {
     "concepts": {
@@ -35,8 +36,11 @@
     },
     "funnies": {
       "title": "The Funnies",
-      "heroImage": "Projects/20260412 three-quarter w roll bar.png",
-      "images": []
+      "heroImage": "Projects/20230630 Helen on Caprice.jpg",
+      "images": [
+        "Projects/20230630 Helen on Caprice.jpg",
+        "Projects/20261127 Helen on Caprice remake.jpg"
+      ]
     },
     "history": {
       "title": "Build Start & History",
@@ -47,6 +51,7 @@
         "Projects/20230315 Side.jpg",
         "Projects/20240717 Underdash hoop.jpg",
         "Projects/20241025 Dash in Car.jpg",
+        "Projects/20250327 Front wheel trial.jpg",
         "Projects/20260408 In shop top & doors on.jpg",
         "Projects/20260415 sheet metal cleco on.jpg",
         "Projects/20260603 Engine bay truss bar.jpg",
@@ -54,58 +59,8 @@
       ]
     }
   },
-  "builderNotes": "Frame and body alignment specs for B-body restomod: Ensure twin VSR turbo plumbing clears front air dam turnbuckles and radiator core support."
+  "builderNotes": "Crossroads, Nov 2026: Kraftsman has given up on the project; the car transfers to Omar at Double-O Garage. Before the transfer Kraftsman promised to finish two things: the bumper fitting (done) and the headlight enclosures (still to complete). After the transfer, the next-steps conversation with Omar sets the punch list. Candidates so far: the grille, my design, four panels via SendCutSend; complete the downdraft diverter from the scoop and re-fit the filters beside the radiator. Funnies is the then-and-now set: the June 30, 2023 Helen Mirren composite (found photo, pasted figure, Google Bard era) beside its Nov 27, 2026 remake (one generated photograph, face-referenced and realism-graded, the lettering re-set by hand both times): what the models learned in three years."
 },
-  {
-    "id": "torky-t",
-    "title": "Torky-T",
-    "subtitle": "1923 Ford T-Bucket Roadster",
-    "thumb": "Projects/torky-t-hero.jpg",
-    "heroImage": "Projects/torky-t-hero.jpg",
-    "image": "Projects/torky-t-hero.jpg",
-    "narrative": [
-      "Constructed with a vintage fiberglass body, Small Block Chevrolet engine with a Vertex magneto ignition system, TH350 transmission, and Ford 9-inch rear axle."
-    ],
-    "specifications": {
-      "Year": "1923",
-      "Make": "Ford",
-      "Model": "T-Bucket Roadster",
-      "Engine": "Small Block Chevrolet V8",
-      "Ignition": "Vertex Magneto System",
-      "Transmission": "TH350 Automatic",
-      "Rear Axle": "Ford 9-inch",
-      "Tires": "Mickey Thompson 29x18.5LT15 Rear"
-    },
-    "subGalleries": {
-      "concepts": {
-        "title": "AI Concepts",
-        "heroImage": "Projects/torky-t-hero.jpg",
-        "images": [
-          "Projects/torky-t-hero.jpg"
-        ]
-      },
-      "funnies": {
-        "title": "The Funnies",
-        "heroImage": "Projects/torky-t-hero.jpg",
-        "images": [
-          "Projects/torky-t-hero.jpg"
-        ]
-      },
-      "history": {
-        "title": "Build Start & History",
-        "heroImage": "Projects/garage-find.jpg",
-        "images": [
-           "Projects/garage-find.jpg",
-            "Projects/shop-delivery.jpg",
-            "Projects/brake-front.jpg",
-            "Projects/brake-rear.jpg",
-            "Projects/magneto-bench.jpg",
-             "Projects/magneto-test.mp4"
-          ]
-      }
-    },
-    "builderNotes": "Torky-T ignition timing and custom laser-cut pedal pad specs..."
-  },
 {
   "id": "scapegoat",
   "title": "Project ScapeGoat",
