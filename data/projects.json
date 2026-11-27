@@ -36,11 +36,12 @@
     },
     "funnies": {
       "title": "The Funnies",
-      "heroImage": "Projects/20230630 Helen on Caprice.jpg",
+      "heroImage": "Projects/AI then, 2023 - found photo, pasted figure, a quote Bard only thought she said.jpg",
       "images": [
-        "Projects/20230630 Helen on Caprice.jpg",
-        "Projects/20261127 Helen on Caprice remake.jpg"
-      ]
+        "Projects/AI then, 2023 - found photo, pasted figure, a quote Bard only thought she said.jpg",
+        "Projects/AI now, 2026 - one generated photograph, face matched and graded, lettering set by hand.jpg"
+      ],
+      "description": "A collection of amusing items the build has picked up along the way. It opens with a then-and-now pair: the same joke, made by two generations of AI three years apart. Click either one and read its caption."
     },
     "history": {
       "title": "Build Start & History",
@@ -56,10 +57,11 @@
         "Projects/20260415 sheet metal cleco on.jpg",
         "Projects/20260603 Engine bay truss bar.jpg",
         "Projects/20261101 Bumper Three-quarter.jpg"
-      ]
+      ],
+      "description": "The build in photographs, in the order they were taken: the car as it arrived, the structure going in, the rollers under it while the work proceeds. The finished car lives in AI Concepts; these are the car as it stands."
     }
   },
-  "builderNotes": "Crossroads, Nov 2026: Kraftsman has given up on the project; the car transfers to Omar at Double-O Garage. Before the transfer Kraftsman promised to finish two things: the bumper fitting (done) and the headlight enclosures (still to complete). After the transfer, the next-steps conversation with Omar sets the punch list. Candidates so far: the grille, my design, four panels via SendCutSend; complete the downdraft diverter from the scoop and re-fit the filters beside the radiator. Funnies is the then-and-now set: the June 30, 2023 Helen Mirren composite (found photo, pasted figure, Google Bard era) beside its Nov 27, 2026 remake (one generated photograph, face-referenced and realism-graded, the lettering re-set by hand both times): what the models learned in three years."
+  "builderNotes": "At a crossroads, Nov 2026: Kraftsman has given up on the project, and the car will move to Omar at Double-O Garage. Next, in order:\n• Kraftsman to finish the headlight enclosures, the last of his two promised finishes before the transfer (the bumper fitting is done).\n• Transfer the car to Omar at Double-O Garage.\n• Complete the downdraft diverter from the scoop and re-fit the filters beside the radiator.\n• Complete the grille: my design, four panels via SendCutSend, installed as the grille.\n• The what's-next conversation with Omar, which sets the punch list from there.\nFunnies is the then-and-now set: the June 30, 2023 Helen Mirren composite (Google Bard era) beside its Nov 27, 2026 remake: what the models learned in three years."
 },
 {
   "id": "scapegoat",
