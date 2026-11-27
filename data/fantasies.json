@@ -1788,6 +1788,67 @@
     }
   ],
   "featured": false
+},
+  {
+  "id": "49-fleetline",
+  "title": "49 Fleetline",
+  "subtitle": "A 1949 Chevrolet Fleetline lead sled in candy green, dressed to the centroid of the sled world",
+  "category": "Fantasies",
+  "badgeText": "Pure Vision",
+  "badgeType": "badge-fantasy",
+  "summary": "A 1949 Chevrolet Fleetline fastback built as the distilled lead sled: a mild raked chop, shaved flanks, a stock grille, candy green paint, pearl white tuck-and-roll, flipper caps and wide whitewalls, and a pulled LS3 dressed in finned covers, cruising the Broiler lot in Downey at dusk.",
+  "thumb": "Fantasies/fleetline-hero-broiler-v1.png",
+  "heroImage": "Fantasies/fleetline-hero-broiler-v1.png",
+  "thumbnail": "Fantasies/fleetline-hero-broiler-v1.png",
+  "detailUrl": "detail.html?type=fantasies&id=49-fleetline",
+  "tags": [
+    "Chevrolet",
+    "Fleetline",
+    "Lead Sled",
+    "Custom",
+    "Candy Green",
+    "LS3"
+  ],
+  "specifications": {
+    "bodyMods": "Nosed and decked, the center hood seam welded shut, door handles shaved, side trim removed and filled, headlights frenched into the fenders",
+    "bumpers": "Chrome, smoothed and tucked close to the body",
+    "chop": "A mild raked chop: 2 inches at the A-pillar, 2.5 inches at the C-pillar, the fastback roof-to-trunk curve kept unbroken",
+    "dateAdded": "2026-11-27T09:21:00",
+    "donor": "1949 Chevrolet Fleetline coupe, Escondido CA, $5,000 OBO (Facebook Marketplace, listed Oct 30, 2026): all original parts present, motor and transmission missing, front floors need attention, no cancer elsewhere, surface rust, will need bodywork, clean Washington title",
+    "engine": "Pulled LS3, dressed but not built, with finned valve covers disguising the coil packs",
+    "finish": "Candy green, a single color under gloss clear, with light pinstriping on the nose and the deck only",
+    "grille": "Stock 1949 Chevrolet grille, refitted in a smoothed surround",
+    "interior": "Pearl white tuck-and-roll over the stock bench, body-color piping; stock dash painted body color, stock wheel, aftermarket gauges",
+    "rearAxle": "Ford 9-inch",
+    "skirts": "Standard DeLuxe rear fender skirts",
+    "status": "Fantasy: studio and hero of record in hand. The dress was distilled from a canvas of admired Fleetline sleds before any ruling was made",
+    "suspension": "Mustang II-type A-arm front, triangulated four-link rear, air bags; the parked stance is laid flat, level to tail-low",
+    "taillights": "1959 Corvette taillights, mounted vertically. The studio render reads them as small vertical lenses; the difference is noted, not corrected",
+    "transmission": "4L60E automatic, the most common LS-swap automatic",
+    "wheels": "15-inch steel wheels with chrome flipper caps and wide whitewall tires",
+    "windshield": "One-piece 1950 Oldsmobile windshield, cut down for the chop"
+  },
+  "narrative": [
+    "The donor is a 1949 Chevrolet Fleetline out of Escondido at $5,000 or best offer: all of its original parts present, its motor and transmission gone, front floors needing attention, no cancer anywhere else, surface rust over grey primer, and a clean Washington title. It sat low in the queue on bandwidth, filed under a one-line judgment that has carried it the whole way: a Fleetline is a nice style. The fastback is the style, one unbroken curve from the windshield header to the rear bumper, and everything in this build is arranged to protect that curve.",
+    "The dress was not invented. Before a single ruling was made, the sled world was canvassed for this exact profile: some twenty-seven admired Fleetlines, the period Kustomrama histories, the magazine feature cars, the HAMB build threads, the lead-sled groups. The recurring treatment was tallied into a centroid, and a second opinion was taken from another model and compared line by line. The two agreed on the core: nosed, decked and shaved, frenched headlights, tuck-and-roll, steelies and whitewalls. Where they parted, on the chop and the color, the evidence and the rulings below decided.",
+    "The rulings: a mild raked chop, 2 inches at the A-pillar and 2.5 at the C, milder than the 3 to 4 inch cluster the canvas found and raked to deepen the fastback slope rather than flatten it. Full sled flanks, handles shaved and trim filled, set against the one restrained element, the stock grille refitted. Taillights from a 1959 Corvette, kept vertical, chosen from the widest field the canvas offered. Flipper caps over the Cadillac caps the tally favored. And candy green, the color the two best-documented traditional builds in the canvas, Masterson's and the Sapien family's, arrived at independently. The windshield is a one-piece 1950 Oldsmobile unit cut down for the chop; the interior is pearl white tuck-and-roll over the stock bench; the graphics stop at light pinstriping on the nose and the deck.",
+    "Underneath, the car is deliberately simple, because a sled is about the silhouette: a pulled LS3 dressed rather than built, its coil packs hidden under finned valve covers, the common automatic, a Ford 9-inch, a Mustang II front and a triangulated four-link on air bags. The hero puts it where this kind of car has always lived, rolling the lot at the Broiler in Downey at dusk, the 1958 Googie drive-in on Firestone Boulevard, neon in the candy paint and a carhop crossing behind. No name yet. For now it is simply the 49 Fleetline, and the shape is name enough."
+  ],
+  "gallery": [
+    {
+      "url": "Fantasies/fleetline-hero-broiler-v1.png",
+      "caption": "Hero: rolling the lot at the Broiler in Downey at dusk, the 1958 Googie drive-in, neon doubled in the candy green."
+    },
+    {
+      "url": "Fantasies/fleetline-studio-v2-dual.png",
+      "caption": "Studio of record, dual pane: front and rear three-quarter, candy green, shaved flanks, DeLuxe skirts, flipper caps and wide whitewalls."
+    },
+    {
+      "url": "Fantasies/fleetline-as-found.jpg",
+      "caption": "As found: the Escondido car in its driveway, surface rust over grey primer, headlight buckets empty, whitewalls already on it. The listing cover photo, the only as-found image archived."
+    }
+  ],
+  "featured": false
 }
 ]
 
