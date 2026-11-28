@@ -213,7 +213,7 @@
         ]
       }
     },
-    "builderNotes": "COE cab graft specs: Verify rear-hinged suicide door latch geometry and monitor fuel pressure telemetry under load."
+    "builderNotes": "• Receive and install the fuel rail pressure shims (stated received, lost in the shop. Again.)\n• R&R the thermistor throwing the code: Mopar 56041053 battery temperature sensor. Reference: https://www.youtube.com/watch?v=Cz0ImX2UsBo&t=136s and https://www.youtube.com/watch?v=ORFNVWPlzV8\n• R&R hydraulics\n• So much more"
   },
   {
     "id": "reiver",
