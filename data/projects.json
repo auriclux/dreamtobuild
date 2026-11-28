@@ -1,123 +1,173 @@
 [
-{
-  "id": "midnight-caprice",
-  "title": "Project Midnight Caprice",
-  "subtitle": "1974 Chevrolet Caprice Classic Restomod Convertible",
-  "thumb": "Projects/20260412 three-quarter w roll bar.png",
-  "heroImage": "Projects/20260412 three-quarter w roll bar.png",
-  "image": "Projects/20260412 three-quarter w roll bar.png",
-  "narrative": [
-    "Project Midnight Caprice transforms a 1974 Chevrolet Caprice Classic convertible into an aggressive twin-turbo restomod, featuring twin VSR 70/70 billet T4 turbochargers on an LS3 408 stroker engine, Morimoto bi-LED projector headlights, custom stainless script badges, and an integrated roll bar with dove grey interior.",
-    "Views of the finished car are AI concepts; the photographs are the car as it stands."
-  ],
-  "specifications": {
-    "Year": "1974",
-    "Make": "Chevrolet",
-    "Model": "Caprice Classic Convertible",
-    "Engine": "LS3 408 Stroker V8",
-    "Induction": "Twin VSR 70/70 Billet T4 Turbochargers",
-    "Lighting": "Morimoto Bi-LED Projector Headlights / BTF-Lighting FCOB Red LED Strips",
-    "Exterior": "Aerofoil Streamline Tubing Grille / Custom 'Midnight Caprice' Stainless Badges",
-    "Interior": "Dove Grey Interior / Custom Integrated Roll Bar",
-    "Suspension": "Modified SLA front and triangulated 4-link rear, using the factory frame mount locations with the axle mounts adjusted. Air bags at all four corners: the car lays frame and still clears a driveway",
-    "Steering": "Rack and pinion, a little tighter than most",
-    "Structure": "Suspension loads front and rear transfer into an inner stiffening structure: an underdash hoop tied to truss work low in the door openings, up to the overhead roll bar, with down bars hidden inside the body panels. Only the roll bar is plainly visible. It is not a cage, because that aesthetic does not go with a convertible; the truss takes the hinge out of the car. The truss work is not finished yet; much of the rest is",
-    "Tires & Wheels": "C8 Corvette take-offs, run for break-in: Michelin Pilot Sport 4 S, 245/35ZR19 (89Y) front and 305/30ZR20 (99Y) rear, GM TPC spec, on black C8 split-five-spoke wheels with machined rim edges and crossed-flags caps. The intent is to go as large as the car will take once it is running; these roll the car through break-in, expendable if they get injured. The wheel style is liked; it may stay, or it may change."
-  },
-  "subGalleries": {
-    "concepts": {
-      "title": "AI Concepts",
-      "heroImage": "Projects/20260412 three-quarter w roll bar.png",
-      "images": [
-        "Projects/20260412 three-quarter w roll bar.png",
-        "Projects/Rear 03 raw.jpg",
-        "Projects/20260412 Rear three quarter with navy top up.png"
-      ]
+  {
+    "id": "midnight-caprice",
+    "title": "Project Midnight Caprice",
+    "subtitle": "1974 Chevrolet Caprice Classic Restomod Convertible",
+    "thumb": "Projects/20260412 three-quarter w roll bar.png",
+    "heroImage": "Projects/20260412 three-quarter w roll bar.png",
+    "image": "Projects/20260412 three-quarter w roll bar.png",
+    "narrative": [
+      "Project Midnight Caprice transforms a 1974 Chevrolet Caprice Classic convertible into an aggressive twin-turbo restomod, featuring twin VSR 70/70 billet T4 turbochargers on an LS3 408 stroker engine, Morimoto bi-LED projector headlights, custom stainless script badges, and an integrated roll bar with dove grey interior.",
+      "Views of the finished car are AI concepts; the photographs are the car as it stands."
+    ],
+    "specifications": {
+      "Year": "1974",
+      "Make": "Chevrolet",
+      "Model": "Caprice Classic Convertible",
+      "Engine": "LS3 408 Stroker V8",
+      "Induction": "Twin VSR 70/70 Billet T4 Turbochargers",
+      "Lighting": "Morimoto Bi-LED Projector Headlights / BTF-Lighting FCOB Red LED Strips",
+      "Exterior": "Aerofoil Streamline Tubing Grille / Custom 'Midnight Caprice' Stainless Badges",
+      "Interior": "Dove Grey Interior / Custom Integrated Roll Bar",
+      "Suspension": "Modified SLA front and triangulated 4-link rear, using the factory frame mount locations with the axle mounts adjusted. Air bags at all four corners: the car lays frame and still clears a driveway",
+      "Steering": "Rack and pinion, a little tighter than most",
+      "Structure": "Suspension loads front and rear transfer into an inner stiffening structure: an underdash hoop tied to truss work low in the door openings, up to the overhead roll bar, with down bars hidden inside the body panels. Only the roll bar is plainly visible. It is not a cage, because that aesthetic does not go with a convertible; the truss takes the hinge out of the car. The truss work is not finished yet; much of the rest is",
+      "Tires & Wheels": "C8 Corvette take-offs, run for break-in: Michelin Pilot Sport 4 S, 245/35ZR19 (89Y) front and 305/30ZR20 (99Y) rear, GM TPC spec, on black C8 split-five-spoke wheels with machined rim edges and crossed-flags caps. The intent is to go as large as the car will take once it is running; these roll the car through break-in, expendable if they get injured. The wheel style is liked; it may stay, or it may change."
     },
-    "funnies": {
-      "title": "The Funnies",
-      "heroImage": "Projects/AI then, 2023 - found photo, pasted figure, a quote Bard only thought she said.jpg",
-      "images": [
-        "Projects/AI then, 2023 - found photo, pasted figure, a quote Bard only thought she said.jpg",
-        "Projects/AI now, 2026 - one generated photograph, face matched and graded, lettering set by hand.jpg"
-      ],
-      "description": "A collection of amusing items the build has picked up along the way. It opens with a then-and-now pair: the same joke, made by two generations of AI three years apart. Click either one and read its caption."
+    "subGalleries": {
+      "concepts": {
+        "title": "AI Concepts",
+        "heroImage": "Projects/20260412 three-quarter w roll bar.png",
+        "images": [
+          "Projects/20260412 three-quarter w roll bar.png",
+          "Projects/Rear 03 raw.jpg",
+          "Projects/20260412 Rear three quarter with navy top up.png"
+        ]
+      },
+      "funnies": {
+        "title": "The Funnies",
+        "heroImage": "Projects/AI then, 2023 - found photo, pasted figure, a quote Bard only thought she said.jpg",
+        "images": [
+          "Projects/AI then, 2023 - found photo, pasted figure, a quote Bard only thought she said.jpg",
+          "Projects/AI now, 2026 - one generated photograph, face matched and graded, lettering set by hand.jpg"
+        ],
+        "description": "A collection of amusing items the build has picked up along the way. It opens with a then-and-now pair: the same joke, made by two generations of AI three years apart. Click either one and read its caption."
+      },
+      "history": {
+        "title": "Build Start & History",
+        "heroImage": "Projects/20220701 Arrival.JPG",
+        "images": [
+          "Projects/20220701 Arrival.JPG",
+          "Projects/20230315 Frame.jpg",
+          "Projects/20230315 Side.jpg",
+          "Projects/20240717 Underdash hoop.jpg",
+          "Projects/20241025 Dash in Car.jpg",
+          "Projects/20250327 Front wheel trial.jpg",
+          "Projects/20260408 In shop top & doors on.jpg",
+          "Projects/20260415 sheet metal cleco on.jpg",
+          "Projects/20260603 Engine bay truss bar.jpg",
+          "Projects/20261101 Bumper Three-quarter.jpg"
+        ],
+        "description": "The build in photographs, in the order they were taken: the car as it arrived, the structure going in, the rollers under it while the work proceeds. The finished car lives in AI Concepts; these are the car as it stands."
+      }
     },
-    "history": {
-      "title": "Build Start & History",
-      "heroImage": "Projects/20220701 Arrival.JPG",
-      "images": [
-        "Projects/20220701 Arrival.JPG",
-        "Projects/20230315 Frame.jpg",
-        "Projects/20230315 Side.jpg",
-        "Projects/20240717 Underdash hoop.jpg",
-        "Projects/20241025 Dash in Car.jpg",
-        "Projects/20250327 Front wheel trial.jpg",
-        "Projects/20260408 In shop top & doors on.jpg",
-        "Projects/20260415 sheet metal cleco on.jpg",
-        "Projects/20260603 Engine bay truss bar.jpg",
-        "Projects/20261101 Bumper Three-quarter.jpg"
-      ],
-      "description": "The build in photographs, in the order they were taken: the car as it arrived, the structure going in, the rollers under it while the work proceeds. The finished car lives in AI Concepts; these are the car as it stands."
-    }
+    "builderNotes": "At a crossroads, Nov 2026: Kraftsman has given up on the project, and the car will move to Omar at Double-O Garage. Next, in order:\n• Kraftsman to finish the headlight enclosures, the last of his two promised finishes before the transfer (the bumper fitting is done).\n• Transfer the car to Omar at Double-O Garage.\n• Complete the downdraft diverter from the scoop and re-fit the filters beside the radiator.\n• Complete the grille: my design, four panels via SendCutSend, installed as the grille.\n• The what's-next conversation with Omar, which sets the punch list from there.\nFunnies is the then-and-now set: the June 30, 2023 Helen Mirren composite (Google Bard era) beside its Nov 27, 2026 remake: what the models learned in three years."
   },
-  "builderNotes": "At a crossroads, Nov 2026: Kraftsman has given up on the project, and the car will move to Omar at Double-O Garage. Next, in order:\n• Kraftsman to finish the headlight enclosures, the last of his two promised finishes before the transfer (the bumper fitting is done).\n• Transfer the car to Omar at Double-O Garage.\n• Complete the downdraft diverter from the scoop and re-fit the filters beside the radiator.\n• Complete the grille: my design, four panels via SendCutSend, installed as the grille.\n• The what's-next conversation with Omar, which sets the punch list from there.\nFunnies is the then-and-now set: the June 30, 2023 Helen Mirren composite (Google Bard era) beside its Nov 27, 2026 remake: what the models learned in three years."
-},
-{
-  "id": "scapegoat",
-  "title": "Project ScapeGoat",
-  "subtitle": "1968 Pontiac Street & Strip Outlaw Drag Car",
-  "thumb": "Projects/ScapeGoat rear widened split bumper.jpg",
-  "heroImage": "Projects/ScapeGoat rear widened split bumper.jpg",
-  "image": "Projects/ScapeGoat rear widened split bumper.jpg",
-  "narrative": [
-    "Project ScapeGoat transforms a 1968 Pontiac into a full street-and-strip outlaw drag car, built as the high-horsepower outlaw counterpart to its factory-bodied 'Body Brother' restomod.",
-    "The build started in October 2026 at the chassis. The central X-member was started on Oct 14 and mocked up on Oct 21. The driveshaft retainer hoops came fresh off the new bender on Oct 23, and the center shaft retainer cage was under construction by Nov 7, its plate plasma-cut on Nov 11. The rear frame is still unmodified: the 1-inch notch comes later, cut clear of the frame's CON-VIN stamp zone, and the wide rear tires get covered by moving the rear fenders' outer sheet metal out, not flares. The drivetrain is decided (built 6.2L L94, T56 Magnum, Ford 9-inch) and the hunt for the engine and gearbox is live. The car's Alpine Blue is confirmed by original paint still on the body; its VIN is still unknown, narrowed to the 242378Z1346xx block."
-  ],
-  "specifications": {
-    "Year": "1968",
-    "Make": "Pontiac",
-    "Model": "Outlaw Drag Car",
-    "Engine": "Built 6.2L L94 V8 (VVT & DOD Delete)",
-    "Transmission": "Tremec T56 Magnum 6-Speed (2.66:1 First Gear / QuickTime RM-6037 Bellhousing)",
-    "Drivetrain": "4.0-inch Aluminum Driveshaft / Weld ProStar 15x15 Rear Wheels",
-    "Chassis": "Custom central X-member (in fabrication); 1-inch frame rail notch planned, clear of the CON-VIN stamp zone",
-    "Management": "Holley Terminator X MAX ECU",
-    "Badge": "Laser-Cut Stainless 'SCAPEGOAT' Grille Badge"
-  },
-  "subGalleries": {
-    "concepts": {
-      "title": "AI Concepts",
-      "heroImage": "Projects/ScapeGoat rear widened split bumper.jpg",
-      "images": [
-        "Projects/ScapeGoat Foldout.jpg",
-        "Projects/ScapeGoat at the car show.jpg",
-        "Projects/ScapeGoat rear widened split bumper.jpg"
-      ]
+  {
+    "id": "torky-t",
+    "title": "Torky-T",
+    "subtitle": "1923 Ford T-Bucket Roadster",
+    "thumb": "Projects/torky-t-hero.jpg",
+    "heroImage": "Projects/torky-t-hero.jpg",
+    "image": "Projects/torky-t-hero.jpg",
+    "narrative": [
+      "Constructed with a vintage fiberglass body, Small Block Chevrolet engine with a Vertex magneto ignition system, TH350 transmission, and Ford 9-inch rear axle."
+    ],
+    "specifications": {
+      "Year": "1923",
+      "Make": "Ford",
+      "Model": "T-Bucket Roadster",
+      "Engine": "Small Block Chevrolet V8",
+      "Ignition": "Vertex Magneto System",
+      "Transmission": "TH350 Automatic",
+      "Rear Axle": "Ford 9-inch",
+      "Tires": "Mickey Thompson 29x18.5LT15 Rear"
     },
-    "funnies": {
-      "title": "The Funnies",
-      "heroImage": "Projects/Stuffing Slicks.jpg",
-      "images": [
-        "Projects/Stuffing Slicks.jpg",
-        "Projects/ScapeGoat at the Granary.jpg",
-        "Projects/Omar as passenger in ScapeGoat on the blvd..jpg"
-      ]
+    "subGalleries": {
+      "concepts": {
+        "title": "AI Concepts",
+        "heroImage": "Projects/torky-t-hero.jpg",
+        "images": [
+          "Projects/torky-t-hero.jpg"
+        ]
+      },
+      "funnies": {
+        "title": "The Funnies",
+        "heroImage": "Projects/torky-t-hero.jpg",
+        "images": [
+          "Projects/torky-t-hero.jpg"
+        ]
+      },
+      "history": {
+        "title": "Build Start & History",
+        "heroImage": "Projects/garage-find.jpg",
+        "images": [
+          "Projects/garage-find.jpg",
+          "Projects/shop-delivery.jpg",
+          "Projects/brake-front.jpg",
+          "Projects/brake-rear.jpg",
+          "Projects/magneto-bench.jpg",
+          "Projects/magneto-test.mp4"
+        ]
+      }
     },
-    "history": {
-      "title": "Build Start & History",
-      "heroImage": "Projects/20261021 X-member mock-up 01.jpg",
-      "images": [
-        "Projects/20261021 X-member mock-up 01.jpg",
-        "Projects/20261014 X-member start.jpg",
-        "Projects/20261023 shaft retainer hoops fresh off new bender.jpg",
-        "Projects/20261107 Scapegoat driveshaft retainer cage under construction.jpg",
-        "Projects/20261111 Scapegoat retainer cage plasma cuts.jpg"
-      ]
-    }
+    "builderNotes": "• Fix brakes, completely (Edwin's test drive suggests this is done; needs verification)\n• Fab and install fan shroud, then fan (fab started)\n• Modify and install radiator reservoir (reservoir modified)\n• Install pedal pads (ordered 4 Nov, delivered 9 Nov; appliques 11 Nov)\n• Fab butterfly linkage and install butterflies\n• Fix tire leak (stated complete, needs validation)\n• Install windshield\n• Fab and install windshield top brass\n• Check for correct operation of all gauges\n• Check magneto kill switch operation\n• Check magneto hold-down bolt and mech tach output\n• Spec and install side mirrors\n• Complete upholstery\n• What else?\n• Make shiny and 'appealing'"
   },
-  "builderNotes": "Shop punchlist: 1) Finish center shaft retainer cage including lower plate. 2) Weld in retainer cage and X-member. 3) Notch and box the frame. 4) Weld in new coilover mounts from BMR Suspension. 5) Grind and sand frame; prep for paint and rust inhibition. 6) Define the suspension installation. 7) IDEA on file (2026-11-24): woven-wire mesh door panels, per the reference photo (Projects/ScapeGoat mesh door panel reference.jpg, unlinked): the framed mesh panel Scot photographed on a green T-bucket's door, a workable treatment for ScapeGoat's door panels, likely a better idea than the previous one. Decide at the door stage."
-},
+  {
+    "id": "scapegoat",
+    "title": "Project ScapeGoat",
+    "subtitle": "1968 Pontiac Street & Strip Outlaw Drag Car",
+    "thumb": "Projects/ScapeGoat rear widened split bumper.jpg",
+    "heroImage": "Projects/ScapeGoat rear widened split bumper.jpg",
+    "image": "Projects/ScapeGoat rear widened split bumper.jpg",
+    "narrative": [
+      "Project ScapeGoat transforms a 1968 Pontiac into a full street-and-strip outlaw drag car, built as the high-horsepower outlaw counterpart to its factory-bodied 'Body Brother' restomod.",
+      "The build started in October 2026 at the chassis. The central X-member was started on Oct 14 and mocked up on Oct 21. The driveshaft retainer hoops came fresh off the new bender on Oct 23, and the center shaft retainer cage was under construction by Nov 7, its plate plasma-cut on Nov 11. The rear frame is still unmodified: the 1-inch notch comes later, cut clear of the frame's CON-VIN stamp zone, and the wide rear tires get covered by moving the rear fenders' outer sheet metal out, not flares. The drivetrain is decided (built 6.2L L94, T56 Magnum, Ford 9-inch) and the hunt for the engine and gearbox is live. The car's Alpine Blue is confirmed by original paint still on the body; its VIN is still unknown, narrowed to the 242378Z1346xx block."
+    ],
+    "specifications": {
+      "Year": "1968",
+      "Make": "Pontiac",
+      "Model": "Outlaw Drag Car",
+      "Engine": "Built 6.2L L94 V8 (VVT & DOD Delete)",
+      "Transmission": "Tremec T56 Magnum 6-Speed (2.66:1 First Gear / QuickTime RM-6037 Bellhousing)",
+      "Drivetrain": "4.0-inch Aluminum Driveshaft / Weld ProStar 15x15 Rear Wheels",
+      "Chassis": "Custom central X-member (in fabrication); 1-inch frame rail notch planned, clear of the CON-VIN stamp zone",
+      "Management": "Holley Terminator X MAX ECU",
+      "Badge": "Laser-Cut Stainless 'SCAPEGOAT' Grille Badge"
+    },
+    "subGalleries": {
+      "concepts": {
+        "title": "AI Concepts",
+        "heroImage": "Projects/ScapeGoat rear widened split bumper.jpg",
+        "images": [
+          "Projects/ScapeGoat Foldout.jpg",
+          "Projects/ScapeGoat at the car show.jpg",
+          "Projects/ScapeGoat rear widened split bumper.jpg"
+        ]
+      },
+      "funnies": {
+        "title": "The Funnies",
+        "heroImage": "Projects/Stuffing Slicks.jpg",
+        "images": [
+          "Projects/Stuffing Slicks.jpg",
+          "Projects/ScapeGoat at the Granary.jpg",
+          "Projects/Omar as passenger in ScapeGoat on the blvd..jpg"
+        ]
+      },
+      "history": {
+        "title": "Build Start & History",
+        "heroImage": "Projects/20261021 X-member mock-up 01.jpg",
+        "images": [
+          "Projects/20261021 X-member mock-up 01.jpg",
+          "Projects/20261014 X-member start.jpg",
+          "Projects/20261023 shaft retainer hoops fresh off new bender.jpg",
+          "Projects/20261107 Scapegoat driveshaft retainer cage under construction.jpg",
+          "Projects/20261111 Scapegoat retainer cage plasma cuts.jpg"
+        ]
+      }
+    },
+    "builderNotes": "Shop punchlist: 1) Finish center shaft retainer cage including lower plate. 2) Weld in retainer cage and X-member. 3) Notch and box the frame. 4) Weld in new coilover mounts from BMR Suspension. 5) Grind and sand frame; prep for paint and rust inhibition. 6) Define the suspension installation. 7) IDEA on file (2026-11-24): woven-wire mesh door panels, per the reference photo (Projects/ScapeGoat mesh door panel reference.jpg, unlinked): the framed mesh panel Scot photographed on a green T-bucket's door, a workable treatment for ScapeGoat's door panels, likely a better idea than the previous one. Decide at the door stage."
+  },
   {
     "id": "not-for-higher",
     "title": "Project 'Not for Higher'",
